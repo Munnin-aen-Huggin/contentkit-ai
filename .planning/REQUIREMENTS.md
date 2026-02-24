@@ -109,13 +109,49 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (populated during roadmap creation) | | |
+| PROD-01 | Phase 1 — Product Assets | Pending |
+| PROD-02 | Phase 1 — Product Assets | Pending |
+| PROD-03 | Phase 1 — Product Assets | Pending |
+| PROD-04 | Phase 1 — Product Assets | Pending |
+| PROD-05 | Phase 1 — Product Assets | Pending |
+| PROD-06 | Phase 1 — Product Assets | Pending |
+| PROD-07 | Phase 1 — Product Assets | Pending |
+| PROD-08 | Phase 1 — Product Assets | Pending |
+| INFRA-01 | Phase 2 — Infrastructure | Pending |
+| INFRA-02 | Phase 2 — Infrastructure | Pending |
+| INFRA-04 | Phase 2 — Infrastructure | Pending |
+| INFRA-05 | Phase 2 — Infrastructure | Pending |
+| PAY-01 | Phase 2 — Infrastructure | Pending |
+| MAIL-01 | Phase 3 — Email Automation | Pending |
+| MAIL-02 | Phase 3 — Email Automation | Pending |
+| MAIL-03 | Phase 3 — Email Automation | Pending |
+| MAIL-04 | Phase 3 — Email Automation | Pending |
+| MAIL-05 | Phase 3 — Email Automation | Pending |
+| PAY-03 | Phase 3 — Email Automation | Pending |
+| PAY-05 | Phase 3 — Email Automation | Pending |
+| PAGE-01 | Phase 4 — Front-End Build | Pending |
+| PAGE-02 | Phase 4 — Front-End Build | Pending |
+| PAGE-03 | Phase 4 — Front-End Build | Pending |
+| PAGE-04 | Phase 4 — Front-End Build | Pending |
+| PAGE-05 | Phase 4 — Front-End Build | Pending |
+| PAGE-06 | Phase 4 — Front-End Build | Pending |
+| PAGE-07 | Phase 4 — Front-End Build | Pending |
+| PAGE-08 | Phase 4 — Front-End Build | Pending |
+| PAGE-09 | Phase 4 — Front-End Build | Pending |
+| PAGE-10 | Phase 4 — Front-End Build | Pending |
+| PAGE-11 | Phase 4 — Front-End Build | Pending |
+| PAGE-12 | Phase 4 — Front-End Build | Pending |
+| PAGE-13 | Phase 4 — Front-End Build | Pending |
+| PAGE-14 | Phase 4 — Front-End Build | Pending |
+| PAY-02 | Phase 4 — Front-End Build | Pending |
+| PAY-04 | Phase 4 — Front-End Build | Pending |
+| INFRA-03 | Phase 5 — Launch Readiness | Pending |
 
 **Coverage:**
-- v1 requirements: 30 total
-- Mapped to phases: 0
-- Unmapped: 30 ⚠️
+- v1 requirements: 37 total
+- Mapped to phases: 37
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-02-24*
-*Last updated: 2026-02-24 after initial definition*
+*Last updated: 2026-02-24 after roadmap creation*
