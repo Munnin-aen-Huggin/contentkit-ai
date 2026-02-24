@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 1 of 5 (Product Assets)
-Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-02-24 — Roadmap created
+Plan: 2 of 4 in current phase (01-02 at checkpoint — awaiting Notion template builds)
+Status: Checkpoint — human action required
+Last activity: 2026-02-24 — 01-02 Task 1 complete
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -30,10 +30,16 @@ Progress: [░░░░░░░░░░] 0%
 | - | - | - | - |
 
 **Recent Trend:**
-- Last 5 plans: —
+- Last 5 plans: 10min (01-02)
 - Trend: —
 
 *Updated after each plan completion*
+
+**By Task:**
+
+| Phase | Plan | Duration | Tasks | Files |
+|-------|------|----------|-------|-------|
+| 01 | 02 | 10min | 1 | 1 |
 
 ## Accumulated Context
 
@@ -48,6 +54,8 @@ Recent decisions affecting current work:
 - [Pre-phase]: Kit (ConvertKit) for email — 10K subscriber free tier (verify current limit at kit.com/pricing before first email)
 - [Pre-phase]: Zapier/Make for Stripe webhook → Kit delivery — Cloudflare Worker is alternative; decide during Phase 2 planning
 - [Pre-phase]: EU VAT decision deferred — must resolve before first sale (Stripe Payment Links vs. Lemon Squeezy merchant of record)
+- [Phase 01-product-assets]: Inline databases only in Notion templates — linked views cause buyer data bleed on duplication
+- [Phase 01-product-assets]: 4 separate Notion templates with separate public URLs — increases perceived product count and buyer clarity
 
 ### Pending Todos
 
@@ -62,5 +70,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Roadmap created, STATE.md initialized — ready to begin Phase 1 planning
+Stopped at: 01-02 checkpoint:human-action — user must build and publish 4 Notion templates, fill in URL Registry in downloads/notion-templates-spec.md, verify duplication from fresh account. Resume signal: "templates done" + paste 4 URLs.
 Resume file: None
