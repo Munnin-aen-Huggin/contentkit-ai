@@ -31,12 +31,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Three Notion templates exist as duplicatable Notion pages: 30-day content calendar, 90-day content calendar, brand strategy workspace, and campaign planner — all tested with a fresh Notion account to confirm duplication works
   4. The lead magnet PDF ("5 AI Prompts That Replace a $5K Copywriter") exists with real example outputs, stops short of full implementation, and ends with a clear gap pointing to the paid product
   5. All product asset URLs/file paths are documented and ready to embed in Kit automation emails
-**Plans**: 3 plans
+**Plans**: 4 plans
 
 Plans:
 - [ ] 01-01-PLAN.md — Write Full Kit (500+ prompts) and Starter tier (200 prompts) content files
 - [ ] 01-02-PLAN.md — Build four Notion templates (spec + human build + duplication verification)
 - [ ] 01-03-PLAN.md — Write lead magnet PDF content and asset manifest for Phase 3
+- [ ] 01-04-PLAN.md — Convert content .md files to styled PDFs using md-to-pdf; update asset manifest
 
 ---
 
@@ -127,7 +128,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Product Assets | 0/3 | Not started | - |
+| 1. Product Assets | 0/4 | Not started | - |
 | 2. Infrastructure | 0/3 | Not started | - |
 | 3. Email Automation | 0/3 | Not started | - |
 | 4. Front-End Build | 0/5 | Not started | - |
