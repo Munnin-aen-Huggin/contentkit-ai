@@ -12,25 +12,25 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 Phase: 1 of 5 (Product Assets)
 Plan: 2 of 4 in current phase (01-02 at checkpoint — awaiting Notion template builds)
 Status: Checkpoint — human action required
-Last activity: 2026-02-24 — 01-02 Task 1 complete
+Last activity: 2026-02-25 — 01-01 COMPLETE; 01-02 at checkpoint (awaiting Notion template builds)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 5%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: —
+- Total plans completed: 1
+- Average duration: 120min
+- Total execution time: 120min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01 | 1 | 120min | 120min |
 
 **Recent Trend:**
-- Last 5 plans: 10min (01-02)
+- Last 5 plans: 120min (01-01)
 - Trend: —
 
 *Updated after each plan completion*
@@ -40,6 +40,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase | Plan | Duration | Tasks | Files |
 |-------|------|----------|-------|-------|
 | 01 | 02 | 10min | 1 | 1 |
+| 01 | 01 | 120min | 2 | 2 |
 
 ## Accumulated Context
 
@@ -56,6 +57,9 @@ Recent decisions affecting current work:
 - [Pre-phase]: EU VAT decision deferred — must resolve before first sale (Stripe Payment Links vs. Lemon Squeezy merchant of record)
 - [Phase 01-product-assets]: Inline databases only in Notion templates — linked views cause buyer data bleed on duplication
 - [Phase 01-product-assets]: 4 separate Notion templates with separate public URLs — increases perceived product count and buyer clarity
+- [Phase 01-01]: Batch-write by category then commit — prevents context-limit failures on large content files
+- [Phase 01-01]: Starter prompts copied verbatim from Full Kit — prevents content drift between product tiers
+- [Phase 01-01]: Variable format includes concrete example ("e.g., 'freelance graphic designers charging under $50/hr'") — not just [VARIABLE NAME]
 
 ### Pending Todos
 
@@ -69,6 +73,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-24
+Last session: 2026-02-25
 Stopped at: 01-02 checkpoint:human-action — user must build and publish 4 Notion templates, fill in URL Registry in downloads/notion-templates-spec.md, verify duplication from fresh account. Resume signal: "templates done" + paste 4 URLs.
 Resume file: None
+Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
