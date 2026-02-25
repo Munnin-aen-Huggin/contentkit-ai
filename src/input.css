@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: oklch(0.97 0.03 212);
+  --color-brand-100: oklch(0.94 0.06 212);
+  --color-brand-500: oklch(0.65 0.19 212);
+  --color-brand-600: oklch(0.57 0.19 212);
+  --color-brand-700: oklch(0.50 0.18 212);
+  --color-brand-900: oklch(0.30 0.12 212);
+  --color-dark-800: oklch(0.14 0.01 270);
+  --color-dark-900: oklch(0.10 0.01 270);
+}
