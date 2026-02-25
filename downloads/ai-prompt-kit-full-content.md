@@ -3519,4 +3519,2152 @@ A 30-60 second Reel script built around trending audio, with on-screen text note
 
 ---
 
+## Category 4: Landing Pages
+
+These prompts cover every section of a high-converting landing page — from hero headlines to FAQ sections to pricing page copy. Each prompt targets a specific conversion objective and psychological trigger so your landing page guides visitors from skeptical to convinced.
+
 ---
+
+### LP-01: Hero Headline + Subheadline (Above the Fold)
+
+**CONTEXT:**
+Use for the most important copy on any landing page — the headline and subheadline above the fold. Visitors decide within 5 seconds whether to stay or leave based on this section alone.
+
+**PROMPT:**
+Act as a conversion copywriter specializing in landing pages. Write 5 hero headline + subheadline combinations for [PRODUCT/SERVICE NAME]. Each headline: under 10 words, specific outcome or transformation, not a tagline. Each subheadline: 1-2 sentences expanding on who this is for and what they get. Avoid: vague benefits, jargon, clever wordplay that sacrifices clarity. Variety: write 2 outcome-focused, 2 problem-led, 1 social proof-led. Label each pair.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT/SERVICE NAME] — e.g., "AI Marketing Prompt Kit"
+- [CORE OUTCOME] — e.g., "write a month of marketing copy in one afternoon"
+- [TARGET AUDIENCE] — e.g., "solopreneurs, freelancers, and small business owners"
+
+**EXPECTED OUTPUT:**
+5 headline + subheadline pairs labeled by type (outcome/problem/proof). Each headline under 10 words, each subheadline 1-2 sentences. Ready to A/B test against each other.
+
+---
+
+### LP-02: Value Proposition Statement (One Sentence)
+
+**CONTEXT:**
+Use when you need to distill your entire product into one sentence — for the hero section, meta descriptions, or pitch context. A strong value proposition answers: what is it, who is it for, and what's the result.
+
+**PROMPT:**
+Act as a value proposition specialist. Write 5 one-sentence value proposition variants for [PRODUCT NAME]. Format: "[PRODUCT NAME] helps [TARGET AUDIENCE] [ACHIEVE RESULT] by [MECHANISM]." Generate 5 versions with different emphasis: (1) result-led, (2) audience-led, (3) mechanism-led, (4) problem-led, (5) comparison-led (vs. alternative). Each under 25 words. Label each by emphasis type.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TARGET AUDIENCE] — e.g., "small business owners"
+- [RESULT] — e.g., "write professional marketing copy in a fraction of the time"
+- [MECHANISM] — e.g., "using 500+ structured AI prompts"
+
+**EXPECTED OUTPUT:**
+5 labeled value proposition sentences (under 25 words each). Each takes a different emphasis angle. Pick the one that resonates most for your primary use case.
+
+---
+
+### LP-03: Feature-to-Benefit Bullet Points (5 bullets)
+
+**CONTEXT:**
+Use for the features section of a landing page. Features tell; benefits sell. This prompt converts a list of product features into benefit-first bullet points that answer "so what?" for each feature.
+
+**PROMPT:**
+Act as a benefit copywriter. Transform these 5 product features into benefit-first bullet points for [PRODUCT NAME]'s landing page: Feature 1: [FEATURE 1]. Feature 2: [FEATURE 2]. Feature 3: [FEATURE 3]. Feature 4: [FEATURE 4]. Feature 5: [FEATURE 5]. Format: "[Benefit] — [brief feature explanation]." Each bullet under 20 words. Lead with the buyer's gain, not the product's capability.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [FEATURE 1-5] — e.g., "500 prompts / 8 categories / instant download / works with any AI / one-time price"
+
+**EXPECTED OUTPUT:**
+5 benefit-first bullet points with em-dash separator. Each bullet under 20 words, leading with the outcome or gain rather than the technical feature.
+
+---
+
+### LP-04: Social Proof Section — Testimonial Curation and Framing
+
+**CONTEXT:**
+Use to write the framing copy around a testimonial section. The testimonials themselves come from customers — this prompt writes the section header, subheader, and brief intro that makes the testimonials more persuasive.
+
+**PROMPT:**
+Act as a social proof section copywriter. Write the framing copy for a testimonial section on [PRODUCT NAME]'s landing page. Include: (1) section headline (under 10 words) that doesn't just say "what our customers say," (2) subheadline (1 sentence): reference a specific number of customers or outcome, (3) brief intro paragraph (2 sentences): frame who these buyers are and why their results are typical. Tone: confident without being boastful.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [NUMBER OF BUYERS] — e.g., "500+ buyers"
+- [TYPICAL RESULT] — the most common or compelling outcome buyers share
+
+**EXPECTED OUTPUT:**
+A testimonial section framing with headline (under 10 words), 1-sentence subheadline, and 2-sentence intro paragraph. Creates context that makes individual testimonials feel representative, not cherry-picked.
+
+---
+
+### LP-05: FAQ Section — 8 Questions and Answers
+
+**CONTEXT:**
+Use for the FAQ section of a sales page. FAQs convert fence-sitters by handling objections in a format that feels informational rather than sales-y. Each question should be a real objection or concern.
+
+**PROMPT:**
+Act as a sales FAQ copywriter. Write 8 FAQ entries for [PRODUCT NAME]'s landing page. Questions should address: (1) pricing/value objection, (2) "will this work for me?" concern, (3) technical question (how to access/use), (4) guarantee/refund policy, (5) who this is NOT for, (6) comparison to free alternatives, (7) time investment required, (8) what happens after purchase. Each answer: 2-4 sentences, honest, direct. No waffling.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Customize answers to your actual product terms, guarantee, and delivery method
+
+**EXPECTED OUTPUT:**
+8 FAQ pairs with specific, direct answers (2-4 sentences each). Covers pricing, fit, technical, guarantee, exclusion, comparison, time, and delivery. Honest enough that prospects trust the page.
+
+---
+
+### LP-06: CTA Button Copy — 10 Variants
+
+**CONTEXT:**
+Use to test different CTA button text. "Buy Now" and "Get Started" are the worst performing CTAs because they focus on what the buyer must do, not what they receive. This prompt generates 10 specific-outcome alternatives.
+
+**PROMPT:**
+Act as a CTA optimization specialist. Write 10 CTA button copy variants for [PRODUCT NAME]. Current CTA: "[CURRENT CTA — e.g., 'Buy Now']." Generate 10 alternatives: 3 action + outcome format ("Get [result]"), 3 first-person format ("Give me [result]"), 2 urgency format ("Get [result] today"), 2 specific format (include price or quantity). Each under 7 words. Label by format type.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [CURRENT CTA] — e.g., "Buy Now" or "Get Started"
+- [RESULT] — the specific outcome the buyer gets
+
+**EXPECTED OUTPUT:**
+10 CTA button variants (under 7 words each) in 4 format types: action+outcome, first-person, urgency, specific. Labeled by format. All 10 are testable alternatives to your current CTA.
+
+---
+
+### LP-07: Pricing Section Copy — Two-Tier Comparison
+
+**CONTEXT:**
+Use for a pricing page or section featuring two product tiers. Pricing copy must make the value of each tier crystal clear and make the higher tier feel like the obvious choice for most buyers.
+
+**PROMPT:**
+Act as a pricing page copywriter. Write copy for a two-tier pricing section: [TIER 1 NAME] at [PRICE 1] and [TIER 2 NAME] at [PRICE 2]. For each tier: tier name + badge (e.g., "Most Popular"), price + price qualifier, 1-sentence description of who it's for, 4-5 feature bullets (benefit format), and CTA button text. The higher tier should feel like a no-brainer upgrade, not just "more stuff."
+
+**VARIABLES TO CUSTOMIZE:**
+- [TIER 1/2 NAME] — e.g., "Starter" and "Full Kit"
+- [PRICE 1/2] — e.g., "$27" and "$47"
+- [TIER FEATURES] — list the actual features in each tier accurately
+
+**EXPECTED OUTPUT:**
+Two-tier pricing section copy with tier names, prices, one-sentence descriptions, 4-5 feature bullets each, and CTAs. Higher tier includes "Most Popular" badge framing. Ready for a designer.
+
+---
+
+### LP-08: Above-the-Fold Section — Complete Copy Block
+
+**CONTEXT:**
+Use to write the complete above-the-fold section as a cohesive unit — headline, subheadline, proof bar, and primary CTA. Everything the visitor sees before scrolling must earn the scroll.
+
+**PROMPT:**
+Act as an above-the-fold section copywriter. Write the complete above-the-fold copy block for [PRODUCT NAME]'s landing page: (1) Headline (under 10 words — specific outcome). (2) Subheadline (1-2 sentences — who it's for, what they get). (3) Proof bar (3 short credibility signals: buyer count, rating, or notable result — each under 6 words). (4) Primary CTA (under 7 words). (5) Risk reducer text under the CTA (under 10 words — e.g., "30-day money-back guarantee").
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PROOF SIGNALS] — e.g., "500+ buyers / 4.9 stars / 30-day guarantee"
+
+**EXPECTED OUTPUT:**
+A complete above-the-fold copy block with 5 labeled elements. Each element is character-count compliant and works as a cohesive unit. Ready for Figma/Canva/design.
+
+---
+
+### LP-09: Problem Section — Agitate Pain (Bulleted)
+
+**CONTEXT:**
+Use for the "problem" section of a PAS-structured landing page. This section must make the visitor feel deeply understood — it mirrors their experience back at them with enough specificity to feel personal.
+
+**PROMPT:**
+Act as a problem-section copywriter. Write the "problem agitation" section for [PRODUCT NAME]'s landing page. Include: (1) section headline (2-4 words: "Sound familiar?" or "Still doing this?"), (2) 5-7 pain point bullets — each describes a specific, relatable frustration in first or second person. Each bullet: under 15 words. End with a transition sentence into the solution. Target audience: [TARGET AUDIENCE].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TARGET AUDIENCE] — e.g., "solopreneurs writing their own marketing copy"
+- [PAIN POINTS] — specific frustrations from customer interviews, reviews, or your own experience
+
+**EXPECTED OUTPUT:**
+A problem section with section headline, 5-7 pain bullets (under 15 words each), and a transition sentence. Pain bullets are specific and relatable — visitors see themselves.
+
+---
+
+### LP-10: Solution Section — "Here's What Changes"
+
+**CONTEXT:**
+Use for the solution reveal section immediately after the problem agitation section. The transition from problem to solution should feel like a breath of fresh air — the contrast is the selling point.
+
+**PROMPT:**
+Act as a solution-section copywriter. Write the solution reveal section for [PRODUCT NAME]'s landing page. Structure: (1) section headline: contrast with the problem — e.g., "What if it didn't have to be that hard?" (2) 2-sentence explanation of what [PRODUCT NAME] is and how it works, (3) 3 outcome bullets: "Now you can [OUTCOME]" — each under 15 words, (4) brief product description: what's literally inside.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [3 OUTCOMES] — e.g., "write a week of content in 30 minutes / create ads in 5 minutes / never stare at a blank page again"
+
+**EXPECTED OUTPUT:**
+A solution section with contrast headline, 2-sentence product intro, 3 "now you can" outcome bullets, and a brief product description. Reads as relief after the problem section.
+
+---
+
+### LP-11: Product Description — What's Inside (Detailed)
+
+**CONTEXT:**
+Use for the "what's inside" or "here's what you get" section of a digital product landing page. This section must be specific enough to justify the price — vague descriptions don't convert.
+
+**PROMPT:**
+Act as a product description copywriter. Write a detailed "what's inside" section for [PRODUCT NAME]. For each product component, write: component name + short label (e.g., "500+ Structured Prompts — for every marketing task"), 2-3 sentence description of what it includes and why each detail matters, and the specific outcome the buyer gets from this component. Product components: [COMPONENT 1], [COMPONENT 2], [COMPONENT 3]. Section headline and intro paragraph included.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Full Kit"
+- [COMPONENT 1/2/3] — e.g., "500+ prompts / 8 categories / 4 Notion templates"
+
+**EXPECTED OUTPUT:**
+A "what's inside" section with headline, intro paragraph, and 2-3 component descriptions. Each component name + label + 2-3 sentence description + outcome. Specific enough to justify the price.
+
+---
+
+### LP-12: Trust Section — About the Creator
+
+**CONTEXT:**
+Use for the "who made this" section of a landing page. For faceless brands, this section can describe the origin story and problem solved without requiring personal disclosure. Trust is built through specificity, not celebrity.
+
+**PROMPT:**
+Act as a landing page trust section writer. Write the "who made this and why" section for [PRODUCT NAME]. This can be written in first person (with a name/brand) or third person (anonymous brand). Include: (1) the problem that motivated creating [PRODUCT NAME], (2) what was tried before building it, (3) what makes the creator qualified to build this, (4) a genuine belief or mission statement. Under 200 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PROBLEM MOTIVATION] — e.g., "spending $2K on freelancers and getting generic copy"
+- [QUALIFICATION] — e.g., "tested 200+ prompt structures over 18 months"
+
+**EXPECTED OUTPUT:**
+A 175-word trust section with origin story, qualification, and mission. Can be anonymous (brand voice) or personal (founder voice). Reads as genuine motivation, not a bio.
+
+---
+
+### LP-13: Guarantee Section — Risk Reversal Block
+
+**CONTEXT:**
+Use for the guarantee or risk-reversal section of a sales page. A strong guarantee is specific — not just "30-day money back" but explaining what that actually means and how it works.
+
+**PROMPT:**
+Act as a guarantee copywriter. Write a risk-reversal block for [PRODUCT NAME]'s landing page. Include: (1) guarantee headline (under 10 words: "Your purchase is completely risk-free"), (2) specific guarantee terms: [GUARANTEE TERMS — e.g., "30 days, no questions asked, full refund"], (3) what specifically they can ask for a refund on (any reason? specific conditions?), (4) how to claim: [CLAIM PROCESS], (5) closing trust statement (1 sentence: what this guarantee reveals about your confidence in the product).
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [GUARANTEE TERMS] — e.g., "30-day full refund, no questions asked"
+- [CLAIM PROCESS] — e.g., "email [address] with your order number"
+
+**EXPECTED OUTPUT:**
+A guarantee block with headline, specific terms, eligibility, claim process, and confidence statement. Specific enough that prospects understand exactly what "risk-free" means.
+
+---
+
+### LP-14: Closing CTA Section — Bottom of Page
+
+**CONTEXT:**
+Use for the final CTA section at the bottom of a long-form sales page. At this point, the visitor has read everything — this final section should be brief, confident, and close with a direct ask.
+
+**PROMPT:**
+Act as a closing section copywriter. Write the final CTA section for [PRODUCT NAME]'s sales page. The visitor has read the entire page — they don't need more information, they need a clear final push. Include: (1) closing headline (2-4 words — "Ready to start?" or "Your turn."), (2) 1-sentence recap of the offer (price + what's included), (3) final benefit statement (1 sentence — the transformation), (4) guarantee reminder (1 sentence), (5) CTA button text.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Full Kit"
+- [OFFER RECAP] — e.g., "$47 one-time — 500+ prompts, 8 categories, instant download"
+- [TRANSFORMATION] — e.g., "start writing better marketing copy today"
+
+**EXPECTED OUTPUT:**
+A 5-element closing CTA block: headline, offer recap, benefit, guarantee, CTA. Brief and decisive — assumes the visitor has read the full page. No new information introduced.
+
+---
+
+### LP-15: Scarcity / Urgency Section Copy
+
+**CONTEXT:**
+Use when your product has a genuine limited-time offer, launch price, or bonus expiry. Scarcity copy must be specific and truthful — "limited time offer" with no end date destroys trust.
+
+**PROMPT:**
+Act as a scarcity section copywriter. Write an urgency/scarcity section for [PRODUCT NAME]'s landing page. Scarcity mechanism: [MECHANISM — e.g., "launch price of $47 expires Sunday at midnight EST"]. Include: (1) urgency headline (state the deadline plainly), (2) what happens after the deadline (price increase, bonus removal, etc.), (3) brief encouragement to act now, (4) CTA with deadline reinforced. Under 100 words total. No manufactured fake scarcity.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [MECHANISM] — use only real deadlines or real limits
+- [CONSEQUENCE] — e.g., "price goes up to $67 after the launch window"
+
+**EXPECTED OUTPUT:**
+A 90-word urgency section with headline, deadline, consequence, brief encouragement, and CTA. Specific and truthful — mentions the exact date and what changes.
+
+---
+
+### LP-16: Comparison Table — Your Product vs. Alternatives
+
+**CONTEXT:**
+Use for a feature comparison table on a landing page. Comparison tables convert high-intent buyers who are actively evaluating options. They work best when you include free/DIY alternatives, not just paid competitors.
+
+**PROMPT:**
+Act as a comparison table copywriter. Write a comparison table for [PRODUCT NAME] vs. 2 alternatives: (1) DIY (doing it yourself without any tool), (2) [ALTERNATIVE CATEGORY — e.g., "Monthly AI writing subscriptions"]. Comparison dimensions (rows): [DIMENSION 1 — e.g., "Monthly cost"], [DIMENSION 2 — e.g., "Setup time"], [DIMENSION 3 — e.g., "Works with any AI tool"], [DIMENSION 4 — e.g., "Time to first result"], [DIMENSION 5 — e.g., "What you own after purchase"]. Format as a markdown table.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [ALTERNATIVE CATEGORY] — describe the competitor category without naming brands
+- [5 DIMENSIONS] — choose dimensions where your product wins clearly
+
+**EXPECTED OUTPUT:**
+A markdown comparison table with 3 columns (Your Product / DIY / Alternative) and 5 rows. Each cell is a specific, factual claim. Rows chosen to favor your product honestly.
+
+---
+
+### LP-17: Trust Badges / Social Proof Bar Copy
+
+**CONTEXT:**
+Use for the trust badges or social proof bar that typically appears under the hero section or the CTA. Each badge is 3-6 words — they must be specific and credible, not vague ("Quality Guarantee" means nothing).
+
+**PROMPT:**
+Act as a trust badge copywriter. Write 6 trust badge labels for [PRODUCT NAME]. Each badge: 3-6 words maximum. Cover: (1) buyer count, (2) rating/satisfaction, (3) delivery method, (4) compatibility (works with X), (5) risk-reversal, (6) uniqueness/differentiation. Format: one label per line. All must be specific and verifiable — no vague claims.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Replace with your real numbers: buyer count, rating, etc.
+
+**EXPECTED OUTPUT:**
+6 trust badge labels (3-6 words each) covering 6 distinct credibility dimensions. All specific and based on real product facts. Ready for a designer to add icons.
+
+---
+
+### LP-18: Bonus Section — Adding Perceived Value
+
+**CONTEXT:**
+Use when adding bonuses to a product offer. Bonus section copy must make each bonus feel genuinely valuable (not filler) and explain why it's included with the main product.
+
+**PROMPT:**
+Act as a bonus section copywriter. Write copy for a [NUMBER]-bonus section for [PRODUCT NAME]'s sales page. For each bonus: bonus name + value statement (e.g., "Bonus 1: Email Swipe File — Value: $27, included free"), 2-sentence description of what it includes and why it's valuable, and why it's being given away with the main product. Section headline: "Everything you get when you order today." Total bonus value summary at the end.
+
+**VARIABLES TO CUSTOMIZE:**
+- [NUMBER] — e.g., 2 or 3 bonuses
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [BONUSES] — describe your actual bonuses with genuine value
+
+**EXPECTED OUTPUT:**
+A bonus section with section headline, [N] bonus blocks (name/value/description/rationale), and total value summary. Bonuses feel earned and valuable — not padded.
+
+---
+
+### LP-19: Objection Handler — Inline Copy
+
+**CONTEXT:**
+Use to write inline objection handling copy — small pieces of reassurance copy placed adjacent to key conversion elements (next to the price, next to the CTA, etc.) that address silent hesitations.
+
+**PROMPT:**
+Act as an inline objection handler copywriter. Write 5 micro-copy objection handlers for [PRODUCT NAME]'s sales page. Each: 1-2 sentences, placed next to a specific page element. (1) Under the price: address "is it worth it?" (2) Under the CTA button: address "is this actually for me?" (3) Near the testimonials: address "are these real results?" (4) Near the guarantee: address "what does risk-free actually mean?" (5) In the FAQ: address "I've bought things like this before and didn't use them."
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Customize each micro-copy answer to your actual product terms and customer experience
+
+**EXPECTED OUTPUT:**
+5 inline micro-copy objection handlers, each labeled by page placement. 1-2 sentences each. Honest and direct — dissolves hesitation without overselling.
+
+---
+
+### LP-20: "Who Is This For" Section
+
+**CONTEXT:**
+Use for a "who is this for" section that specifically identifies ideal buyers. This section converts by making the right people feel seen and, crucially, filters out bad-fit buyers who would refund anyway.
+
+**PROMPT:**
+Act as a targeting section copywriter. Write a "who is this for" section for [PRODUCT NAME]'s landing page. Format: two subsections. "This is for you if:" — 5 specific "you" statements identifying the ideal buyer. "This is NOT for you if:" — 3 honest statements about who shouldn't buy. Each statement: under 20 words. Honest over optimistic — wrong buyers cause chargebacks and bad reviews.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [FOR YOU IF] — describe your ideal customer's specific situation, not generic traits
+- [NOT FOR YOU IF] — be genuinely honest about who this won't work for
+
+**EXPECTED OUTPUT:**
+A targeting section with 5 "for you" and 3 "not for you" statements. Each under 20 words. Specificity over politeness — makes the right people say "this is exactly me."
+
+---
+
+### LP-21: Landing Page Meta Title and Description
+
+**CONTEXT:**
+Use for the SEO meta title and description for your landing page. These appear in Google results and affect both click-through rate and search ranking. The description should sell the click, not just describe the page.
+
+**PROMPT:**
+Act as an SEO landing page writer. Write 3 meta title variants (under 60 characters) and 3 meta description variants (under 160 characters) for [PRODUCT NAME]'s landing page. Primary keyword: [KEYWORD]. Meta titles: one outcome-focused, one keyword-focused, one brand-focused. Meta descriptions: each must end with a CTA phrase and include the keyword naturally. Label each by type.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [KEYWORD] — e.g., "AI marketing prompts" or "ChatGPT marketing templates"
+
+**EXPECTED OUTPUT:**
+3 meta title variants (under 60 chars) and 3 meta description variants (under 160 chars), labeled by type. All include the keyword naturally and the descriptions end with a CTA.
+
+---
+
+### LP-22: Open Graph / Social Share Copy
+
+**CONTEXT:**
+Use for the Open Graph title and description that appears when your landing page is shared on social media (LinkedIn, Facebook, Twitter). OG copy is separate from meta copy and should be optimized for social click-through.
+
+**PROMPT:**
+Act as a social share copy specialist. Write Open Graph copy for [PRODUCT NAME]'s landing page. OG title (under 60 characters): more emotional/benefit-driven than the meta title — this is for social, not Google. OG description (under 200 characters): expand on the title, include a social proof signal, end with an implicit or explicit CTA. Write 3 variants of each, labeled by approach.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [SOCIAL PROOF SIGNAL] — e.g., "500+ marketers / 4.9 stars / used by agency owners"
+
+**EXPECTED OUTPUT:**
+3 OG title variants (under 60 chars) and 3 OG description variants (under 200 chars). Each pair is a cohesive unit. More conversational than SEO meta — optimized for social sharing.
+
+---
+
+### LP-23: Product Page — What You'll Be Able to Do (Outcome Framing)
+
+**CONTEXT:**
+Use for an "outcomes" or "results" section that frames the product in terms of what the buyer will be able to accomplish after using it. Outcome framing is more powerful than feature listing for digital products.
+
+**PROMPT:**
+Act as an outcome-framing copywriter. Write an "after [PRODUCT NAME], you'll be able to:" section for [PRODUCT NAME]'s landing page. List 6 specific capabilities the buyer gains — framed as "you'll be able to [do specific thing]." Each capability: under 20 words, specific and achievable, not vague aspiration. Section headline included.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [6 CAPABILITIES] — specific actions the buyer can take after using the product
+- Make each capability distinct — no overlapping themes
+
+**EXPECTED OUTPUT:**
+An outcome section with headline and 6 "you'll be able to" bullets, each under 20 words. Specific enough that prospects can imagine doing each thing. Distinct across all 6 bullets.
+
+---
+
+### LP-24: Testimonial Write-Up (From Raw Feedback)
+
+**CONTEXT:**
+Use to transform raw customer feedback into polished testimonial copy. Real customer language is more compelling than edited copy, but raw feedback often needs structure and quotation marks to work on a landing page.
+
+**PROMPT:**
+Act as a testimonial editor. Transform this raw customer feedback into 3 polished testimonial formats: Raw feedback: "[RAW FEEDBACK — e.g., 'honestly love this thing, used it yesterday to write an ad and it worked way better than what I usually write, took like 20 minutes']." Format 1: short quote under 25 words. Format 2: medium quote 25-50 words with context. Format 3: star rating + headline + 2-sentence quote. Preserve the customer's authentic voice — don't professionalize it out of existence.
+
+**VARIABLES TO CUSTOMIZE:**
+- [RAW FEEDBACK] — paste actual raw customer quote or message
+- Preserve their actual words — don't replace casual language with marketing language
+
+**EXPECTED OUTPUT:**
+3 testimonial format variations from one piece of raw feedback. Short / medium / star-rating-plus-quote. Each preserves the customer's voice. Ready to display on landing page.
+
+---
+
+### LP-25: Sales Video Script (VSL) — Full Structure
+
+**CONTEXT:**
+Use for a Video Sales Letter (VSL) on a landing page. VSLs typically replace the traditional long-form sales page copy or supplement it. A 5-10 minute VSL follows a specific structure that mirrors the written sales page.
+
+**PROMPT:**
+Act as a VSL scriptwriter. Write a 7-minute VSL outline and script for [PRODUCT NAME]. Structure: Hook (0-30 sec): problem statement that makes the viewer lean in. Agitation (0:30-2:00): develop the problem with 3 specific pain scenarios. Solution intro (2:00-3:00): introduce [PRODUCT NAME] and the mechanism. Proof (3:00-4:30): 3 buyer results, product demonstration summary. Offer (4:30-5:30): what's included, price, bonuses. Guarantee (5:30-6:00). CTA (6:00-7:00). Approximate word count per section included.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [3 PAIN SCENARIOS] — specific, relatable situations your buyer recognizes
+- [3 BUYER RESULTS] — real or representative customer outcomes
+
+**EXPECTED OUTPUT:**
+A 7-section VSL outline with scripted copy for each section, section timestamps, and approximate word counts. Roughly 900-1,050 spoken words total (7 minutes at ~150 words/minute).
+
+---
+
+### LP-26: Product Launch Countdown Page Copy
+
+**CONTEXT:**
+Use for a countdown timer page used before or during a product launch. Countdown pages need enough information to create anticipation without giving away everything — the scarcity of information creates desire.
+
+**PROMPT:**
+Act as a countdown page copywriter. Write copy for a product launch countdown page for [PRODUCT NAME]. Include: (1) headline: what's coming and why it matters (under 12 words), (2) teaser: 2-3 sentences of what they'll get — enough to intrigue, not enough to satisfy, (3) countdown label text (e.g., "Launching in" or "Opens in"), (4) email capture section: headline + subheadline + form label + button text + below-form micro-copy. Under 200 words total.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH DATE] — specific date and time
+- [TEASER DETAILS] — what you're comfortable revealing before launch
+
+**EXPECTED OUTPUT:**
+A countdown page copy set with headline, teaser paragraph, countdown label, and email capture section. Under 200 words total. Creates genuine anticipation without overselling.
+
+---
+
+### LP-27: Thank You Page — Post-Purchase
+
+**CONTEXT:**
+Use for the thank-you or confirmation page after purchase. This page has a 100% open rate (every buyer sees it) and is the best opportunity for an immediate upsell or next-step activation.
+
+**PROMPT:**
+Act as a post-purchase page copywriter. Write the thank-you page copy for [PRODUCT NAME] purchases. Include: (1) confirmation headline (not "Thanks for your order!" — something that reinforces their great decision), (2) delivery instructions: exactly how to access what they bought, (3) quick-start instruction: the one thing to do in the next 10 minutes, (4) optional upsell: natural mention of [UPSELL PRODUCT] if relevant, (5) support line: where to get help. Under 250 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Starter"
+- [DELIVERY INSTRUCTIONS] — exact access method: download link, Notion URL, etc.
+- [UPSELL PRODUCT] — e.g., "Full Kit upgrade" (if applicable)
+
+**EXPECTED OUTPUT:**
+A thank-you page copy block with 5 elements: headline, delivery instructions, quick-start, optional upsell, and support info. Under 250 words. Practical and warm — removes confusion, creates momentum.
+
+---
+
+### LP-28: 404 / Error Page Copy
+
+**CONTEXT:**
+Use for a custom 404 page. Most 404 pages lose potential customers — a well-written 404 can retain them by providing helpful options. This is a small but measurable conversion win.
+
+**PROMPT:**
+Act as a 404 page copywriter. Write a custom 404 page copy for [BRAND NAME]. Include: (1) headline: acknowledge the error without being apologetic in a boring way (e.g., "Hmm. That page doesn't exist yet."), (2) brief humanizing line (1 sentence), (3) 3 helpful links to recover (homepage, main product, free lead magnet), (4) search box label. Under 75 words. Light, not frustrating.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [3 HELPFUL LINKS] — your most important destination pages
+- [TONE] — e.g., "friendly and direct" or "slightly self-deprecating"
+
+**EXPECTED OUTPUT:**
+A 404 page copy block (under 75 words) with an on-brand error headline, brief humanizing sentence, 3 labeled recovery links, and a search box label. Reduces bounce from error pages.
+
+---
+
+### LP-29: Pop-Up Copy — Exit-Intent Offer
+
+**CONTEXT:**
+Use for an exit-intent popup that appears when a visitor moves their cursor toward the browser bar. Exit popups are the last chance to capture an email or make a sale before the visitor leaves.
+
+**PROMPT:**
+Act as an exit-intent popup copywriter. Write exit popup copy for [PRODUCT NAME]. The popup fires when a visitor is about to leave the sales page. Offer: [EXIT OFFER — e.g., "a free sample of 5 prompts" or "10% off coupon code"]. Include: (1) headline (under 10 words — stop them without being annoying), (2) subheadline (1 sentence — state the free offer clearly), (3) yes/no button copy ("Yes, give me the 5 prompts" / "No thanks, I'll write copy the hard way"). Under 50 words total.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [EXIT OFFER] — the specific thing you're offering to get the email or the sale
+- No/negative button text should be honest but slightly negative consequence framing
+
+**EXPECTED OUTPUT:**
+An exit popup copy set (under 50 words) with headline, subheadline, yes button, and no button. Yes button uses first-person format. No button uses honest negative consequence framing.
+
+---
+
+### LP-30: Pop-Up Copy — Lead Magnet Capture (Timed)
+
+**CONTEXT:**
+Use for a timed popup (typically appearing after 30-60 seconds on the page) that offers a lead magnet in exchange for an email. Timed popups perform best when the offer is highly specific to the page's topic.
+
+**PROMPT:**
+Act as a lead capture popup copywriter. Write a timed popup for the [PRODUCT NAME] landing page offering [LEAD MAGNET — e.g., "5 AI Prompts That Replace a $5K Copywriter — free PDF"]. Include: (1) headline under 10 words (lead with the freebie, not "sign up for our newsletter"), (2) subheadline (1 sentence): who it's for, (3) email field label, (4) CTA button text (first-person, under 6 words), (5) privacy micro-copy (under 15 words). Under 60 words total.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LEAD MAGNET] — e.g., "5 AI Prompts That Replace a $5K Copywriter"
+- [PRIVACY TEXT] — e.g., "No spam. Unsubscribe anytime."
+
+**EXPECTED OUTPUT:**
+A 5-element lead capture popup (under 60 words total): headline, subheadline, field label, CTA, privacy text. Specific and benefit-led — reads as a gift offer, not an email capture.
+
+---
+
+### LP-31: Sticky Bar / Banner Copy
+
+**CONTEXT:**
+Use for a sticky header or footer bar that appears on the sales page. Sticky bars keep the CTA visible at all times without interrupting the reading experience. They typically promote an offer or deadline.
+
+**PROMPT:**
+Act as a sticky bar copywriter. Write 3 sticky header bar copy variants for [PRODUCT NAME]'s sales page. Each: under 80 characters total. Variant 1: offer-focused (price + CTA). Variant 2: urgency-focused (deadline + CTA). Variant 3: proof-focused (social proof signal + CTA). Each ends with a clickable CTA phrase.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [OFFER] — e.g., "$47 one-time — 500+ prompts"
+- [DEADLINE] — e.g., "Launch price ends Sunday"
+- [PROOF] — e.g., "500+ buyers • 4.9 stars"
+
+**EXPECTED OUTPUT:**
+3 sticky bar copy variants (under 80 characters each): offer, urgency, proof. Each ends with a CTA phrase and is usable as a single-line bar with optional button.
+
+---
+
+### LP-32: Headline Split Test Set (10 variants)
+
+**CONTEXT:**
+Use to set up a systematic headline A/B test. Testing 10 variants across different frameworks surfaces the highest-converting approach for your specific audience.
+
+**PROMPT:**
+Act as a headline testing specialist. Write 10 landing page headline variants for [PRODUCT NAME]. Distribute across frameworks: 2 outcome-focused, 2 problem-led, 2 curiosity-gap, 2 social proof, 2 specificity-anchored (include a number or specific claim). Each headline under 12 words. Label by framework. Subheadlines optional — write one if the headline needs context to land.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [CORE OUTCOME] — e.g., "write a month of marketing copy in one afternoon"
+- [SOCIAL PROOF] — e.g., "joined by 500+ marketers who cut their content time by 70%"
+
+**EXPECTED OUTPUT:**
+10 landing page headlines (under 12 words each) labeled by framework. Optional subheadlines where needed. Ready for A/B testing — each tests a fundamentally different angle.
+
+---
+
+### LP-33: Product Demo Section Copy
+
+**CONTEXT:**
+Use for a section of the landing page that shows or describes the product in action. For digital products, the "demo" is often a screenshot sequence or a brief walkthrough — this copy frames the demo so it sells.
+
+**PROMPT:**
+Act as a product demo section copywriter. Write the framing copy for a demo/walkthrough section of [PRODUCT NAME]'s landing page. Include: (1) section headline under 10 words (e.g., "See exactly what you get"), (2) 2-sentence intro explaining what the demo shows and what the viewer will notice, (3) 3 screenshot/step caption lines — each under 15 words — describing what's shown in each image and why it matters.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [DEMO CONTENT] — describe what your screenshots or walkthrough actually show
+- [3 KEY STEPS] — the 3 most impressive or useful moments in your demo
+
+**EXPECTED OUTPUT:**
+A demo section with headline, 2-sentence intro, and 3 step/screenshot captions (under 15 words each). Frames the visual demo to highlight value, not just describe what's shown.
+
+---
+
+### LP-34: Lead Magnet Landing Page — Full Copy
+
+**CONTEXT:**
+Use for a standalone landing page whose only goal is to collect email addresses in exchange for a free lead magnet. These pages should have no navigation, one offer, and one CTA.
+
+**PROMPT:**
+Act as a lead magnet landing page copywriter. Write the complete copy for a lead magnet landing page for [LEAD MAGNET NAME — e.g., "5 AI Prompts That Replace a $5K Copywriter"]. Include: (1) headline under 10 words, (2) subheadline (1-2 sentences), (3) what's inside (3 bullets, each under 15 words), (4) social proof element (optional), (5) email form label, (6) CTA button (first-person, under 6 words), (7) privacy/anti-spam line. Total: under 150 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [LEAD MAGNET NAME] — e.g., "5 AI Prompts That Replace a $5K Copywriter"
+- [3 WHAT'S INSIDE BULLETS] — specific things the downloader gets or learns
+- [SOCIAL PROOF] — optional: early download count or rating
+
+**EXPECTED OUTPUT:**
+A complete 7-element lead magnet landing page copy block (under 150 words). Each element is labeled. Simple, focused, no distractions — one offer, one CTA.
+
+---
+
+### LP-35: Pricing Page — Annual vs. Monthly Framing (SaaS)
+
+**CONTEXT:**
+Use if you offer a subscription product alongside a one-time option. Annual vs. monthly pricing pages need copy that makes annual feel like the obvious choice while still making monthly accessible.
+
+**PROMPT:**
+Act as a SaaS pricing page copywriter. Write pricing toggle copy for [PRODUCT/SERVICE NAME] with two billing options: monthly at [MONTHLY PRICE] and annual at [ANNUAL PRICE]. Include: (1) toggle label ("Monthly / Annual — Save X%"), (2) savings call-out under annual ("Save $[AMOUNT] per year / equivalent to 2 months free"), (3) monthly plan description (1 sentence — who it's for), (4) annual plan description (1 sentence — why it's better). Under 100 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT/SERVICE NAME] — e.g., your SaaS product
+- [MONTHLY PRICE / ANNUAL PRICE] — actual pricing
+- [SAVINGS] — calculate the real savings amount
+
+**EXPECTED OUTPUT:**
+A pricing toggle copy set with toggle label, savings call-out, and two plan descriptions. Under 100 words. Makes annual feel like the obvious financial choice.
+
+---
+
+### LP-36: Upsell Order Bump Copy (Checkout Page)
+
+**CONTEXT:**
+Use for an order bump — a small checkbox add-on on the checkout page. Order bumps are the highest-ROI upsell because the buyer's credit card is already out. Copy must make the add-on feel like a no-brainer at the checkout price.
+
+**PROMPT:**
+Act as an order bump copywriter. Write an order bump box for the checkout page of [MAIN PRODUCT]. Add-on: [ADD-ON PRODUCT] at [BUMP PRICE]. Format: (1) checkbox label (under 10 words: "Yes, add [ADD-ON] to my order"), (2) brief description (2-3 sentences: what it is, why it pairs perfectly with the main product), (3) value framing (normal price vs. bump price), (4) "only available here" note (1 sentence). Under 80 words total.
+
+**VARIABLES TO CUSTOMIZE:**
+- [MAIN PRODUCT] — e.g., "AI Marketing Prompt Kit — Starter"
+- [ADD-ON PRODUCT] — e.g., "Email Swipe File — 30 high-converting email templates"
+- [BUMP PRICE] — e.g., "$17 (normally $27)"
+
+**EXPECTED OUTPUT:**
+An order bump box (under 80 words) with checkbox label, description, value framing, and exclusivity note. Makes the add-on feel like an obvious $17 decision at the moment of checkout.
+
+---
+
+### LP-37: Thank You Page — Referral Invite
+
+**CONTEXT:**
+Use on the thank-you page immediately after purchase to invite buyers to share the product. Buyers are most enthusiastic in the first 5 minutes after purchase — this is the optimal moment for a referral ask.
+
+**PROMPT:**
+Act as a thank-you page referral copywriter. Write a referral invite section for the [PRODUCT NAME] thank-you page. Include: (1) section headline (under 10 words: "Know someone who'd love this?"), (2) 1-sentence description of the sharing benefit (for them and/or the referee), (3) pre-written shareable message they can copy, (4) sharing CTA (under 6 words). Under 100 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [SHARING BENEFIT] — e.g., "they get $5 off, you get credit" or "no incentive — just share the love"
+- [PRE-WRITTEN MESSAGE] — a short, authentic message they'd actually send
+
+**EXPECTED OUTPUT:**
+A 4-element thank-you page referral section (under 100 words): headline, benefit statement, pre-written shareable message, and sharing CTA. Capitalizes on post-purchase enthusiasm.
+
+---
+
+### LP-38: Below-the-Fold CTA Copy Block
+
+**CONTEXT:**
+Use for mid-page CTA sections on long-form sales pages. These sections appear every 500-700 words to give engaged readers a chance to buy without scrolling to the end.
+
+**PROMPT:**
+Act as a mid-page CTA copywriter. Write a mid-page CTA block for [PRODUCT NAME] to be placed after the product features section. Include: (1) mini-headline (under 8 words: "Ready to get started?"), (2) 1-sentence offer reminder (price + what's included), (3) CTA button text (first-person, under 6 words), (4) risk reducer (1 line: guarantee or no-risk language). Under 60 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [OFFER REMINDER] — e.g., "$47, 500+ prompts, instant download"
+- [RISK REDUCER] — e.g., "30-day money-back guarantee — no questions asked"
+
+**EXPECTED OUTPUT:**
+A 4-element mid-page CTA block (under 60 words): mini-headline, offer reminder, CTA button, risk reducer. Compact and conversion-focused — doesn't interrupt the page flow.
+
+---
+
+### LP-39: Launch Email Capture Opt-In Page
+
+**CONTEXT:**
+Use for a pre-launch "join the waitlist" page. The goal is to build a warm email list before the product launches so day-one buyers are ready. Copy must create anticipation without over-promising.
+
+**PROMPT:**
+Act as a waitlist page copywriter. Write copy for a waitlist landing page for [PRODUCT NAME] launching on [LAUNCH DATE]. Include: (1) headline: what's coming and for whom (under 12 words), (2) teaser: 2-3 sentences — what the product does without full details, (3) waitlist benefit: why joining early matters (early access, launch pricing, bonus), (4) email form: label + CTA button + anti-spam micro-copy. Under 175 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH DATE] — e.g., "launching March 1"
+- [WAITLIST BENEFIT] — e.g., "waitlist members get 24-hour early access and launch pricing of $47 before it goes to $67"
+
+**EXPECTED OUTPUT:**
+A waitlist page copy block (under 175 words) with headline, teaser, waitlist benefit, and email capture form copy. Creates genuine anticipation with a specific benefit for signing up early.
+
+---
+
+### LP-40: Landing Page Copy Audit Checklist
+
+**CONTEXT:**
+Use to evaluate an existing landing page's copy against conversion best practices. This prompt generates a copy audit — a structured review framework you can apply to any sales page.
+
+**PROMPT:**
+Act as a conversion copy auditor. Create a 15-point landing page copy audit checklist for evaluating [PRODUCT NAME]'s sales page. Organize into 4 sections: (1) Clarity (5 points: headline, offer, audience fit, differentiator, outcome), (2) Trust (4 points: social proof, guarantee, FAQ, testimonials), (3) Conversion (4 points: CTAs, urgency, objection handling, pricing), (4) Technical (2 points: meta copy, mobile readability). For each point, provide the audit question and what "passing" looks like.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Customize sections for your specific page type (digital product vs. SaaS vs. service)
+
+**EXPECTED OUTPUT:**
+A 15-point copy audit checklist in 4 sections, each with an audit question and pass criteria. Can be applied to any landing page. Takes ~20 minutes to complete per page.
+
+---
+
+### LP-41: Micro-Copy — Form Labels and Error Messages
+
+**CONTEXT:**
+Use for the small copy details that most teams ignore: form field labels, placeholder text, error messages, and confirmation messages. These micro-copy details affect form conversion rates significantly.
+
+**PROMPT:**
+Act as a micro-copy specialist. Write optimized copy for a lead capture or checkout form for [PRODUCT NAME]: (1) email field label (under 6 words), (2) email placeholder text (under 30 characters), (3) CTA button text (first-person, under 6 words), (4) form error message for invalid email (under 20 words, not "Invalid email"), (5) success message after submission (under 25 words), (6) anti-spam line under form (under 15 words). Label each element.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Error and success messages should match your brand voice
+
+**EXPECTED OUTPUT:**
+6 labeled micro-copy elements for a web form. Each is character-count compliant and on-brand. Error messages are helpful, not blame-y. Success message creates momentum toward the next step.
+
+---
+
+### LP-42: Feature Section — Icon + Headline + Description Format
+
+**CONTEXT:**
+Use for a 3-column or 4-column feature grid section on a landing page. Each feature block has an icon, a short headline, and a 2-sentence description. This prompt generates the copy for all feature blocks.
+
+**PROMPT:**
+Act as a feature block copywriter. Write [NUMBER — 3, 4, or 6] feature grid blocks for [PRODUCT NAME]'s landing page. For each block: (1) icon suggestion (describe what type of icon fits, e.g., "lightning bolt for speed"), (2) feature headline (under 6 words), (3) description (2 sentences: what the feature does + the benefit to the buyer). Features to highlight: [LIST YOUR FEATURES].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [FEATURES] — e.g., "500+ prompts / 8 categories / instant download / works with any AI / one-time price / structured format"
+
+**EXPECTED OUTPUT:**
+3-6 feature grid blocks, each with icon suggestion, headline (under 6 words), and 2-sentence description. Ready for a designer to add icons. Benefit-focused, not technical.
+
+---
+
+### LP-43: "As Seen In" / Media Mentions Section Copy
+
+**CONTEXT:**
+Use for a "as seen in" or media credibility section. Even small media mentions add credibility when framed correctly. If you have no media mentions yet, this prompt also handles the "early brand" version.
+
+**PROMPT:**
+Act as a media credibility section copywriter. Write copy for a media/credibility section for [BRAND NAME]. If you have media mentions: write the section headline and sub-copy framing for [MEDIA MENTIONS]. If you don't yet: write an alternative credibility section using buyer community stats, platform presence, or social proof instead of media logos. Under 75 words for the framing copy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [MEDIA MENTIONS] — e.g., "Featured in: [publication], [newsletter], [podcast]" or leave blank for the alternative version
+
+**EXPECTED OUTPUT:**
+A media/credibility section framing (under 75 words) with headline and 1-2 subtext sentences. Either media-logo format or alternative social proof format depending on your situation.
+
+---
+
+### LP-44: Conversion-Optimized About Page
+
+**CONTEXT:**
+Use for an About page that actually sells — not a bio page, but a page that builds trust, establishes mission, and includes a natural product CTA. About pages are often the second most-visited page after the homepage.
+
+**PROMPT:**
+Act as an About page copywriter for a digital product brand. Write a conversion-focused About page for [BRAND NAME]. Structure: (1) who this brand is for (not who we are — who you're serving), (2) the problem that motivated creating [PRODUCT NAME], (3) what the brand stands for (1 core belief), (4) what's available (brief product mention with CTA), (5) optional: social proof or community. Under 300 words. Can be founder-voiced or brand-voiced.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [CORE BELIEF] — the genuine principle behind your brand
+
+**EXPECTED OUTPUT:**
+A 275-word About page with audience-first structure, origin story, brand belief, product mention, and optional proof. Reads as a mission page, not a resume. Converts visitors to buyers.
+
+---
+
+### LP-45: Product Hunt Launch Page Description
+
+**CONTEXT:**
+Use for your Product Hunt launch page description. Product Hunt descriptions must be specific, benefit-focused, and brief. Makers who over-explain their product perform worse than those who nail the one-line pitch plus a clear description.
+
+**PROMPT:**
+Act as a Product Hunt launch copywriter. Write a Product Hunt page package for [PRODUCT NAME]: (1) tagline (under 60 characters — what it does, for whom, result), (2) description (under 260 characters — expands tagline with specific detail), (3) first comment from maker (150-200 words: personal launch story, what you built, who it's for, why today). Tone: founder to community — genuine and specific.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH STORY] — why you built it, who you built it for, what makes it different
+
+**EXPECTED OUTPUT:**
+A Product Hunt launch package: tagline (under 60 chars), description (under 260 chars), and first comment (150-200 words). Specific and honest — sounds like a founder, not a marketer.
+
+---
+
+### LP-46: Mobile-Specific Landing Page Copy
+
+**CONTEXT:**
+Use when creating a mobile-first or mobile-specific landing page variant. Mobile landing pages must be more concise — 60% shorter than desktop pages — because mobile visitors have less patience for scrolling.
+
+**PROMPT:**
+Act as a mobile landing page copywriter. Write a mobile-optimized version of [PRODUCT NAME]'s landing page. Mobile rules: headline under 7 words, no paragraph longer than 3 sentences, CTAs every 3 scrolls, social proof compressed to 1 number + 1 rating, FAQ limited to 3 most important questions. Adapt this desktop structure to mobile: [DESKTOP SECTIONS LIST]. Flag each mobile adaptation with a [MOBILE NOTE].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [DESKTOP SECTIONS LIST] — list your current landing page sections in order
+
+**EXPECTED OUTPUT:**
+A mobile-adapted landing page copy outline with all sections shortened, CTAs repositioned, and [MOBILE NOTE] flags explaining each adaptation. Ready for a mobile-first design implementation.
+
+---
+
+### LP-47: Conversion Copy — Pricing Objection Handler Block
+
+**CONTEXT:**
+Use for a standalone block on the pricing section that handles price objections before they kill the conversion. This copy sits directly adjacent to the price and reframes it as an investment.
+
+**PROMPT:**
+Act as a price objection handler. Write a pricing objection block for [PRODUCT NAME] priced at [PRICE]. Block: (1) acknowledge the price with a reframe (e.g., "Yes, $47 is real money."), (2) anchor against 2 alternatives: [ALTERNATIVE 1 COST] and [ALTERNATIVE 2 COST], (3) time-to-value: how quickly they can recoup the cost, (4) one-time vs. subscription framing if applicable. Under 100 words. Confident, not defensive.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Full Kit"
+- [PRICE] — e.g., "$47"
+- [ALTERNATIVE 1 COST] — e.g., "one freelance copy project: $200+"
+- [ALTERNATIVE 2 COST] — e.g., "AI writing subscription: $49/month = $588/year"
+
+**EXPECTED OUTPUT:**
+A 90-word pricing objection block (not a full section — a short inline block) that reframes the price through anchor comparison and time-to-value. Confident and direct.
+
+---
+
+### LP-48: Retargeting Landing Page Variant
+
+**CONTEXT:**
+Use to create a landing page variant specifically for retargeted visitors — people who've seen the page before. The retargeting variant acknowledges their prior visit and addresses the specific reason they didn't convert.
+
+**PROMPT:**
+Act as a retargeting page copywriter. Write a landing page variant for [PRODUCT NAME] for people who visited the original sales page but didn't buy. Changes from the original page: (1) headline acknowledges prior visit (implicitly, not explicitly), (2) opens with the most common objection and handles it immediately, (3) adds a limited-time offer if appropriate, (4) compresses the page — removes sections they've already seen. Outline the changes only; write the modified sections in full.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TOP OBJECTION FOR RETARGETED VISITORS] — e.g., "is it worth $47?" or "will this work for my business?"
+- [RETARGETING OFFER] — e.g., "special 72-hour offer" or "just handling the objection with no new offer"
+
+**EXPECTED OUTPUT:**
+A retargeting page variant outline with 4 specific changes from the original, plus full copy for the modified headline and objection-handling opening section.
+
+---
+
+### LP-49: Sales Page — Long-Form (Full Structure Outline)
+
+**CONTEXT:**
+Use as a master outline for writing a full long-form sales page. The outline defines every section in order with the purpose of each section and the copy type needed — serving as a complete brief for writing.
+
+**PROMPT:**
+Act as a sales page architect. Write a complete long-form sales page outline for [PRODUCT NAME] at [PRICE POINT]. Include every section in order with: section name, psychological purpose (what it does for the reader), copy type needed, and word count target. Sections to include: above-fold, problem, solution, product details, social proof, FAQ, guarantee, pricing, closing CTA. Total page: 1,000-1,500 words. Include optional and required sections.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PRICE POINT] — e.g., "$47"
+- Adjust section order based on your specific product category
+
+**EXPECTED OUTPUT:**
+A complete long-form sales page outline with section names, psychological purposes, copy types, and word count targets. Serves as a writing brief — not the copy itself.
+
+---
+
+### LP-50: Landing Page A/B Test Plan
+
+**CONTEXT:**
+Use to design a systematic A/B testing roadmap for your landing page. Testing one element at a time, in priority order, reveals the highest-impact changes quickly rather than testing random variations.
+
+**PROMPT:**
+Act as a conversion rate optimization specialist. Write a 6-test A/B testing roadmap for [PRODUCT NAME]'s landing page. Priority order (highest impact first): headline, CTA button text, pricing section, social proof placement, hero image, guarantee. For each test: hypothesis ("We believe changing X will increase conversions because Y"), variants A and B, success metric, recommended test duration, and what to do with each outcome. Format as a table.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Adjust test sequence based on your current traffic levels (low traffic = fewer, longer tests)
+
+**EXPECTED OUTPUT:**
+A 6-row A/B test roadmap table with: element, hypothesis, variants, success metric, duration, outcome actions. Systematic and prioritized. Can be followed sequentially after launch.
+
+---
+
+### LP-51: Product Page — "What Makes This Different" Section
+
+**CONTEXT:**
+Use for a differentiation section that answers the buyer's implicit question: "why should I buy this instead of the free stuff or the competitors?" This section must be specific — vague differentiation doesn't convert.
+
+**PROMPT:**
+Act as a differentiation copywriter. Write a "What makes [PRODUCT NAME] different" section for the landing page. Identify 4 specific differentiators: [DIFF 1], [DIFF 2], [DIFF 3], [DIFF 4]. For each: one-line label (under 8 words), 2-sentence explanation of why this matters to the buyer. Section headline included. No "we're passionate about X" fluff — specific, structural differences only.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [DIFF 1-4] — e.g., "one-time payment / structured prompt format / 8 specific categories / works with any AI tool"
+
+**EXPECTED OUTPUT:**
+A differentiation section with headline and 4 blocks (label + 2-sentence explanation each). Each differentiator is specific and structural — not personality or values-based claims.
+
+---
+
+### LP-52: Conversion-Focused Homepage Copy
+
+**CONTEXT:**
+Use for a homepage that doubles as a landing page — common for simple digital product businesses. The homepage must orient the visitor, establish value, and drive to the primary CTA within one scroll.
+
+**PROMPT:**
+Act as a homepage copywriter for a digital product brand. Write above-the-fold homepage copy for [BRAND NAME] selling [PRODUCT NAME]. Elements: (1) nav: brand name + 2 nav links + CTA button, (2) headline (under 10 words: what you sell and for whom), (3) subheadline (1-2 sentences: specific outcome), (4) proof bar (3 signals, 3-6 words each), (5) hero CTA (first-person, under 6 words), (6) secondary CTA (free lead magnet option, under 8 words).
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [NAV LINKS] — e.g., "Products / Free Prompts"
+
+**EXPECTED OUTPUT:**
+A 6-element homepage above-the-fold copy block with labeled nav, headline, subheadline, proof bar, primary CTA, and secondary CTA. Mobile-conscious — everything fits above the fold on a 13" laptop.
+
+---
+
+### LP-53: Landing Page — Customer Quote Block (Pull Quote)
+
+**CONTEXT:**
+Use for a pull-quote testimonial block embedded in the landing page body copy. Pull quotes break up the text, add visual credibility, and keep the reader engaged through the scroll.
+
+**PROMPT:**
+Act as a testimonial placement specialist. Write 3 pull quote blocks for embedding in [PRODUCT NAME]'s landing page. Each block: (1) quote (25-40 words, specific result, authentic voice), (2) attribution (buyer type/role, not full name), (3) where to place it on the page (after what section) and why. The quotes should cover different buyer types and different outcomes. Do not use generic praise — specific results only.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Use real customer quotes when possible — this prompt can also generate representative plausible quotes
+- [BUYER TYPES] — 3 distinct buyer roles or contexts
+
+**EXPECTED OUTPUT:**
+3 pull quote blocks with quote, attribution, and placement rationale. Each covers a different buyer type and a different specific outcome. Placement note explains which page section benefits most from each.
+
+---
+
+### LP-54: Copy Refresh — Rewrite Underperforming Section
+
+**CONTEXT:**
+Use when your landing page isn't converting and you've identified a specific section that's underperforming. This prompt takes your existing copy and rewrites it using a different conversion principle.
+
+**PROMPT:**
+Act as a conversion copy specialist. Rewrite this underperforming landing page section using [NEW APPROACH]: Current copy: "[CURRENT COPY — paste your existing section]." Reason it's underperforming: [DIAGNOSIS — e.g., "too feature-focused, not benefit-focused" or "no clear objection handling"]. New approach: [NEW APPROACH — e.g., "rewrite using a before/after transformation structure" or "rewrite with social proof leading every paragraph"]. Keep the same information — change the approach and sequence.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CURRENT COPY] — paste your existing section exactly as it reads
+- [DIAGNOSIS] — your best hypothesis for why it's underperforming
+- [NEW APPROACH] — the specific conversion technique to apply
+
+**EXPECTED OUTPUT:**
+A rewritten version of your existing section using the new approach. Same core information, different structure and psychological framing. Comparison makes the conversion improvement clear.
+
+---
+
+### LP-55: Long-Form Sales Page — Problem Section (Full)
+
+**CONTEXT:**
+Use for writing the complete problem/agitation section of a long-form sales page. The problem section is often the most under-written section — it needs to make the reader feel deeply understood before you can sell to them.
+
+**PROMPT:**
+Act as a problem-section long-copy writer. Write a complete 300-word problem section for [PRODUCT NAME]'s sales page. Target: [TARGET AUDIENCE]. The section must: name the situation specifically (not just the pain), describe the emotional cost (not just the practical cost), mention what they've already tried and why it didn't work, and end with a pivot sentence that opens the door to the solution. No solution mention yet.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TARGET AUDIENCE] — e.g., "solopreneurs writing all their own marketing copy"
+- [WHAT THEY'VE TRIED] — e.g., "freelancers / AI tools / DIY templates"
+
+**EXPECTED OUTPUT:**
+A 300-word problem/agitation section for a long-form sales page. Covers situation, emotional cost, failed alternatives, and pivot. No solution mentioned — ends with the reader feeling deeply understood and ready for relief.
+
+---
+
+### LP-56: Product Page — "Works With" Compatibility Section
+
+**CONTEXT:**
+Use for a section showing which tools, platforms, or software your product is compatible with. For AI prompt packs, this means showing it works with ChatGPT, Claude, Gemini, etc.
+
+**PROMPT:**
+Act as a compatibility section copywriter. Write a "works with" section for [PRODUCT NAME]. Compatible tools: [TOOL 1], [TOOL 2], [TOOL 3], [TOOL 4]. Section headline: make compatibility a selling point, not just a feature ("Works with every AI tool you already use"). 1-sentence intro explaining why broad compatibility matters to the buyer. 1 sentence per tool on what specifically works about the pairing.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TOOL 1-4] — e.g., "ChatGPT / Claude / Gemini / Copilot"
+
+**EXPECTED OUTPUT:**
+A compatibility section with headline, 1-sentence intro, and 4 tool-specific sentences. Frames broad compatibility as a buyer benefit rather than a technical footnote.
+
+---
+
+### LP-57: Discount Code Landing Page
+
+**CONTEXT:**
+Use for a landing page that accepts a discount code (e.g., from an affiliate, ad campaign, or influencer partnership). Discount landing pages should communicate the deal clearly and create urgency around the code expiry.
+
+**PROMPT:**
+Act as a discount landing page copywriter. Write copy for a landing page delivering [DISCOUNT CODE — e.g., "SAVE20"] for [PRODUCT NAME]. Include: (1) headline: acknowledge the discount code and the offer clearly, (2) what they get: product description + discounted price, (3) code display and how to use it, (4) code expiry: [EXPIRY — e.g., "code expires in 48 hours"], (5) CTA. Under 200 words. No need to sell the full product — just deliver the offer and drive the purchase.
+
+**VARIABLES TO CUSTOMIZE:**
+- [DISCOUNT CODE] — e.g., "SAVE20" or "PARTNER10"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Full Kit"
+- [DISCOUNTED PRICE] — calculated price after discount
+
+**EXPECTED OUTPUT:**
+A 175-word discount landing page copy with clear deal delivery, code display, expiry, and CTA. Assumes visitor clicked from an ad or influencer link already pre-sold on the product.
+
+---
+
+### LP-58: Long-Form Sales Page — Intro Story (Lead)
+
+**CONTEXT:**
+Use for the opening story/intro of a long-form sales page. The lead (first 200-300 words) determines whether someone reads the rest of the page — it must hook immediately and set up the narrative frame for everything that follows.
+
+**PROMPT:**
+Act as a long-copy lead writer. Write a 300-word opening story/lead for [PRODUCT NAME]'s long-form sales page. Style: direct mail narrative format. Open with a specific scene the reader can picture. Develop the problem with detail. End with a curiosity-gap sentence that makes them want to continue reading ("But then I discovered something that changed everything..."). Character: [CHARACTER — first person founder or second-person reader], Situation: [OPENING SCENE], Problem: [PROBLEM]. No product mention yet.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [CHARACTER] — first-person (founder) or second-person (reader as protagonist)
+- [OPENING SCENE] — a specific, vivid scene that puts the reader in the moment
+- [PROBLEM] — the situation that creates the tension in the story
+
+**EXPECTED OUTPUT:**
+A 300-word narrative sales page lead that opens with a specific scene, builds problem tension, and ends with a curiosity-gap sentence. No product mentioned — sets up the solution reveal.
+
+---
+
+### LP-59: App Store / Product Listing Description
+
+**CONTEXT:**
+Use for product listings on digital marketplaces (Gumroad, Payhip, AppSumo, etc.). Marketplace descriptions must be keyword-rich, benefit-led, and formatted for scanning since users are browsing multiple products.
+
+**PROMPT:**
+Act as a marketplace listing copywriter. Write a product listing description for [PRODUCT NAME] on [MARKETPLACE — e.g., "Gumroad" or "Payhip"]. Include: (1) opening line: outcome in under 15 words, (2) what's included: bulleted list of 5-7 items, (3) who it's for: 2 sentences, (4) how it works: 2-3 sentences, (5) price and format, (6) brief guarantee. Total: 250-350 words. Keyword: [PRIMARY KEYWORD — e.g., "AI marketing prompts"].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Full Kit"
+- [MARKETPLACE] — e.g., "Gumroad" — adjust length/format for the platform
+- [PRIMARY KEYWORD] — the search term buyers use to find products like yours
+
+**EXPECTED OUTPUT:**
+A 250-350 word marketplace listing description with outcome lead, feature bullets, audience description, how-it-works, price/format, and guarantee. Keyword included naturally. Formatted for marketplace scanning.
+
+---
+
+### LP-60: Landing Page — Objection-First Approach
+
+**CONTEXT:**
+Use for a landing page variant that leads with the biggest objection instead of burying it. For high-skepticism audiences who've tried similar products before, starting with the objection builds trust immediately.
+
+**PROMPT:**
+Act as a trust-first landing page copywriter. Write a landing page opening that leads with the audience's biggest objection: "[BIGGEST OBJECTION — e.g., 'I've bought AI prompt packs before. They were garbage.']" Acknowledge it directly in the headline or first line. Spend the first 150 words addressing only this objection — why [PRODUCT NAME] is different from what they've experienced. Then transition to the standard product pitch. This section only: 150 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [BIGGEST OBJECTION] — the most common reason your ideal buyer has NOT bought from competitors
+- [SPECIFIC DIFFERENCE] — the concrete reason you're different — not marketing language
+
+**EXPECTED OUTPUT:**
+A 150-word objection-first landing page opening that leads with the audience's skepticism, addresses it specifically and honestly, and transitions into the product pitch. Builds trust with burned buyers.
+
+---
+
+## Category 5: SEO
+
+These prompts cover the full spectrum of on-page and content SEO — from meta titles and descriptions to blog post outlines to pillar content structures to product page copy. Each prompt is designed to produce copy that satisfies both search engines and human readers.
+
+---
+
+### SEO-01: Meta Title — 10 Variants for a Landing Page
+
+**CONTEXT:**
+Use when optimizing the meta title for a landing page or product page. Meta titles appear in Google results and affect click-through rate. This prompt generates 10 variants across different strategic angles for A/B testing.
+
+**PROMPT:**
+Act as an SEO meta title specialist. Write 10 meta title variants (under 60 characters each) for [PAGE NAME — e.g., "AI Marketing Prompt Kit sales page"]. Primary keyword: [KEYWORD — e.g., "AI marketing prompts"]. Distribution: 3 keyword-first, 3 benefit-first, 2 brand-included, 2 question format. Each must be compelling enough to earn the click from a search results page. Label each by type.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PAGE NAME] — the specific page you're writing meta titles for
+- [KEYWORD] — your primary target keyword
+- Include your brand name in at least 2-3 variants
+
+**EXPECTED OUTPUT:**
+10 meta title variants (under 60 characters each) labeled by type (keyword-first/benefit-first/brand/question). Character counts noted. Ready for A/B testing via search console.
+
+---
+
+### SEO-02: Meta Description — 5 Variants for a Landing Page
+
+**CONTEXT:**
+Use when writing or testing meta descriptions. While meta descriptions don't directly affect ranking, they dramatically affect click-through rate. The best meta descriptions are mini-ads, not summaries.
+
+**PROMPT:**
+Act as a meta description optimization specialist. Write 5 meta description variants (under 160 characters each) for [PAGE NAME]. Primary keyword: [KEYWORD]. Each must: contain the keyword naturally, end with a CTA or action phrase, and communicate specific value (not vague "learn more"). Types: 2 benefit-led, 1 urgency/offer, 1 question-led, 1 social proof-led. Label each.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PAGE NAME] — the specific page
+- [KEYWORD] — target keyword
+- [CTA PHRASE] — e.g., "Download free," "Get instant access," "See the full kit"
+
+**EXPECTED OUTPUT:**
+5 meta description variants (under 160 characters each) labeled by type. Each contains the keyword and ends with a CTA. All are under-160 character compliant (verified).
+
+---
+
+### SEO-03: Blog Post Outline — Keyword-Targeted Long-Form
+
+**CONTEXT:**
+Use when planning a blog post targeting a specific keyword. A detailed outline is more valuable than a first draft — it determines structure, heading hierarchy, and keyword coverage before you write.
+
+**PROMPT:**
+Act as an SEO content strategist. Write a complete blog post outline for the target keyword: "[KEYWORD — e.g., 'best AI marketing prompts for small business']." Include: H1 title (keyword included), meta description (under 160 chars), intro paragraph purpose, 4-6 H2 sections with purpose and 2-3 H3 subsections each, FAQ section (3 questions), and closing CTA. Total outline: 500-700 words. Note search intent for this keyword and how the outline addresses it.
+
+**VARIABLES TO CUSTOMIZE:**
+- [KEYWORD] — the specific target keyword from your research
+- [SEARCH INTENT] — informational, commercial, transactional — note which this keyword is
+
+**EXPECTED OUTPUT:**
+A complete blog post outline with H1, meta description, structured H2/H3 hierarchy, FAQ, and CTA. Includes search intent note. This is the planning document — not the post itself.
+
+---
+
+### SEO-04: Blog Post — Full Introduction Section
+
+**CONTEXT:**
+Use when writing the introduction to an SEO blog post. The intro must hook the reader, establish relevance, and include the target keyword in the first 100 words — without being obviously keyword-stuffed.
+
+**PROMPT:**
+Act as an SEO blog writer. Write a 200-word introduction for a blog post targeting "[KEYWORD — e.g., 'how to use AI for marketing']." Structure: (1) hook — open with a question, statistic, or surprising statement, (2) establish the problem or topic clearly, (3) preview what the post covers (1-2 sentences), (4) include [KEYWORD] naturally in the first 100 words. Tone: [TONE — e.g., "practical and direct, not academic"]. Do not use "In this article/post, I will..."
+
+**VARIABLES TO CUSTOMIZE:**
+- [KEYWORD] — target keyword for this post
+- [TONE] — your blog's voice and style
+- [HOOK TYPE] — question / statistic / bold claim / story opening
+
+**EXPECTED OUTPUT:**
+A 200-word blog post introduction with hook, problem statement, post preview, and natural keyword inclusion in the first 100 words. No "In this post" language. Reads as engaging, not formulaic.
+
+---
+
+### SEO-05: Blog Post — Full H2 Section (400 words)
+
+**CONTEXT:**
+Use when writing individual sections of a long-form SEO blog post. Each H2 section is essentially a mini-article — it needs its own hook, development, and closing thought.
+
+**PROMPT:**
+Act as an SEO section writer. Write a 400-word H2 section for a blog post on "[TOPIC — e.g., 'AI marketing prompts']." Section heading: [H2 HEADING — e.g., "## How to Write AI Marketing Prompts That Actually Work"]. Include: H3 subheadings if needed, target keyword [KEYWORD] naturally 2-3 times, one specific example, practical advice (not theory). Tone: [TONE]. No fluff sentences — every sentence advances the topic.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the blog post's overall topic
+- [H2 HEADING] — the specific section heading
+- [KEYWORD] — the target or secondary keyword for this section
+
+**EXPECTED OUTPUT:**
+A 400-word H2 section with optional H3 subheadings, 2-3 natural keyword uses, one specific example, and no filler. Ready to drop into the blog post at the appropriate position.
+
+---
+
+### SEO-06: FAQ Schema Content — 8 Questions and Answers
+
+**CONTEXT:**
+Use when writing FAQ sections optimized for Google's FAQ rich results. FAQ schema can earn additional SERP real estate (expandable Q&A directly in results). Answers must be 40-300 words to qualify.
+
+**PROMPT:**
+Act as an FAQ schema content writer. Write 8 FAQ schema entries for [TOPIC/PAGE — e.g., "AI marketing prompts product page"]. Each entry: question (starts with How/What/Why/Can/Is) and answer (50-150 words, factual and complete, first sentence answers the question directly). Target keyword: [KEYWORD] — include naturally in at least 3 answers. Answers must be standalone — assume they'll appear in Google without surrounding context.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC/PAGE] — the page or topic these FAQs support
+- [KEYWORD] — include naturally in multiple answers
+- Questions should reflect real user searches — not product FAQ fluff
+
+**EXPECTED OUTPUT:**
+8 FAQ schema entries with question + 50-150 word answer. Each answer is direct and complete. Keyword appears naturally in 3+ answers. Formatted as Q/A pairs ready for schema markup.
+
+---
+
+### SEO-07: Product Page Description — SEO-Optimized
+
+**CONTEXT:**
+Use when writing product descriptions for e-commerce or digital product pages. Product descriptions must serve two masters: Google (keyword relevance) and humans (conversion). This prompt balances both.
+
+**PROMPT:**
+Act as an e-commerce SEO product description writer. Write a product description for [PRODUCT NAME] at [PRICE]. Primary keyword: [KEYWORD — e.g., "AI marketing prompt pack"]. Description length: 150-300 words. Structure: (1) opening sentence with keyword, (2) what's included (specific), (3) who it's for, (4) how to use it, (5) outcome/result. Keyword density: include primary keyword 2-3 times. Secondary keywords: [SECONDARY KEYWORDS].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Full Kit"
+- [KEYWORD] — primary keyword to rank for
+- [SECONDARY KEYWORDS] — 2-3 related terms to include naturally
+
+**EXPECTED OUTPUT:**
+A 150-300 word product description with 2-3 natural keyword uses, specific product details, audience description, and outcome framing. Both Google-friendly and conversion-focused.
+
+---
+
+### SEO-08: Pillar Content Structure — Hub and Spoke Plan
+
+**CONTEXT:**
+Use when planning a content cluster around a core topic. A pillar page + cluster model improves topical authority and internal linking, which is one of the most underutilized SEO strategies for small sites.
+
+**PROMPT:**
+Act as an SEO content strategist. Design a hub-and-spoke content cluster for the pillar topic: "[PILLAR TOPIC — e.g., 'AI marketing for small businesses']." Include: (1) pillar page title and target keyword, (2) 8 cluster content pieces — each with a suggested title, target keyword, and its relationship to the pillar (supports, expands, or specializes), (3) internal linking strategy: how each cluster page links back to the pillar and to each other.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PILLAR TOPIC] — your core content area
+- [CLUSTER RELATIONSHIPS] — each cluster piece should target a more specific keyword than the pillar
+
+**EXPECTED OUTPUT:**
+A content cluster plan with 1 pillar + 8 cluster pieces. Each piece has title, keyword, and relationship to pillar. Includes internal linking strategy. Ready to use as a content calendar.
+
+---
+
+### SEO-09: Internal Linking Anchor Text — 10 Variants
+
+**CONTEXT:**
+Use when building internal links between pages on your site. Anchor text variety is an SEO best practice — using the same keyword anchor repeatedly can trigger over-optimization penalties.
+
+**PROMPT:**
+Act as an internal linking SEO specialist. Write 10 anchor text variants for linking to [TARGET PAGE — e.g., "the AI Marketing Prompt Kit sales page"]. Target keyword: [KEYWORD]. Include: 2 exact-match anchors, 3 partial-match anchors, 3 branded anchors, 2 generic anchors. Label each type. All must read naturally in surrounding sentence context — provide an example sentence for each.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TARGET PAGE] — the page you're building internal links to
+- [KEYWORD] — the primary keyword for the target page
+
+**EXPECTED OUTPUT:**
+10 anchor text variants labeled by type (exact/partial/branded/generic) with an example sentence for each. All read naturally in context. Prevents over-optimization from repeated same-anchor linking.
+
+---
+
+### SEO-10: Keyword Research Brief — Competitor Gap Analysis
+
+**CONTEXT:**
+Use to structure a keyword gap analysis for a competitor's content strategy. Understanding what keywords competitors rank for that you don't is one of the fastest ways to find high-opportunity content ideas.
+
+**PROMPT:**
+Act as an SEO keyword research analyst. Write a keyword gap analysis framework for [BRAND NAME] vs. [COMPETITOR CATEGORY — e.g., "AI writing tool websites"]. Structure: (1) 5 keyword categories to investigate (commercial intent, informational, long-tail, branded alternative, question-based), (2) specific search query examples for each category, (3) prioritization matrix (volume vs. difficulty vs. relevance), (4) recommended tools for conducting the actual research. This is a framework brief — not the actual research output.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [COMPETITOR CATEGORY] — describe the competitor type without naming specific brands
+
+**EXPECTED OUTPUT:**
+A keyword gap analysis framework with 5 keyword categories, example queries, prioritization matrix criteria, and tool recommendations. Use as a brief before running the actual research in SEMrush/Ahrefs/etc.
+
+---
+
+### SEO-11: Blog Post — Conclusion Section
+
+**CONTEXT:**
+Use when writing the conclusion of an SEO blog post. Conclusions must summarize without being repetitive, reinforce the primary takeaway, and include a CTA that's contextually appropriate for the content.
+
+**PROMPT:**
+Act as an SEO blog conclusion writer. Write a 150-200 word conclusion for a blog post about [TOPIC]. The article covered: [MAIN POINTS — e.g., "why AI prompts fail, the right structure, 5 frameworks, and how to apply them"]. Conclusion structure: (1) one-sentence summary of the key insight, (2) reinforce the main takeaway in 2-3 sentences without repeating the article, (3) CTA appropriate to the content: [CTA TYPE — e.g., "download the full prompt pack" or "try the first framework yourself"]. Include [KEYWORD] once naturally.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the blog post topic
+- [MAIN POINTS] — what the article actually covered
+- [CTA TYPE] — what action fits naturally after reading this content
+
+**EXPECTED OUTPUT:**
+A 150-200 word blog conclusion with summary sentence, takeaway reinforcement, and contextually appropriate CTA. Keyword appears once. Doesn't just repeat the intro.
+
+---
+
+### SEO-12: Local SEO — Location + Service Description
+
+**CONTEXT:**
+Use for location-specific landing pages or Google Business Profile descriptions. Local SEO copy must include the location naturally while still being readable and conversion-focused.
+
+**PROMPT:**
+Act as a local SEO copywriter. Write a location-targeted page description for [BUSINESS TYPE] in [LOCATION — e.g., "marketing consultant in Austin, TX"]. Include: location keyword [LOCATION + SERVICE] naturally in first 100 words, specific local signals (neighborhood, city, regional terms), and conversion-focused copy that serves the reader's intent. Length: 200-300 words. Google Business Profile description variant (under 750 characters) also included.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BUSINESS TYPE] — your specific service or product category
+- [LOCATION] — city, state, or regional target area
+- [LOCAL SIGNALS] — neighborhoods, landmarks, or regional terms that ground the copy
+
+**EXPECTED OUTPUT:**
+A 200-300 word location page description with natural keyword placement and a 750-character Google Business Profile description variant. Both are human-readable, not keyword-stuffed.
+
+---
+
+### SEO-13: Schema Markup Guidance — Product Page
+
+**CONTEXT:**
+Use to generate the information needed to write JSON-LD schema markup for a product page. Schema markup helps Google display rich results (star ratings, price, availability) in search results.
+
+**PROMPT:**
+Act as a technical SEO schema specialist. Write the Product schema markup guidance for [PRODUCT NAME]. Provide the key-value pairs needed for JSON-LD Product schema: name, description (under 160 chars), brand, offers (price, currency, availability, priceValidUntil), aggregateRating (if applicable), and category. Format as a structured list with field names and recommended values based on [PRODUCT DETAILS — describe your product].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Full Kit"
+- [PRODUCT DETAILS] — price, rating, availability, product category
+- A developer will convert this guidance into actual JSON-LD code
+
+**EXPECTED OUTPUT:**
+A structured list of Product schema field-value pairs for [PRODUCT NAME]. Each field has a recommended value based on your product details. Ready for a developer to implement as JSON-LD.
+
+---
+
+### SEO-14: Blog Post — Listicle Format (10 items)
+
+**CONTEXT:**
+Use when writing a list-format blog post. Listicles consistently outperform other blog formats for search traffic because they match the "best X" and "top X" intent of most commercial searches.
+
+**PROMPT:**
+Act as an SEO listicle writer. Write a 10-item listicle post titled "[TITLE — e.g., '10 AI Marketing Prompt Examples That Actually Work']." For each item: H3 heading (item name — 5-8 words), 100-word description including a specific example or use case. Include [KEYWORD] in the H1 and at least 3 H3 headings. Total: 1,200-1,400 words. Intro: 150 words. Conclusion with CTA: 100 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TITLE] — your keyword-targeted listicle title
+- [KEYWORD] — target keyword to distribute throughout
+- [10 ITEMS] — each item should be a distinct, specific point — not variations of the same idea
+
+**EXPECTED OUTPUT:**
+A complete 10-item listicle (1,200-1,400 words) with keyword-optimized H1, intro, 10 H3 sections, and CTA conclusion. Ready to publish after reviewing for accuracy and brand voice.
+
+---
+
+### SEO-15: Blog Post — Comparison Post ("X vs. Y")
+
+**CONTEXT:**
+Use for comparison posts targeting high-commercial-intent keywords. "X vs. Y" searches indicate a buyer comparing options — this content format captures decision-stage traffic.
+
+**PROMPT:**
+Act as a comparison content writer. Write an "[OPTION A] vs. [OPTION B]" blog post outline and introduction for the target keyword: "[KEYWORD — e.g., 'AI writing tools vs. AI prompt packs']." Outline: 6 H2 comparison sections (e.g., pricing, features, ease of use, who it's best for, pros/cons, verdict). Introduction: 200 words with keyword included. Each H2 section should have a clear "winner" declared or a nuanced recommendation. Post conclusion: verdict + CTA.
+
+**VARIABLES TO CUSTOMIZE:**
+- [OPTION A vs. OPTION B] — the two things being compared
+- [KEYWORD] — the comparison search term you're targeting
+- Be genuinely helpful — fence-sitters read these to make real decisions
+
+**EXPECTED OUTPUT:**
+A comparison post outline with 6 labeled H2 sections and a 200-word intro. Each section has a clear structure for declaring a winner or nuanced recommendation. Conclusion + CTA included.
+
+---
+
+### SEO-16: Blog Post — "Best Of" Roundup (7 items)
+
+**CONTEXT:**
+Use for roundup posts targeting "best [category]" searches. Best-of roundups earn backlinks naturally because creators and brands who get featured share them with their audiences.
+
+**PROMPT:**
+Act as a roundup post writer. Write a "best of" roundup for [CATEGORY — e.g., "AI marketing tools for small businesses"]. Include: H1 title with keyword, intro (150 words), 7 items — each with: H3 title, 1-sentence summary, 3 specific pros, 1 honest con, who it's best for, and pricing. Conclusion with top recommendation + CTA. Target keyword: [KEYWORD]. Total: 1,500-2,000 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CATEGORY] — the "best [category]" keyword you're targeting
+- [7 ITEMS] — research the actual best options — don't invent tools
+- Include your own product as one of the 7 items if legitimately in the category
+
+**EXPECTED OUTPUT:**
+A complete 7-item best-of roundup structure (1,500-2,000 words) with keyword-targeted H1, intro, 7 structured item blocks, and top recommendation. Balanced — honest pros and cons.
+
+---
+
+### SEO-17: Category Page SEO Copy
+
+**CONTEXT:**
+Use for the description text on a product category page (e-commerce/digital product stores). Category pages are often the highest-traffic pages in a store — they need keyword-optimized introductory copy.
+
+**PROMPT:**
+Act as a category page SEO copywriter. Write the introductory copy for a category page: "[CATEGORY NAME — e.g., 'AI Marketing Prompts']." Primary keyword: [KEYWORD]. Length: 150-200 words. Structure: (1) H1 with keyword, (2) 2-paragraph intro: what this category contains + who it's for, (3) keyword-natural language throughout (don't force it), (4) brief CTA to browse the category. Reads like helpful orientation copy — not keyword stuffing.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CATEGORY NAME] — e.g., "AI Marketing Prompts" or "Email Copywriting Templates"
+- [KEYWORD] — primary keyword for this category
+- [WHAT'S IN THE CATEGORY] — describe the products or content in this category
+
+**EXPECTED OUTPUT:**
+A 150-200 word category page description with H1, 2-paragraph intro, and brief CTA. Keyword appears 2-3 times naturally. Reads as helpful navigation copy for the visitor.
+
+---
+
+### SEO-18: SEO-Optimized "How To" Guide (Full Post)
+
+**CONTEXT:**
+Use for a complete how-to guide blog post targeting a "how to" keyword. How-to posts can earn Google's Featured Snippet if the answer is structured correctly — this prompt builds in the featured snippet structure.
+
+**PROMPT:**
+Act as an SEO how-to guide writer. Write a complete how-to guide titled "[TITLE — e.g., 'How to Use AI to Write Your Marketing Copy in 30 Minutes']." Target keyword: [KEYWORD — e.g., "how to use AI for marketing"]. Include: (1) featured snippet-optimized summary (50-75 words, numbered list of steps), (2) intro (200 words, keyword in first 100 words), (3) 5-7 numbered steps with H2 headings (200 words each), (4) troubleshooting section (100 words), (5) conclusion with CTA. Total: 1,500-2,000 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TITLE] — keyword-targeted how-to title
+- [KEYWORD] — "how to [action]" keyword
+- [STEPS] — the actual steps — must be specific and actionable, not vague
+
+**EXPECTED OUTPUT:**
+A complete how-to guide (1,500-2,000 words) with featured snippet summary, keyword-optimized intro, 5-7 numbered H2 steps, troubleshooting section, and CTA conclusion. Featured snippet section is 50-75 words and numbered.
+
+---
+
+### SEO-19: Title Tag and Meta Description — Blog Post
+
+**CONTEXT:**
+Use when writing meta titles and descriptions specifically for blog posts (not product pages). Blog meta copy competes differently in SERP — it must match informational intent and promise a specific answer.
+
+**PROMPT:**
+Act as a blog SEO meta copy writer. Write 3 meta title variants (under 60 characters) and 3 meta description variants (under 160 characters) for a blog post titled "[BLOG POST TITLE — e.g., 'How to Use AI Prompts to Write Facebook Ads']." Primary keyword: [KEYWORD]. Meta titles should match the informational intent. Meta descriptions should promise a specific answer (not "find out more"). Label each by approach: direct, curiosity, or benefit.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BLOG POST TITLE] — exact title of your blog post
+- [KEYWORD] — primary keyword
+- Adjust "promise" in descriptions based on what the post actually delivers
+
+**EXPECTED OUTPUT:**
+3 meta title variants (under 60 chars) and 3 meta descriptions (under 160 chars) for a blog post, labeled by approach. All promise specific answers matching informational search intent.
+
+---
+
+### SEO-20: SEO Blog Post — Expert Roundup Introduction
+
+**CONTEXT:**
+Use for expert roundup posts that feature quotes from multiple experts. Roundup posts earn backlinks because contributors share them — but they need a strong intro that establishes the post's unique value.
+
+**PROMPT:**
+Act as a roundup post editor. Write a 250-word expert roundup introduction for a post titled "[TITLE — e.g., '15 AI Marketing Experts Share Their Best Prompt Tips']." The intro must: (1) hook the reader with a problem, (2) explain why expert perspectives specifically are valuable here, (3) briefly introduce the number and caliber of contributors, (4) preview what readers will learn, (5) include [KEYWORD] in the first 100 words. No generic "we asked experts" language.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TITLE] — your roundup title
+- [KEYWORD] — target keyword
+- [CONTRIBUTORS] — describe the expertise level and variety of your contributors
+
+**EXPECTED OUTPUT:**
+A 250-word expert roundup intro that hooks, establishes value, introduces contributors, previews content, and includes the keyword in the first 100 words. Reads as a confident editor, not a content farm.
+
+---
+
+### SEO-21: Homepage SEO Copy Block
+
+**CONTEXT:**
+Use for adding SEO-optimized body copy to a homepage. Homepages rank for brand + category keywords — they need copy that covers core topic terms naturally without burying the conversion copy.
+
+**PROMPT:**
+Act as a homepage SEO copywriter. Write a 250-word SEO-optimized copy block for [BRAND NAME]'s homepage. This block appears below the hero section. Primary keyword: [KEYWORD]. Secondary keywords: [SECONDARY KEYWORDS]. Cover: what the brand offers, who it's for, and what makes it different — all in keyword-natural language. This copy should serve SEO without destroying conversion copy above it.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [KEYWORD] — primary homepage keyword
+- [SECONDARY KEYWORDS] — 2-3 related keyword variations
+
+**EXPECTED OUTPUT:**
+A 250-word homepage SEO copy block with natural keyword placement (primary + secondary). Reads as helpful orientation copy, not SEO filler. Supports — not competes with — the hero section above.
+
+---
+
+### SEO-22: Keyword Cluster — 30 Long-Tail Variations
+
+**CONTEXT:**
+Use when building a comprehensive keyword map for a topic. Long-tail keywords are often lower competition and higher conversion intent — they should inform both content creation and product page copy.
+
+**PROMPT:**
+Act as a keyword research specialist. Generate 30 long-tail keyword variations for the seed keyword: "[SEED KEYWORD — e.g., 'AI marketing prompts']." Organize into 5 clusters of 6: (1) how-to intent, (2) best/comparison intent, (3) specific platform/tool intent, (4) audience-specific intent, (5) problem/solution intent. For each keyword: the keyword phrase + estimated intent (informational / commercial / transactional). Present as a labeled table.
+
+**VARIABLES TO CUSTOMIZE:**
+- [SEED KEYWORD] — your core topic keyword
+- Use your own keyword tool (Ahrefs, SEMrush, Google Search Console) to validate volume
+
+**EXPECTED OUTPUT:**
+A 30-keyword table organized in 5 clusters of 6, each with keyword phrase and intent label. Serves as a content calendar and page optimization checklist.
+
+---
+
+### SEO-23: SEO Content Brief — Full Brief Template
+
+**CONTEXT:**
+Use when briefing a writer or AI to create a specific piece of content. A full SEO brief prevents guessing and produces first-draft content that requires minimal revision.
+
+**PROMPT:**
+Act as an SEO content brief writer. Write a complete content brief for a post targeting: "[TARGET KEYWORD — e.g., 'how to write AI marketing prompts']." Brief sections: (1) target keyword + intent, (2) title options (3 variants), (3) audience + pain point, (4) outline (H2/H3 structure), (5) word count target, (6) keyword distribution guidance, (7) internal links to include, (8) CTA, (9) tone and style notes. One page brief.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TARGET KEYWORD] — the keyword this content piece targets
+- [INTERNAL LINKS] — pages on your site this post should link to
+- [TONE] — your brand's writing voice
+
+**EXPECTED OUTPUT:**
+A 9-section SEO content brief for a specific keyword. Serves as a complete brief for a human writer or AI. Prevents guessing on keyword placement, structure, and CTA.
+
+---
+
+### SEO-24: Press Release — SEO-Optimized Product Launch
+
+**CONTEXT:**
+Use for a product launch press release. Press releases distributed to PR services create backlinks and coverage that signal authority to Google. Modern press releases must be newsworthy and human-readable — not keyword-stuffed.
+
+**PROMPT:**
+Act as a PR/SEO press release writer. Write a press release for the launch of [PRODUCT NAME]. Include: headline (under 12 words, contains keyword [KEYWORD]), dateline, lead paragraph (5 W's answered, keyword included), supporting paragraph (key features and target audience), quote from creator/spokesperson, about section (100 words), boilerplate, and contact. Total: 400-600 words. Format: AP Style.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [KEYWORD] — primary keyword
+- [QUOTE] — spokesperson quote (can be founder/brand/anonymous)
+
+**EXPECTED OUTPUT:**
+A 400-600 word press release in AP Style with all standard sections. Keyword in headline and lead paragraph. Suitable for distribution via PR Newswire, EIN Presswire, or similar.
+
+---
+
+### SEO-25: Testimonial Page SEO Optimization
+
+**CONTEXT:**
+Use to write the framing copy and SEO metadata for a dedicated testimonial or reviews page. Testimonial pages often rank for "[brand name] reviews" searches and convert high-intent visitors at a high rate.
+
+**PROMPT:**
+Act as a testimonial page SEO writer. Write: (1) H1 for a testimonials page (includes keyword "[BRAND NAME] reviews"), (2) intro paragraph (100 words — explains why these reviews were collected and who the reviewers are), (3) meta title (under 60 chars, brand + reviews keyword), (4) meta description (under 160 chars — promises social proof type and invites the click). Also: recommend how to structure the review display for maximum credibility.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [REVIEW TYPES] — text reviews, video testimonials, star ratings — what you have
+
+**EXPECTED OUTPUT:**
+A testimonial page SEO package: H1, intro paragraph, meta title, meta description, and display structure recommendation. Optimizes for "[brand] reviews" searches.
+
+---
+
+### SEO-26: Guest Post Pitch — Outreach Template
+
+**CONTEXT:**
+Use for pitching guest post contributions to other blogs in your niche. Guest posts build backlinks and authority — this template structures the pitch to show value to the receiving editor, not just to you.
+
+**PROMPT:**
+Act as a guest post outreach specialist. Write a guest post pitch email template for [BRAND NAME] to pitch to [TARGET SITE TYPE — e.g., "marketing blogs with 10K+ monthly readers"]. Include: subject line (under 50 chars — specific, not generic), pitch body (150 words max): (1) reference their audience and one specific post you liked, (2) pitch 3 article ideas with keyword targets, (3) your credentials (1 sentence), (4) small ask. No attachments in the first pitch.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [TARGET SITE TYPE] — describe the sites you're pitching to
+- [3 ARTICLE IDEAS] — specific, keyword-targeted post ideas that fit their audience
+
+**EXPECTED OUTPUT:**
+A guest post pitch email template with subject line and 150-word body. Personalizable with the specific blog reference. 3 article ideas are specific and keyword-targeted. Reads as genuine interest, not link-building.
+
+---
+
+### SEO-27: Blog Post — "What Is X" Definitional Post
+
+**CONTEXT:**
+Use for definitional blog posts targeting "what is [term]" searches. These posts often rank at the top of Google and earn featured snippets because they answer a simple, direct question definitively.
+
+**PROMPT:**
+Act as a definitional SEO blog writer. Write a complete "what is [TERM — e.g., 'AI marketing prompts']" post. Include: (1) definition (50-75 words, plain language, designed to earn featured snippet), (2) extended explanation (200 words: history, context, how it works), (3) why it matters (150 words), (4) 5 examples (100 words each), (5) related terms section, (6) conclusion + CTA. Primary keyword: [KEYWORD]. Total: 1,000-1,500 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TERM] — the concept you're defining
+- [KEYWORD] — the "what is [term]" search query
+- [5 EXAMPLES] — concrete, specific examples — not abstract descriptions
+
+**EXPECTED OUTPUT:**
+A complete "what is X" post (1,000-1,500 words) with a 50-75 word featured-snippet-optimized definition, explanation, examples, related terms, and CTA. Definition section is clearly formatted for snippet eligibility.
+
+---
+
+### SEO-28: Blog Post — Annual "State of [Industry]" Report
+
+**CONTEXT:**
+Use to create an annual industry report post. State-of-industry posts earn significant backlinks because journalists and creators reference them as data sources. They require original data or synthesized research.
+
+**PROMPT:**
+Act as an industry research post writer. Write an outline for a "[YEAR] State of [INDUSTRY] Report" for [BRAND NAME]. Topic: [INDUSTRY — e.g., "AI Marketing"]. Include: (1) executive summary (150 words), (2) 5-7 key findings with data (either original survey data or synthesized from published sources — cite all), (3) trend analysis for each finding (200 words each), (4) implications for [TARGET AUDIENCE], (5) methodology note, (6) about section. Total: 2,500-3,500 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [INDUSTRY] — your target industry or topic area
+- [DATA SOURCES] — either your own survey data or published third-party research you'll cite
+- Do not fabricate statistics — use real data
+
+**EXPECTED OUTPUT:**
+An annual state-of-industry report outline with executive summary, 5-7 findings, trend analysis framework, and methodology note. Full post would be 2,500-3,500 words. Designed to earn citations.
+
+---
+
+### SEO-29: Blog Post — "Ultimate Guide" Format
+
+**CONTEXT:**
+Use for comprehensive pillar content targeting high-volume head keywords. Ultimate guides earn significant backlinks because they become the definitive reference in their category. They take time to write but serve as long-term SEO assets.
+
+**PROMPT:**
+Act as a comprehensive guide writer. Write a complete outline for an "Ultimate Guide to [TOPIC — e.g., 'AI Marketing Prompts']." Include: H1 title, 8-10 main sections (H2) with 2-4 subsections (H3) each, estimated word count per section, and the specific keyword target for each H2. Total guide: 4,000-6,000 words. Each H2 section should target a distinct search query. Include a downloadable resource CTA in the outline.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — your core content pillar topic
+- [PRIMARY KEYWORD] — the head keyword for the guide
+- [H2 KEYWORDS] — each H2 should target a specific keyword variation
+
+**EXPECTED OUTPUT:**
+An ultimate guide outline with 8-10 H2 sections + H3 subsections, word count targets per section, keyword targets per H2, and downloadable CTA placement. Total 4,000-6,000 word target. Ready to brief a writer or write section by section.
+
+---
+
+### SEO-30: Image Alt Text — 10 Optimized Examples
+
+**CONTEXT:**
+Use to write optimized alt text for product or blog images. Alt text serves two functions: accessibility (screen readers) and SEO (keyword signal for image search). This prompt generates both-purpose alt text.
+
+**PROMPT:**
+Act as an image SEO specialist. Write 10 optimized alt text examples for images related to [PRODUCT/TOPIC — e.g., "AI marketing prompt kit"]. Include: 3 product image alts, 3 blog illustration alts, 2 infographic/screenshot alts, 2 person/action alts. Each alt text: under 125 characters, descriptive first then keyword-inclusive. No "image of" or "picture of" prefix. Label by image type.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT/TOPIC] — e.g., "AI Marketing Prompt Kit" or "email marketing templates"
+- Customize for the actual images you're optimizing
+
+**EXPECTED OUTPUT:**
+10 alt text examples (under 125 characters each) organized by image type (product/blog/infographic/action). Each is descriptive first, keyword-inclusive second. No generic "image of X" format.
+
+---
+
+### SEO-31: Site Architecture Brief — SEO-First Structure
+
+**CONTEXT:**
+Use when planning the URL and page hierarchy for a new website or significant site restructure. SEO-first site architecture ensures crawlers can find all pages efficiently and link equity flows to the most important pages.
+
+**PROMPT:**
+Act as an SEO site architecture specialist. Design a site architecture for [WEBSITE TYPE — e.g., "digital product e-commerce site"] for [BRAND NAME] with the primary keyword goal: [KEYWORD GOAL — e.g., "rank for AI marketing prompt-related keywords"]. Provide: (1) homepage and primary navigation structure, (2) 3-4 main content categories with URL slugs, (3) keyword target for each section, (4) internal linking hierarchy, (5) which pages should be noindexed. Format as a hierarchical site map.
+
+**VARIABLES TO CUSTOMIZE:**
+- [WEBSITE TYPE] — e.g., "content site," "digital product store," "SaaS landing page"
+- [BRAND NAME] — e.g., "ContentKit"
+- [KEYWORD GOAL] — your primary SEO objective
+
+**EXPECTED OUTPUT:**
+A site architecture document with URL structure, keyword targets per section, internal linking hierarchy, and noindex recommendations. Formatted as a hierarchical map. Use as the foundation for building or restructuring the site.
+
+---
+
+### SEO-32: Blog Post — Beginner's Guide Format
+
+**CONTEXT:**
+Use for beginner-oriented content targeting "for beginners" or "getting started" keywords. Beginner guides must genuinely start from zero — no assumed knowledge — and build understanding progressively.
+
+**PROMPT:**
+Act as a beginner's guide writer. Write a "beginner's guide to [TOPIC — e.g., 'using AI for marketing copy']" blog post. Target keyword: [KEYWORD — e.g., "AI marketing for beginners"]. Assume zero prior knowledge — define every term on first use. Structure: intro (150 words), 6 sections progressing from basic to intermediate (200 words each), FAQ (3 questions), and next steps CTA. Total: 1,500-2,000 words. Avoid jargon or define it immediately.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — your beginner's guide topic
+- [KEYWORD] — "for beginners" or "getting started" keyword variation
+- Test: could a complete beginner read this and take the first step?
+
+**EXPECTED OUTPUT:**
+A complete beginner's guide (1,500-2,000 words) that progresses from zero knowledge to actionable first steps. All jargon defined on first use. FAQ and next-steps CTA at end.
+
+---
+
+### SEO-33: Blog Post — Interview / Q&A Format
+
+**CONTEXT:**
+Use for interview-format blog posts where an expert is quoted or Q&A answers are featured. Interview format content earns backlinks from the featured expert and can rank for the expert's name + topic searches.
+
+**PROMPT:**
+Act as an interview post editor. Write the intro, 5 key questions, and conclusion for an interview blog post with [EXPERT TYPE — e.g., "an AI marketing consultant"] about [TOPIC]. Questions must be specific (not "what advice do you have?") and each must address a different aspect: (1) problem/challenge, (2) practical tip, (3) common mistake, (4) tool/resource, (5) prediction/future. Intro: 150 words establishing the expert's relevance. Conclusion: 100 words + CTA.
+
+**VARIABLES TO CUSTOMIZE:**
+- [EXPERT TYPE] — describe the type of expert being interviewed
+- [TOPIC] — the interview's focus topic
+- Questions must be answerable in 150-300 words each — not essay-length prompts
+
+**EXPECTED OUTPUT:**
+An interview post template with 150-word intro, 5 specific questions covering 5 distinct angles, and 100-word conclusion with CTA. Each question is answerable in 150-300 words.
+
+---
+
+### SEO-34: Page Copy — Landing Page + SEO Hybrid
+
+**CONTEXT:**
+Use when you want a page that serves both as a conversion landing page and as an SEO-ranking page. These "SEO landing pages" rank for keywords and convert visitors — the copy must serve both goals without sacrificing either.
+
+**PROMPT:**
+Act as an SEO landing page hybrid copywriter. Write copy for a page that ranks for [KEYWORD — e.g., "buy AI marketing prompt pack"] and converts visitors to buyers. Page type: [PRODUCT NAME] product page. Balance SEO requirements (keyword placement, semantic terms, FAQ schema) with conversion requirements (headline, benefits, social proof, CTA). Total: 600-800 words. Flag each SEO element with [SEO NOTE] and each conversion element with [CRO NOTE].
+
+**VARIABLES TO CUSTOMIZE:**
+- [KEYWORD] — the search query this page should rank for
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Ensure keyword appears in: H1, first 100 words, at least one H2, and meta copy
+
+**EXPECTED OUTPUT:**
+A 600-800 word hybrid SEO/CRO page copy with [SEO NOTE] and [CRO NOTE] flags. Shows how SEO and conversion elements coexist. Keyword placement is natural and compliant.
+
+---
+
+### SEO-35: Podcast SEO — Episode Show Notes
+
+**CONTEXT:**
+Use to write SEO-optimized show notes for a podcast episode. Show notes rank in Google and serve as a text companion to the audio — they must be valuable enough to read independently.
+
+**PROMPT:**
+Act as a podcast SEO writer. Write show notes for a podcast episode about [EPISODE TOPIC — e.g., "how AI is changing content marketing"]. Include: episode title (with keyword), 150-word description (keyword-included), 5 key takeaways (bulleted), timestamps for main topics, resources mentioned, guest bio (if applicable), and CTA. Target keyword: [KEYWORD]. Total: 400-600 words. Optimized for both Google and podcast apps.
+
+**VARIABLES TO CUSTOMIZE:**
+- [EPISODE TOPIC] — the specific episode topic
+- [KEYWORD] — the primary keyword this episode could rank for
+- [TIMESTAMPS] — approximate timestamps for main topic changes
+
+**EXPECTED OUTPUT:**
+A complete set of podcast show notes (400-600 words) with keyword-optimized title, description, takeaways, timestamps, resources, and CTA. Ranks in Google and serves audio listeners.
+
+---
+
+### SEO-36: SEO Blog Post — Statistics Roundup
+
+**CONTEXT:**
+Use for "statistics about X" posts that aggregate industry data. Statistics posts earn significant backlinks because journalists cite them when writing about the topic — making them high-authority link magnets.
+
+**PROMPT:**
+Act as a statistics roundup writer. Write a "[YEAR] [TOPIC] Statistics: [NUMBER] Key Data Points" post structure for [TOPIC — e.g., "AI marketing"]. Include: H1 (keyword: "[TOPIC] statistics [YEAR]"), intro (150 words setting up why these stats matter), 10 statistics organized by [5 CATEGORIES], sourcing guidance ("Cite each stat with: Source name + URL + year"), and conclusion CTA. Total outline: 500 words for the structure, each stat section 100 words when filled in.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the statistics topic
+- [5 CATEGORIES] — organize stats into logical theme clusters
+- Use only real, verifiable statistics from credible sources
+
+**EXPECTED OUTPUT:**
+A statistics post structure with H1, intro, 10-stat framework in 5 categories, sourcing guidance, and CTA. The AI provides the structure; you fill in real statistics from verified sources.
+
+---
+
+### SEO-37: Local Citation Copy — Business Listings
+
+**CONTEXT:**
+Use to write consistent business listing copy for local citation building. NAP (Name, Address, Phone) consistency across directories is a local SEO ranking factor. Business descriptions must match across platforms.
+
+**PROMPT:**
+Act as a local citation SEO specialist. Write business listing copy for [BUSINESS NAME] for use across local citation directories (Google Business, Yelp, Bing Places, etc.). Include: (1) short description (100 characters — for directories with character limits), (2) medium description (300 characters), (3) full description (750 characters — Google Business Profile limit). All three must be consistent in information, keyword-inclusive, and human-readable. Primary keyword: [KEYWORD].
+
+**VARIABLES TO CUSTOMIZE:**
+- [BUSINESS NAME] — e.g., "ContentKit"
+- [KEYWORD] — the local or category keyword to include
+- Keep NAP (name, address, phone) identical across all platforms
+
+**EXPECTED OUTPUT:**
+Three business description variants (100 / 300 / 750 characters) for citation building. Consistent in information and keyword placement. Ready to use across multiple directories without modification.
+
+---
+
+### SEO-38: Featured Snippet Optimization — Existing Content
+
+**CONTEXT:**
+Use to rewrite a specific section of an existing blog post to target the Google Featured Snippet (Position Zero). Featured snippets require specific formatting — paragraph, list, or table format depending on the query type.
+
+**PROMPT:**
+Act as a featured snippet optimization specialist. Rewrite this section of an existing blog post to target the featured snippet for "[QUERY — e.g., 'how to write AI marketing prompts']." Current content: "[PASTE CURRENT SECTION]." Snippet type for this query: [TYPE — paragraph / list / table]. Rewrite requirements: (1) direct answer in first sentence, (2) [SNIPPET TYPE] format, (3) 40-60 words for paragraph snippets, (4) include query keyword. Show before and after.
+
+**VARIABLES TO CUSTOMIZE:**
+- [QUERY] — the specific Google search query you're targeting for the snippet
+- [CURRENT SECTION] — paste your existing content for this section
+- [SNIPPET TYPE] — research in Google to see what format currently appears
+
+**EXPECTED OUTPUT:**
+A before/after rewrite showing the original section and the snippet-optimized version. Snippet version follows the correct format (paragraph/list/table), includes the query keyword, and leads with a direct answer.
+
+---
+
+### SEO-39: Video SEO — YouTube Title and Description
+
+**CONTEXT:**
+Use when optimizing YouTube videos for search. YouTube is the world's second-largest search engine — titles and descriptions that match search intent perform significantly better than creative titles that no one searches for.
+
+**PROMPT:**
+Act as a YouTube SEO specialist. Write optimized copy for a YouTube video about [VIDEO TOPIC — e.g., "how to write a Facebook ad using AI"]. Include: (1) 3 title variants (under 70 characters, keyword-first format), (2) video description (300-500 words: keyword in first line, timestamps, key points, links, CTA, hashtags), (3) 5 tag suggestions. Target keyword: [KEYWORD — e.g., "how to write Facebook ads with AI"]. Label all elements.
+
+**VARIABLES TO CUSTOMIZE:**
+- [VIDEO TOPIC] — the specific topic of your video
+- [KEYWORD] — the YouTube search term you're targeting
+- [LINKS] — links to include in description (product, website, lead magnet)
+
+**EXPECTED OUTPUT:**
+3 YouTube title variants (under 70 chars each), a 300-500 word video description with timestamps placeholder, CTAs, and hashtags, plus 5 tag suggestions. All optimized for the target keyword.
+
+---
+
+### SEO-40: Backlink Outreach Email — Resource Page
+
+**CONTEXT:**
+Use when conducting resource page link building. Resource pages ("best marketing tools," "useful resources") are maintained by sites for their audience — they welcome relevant additions because it improves their page.
+
+**PROMPT:**
+Act as a link building outreach specialist. Write a resource page backlink outreach email for [BRAND NAME] to a site maintaining a resource page about [RESOURCE TOPIC — e.g., "AI marketing tools"]. Subject line (under 50 chars): specific and value-focused. Body (under 150 words): (1) reference their specific resource page, (2) suggest [RESOURCE NAME] as an addition with one-sentence value pitch, (3) link to [RESOURCE URL], (4) small ask. No bulk-email language.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [RESOURCE TOPIC] — the topic of the target site's resource page
+- [RESOURCE NAME] — the specific resource you're suggesting be added
+- [RESOURCE URL] — the URL of your resource
+
+**EXPECTED OUTPUT:**
+A 150-word resource page outreach email with a specific subject line and a clear, value-focused pitch. Reads as a genuine contribution suggestion, not a link-building template.
+
+---
+
+### SEO-41: Content Refresh Brief — Outdated Post
+
+**CONTEXT:**
+Use when refreshing an existing blog post that's lost rankings. Content refreshes are often faster and higher-ROI than writing new posts — this brief structures the refresh so it actually improves rankings.
+
+**PROMPT:**
+Act as a content refresh strategist. Write a refresh brief for a blog post about [TOPIC] that's lost rankings. Current post URL: [URL]. Original publish date: [DATE]. Issues to address (choose applicable): outdated statistics, missing sections, thin content, keyword gaps, poor featured snippet formatting, slow load due to images. Refresh plan: (1) what to update, (2) what to add, (3) what to remove, (4) new sections to write, (5) republish date. Format as a prioritized action list.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — e.g., "AI marketing prompts guide"
+- [URL] — your actual post URL
+- [DATE] — original publish date
+- Run the post through an SEO audit tool before briefing
+
+**EXPECTED OUTPUT:**
+A prioritized content refresh action list with 5 categories (update/add/remove/new sections/republish). Applies the most impactful SEO changes first. Can be executed in priority order.
+
+---
+
+### SEO-42: Blog Monetization CTA — In-Content Placement
+
+**CONTEXT:**
+Use to write in-content CTAs within blog posts. Contextual in-content CTAs convert better than sidebar ads or footer CTAs because they appear at moments of peak reader engagement.
+
+**PROMPT:**
+Act as a blog monetization copywriter. Write 3 in-content CTA variants for placing within a blog post about [BLOG TOPIC — e.g., "AI marketing prompts"]. Product: [PRODUCT NAME]. Each CTA: 2-3 sentences + link anchor text. Variant 1: placed after the problem section (pain-aware reader). Variant 2: placed mid-article (engaged reader). Variant 3: placed at the end (converted reader). Each CTA must feel contextually relevant to the section it's placed in.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BLOG TOPIC] — the topic of the blog post this CTA is embedded in
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LINK ANCHOR TEXT] — the anchor text for the inline link
+
+**EXPECTED OUTPUT:**
+Three in-content CTA variants (2-3 sentences each) with placement rationale. Each is contextually relevant to where in the post it appears. Reads as natural content recommendation, not sidebar ad copy.
+
+---
+
+### SEO-43: Podcast / Interview Pitch — For Backlink and Traffic
+
+**CONTEXT:**
+Use to pitch yourself or your brand for podcast appearances. Podcast appearances build authority, create content, and generate backlinks through show notes. The pitch must demonstrate clear value to the host's audience.
+
+**PROMPT:**
+Act as a podcast pitch specialist. Write a podcast appearance pitch for [SPEAKER NAME/BRAND] targeting [PODCAST TYPE — e.g., "marketing and growth podcasts with 5K+ listeners"]. Pitch email body (under 200 words): (1) brief value statement (why their audience will care), (2) 3 specific topic angles that fit their show, (3) one social proof signal, (4) small ask (15-minute intro call or direct booking link). Subject line: under 50 characters, benefit-focused.
+
+**VARIABLES TO CUSTOMIZE:**
+- [SPEAKER NAME/BRAND] — e.g., "the ContentKit team"
+- [PODCAST TYPE] — specific enough to personalize each pitch
+- [3 TOPIC ANGLES] — tailored to the specific show's content focus
+
+**EXPECTED OUTPUT:**
+A 200-word podcast pitch email with subject line and 4-section body. Reads as a genuine value proposition to the host — "here's why my appearance serves your audience."
+
+---
+
+### SEO-44: YouTube Video Description — Full Optimization
+
+**CONTEXT:**
+Use to write a complete YouTube video description that maximizes both search ranking and viewer conversion. Most YouTube descriptions are unhelpfully vague — this template covers all the ranking factors.
+
+**PROMPT:**
+Act as a YouTube description optimization specialist. Write a complete YouTube video description for a video about [VIDEO TOPIC]. Structure: (1) first 150 characters (shown before "show more"): keyword + compelling hook, (2) full description (300-400 words): what the video covers, who it's for, key points, (3) timestamps, (4) links (product page, lead magnet, related videos), (5) channel subscribe CTA, (6) 3-5 relevant hashtags at the end. Target keyword: [KEYWORD].
+
+**VARIABLES TO CUSTOMIZE:**
+- [VIDEO TOPIC] — specific video topic
+- [KEYWORD] — primary YouTube keyword
+- [LINKS] — your actual product, lead magnet, and related video URLs
+
+**EXPECTED OUTPUT:**
+A complete YouTube description with first-150-character hook, 300-400 word body, timestamps placeholder, links, subscribe CTA, and hashtags. Keyword in first 150 characters. Ready to upload.
+
+---
+
+### SEO-45: Blog Post — "News" Format for Trending Topics
+
+**CONTEXT:**
+Use when covering trending industry news to capture current search volume. News-style blog posts can earn traffic quickly on trending topics — the window is short, but the returns on timely content can be significant.
+
+**PROMPT:**
+Act as an SEO news blog writer. Write a [TOPIC — e.g., "AI in marketing"] news post about [NEWS EVENT — e.g., "OpenAI's latest model update and what it means for marketers"]. Structure: headline (keyword-targeted, under 10 words), lead paragraph (who/what/when/where/why, 100 words), background context (200 words), implications for [TARGET AUDIENCE] (200 words), expert quote or perspective (optional), CTA. Total: 500-700 words. Published within 48 hours of the news event.
+
+**VARIABLES TO CUSTOMIZE:**
+- [NEWS EVENT] — a real, specific news item in your industry
+- [TARGET AUDIENCE] — who needs to know this news and why
+- Speed is the ranking factor — publish within 48 hours of the event
+
+**EXPECTED OUTPUT:**
+A 500-700 word news post with keyword headline, inverted-pyramid structure, audience-specific implications, and CTA. Structured for fast publication — research fills in the gaps.
+
+---
+
+### SEO-46: Blog Post — Definitive "Hub" Overview (Topic Cluster Pillar)
+
+**CONTEXT:**
+Use for the pillar page that sits at the center of a topic cluster. The pillar page must cover the broadest version of a topic while linking out to cluster content that covers subtopics in depth.
+
+**PROMPT:**
+Act as a pillar content writer. Write a complete pillar page outline for "[BROAD TOPIC — e.g., 'AI Marketing']." This page must: (1) rank for the head keyword, (2) link to 8 cluster pieces, (3) cover the topic broadly (not deep on any subtopic), (4) serve both search intent and conversion. Outline: H1, intro (200 words), 8 H2 sections (one per cluster topic, 300 words each), summary, and CTA. Total target: 3,000-4,000 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BROAD TOPIC] — your pillar topic
+- [8 CLUSTER TOPICS] — the 8 subtopics your cluster content covers
+- Each H2 should internally link to its corresponding cluster piece
+
+**EXPECTED OUTPUT:**
+A pillar page outline with H1, intro, 8 H2 sections, summary, and CTA. Total 3,000-4,000 words. Each H2 section is designed to stand alone but also to link to deeper cluster content.
+
+---
+
+### SEO-47: SEO-Optimized Product Review Post
+
+**CONTEXT:**
+Use when writing a sponsored or organic review of your own product designed to rank for "[product name] review" searches. Review posts with authentic perspectives rank well because Google prioritizes first-hand experience signals.
+
+**PROMPT:**
+Act as a product review blog writer. Write a review post for [PRODUCT NAME] targeting the keyword "[PRODUCT NAME] review." Include: (1) review summary (100 words — verdict first), (2) what's included (specific list), (3) 3 pros (with specific examples), (4) 2 honest cons, (5) who it's best for, (6) who should not buy it, (7) pricing and value assessment, (8) final verdict + CTA. Be genuinely balanced — if the cons aren't real, the review won't earn trust or rankings.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PROS] — specific advantages — not "it's great"
+- [CONS] — real limitations — e.g., "not for total AI beginners / no video format"
+
+**EXPECTED OUTPUT:**
+A structured review post with verdict-first summary, 8 sections including genuine pros and cons, audience fit guidance, and final verdict CTA. Targets "[product name] review" keyword.
+
+---
+
+### SEO-48: Blog Post — "X Mistakes" Warning Format
+
+**CONTEXT:**
+Use for "mistakes to avoid" content targeting risk-averse buyers who want to learn before doing. Warning posts rank well for long-tail searches and earn shares from people who recognized their own past mistakes.
+
+**PROMPT:**
+Act as a warning-format SEO blog writer. Write a "[NUMBER] [TOPIC] Mistakes to Avoid" post. Target keyword: "[KEYWORD — e.g., 'AI marketing prompt mistakes']." Include: intro (150 words: establish the cost of these mistakes), [NUMBER] mistakes — each with H3 title, description of the mistake, why it happens, and the fix (150 words each), conclusion + CTA. [NUMBER]: 7-10. Total: 1,500-2,000 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the mistakes you're warning about
+- [KEYWORD] — the search query targeting this content
+- [MISTAKES] — specific, real mistakes from your experience or customer research
+
+**EXPECTED OUTPUT:**
+A 7-10 mistake warning post (1,500-2,000 words) with intro, H3 mistake sections (description/cause/fix), and CTA conclusion. Each mistake is specific and the fix is actionable.
+
+---
+
+### SEO-49: Blog Post — "Quick Wins" Format (Short, High-Impact)
+
+**CONTEXT:**
+Use for short-form SEO posts targeting "quick tips" or "fast results" search intent. Short blog posts (800-1,200 words) can rank just as well as long ones when the keyword has low competition and the post matches intent precisely.
+
+**PROMPT:**
+Act as a quick-wins SEO blog writer. Write a short-form blog post titled "[TITLE — e.g., '5 AI Marketing Prompt Quick Wins for This Week']." Target keyword: [KEYWORD]. Structure: brief intro (100 words), 5 quick wins (150 words each with a specific example), and a CTA. Total: 900-1,100 words. Each quick win must be something the reader can implement today — not a strategy that takes weeks.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TITLE] — keyword-targeted title promising fast results
+- [KEYWORD] — the target keyword
+- [5 QUICK WINS] — specific, immediately actionable wins in your topic area
+
+**EXPECTED OUTPUT:**
+A 900-1,100 word quick wins post with 5 specifically actionable items and a brief CTA. Each item can be implemented the same day. Short enough to read in 5 minutes.
+
+---
+
+### SEO-50: Blog Post — "Lessons Learned" Personal Experience
+
+**CONTEXT:**
+Use for first-person experience posts that share specific lessons from doing something. Google's Helpful Content and E-E-A-T guidelines reward first-hand experience — these posts signal authenticity and expertise.
+
+**PROMPT:**
+Act as a personal experience blog writer. Write a first-person "lessons learned from [EXPERIENCE — e.g., 'testing 200 AI marketing prompts over 3 months']" blog post. Include: hook (150 words: the experience and why it matters), 6 specific lessons (200 words each: the lesson, what happened, what I learned, what I'd do differently), conclusion + product CTA. Total: 1,500-2,000 words. Maintain first-person voice throughout. Include specific details — numbers, dates, results.
+
+**VARIABLES TO CUSTOMIZE:**
+- [EXPERIENCE] — a specific, real experience you had that produced learnable insights
+- [6 LESSONS] — genuine, specific lessons — not generic advice dressed up as personal experience
+
+**EXPECTED OUTPUT:**
+A 1,500-2,000 word first-person lessons learned post with hook, 6 specific lessons (each with real detail), and a CTA. E-E-A-T signals come from specificity — dates, numbers, and specific outcomes.
+
+---
+
+### SEO-51: On-Page SEO Audit — Copy Evaluation
+
+**CONTEXT:**
+Use to audit the copy of an existing page against on-page SEO best practices. This prompt generates an audit framework you apply to any page — not an automated scan, but a systematic copy review.
+
+**PROMPT:**
+Act as an on-page SEO copy auditor. Create an on-page copy audit checklist for [PAGE NAME — e.g., "AI Marketing Prompt Kit product page"]. Evaluate: (1) keyword in H1 (yes/no), (2) keyword in first 100 words (yes/no), (3) keyword in at least one H2 (yes/no), (4) semantic/related terms present, (5) meta title character count and keyword, (6) meta description character count and CTA, (7) alt text on images, (8) internal links (3+), (9) external authority links. Report format with pass/fail/improve.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PAGE NAME] — the specific page you're auditing
+- [KEYWORD] — the target keyword for this page
+- Conduct this audit before and after any major copy revision
+
+**EXPECTED OUTPUT:**
+A 9-point on-page SEO copy audit checklist with pass/fail/improve criteria for each point. Apply to any page. Shows specifically which SEO copy elements need improvement.
+
+---
+
+### SEO-52: Search Intent Analysis — 4 Types for a Keyword
+
+**CONTEXT:**
+Use to analyze the search intent behind a keyword before writing content. Creating content that mismatches intent is the #1 reason well-written posts don't rank — this analysis prevents that.
+
+**PROMPT:**
+Act as a search intent analyst. Analyze the search intent for this keyword: "[KEYWORD — e.g., 'AI marketing prompts']." For each of the 4 intent types: (1) Informational — would a user with this intent want to learn, or just get a quick answer? (2) Commercial Investigation — is this keyword used to compare before buying? (3) Transactional — would users with this intent want to buy now? (4) Navigational — are users looking for a specific brand or page? Conclude with: the primary intent and the recommended content type.
+
+**VARIABLES TO CUSTOMIZE:**
+- [KEYWORD] — the keyword you're analyzing before writing
+- Cross-reference with Google SERP — what types of results appear on page 1?
+
+**EXPECTED OUTPUT:**
+A search intent analysis for one keyword covering all 4 intent types, with a conclusion stating the primary intent and the recommended content type (blog post / product page / comparison post / etc.).
+
+---
+
+### SEO-53: Thin Content Expansion — Pad to Minimum Length
+
+**CONTEXT:**
+Use when you have existing content that Google has flagged as thin (under 500 words) or that lacks depth. Expanding thin content with specific, useful sections is often faster than writing a new post.
+
+**PROMPT:**
+Act as a content expansion specialist. Take this thin piece of content and expand it to 800-1,200 words without adding filler: [EXISTING CONTENT — paste your content]. Expansion instructions: (1) identify which sections are thin, (2) add specific examples where missing, (3) add one FAQ section (3 questions), (4) add internal links as [LINK PLACEHOLDER] notes, (5) improve keyword density for [KEYWORD] without over-optimizing. Show original and expanded version.
+
+**VARIABLES TO CUSTOMIZE:**
+- [EXISTING CONTENT] — paste your thin content
+- [KEYWORD] — the target keyword
+- Only expand with genuinely useful content — not padded filler
+
+**EXPECTED OUTPUT:**
+An expanded version of your content (800-1,200 words) with thin sections identified, examples added, FAQ section, and internal link placeholders. Each expansion adds genuine value, not word count.
+
+---
+
+### SEO-54: Backlink Profile Brief — Target URL Types
+
+**CONTEXT:**
+Use to design a link building strategy for a specific page. Different types of backlinks (editorial, resource page, guest post, directory) have different difficulty and value profiles — this brief prioritizes the right mix.
+
+**PROMPT:**
+Act as a link building strategy specialist. Write a link building brief for [PAGE URL/DESCRIPTION — e.g., "the AI Marketing Prompt Kit product page"]. Target DR/authority range: [AUTHORITY RANGE — e.g., "DR 30-70"]. Include: (1) 5 link types to target (resource pages, comparison posts, guest posts, PR, directories), (2) outreach approach for each, (3) anchor text distribution plan (branded/partial-match/naked URL ratios), (4) monthly link target, and (5) red flags to avoid.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PAGE URL/DESCRIPTION] — the specific page you're building links to
+- [AUTHORITY RANGE] — your target domain rating range for backlinks
+
+**EXPECTED OUTPUT:**
+A link building brief with 5 link types, outreach approaches, anchor text distribution plan, monthly target, and red flag list. Actionable — can be handed to an SEO specialist or executed in-house.
+
+---
+
+### SEO-55: SEO Case Study — Format and Structure
+
+**CONTEXT:**
+Use when writing an SEO case study documenting your content strategy results. SEO case studies earn backlinks from SEO communities and establish your expertise in the space.
+
+**PROMPT:**
+Act as an SEO case study writer. Write the structure and intro for an SEO case study documenting [RESULT — e.g., "how a new digital product site got to 1,000 organic visits/month in 90 days"]. Include: (1) executive summary (100 words, result-led), (2) starting point (baseline metrics), (3) strategy section (3-5 tactics used), (4) results section (specific metrics), (5) lessons section (what worked, what didn't), (6) what others can replicate. Structure only — you fill in with your real data.
+
+**VARIABLES TO CUSTOMIZE:**
+- [RESULT] — the specific outcome you're documenting
+- [TACTICS] — the actual SEO tactics you used
+- Use only real data — fabricated case study metrics destroy credibility
+
+**EXPECTED OUTPUT:**
+A 6-section SEO case study structure with 100-word executive summary. Each section has a clear purpose and the questions it answers. Fill in with your real metrics and tactics.
+
+---
+
+### SEO-56: Topical Authority Plan — 3-Month Calendar
+
+**CONTEXT:**
+Use when building topical authority in a new content area. Topical authority requires publishing multiple pieces of quality content on related topics — this 3-month calendar builds authority systematically.
+
+**PROMPT:**
+Act as a topical authority content planner. Write a 3-month content calendar for building topical authority in [TOPIC — e.g., "AI marketing"]. Month 1: foundation posts (3 articles — broad overview, key subtopic 1, key subtopic 2). Month 2: depth posts (3 articles — specific how-tos, comparison, case study). Month 3: authority builders (3 articles — expert roundup, original research, ultimate guide). For each post: title, target keyword, word count target, and content type. 9 posts total.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the topical authority area you're building in
+- Each post should target a distinct keyword — no overlap
+- Include internal linking instructions between posts
+
+**EXPECTED OUTPUT:**
+A 3-month 9-post topical authority calendar with post titles, keywords, word counts, content types, and monthly theme. Each month builds on the last. Includes internal linking guidance.
+
+---
+
+### SEO-57: Content Distribution Plan — Post-Publish SEO Amplification
+
+**CONTEXT:**
+Use after publishing a new blog post to maximize its initial distribution and signal freshness to Google. Content amplification in the first 48 hours drives early traffic signals that influence long-term ranking.
+
+**PROMPT:**
+Act as a content distribution specialist. Write a 48-hour post-publish distribution plan for a new blog post about [TOPIC]. Platform distribution: (1) email list (what to send, when), (2) Twitter/X (2-3 tweet variants), (3) LinkedIn (1 post variant), (4) relevant subreddits or communities (which ones, what angle), (5) Pinterest (1 pin description), (6) internal linking action (which existing posts to add links from). Specific and time-ordered.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the blog post topic
+- [RELEVANT COMMUNITIES] — Reddit, Facebook groups, Slack communities relevant to your audience
+- Complete within 48 hours of publishing for maximum freshness signal
+
+**EXPECTED OUTPUT:**
+A time-ordered 48-hour content distribution plan with platform-specific content for 6 channels. Each platform receives appropriately formatted content — not the same text copy-pasted everywhere.
+
+---
+
+### SEO-58: Blog Post — Data-Led Original Research
+
+**CONTEXT:**
+Use to structure an original research blog post. Data-led posts earn the most backlinks of any content type — because other creators cite them as sources. They require original data (survey, analysis, experiment) but earn backlinks for years.
+
+**PROMPT:**
+Act as a research post framework writer. Write the structure for an original research post for [BRAND NAME] on [RESEARCH TOPIC — e.g., "how marketers use AI tools in 2025"]. Structure: (1) executive summary (100 words), (2) methodology (how data was collected — survey, experiment, analysis), (3) 5 key findings with chart/graph descriptions, (4) interpretation section (what the findings mean), (5) implications for [TARGET AUDIENCE], (6) methodology appendix. This is the structure framework — you fill in with your real research data.
+
+**VARIABLES TO CUSTOMIZE:**
+- [RESEARCH TOPIC] — your specific research topic
+- [DATA COLLECTION METHOD] — survey, experiment, analysis of existing data
+- Do not fabricate research data — this framework is only valuable with real data
+
+**EXPECTED OUTPUT:**
+A 6-section original research post structure with executive summary, methodology, 5 findings, interpretation, implications, and appendix. Framework only — real data fills in each section.
+
+---
+
+### SEO-59: SEO-Optimized Gated Content (Lead Magnet) Page
+
+**CONTEXT:**
+Use for a landing page that offers a gated resource (PDF, template, guide) in exchange for an email. These pages can rank organically for "[resource topic] template" or "[resource topic] checklist" keywords.
+
+**PROMPT:**
+Act as a gated content SEO page writer. Write copy for a landing page for the free resource: "[RESOURCE NAME — e.g., '5 AI Marketing Prompt Templates — Free Download']." Target keyword: [KEYWORD — e.g., "AI marketing prompt templates free"]. Page sections: H1 (keyword included), what it is (100 words), who it's for (3 bullet points), what's inside (5 specifics), how to access (email capture), and meta copy. Total: 300-400 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [RESOURCE NAME] — your actual free resource name
+- [KEYWORD] — what people search for to find this type of free resource
+- [5 SPECIFICS] — what's literally inside the resource — specific, not vague
+
+**EXPECTED OUTPUT:**
+A gated content landing page (300-400 words) with keyword-optimized H1, what/who/inside sections, email capture framing, and meta copy. Ranks for "[resource type] free" keywords.
+
+---
+
+### SEO-60: Rich Snippet Optimization — Review/Rating Schema
+
+**CONTEXT:**
+Use to add review schema markup to a product or blog page, enabling Google to show star ratings in search results. Star ratings in SERP dramatically improve click-through rates — often doubling CTR for the same position.
+
+**PROMPT:**
+Act as a review schema specialist. Write the review schema markup guidance for [PRODUCT NAME] to enable star ratings in Google search results. Include the field-value pairs for: Review type (AggregateRating vs. individual Review), ratingValue, bestRating, reviewCount or ratingCount, author (for individual reviews), and itemReviewed. Provide guidance on: how many reviews are needed, where to collect them, and how to keep schema compliant with Google's review policy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [RATING DATA] — your actual rating value and review count
+- Must meet Google's requirements: reviews must be written by real buyers, not the brand
+
+**EXPECTED OUTPUT:**
+Review schema field-value guidance with compliance notes. Enables star rating display in Google SERP when implemented as JSON-LD. Includes policy guidance to avoid penalties.
+
+---
+
