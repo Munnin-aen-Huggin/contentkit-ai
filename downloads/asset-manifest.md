@@ -12,11 +12,12 @@ These files will be committed to the repo at the paths below and served as stati
 
 | Asset | Local Content File | Local PDF Path (post-design) | Live URL (after Phase 2 deploy) | File Status |
 |-------|-------------------|------------------------------|--------------------------------|-------------|
-| Full Kit PDF | downloads/ai-prompt-kit-full-content.md | downloads/ai-prompt-kit-full.pdf | https://yourdomain.com/downloads/ai-prompt-kit-full.pdf | [ ] Designed in Canva |
-| Starter Kit PDF | downloads/ai-prompt-kit-starter-content.md | downloads/ai-prompt-kit-starter.pdf | https://yourdomain.com/downloads/ai-prompt-kit-starter.pdf | [ ] Designed in Canva |
-| Lead Magnet PDF | downloads/lead-magnet-content.md | downloads/5-ai-prompts-lead-magnet.pdf | https://yourdomain.com/downloads/5-ai-prompts-lead-magnet.pdf | [ ] Designed in Canva |
+| Full Kit PDF | downloads/ai-prompt-kit-full-content.md | downloads/ai-prompt-kit-full.pdf | https://yourdomain.com/downloads/ai-prompt-kit-full.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
+| Starter Kit PDF | downloads/ai-prompt-kit-starter-content.md | downloads/ai-prompt-kit-starter.pdf | https://yourdomain.com/downloads/ai-prompt-kit-starter.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
+| Lead Magnet PDF | downloads/lead-magnet-content.md | downloads/5-ai-prompts-lead-magnet.pdf | https://yourdomain.com/downloads/5-ai-prompts-lead-magnet.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
 
-Note: PDF design (Canva layout) is a separate post-Phase 1 task. The content files (.md) exist now; the designed PDF exports (.pdf) will be added before Phase 3.
+Note: PDFs were generated programmatically from content .md files using md-to-pdf (Plan 01-04).
+Files are in downloads/ and ready to commit to the repo for Cloudflare Pages hosting.
 
 ---
 
