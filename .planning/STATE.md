@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 1 of 5 (Product Assets)
-Plan: 2 of 4 in current phase (01-02 at checkpoint — awaiting Notion template builds)
-Status: Checkpoint — human action required
-Last activity: 2026-02-25 — 01-01 COMPLETE; 01-02 at checkpoint (awaiting Notion template builds)
+Plan: 3 of 4 in current phase (01-02 COMPLETE — advancing to 01-03)
+Status: Active
+Last activity: 2026-02-25 — 01-02 COMPLETE; 4 Notion template markdown files delivered as product assets
 
-Progress: [█░░░░░░░░░] 5%
+Progress: [██░░░░░░░░] 10%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 120min
-- Total execution time: 120min
+- Total plans completed: 2
+- Average duration: 77min
+- Total execution time: 155min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01 | 1 | 120min | 120min |
+| 01 | 2 | 155min | 77min |
 
 **Recent Trend:**
-- Last 5 plans: 120min (01-01)
+- Last 5 plans: 120min (01-01), 35min (01-02)
 - Trend: —
 
 *Updated after each plan completion*
@@ -39,6 +39,7 @@ Progress: [█░░░░░░░░░] 5%
 
 | Phase | Plan | Duration | Tasks | Files |
 |-------|------|----------|-------|-------|
+| 01 | 02 | 35min | 2 | 5 |
 | 01 | 02 | 10min | 1 | 1 |
 | 01 | 01 | 120min | 2 | 2 |
 
@@ -60,6 +61,8 @@ Recent decisions affecting current work:
 - [Phase 01-01]: Batch-write by category then commit — prevents context-limit failures on large content files
 - [Phase 01-01]: Starter prompts copied verbatim from Full Kit — prevents content drift between product tiers
 - [Phase 01-01]: Variable format includes concrete example ("e.g., 'freelance graphic designers charging under $50/hr'") — not just [VARIABLE NAME]
+- [Phase 01-02]: Notion templates delivered as markdown files, not Notion GUI builds — per user instruction; files are immediately usable as product deliverables, also importable into Notion
+- [Phase 01-02]: Pre-filled with realistic sample content (not generic placeholders) — buyers see a populated workspace that shows the level of specificity the kit enables
 
 ### Pending Todos
 
@@ -74,6 +77,7 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: 01-02 checkpoint:human-action — user must build and publish 4 Notion templates, fill in URL Registry in downloads/notion-templates-spec.md, verify duplication from fresh account. Resume signal: "templates done" + paste 4 URLs.
+Stopped at: Completed 01-02 — 4 Notion template markdown files created and committed. Ready for 01-03.
 Resume file: None
 Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
+Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
