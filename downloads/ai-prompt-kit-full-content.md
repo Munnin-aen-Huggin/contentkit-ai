@@ -7812,3 +7812,1158 @@ A 350-word public lessons learned post with 5 specific lessons and real numbers.
 
 ---
 
+## Category 8: Video Scripts
+
+These prompts cover every type of video content — YouTube long-form, short-form Reels/TikTok, Video Sales Letters (VSL), product demos, tutorial scripts, testimonial videos, and branded content. Each prompt produces a complete, filmable script with timing, on-screen text notes, and voiceover.
+
+---
+
+### VS-01: YouTube Video Hook — 5 Variants (First 30 Seconds)
+
+**CONTEXT:**
+Use when writing or testing YouTube video hooks. The first 30 seconds determine viewer retention — most viewers click away in the first 15 seconds if the hook doesn't hold them. This prompt generates 5 different hook approaches to test.
+
+**PROMPT:**
+Act as a YouTube hook writer. Write 5 first-30-second hook scripts for a video about [TOPIC — e.g., "how to write Facebook ads using AI"]. Each hook must: create pattern interruption, promise specific value, and set up the rest of the video. Types: (1) Question hook, (2) Shocking stat hook, (3) Challenge hook ("I bet you can't..."), (4) Story hook (open in the middle of the story), (5) Curiosity gap hook ("I discovered something that changed everything"). Each: 75-100 words, timestamped.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the specific video topic
+- [TARGET AUDIENCE] — who you're making this for
+- Hooks 4 and 5 work best for warmer audiences
+
+**EXPECTED OUTPUT:**
+5 labeled 30-second hook scripts (75-100 words each) with timestamps. Each uses a distinct hook type. Test in the first 5 videos in a new series to identify which approach your audience responds to.
+
+---
+
+### VS-02: YouTube Tutorial — Full Script (10 minutes)
+
+**CONTEXT:**
+Use for a complete 10-minute YouTube tutorial script. Tutorial videos are the highest-retention content type on YouTube because viewers stay to get the answer they came for.
+
+**PROMPT:**
+Act as a YouTube tutorial scriptwriter. Write a complete 10-minute tutorial script on [TOPIC — e.g., "how to use AI prompts to write a Facebook ad in 5 minutes"]. Structure: Hook (0-1 min), What you'll learn + why it matters (1-2 min), Tutorial Step 1 (2-4 min), Step 2 (4-6 min), Step 3 (6-8 min), Summary + next step (8-9 min), CTA (9-10 min). ~1,500 spoken words total. Include [ON-SCREEN] notes for each step.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — a specific, teachable process with 3 clear steps
+- [TARGET AUDIENCE] — adjust language complexity for your audience's knowledge level
+
+**EXPECTED OUTPUT:**
+A full 10-minute tutorial script (~1,500 words) with timestamps, on-screen notes, and 3 teaching steps. Each section has a clear purpose. CTA at end drives to next video, subscribe, or product.
+
+---
+
+### VS-03: YouTube Intro — Channel Trailer (60 seconds)
+
+**CONTEXT:**
+Use for a channel trailer that appears on your YouTube homepage for non-subscribers. The channel trailer has one job: convert visitors to subscribers by showing them why they should care.
+
+**PROMPT:**
+Act as a YouTube channel trailer scriptwriter. Write a 60-second channel trailer for [CHANNEL NAME — e.g., "ContentKit TV"]. Structure: Hook (0-5 sec): bold claim or transformation statement. Who this is for (5-15 sec): specific audience. What they'll get (15-40 sec): 3 types of content with visual examples described. Subscribe ask (40-55 sec): specific reason to subscribe. End card (55-60 sec): subscribe button + notification bell instruction. ~150 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CHANNEL NAME] — your actual YouTube channel name
+- [CONTENT TYPES] — e.g., "tutorials / prompts demos / product reviews"
+- [AUDIENCE] — your specific target viewer
+
+**EXPECTED OUTPUT:**
+A 60-second channel trailer script (~150 words) with timestamps, on-screen notes, and a clear subscribe CTA. Shows the visitor exactly what they'll get and why to subscribe.
+
+---
+
+### VS-04: VSL (Video Sales Letter) — Full Script (7 minutes)
+
+**CONTEXT:**
+Use for a Video Sales Letter on a landing page or sales funnel. A VSL replaces written sales copy with a spoken script — it works for audiences who prefer video over reading.
+
+**PROMPT:**
+Act as a VSL scriptwriter. Write a 7-minute VSL script for [PRODUCT NAME] at [PRICE]. Structure: Hook/Problem (0-1 min), Agitation (1-2:30 min), Solution intro (2:30-3:30 min), Product demo/walkthrough (3:30-5 min), Social proof (5-5:45 min), Offer + guarantee (5:45-6:30 min), CTA (6:30-7 min). ~1,050 spoken words. Include [SLIDE NOTES] for any supporting visuals. Conversational spoken-word style — not read-out loud marketing copy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PRICE] — e.g., "$47"
+- [SOCIAL PROOF] — buyer results to reference in the proof section
+
+**EXPECTED OUTPUT:**
+A 7-minute VSL script (~1,050 words) with timestamps, slide notes, and spoken-word style throughout. Follows proven VSL structure with each section serving a distinct conversion role.
+
+---
+
+### VS-05: Instagram Reel / TikTok — "How To" (30 seconds)
+
+**CONTEXT:**
+Use for short-form educational content on Instagram Reels and TikTok. These scripts must deliver value in under 30 seconds — every sentence must earn its place.
+
+**PROMPT:**
+Act as a short-form video scriptwriter. Write a 30-second "how to [TASK — e.g., 'write a Facebook ad using AI in 2 minutes']" script for Instagram Reels / TikTok. Structure: Hook (0-3 sec): claim the result. Step 1 (3-10 sec). Step 2 (10-18 sec). Step 3 (18-24 sec). CTA (24-30 sec). Include [ON-SCREEN TEXT] notes. ~80 spoken words. Each step is a single, specific action.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TASK] — a specific 3-step process achievable in video demo
+- [ON-SCREEN TEXT] — text overlays that reinforce each step
+
+**EXPECTED OUTPUT:**
+A 30-second short-form video script (~80 words) with timestamps, on-screen text notes, and a CTA. Three specific steps in under 25 seconds leaves room for a clean close.
+
+---
+
+### VS-06: YouTube Long-Form — Interview / Podcast Video
+
+**CONTEXT:**
+Use when filming a video interview or converting a podcast into a YouTube video. Interview video scripts need a strong intro and outro — the conversation itself drives the middle.
+
+**PROMPT:**
+Act as a video interview scriptwriter. Write the intro and outro for a YouTube interview video with [GUEST TYPE — e.g., "a freelance marketing expert who generated $100K using AI tools"]. Intro (60 seconds): hook the viewer with the guest's most impressive result, introduce the guest, preview 3 things they'll learn. Outro (45 seconds): summarize 3 key takeaways, subscribe CTA, link to related video. ~160 words total.
+
+**VARIABLES TO CUSTOMIZE:**
+- [GUEST TYPE] — describe the guest specifically — their expertise and result
+- [3 KEY TAKEAWAYS] — from the actual interview
+- [RELATED VIDEO] — the next video you want viewers to watch
+
+**EXPECTED OUTPUT:**
+A 60-second intro script and 45-second outro script for a video interview. Intro hooks with the guest's result; outro captures takeaways and drives ongoing viewership.
+
+---
+
+### VS-07: YouTube Shorts — Viral Tip Format (60 seconds)
+
+**CONTEXT:**
+Use for YouTube Shorts designed for maximum shares. The best Shorts deliver one surprising insight in under 60 seconds — they feel like discovering something valuable.
+
+**PROMPT:**
+Act as a YouTube Shorts scriptwriter. Write a 60-second Short delivering one surprising insight about [TOPIC — e.g., "why your AI prompt has been wrong this whole time"]. Structure: Hook (0-3 sec): surprising claim. Context (3-12 sec): why this matters. Revelation (12-45 sec): the actual insight with one example. Takeaway (45-55 sec): what to do with this. CTA (55-60 sec). ~150 spoken words. Include [ON-SCREEN] notes.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — a genuinely surprising insight in your area of expertise
+- The revelation must be specific enough to be immediately actionable
+
+**EXPECTED OUTPUT:**
+A 60-second YouTube Short script (~150 words) delivering one genuinely surprising insight with on-screen text notes and a CTA. Designed for shareability — viewers forward this to someone.
+
+---
+
+### VS-08: Product Demo Video — Full Walk-Through (3 minutes)
+
+**CONTEXT:**
+Use for a 3-minute product demonstration video on YouTube or a landing page. Demo videos convert skeptical buyers by showing the product in action — seeing is more persuasive than reading.
+
+**PROMPT:**
+Act as a product demo scriptwriter. Write a 3-minute demo video script for [PRODUCT NAME]. Structure: Result reveal (0-15 sec): show or state the end result first. Problem context (15-45 sec): who this is for and what problem it solves. Demo walkthrough (45 sec-2:30 min): step-by-step product use with [SCREEN NOTES]. Result confirmation (2:30-2:50 min): the output the viewer just saw. CTA (2:50-3:00 min). ~450 spoken words. Show don't tell.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [DEMO STEPS] — describe the actual product use sequence
+- [SCREEN NOTES] — what appears on screen during the demo
+
+**EXPECTED OUTPUT:**
+A 3-minute product demo script (~450 words) with result-first structure, step-by-step walkthrough with screen notes, and CTA. "Show don't tell" — the demo is the selling.
+
+---
+
+### VS-09: YouTube Educational Series — Episode Template
+
+**CONTEXT:**
+Use as a template for a recurring educational YouTube series. Consistent episode structure improves viewer retention over a series because viewers know what to expect.
+
+**PROMPT:**
+Act as a YouTube series template designer. Write a 5-minute episode template for [SERIES NAME — e.g., "Prompt Lab: One Prompt, One Marketing Task"]. Fixed structure every episode: Cold open teaser (0-15 sec), Intro + episode topic (15-45 sec), Main content (45 sec-4:00 min, 3 sections), Recap + key takeaway (4:00-4:30 min), Subscribe + next episode tease (4:30-5:00 min). Provide the template with [FILL IN] placeholders for episode-specific content.
+
+**VARIABLES TO CUSTOMIZE:**
+- [SERIES NAME] — your recurring series title
+- [EPISODE TOPIC] — fill in for each episode
+- Maintain identical structure across episodes — consistency drives repeat viewership
+
+**EXPECTED OUTPUT:**
+A 5-minute episode template with timestamps, fixed structure, and [FILL IN] placeholders for episode-specific content. Designed so every episode of the series follows the same reliable format.
+
+---
+
+### VS-10: Testimonial Video Script — Customer Interview
+
+**CONTEXT:**
+Use to guide a customer through recording a video testimonial. Most customers don't know what to say without direction — this script gives them a structure that produces compelling, specific testimonials.
+
+**PROMPT:**
+Act as a testimonial video script designer. Write a customer testimonial video script guide for [PRODUCT NAME]. The script gives the customer a series of fill-in-the-blank prompts to answer on camera: (1) "Before I found [PRODUCT NAME], I was struggling with..." (2) "I decided to try it because..." (3) "What surprised me was..." (4) "Specifically, I used it to..." (5) "The result was..." (6) "I'd recommend it to anyone who..." Each prompt: 1-2 sentence guidance on what makes a good answer.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Send this to customers before recording — they answer on camera, you edit
+
+**EXPECTED OUTPUT:**
+A 6-prompt customer testimonial script with guidance for each prompt. Customers can read and record in under 30 minutes. Results in a structured, specific testimonial that covers before/after/recommendation.
+
+---
+
+### VS-11: TikTok Script — Trending "POV" Format
+
+**CONTEXT:**
+Use for TikTok POV videos where the creator puts the viewer in a specific situation. POV videos create immediate identification and are among TikTok's most shared formats.
+
+**PROMPT:**
+Act as a TikTok POV scriptwriter. Write a "POV: you're [SITUATION]" TikTok script for [TARGET AUDIENCE]. Situation: [SPECIFIC SCENARIO — e.g., "POV: you're a freelancer with a client deadline in 2 hours and you haven't started the copy yet"]. Show the problem escalating briefly (15 sec), then show how [PRODUCT NAME] solves it (30 sec), end with the relief/result (15 sec). Total: 60 seconds. On-screen text notes included.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TARGET AUDIENCE] — e.g., "freelance marketers"
+- [SPECIFIC SCENARIO] — a stressful or aspirational situation they'll recognize instantly
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+
+**EXPECTED OUTPUT:**
+A 60-second POV TikTok script with on-screen text notes. Three-act structure: problem/escalation → solution → relief/result. Creates immediate identification for the target audience.
+
+---
+
+### VS-12: YouTube Video — "My Results After [Time Period]"
+
+**CONTEXT:**
+Use for a results-based video documenting what you achieved using your own product or method. Results videos build enormous credibility because they show proof of the creator's own experience.
+
+**PROMPT:**
+Act as a results video scriptwriter. Write a 8-minute YouTube video script: "My Results After [TIME PERIOD — e.g., '30 Days'] Using AI Marketing Prompts." Structure: Hook (0-1 min): the result upfront. Setup (1-2 min): what I was doing before and why I tried this. Month breakdown (2-6 min): week by week highlights — what worked, what didn't. Key insights (6-7 min): 3 specific lessons. Recommendation (7-8 min): who should try this + CTA. ~1,200 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TIME PERIOD] — e.g., "30 days" or "90 days"
+- [ACTUAL RESULTS] — use your real data — specific numbers
+- [3 LESSONS] — genuine learnings from the period
+
+**EXPECTED OUTPUT:**
+An 8-minute results video script (~1,200 words) with result-first hook, chronological breakdown, 3 lessons, and CTA. Specific numbers throughout — vague results claims don't earn trust.
+
+---
+
+### VS-13: YouTube Intro — Channel/Creator Intro Video (2 minutes)
+
+**CONTEXT:**
+Use for a new YouTube channel's first video — an introduction to who you are and what the channel is about. This video is often the most-watched video a new subscriber sees after discovering your channel.
+
+**PROMPT:**
+Act as a YouTube channel intro video scriptwriter. Write a 2-minute channel intro for [CREATOR/BRAND NAME]. Structure: Hook — what viewers will be able to do after watching this channel (30 sec). Who I am — relevant background (30 sec). What this channel is specifically about (30 sec). Why subscribe — what they get that they can't get elsewhere (20 sec). First recommended video (10 sec). ~300 spoken words. Personal, direct, specific.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CREATOR/BRAND NAME] — your name or brand
+- [CHANNEL FOCUS] — the specific topic/niche of the channel
+- [FIRST RECOMMENDED VIDEO] — the video you want them to watch next
+
+**EXPECTED OUTPUT:**
+A 2-minute channel intro script (~300 words) with 5-section structure. Personal and direct — viewers should feel like they know the creator by the end. Ends with a specific video recommendation.
+
+---
+
+### VS-14: Instagram Reels — "Before vs. After" Demo
+
+**CONTEXT:**
+Use for Reels that show the transformation your product enables. Before/after Reels are one of the highest-performing formats for digital products because the contrast is immediately visible.
+
+**PROMPT:**
+Act as a before/after Reels scriptwriter. Write a 30-45 second Instagram Reel script showing the before/after transformation of using [PRODUCT NAME]. Before (0-12 sec): show or describe the painful before state with [BEFORE VISUAL]. After (12-30 sec): show or describe the transformed after state with [AFTER VISUAL]. Bridge (30-40 sec): how [PRODUCT NAME] creates the transformation. CTA (40-45 sec). On-screen text notes included.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [BEFORE VISUAL] — describe what the before state looks like on screen
+- [AFTER VISUAL] — describe what the after state looks like on screen
+
+**EXPECTED OUTPUT:**
+A 30-45 second before/after Reel script with before/bridge/after structure and on-screen text notes. Visual contrast is the selling — the script supports what's shown, not replaces it.
+
+---
+
+### VS-15: YouTube Long-Form — Vlog / Day-in-the-Life
+
+**CONTEXT:**
+Use for a day-in-the-life vlog that shows your work process, building connection and trust. Vlog-style content performs well for personal brands and solo business owners because it humanizes the brand.
+
+**PROMPT:**
+Act as a vlog scriptwriter. Write an outline and talking points for a "day in my life [ROLE — e.g., 'as a digital product creator']" YouTube vlog. Coverage: morning routine relevance to business, 3 work segments with specific tasks, one challenge moment, one small win, end-of-day reflection. For each segment: what to film, talking points (not a word-for-word script). Total: 10-15 minute vlog. Tone: candid — unscripted feel but guided.
+
+**VARIABLES TO CUSTOMIZE:**
+- [ROLE] — your specific role or business type
+- [3 WORK SEGMENTS] — actual tasks you do that are interesting to show
+- [CHALLENGE MOMENT] — something real that went wrong — viewers connect with struggle
+
+**EXPECTED OUTPUT:**
+A day-in-the-life vlog outline with segment descriptions, filming notes, and talking points. Not a word-for-word script — a guide for natural filming. Includes a challenge moment for authenticity.
+
+---
+
+### VS-16: Explainer Video Script — Product/Service Overview (2 minutes)
+
+**CONTEXT:**
+Use for a short explainer video on a homepage or landing page. Explainer videos improve landing page conversion rates when they're under 2 minutes and lead with the buyer's problem.
+
+**PROMPT:**
+Act as an explainer video scriptwriter. Write a 2-minute explainer video script for [PRODUCT NAME]. Structure: Problem (0-20 sec): visualize the problem in one relatable scenario. Solution intro (20-40 sec): introduce [PRODUCT NAME] in one sentence. How it works (40-90 sec): 3 steps, each with a visual description. Result (90-100 sec): show the transformed outcome. CTA (100-120 sec). ~300 spoken words. Animated video style — describe each visual scene.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [3 STEPS] — the core product use process in 3 steps
+- [VISUAL DESCRIPTIONS] — describe what appears on screen for each section
+
+**EXPECTED OUTPUT:**
+A 2-minute explainer script (~300 words) with scene descriptions, 3-step product walkthrough, and CTA. Written for animation or screen recording style. Problem-first structure.
+
+---
+
+### VS-17: TikTok Script — "Things I Wish I Knew" (60 seconds)
+
+**CONTEXT:**
+Use for "things I wish I knew" TikTok videos that build authority through experience sharing. This format performs well because it acknowledges the viewer's struggle while positioning the creator as someone who's been there.
+
+**PROMPT:**
+Act as a TikTok experience-sharing scriptwriter. Write a 60-second "things I wish I knew before [TOPIC — e.g., 'using AI for marketing']" TikTok script. Structure: Hook (0-3 sec): "If I knew this when I started..." Items 1-5 (3-52 sec): rapid-fire, each 10 seconds. Item: label + 2-sentence insight. CTA (52-60 sec). ~150 spoken words. On-screen labels for each item. Genuine lessons — not generic tips.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — your experience area
+- [5 ITEMS] — genuine lessons from your own experience — not things you read
+
+**EXPECTED OUTPUT:**
+A 60-second TikTok "things I wish I knew" script (~150 words) with 5 rapid-fire lessons and on-screen labels. Genuine insights — each item reveals something non-obvious.
+
+---
+
+### VS-18: YouTube Shorts — Question Hook (Under 60 Seconds)
+
+**CONTEXT:**
+Use for YouTube Shorts that open with a question your viewer is secretly asking themselves. Question-hook Shorts earn completion because viewers watch until the question is answered.
+
+**PROMPT:**
+Act as a YouTube Shorts question-hook scriptwriter. Write a 45-second Short opening with the question: "[QUESTION — e.g., 'Why does AI-written copy always sound the same?']". Structure: Question (0-3 sec). Why it matters (3-10 sec). The answer revealed (10-35 sec) — specific, actionable. Application for the viewer (35-40 sec). CTA (40-45 sec). ~120 spoken words. On-screen text shows the question at the start.
+
+**VARIABLES TO CUSTOMIZE:**
+- [QUESTION] — a question your audience is actively wondering about
+- [ANSWER] — the specific answer — must be genuinely useful, not vague
+
+**EXPECTED OUTPUT:**
+A 45-second Shorts script (~120 words) with question hook, specific answer, viewer application, and CTA. On-screen text notes included. The answer is the value — it must be specific.
+
+---
+
+### VS-19: Facebook Watch / Video Ad — 60-Second Branding
+
+**CONTEXT:**
+Use for a branded Facebook video (not direct response ad — this is awareness-focused). Branded videos build audience warmth for later direct response campaigns.
+
+**PROMPT:**
+Act as a brand video scriptwriter. Write a 60-second branded Facebook video for [BRAND NAME]. Goal: awareness and brand affinity — no direct CTA to buy. Structure: Open with a relatable moment (0-10 sec). Brand philosophy statement (10-25 sec): what [BRAND NAME] believes about [TOPIC]. Evidence of that belief (25-45 sec): show or describe 3 things the brand does that prove it. Invite connection (45-60 sec): soft CTA (follow / learn more). ~150 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [TOPIC] — what the brand cares about
+- [3 EVIDENCE ITEMS] — specific things the brand does that demonstrate the belief
+
+**EXPECTED OUTPUT:**
+A 60-second branded video script (~150 words) with relatable opening, brand philosophy, evidence of belief, and soft CTA. Builds brand affinity — doesn't sell directly.
+
+---
+
+### VS-20: YouTube Product Review — Honest Format (5 minutes)
+
+**CONTEXT:**
+Use for a video review of your own product (transparency) or a product you use and recommend. Honest review videos build trust when they genuinely acknowledge pros AND cons.
+
+**PROMPT:**
+Act as a video reviewer. Write a 5-minute honest product review script for [PRODUCT NAME]. Structure: What it is (0-30 sec). What I tested (30-1:30 min). Top 3 things I liked — with specific examples (1:30-3:30 min). Top 2 honest limitations — with specific examples (3:30-4:15 min). Who should buy it — and who shouldn't (4:15-4:45 min). Final rating + where to get it (4:45-5:00 min). ~750 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [WHAT YOU TESTED] — describe your specific testing process
+- [LIMITATIONS] — be genuinely honest — fake limitations destroy trust
+
+**EXPECTED OUTPUT:**
+A 5-minute honest review script (~750 words) with specific pros (3), genuine cons (2), audience fit guidance, and CTA. Limitations are real — this review earns trust through honesty.
+
+---
+
+### VS-21: Reels/TikTok — Countdown List Format (5 items)
+
+**CONTEXT:**
+Use for "5 [things]" countdown videos. Countdown format creates suspense — viewers stay to see what's #1. Works best when the list is ranked by impact, not just organized.
+
+**PROMPT:**
+Act as a countdown video scriptwriter. Write a 60-second "5 [THINGS — e.g., 'AI prompt mistakes that are ruining your copy']" countdown Reel/TikTok script. Structure: Hook (0-3 sec): set up the countdown. Items 5 → 1 (3-54 sec, ~10 sec each): number + label + one-sentence insight. #1 gets 2x more time — it's the most important. CTA (54-60 sec). On-screen number labels for each item.
+
+**VARIABLES TO CUSTOMIZE:**
+- [THINGS] — a ranked list in your expertise area — genuinely ranked, not just listed
+- #1 must be the most surprising or impactful item — earns the build-up
+
+**EXPECTED OUTPUT:**
+A 60-second countdown video script with 5 items ranked from 5 to 1, on-screen number labels, and CTA. #1 item gets extra time and impact. Hook explains the countdown stakes.
+
+---
+
+### VS-22: YouTube Long-Form — "I Tested X So You Don't Have To" (10 minutes)
+
+**CONTEXT:**
+Use for a video documenting an experiment or test. "I tested X" videos perform exceptionally well because they provide research value — the viewer gets the conclusions without doing the work themselves.
+
+**PROMPT:**
+Act as an experiment video scriptwriter. Write a 10-minute YouTube video script: "I Tested [NUMBER] [THING — e.g., 'AI Marketing Prompts'] So You Don't Have To — Here's What Actually Works." Structure: Hook (0-1 min), Why I did this test (1-2 min), Methodology (2-3 min), Results — what worked (3-6 min), What didn't work (6-8 min), Best approach revealed (8-9 min), CTA (9-10 min). ~1,500 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [NUMBER] — how many things you tested — use a real number
+- [THING] — what you tested
+- [ACTUAL RESULTS] — your real findings — fabricated test results destroy trust
+
+**EXPECTED OUTPUT:**
+A 10-minute test-results video script (~1,500 words) with methodology, what worked, what didn't, best approach reveal, and CTA. Real results throughout — specifics earn trust.
+
+---
+
+### VS-23: YouTube Ad — Skippable Pre-Roll (First 5 Seconds)
+
+**CONTEXT:**
+Use when running YouTube skippable ads. The first 5 seconds are unskippable — after that, viewers can skip. You must earn their attention in 5 seconds to hold them through the offer.
+
+**PROMPT:**
+Act as a YouTube ad scriptwriter. Write 3 variants of the first 5 seconds (unskippable) for a YouTube ad for [PRODUCT NAME]. Each variant must: stop the skip reflex and make the viewer want to see more. Then write the full 30-second ad script (after the 5-second hook) for the best variant. Full ad structure: hook (0-5 sec) + problem (5-12 sec) + solution (12-22 sec) + CTA (22-30 sec). ~75 spoken words total.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- 5-second hooks: what would make your target viewer stop mid-scroll?
+
+**EXPECTED OUTPUT:**
+3 five-second hook variants (labeled), then a full 30-second script (~75 words) using the strongest hook. Timestamps and on-screen notes included. CTA includes URL visible on screen.
+
+---
+
+### VS-24: Testimonial Video — Success Story Format
+
+**CONTEXT:**
+Use to film a structured success story testimonial with a specific customer. Success story videos follow a proven narrative arc — this script maximizes the persuasiveness of the real story.
+
+**PROMPT:**
+Act as a testimonial video director. Write a success story video script for [CUSTOMER TYPE] using [PRODUCT NAME]. This is a directed interview — write the questions the interviewer asks + prompts for what to show on screen. Interview arc: who they are (30 sec), what their situation was before (60 sec), why they tried [PRODUCT NAME] (30 sec), specific result achieved (60 sec), unexpected benefit (30 sec), who should try this (30 sec). Total: ~5 minutes. Include [B-ROLL NOTES].
+
+**VARIABLES TO CUSTOMIZE:**
+- [CUSTOMER TYPE] — describe the customer type being filmed
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [B-ROLL NOTES] — what supporting footage to capture during filming
+
+**EXPECTED OUTPUT:**
+A 5-minute success story testimonial interview script with interviewer questions, response prompts, and B-roll notes. Follows a proven narrative arc from situation to result.
+
+---
+
+### VS-25: Corporate Training Video — Onboarding Script (3 minutes)
+
+**CONTEXT:**
+Use for a customer onboarding video that walks new buyers through their purchase. Onboarding videos reduce support requests, decrease refund rates, and improve product usage from day one.
+
+**PROMPT:**
+Act as an onboarding video scriptwriter. Write a 3-minute customer onboarding video script for [PRODUCT NAME]. Structure: Welcome + what they just got (0-20 sec), 3 steps to get started immediately (20-2:30 min, 40 sec each), where to get help + what to expect next (2:30-3:00 min). Tone: warm, confident, clear — like a knowledgeable friend handing over the keys. ~450 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [3 STEPS] — the specific first-use process for your product
+- [WHERE TO GET HELP] — your actual support channel
+
+**EXPECTED OUTPUT:**
+A 3-minute onboarding video script (~450 words) with welcome, 3 quick-start steps, and support info. Warm and clear — reduces buyer confusion and support requests from Day 1.
+
+---
+
+### VS-26: TikTok Script — Trending Format "Get Ready With Me"
+
+**CONTEXT:**
+Use to participate in the "Get Ready With Me" (GRWM) format adapted for business/productivity content. GRWM builds parasocial connection and makes product integration feel natural.
+
+**PROMPT:**
+Act as a GRWM business TikTok scriptwriter. Write a "Get Ready With Me for [TASK — e.g., 'a week of marketing content']" TikTok script (60-90 sec). Show getting organized, using [PRODUCT NAME] as one of the tools, and finishing ready. Structure: Setup (0-10 sec), Task 1 with product integration (10-30 sec), Task 2 (30-50 sec), Completed state (50-70 sec), CTA (70-90 sec). Conversational — like talking to camera while doing the thing.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TASK] — a task your audience does regularly
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit" — integration must feel natural
+
+**EXPECTED OUTPUT:**
+A 60-90 second GRWM TikTok script with natural product integration, task completion arc, and CTA. Conversational voice — not a sales script. Product mention feels organic.
+
+---
+
+### VS-27: YouTube Shorts — "This vs. That" Comparison
+
+**CONTEXT:**
+Use for YouTube Shorts that show a direct comparison between two approaches. Comparison Shorts are highly shareable because they're efficient — viewers get the decision-making information in under 60 seconds.
+
+**PROMPT:**
+Act as a comparison Shorts scriptwriter. Write a 45-second YouTube Short comparing [OPTION A — e.g., "generic AI prompt"] vs. [OPTION B — e.g., "structured AI prompt from the kit"]. Show the same input/output for both. Structure: Setup (0-5 sec): same task, two approaches. Option A (5-20 sec): show input, show output, name the problem. Option B (20-40 sec): show input, show output, name the improvement. CTA (40-45 sec). On-screen labels throughout.
+
+**VARIABLES TO CUSTOMIZE:**
+- [OPTION A] — the worse/harder approach (the status quo)
+- [OPTION B] — your product's approach
+- Show a real example — fabricated comparisons are obvious
+
+**EXPECTED OUTPUT:**
+A 45-second "this vs. that" Short script with labeled comparison, on-screen text, and CTA. Same task, two approaches — the quality difference is the selling. Real example required.
+
+---
+
+### VS-28: Facebook Live Script — Product Launch Broadcast
+
+**CONTEXT:**
+Use for a Facebook or Instagram Live broadcast on product launch day. Live broadcasts for product launches create real-time urgency and allow Q&A that addresses live objections.
+
+**PROMPT:**
+Act as a live broadcast scriptwriter. Write a 30-minute Facebook/Instagram Live script for the launch of [PRODUCT NAME]. Structure: Welcome + what's happening today (0-2 min), Teach something genuinely useful (2-12 min), Behind-the-scenes: why I built this (12-17 min), Product reveal + walkthrough (17-24 min), Q&A (24-28 min), Final offer + CTA (28-30 min). Include talking point bullets per section — not a word-for-word script (live content needs flexibility).
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TEACH TOPIC] — a genuinely useful 10-minute teaching segment related to the product
+- Prepare real Q&A responses for common questions
+
+**EXPECTED OUTPUT:**
+A 30-minute Facebook Live script with talking point bullets per section (not word-for-word). Product reveal at 17 minutes — after delivering genuine value. Final CTA with live purchase link.
+
+---
+
+### VS-29: TikTok Script — Stitch Response (30 seconds)
+
+**CONTEXT:**
+Use for TikTok Stitches where you respond to another creator's claim. Stitches inherit reach from the original video — responding to viral content in your niche can drive significant new audience.
+
+**PROMPT:**
+Act as a TikTok Stitch response scriptwriter. Write a 30-second Stitch response to a video making this claim: "[CLAIM — e.g., 'AI can't write copy that sounds human']." Structure: [CLIP PLAYS — 0-3 sec]. React (3-8 sec): one-sentence response. Your take (8-25 sec): 2-3 specific points that add value to the original claim (agree/disagree/nuance). CTA (25-30 sec). ~80 spoken words. On-screen text labels for your key points.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CLAIM] — a real claim from a video in your niche — research before scripting
+- Your response should add genuine value — not just disagree for engagement
+
+**EXPECTED OUTPUT:**
+A 30-second Stitch script (~80 words) with reaction, 2-3 substantive points, and CTA. Adds value to the conversation — earns engagement from both creator's audience and your own.
+
+---
+
+### VS-30: YouTube Educational — "Common Myths" Format (7 minutes)
+
+**CONTEXT:**
+Use for a myth-busting YouTube video. Myth-busting videos earn strong engagement because they give viewers information they can share with peers ("actually, that's not how it works...").
+
+**PROMPT:**
+Act as a myth-busting YouTube scriptwriter. Write a 7-minute "Myths About [TOPIC — e.g., 'AI Marketing Prompts']" YouTube video script. Structure: Hook (0-1 min), Myth 1 + truth (1-2:30 min), Myth 2 + truth (2:30-4:00 min), Myth 3 + truth (4:00-5:30 min), Why these myths persist (5:30-6:30 min), What to do instead (6:30-7:00 min). ~1,050 spoken words. 3 real myths — not strawmen.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — your content area
+- [3 MYTHS] — real misconceptions held by your audience — not obvious misunderstandings
+- Each myth: explain why people believe it before debunking it
+
+**EXPECTED OUTPUT:**
+A 7-minute myth-busting script (~1,050 words) with 3 genuine myths, evidence-based debunking, and what-to-do-instead section. Myths are real — the rebuttals are specific and defensible.
+
+---
+
+### VS-31: YouTube Ad — Non-Skippable 15-Second
+
+**CONTEXT:**
+Use for 15-second non-skippable YouTube ads. Non-skippables have a captive audience — every second must deliver because viewers can't skip. They work best for brand recall, not conversion.
+
+**PROMPT:**
+Act as a 15-second YouTube ad scriptwriter. Write 3 variants of a 15-second non-skippable YouTube ad for [PRODUCT NAME]. Each ad: one sentence to hook + one sentence to deliver value + one sentence CTA. ~35-40 spoken words per variant. Variant 1: problem-led. Variant 2: result-led. Variant 3: social proof-led. On-screen text notes for each. Voiceover must work with or without sound.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- On-screen text must communicate the core message silently (sound-off viewers)
+
+**EXPECTED OUTPUT:**
+3 non-skippable 15-second ad variants (~35-40 words each) with problem/result/proof approaches. On-screen text communicates core message without sound. CTA visible on screen in final 5 seconds.
+
+---
+
+### VS-32: YouTube SEO — Script Optimized for Rank
+
+**CONTEXT:**
+Use when writing a YouTube script specifically designed to rank in both YouTube search and Google search. Script structure affects retention which affects rank — this prompt builds ranking signals into the script.
+
+**PROMPT:**
+Act as a YouTube SEO scriptwriter. Write a 10-minute YouTube script for the target keyword: "[KEYWORD — e.g., 'how to write AI marketing prompts']." SEO requirements built in: (1) keyword in first 10 seconds, (2) chapter timestamps at 2-minute intervals, (3) retention hook at 4:00 and 7:00 minutes ("stay to the end for..."), (4) keyword mentioned naturally 3+ times in the script. Total: ~1,500 spoken words with timestamp markers.
+
+**VARIABLES TO CUSTOMIZE:**
+- [KEYWORD] — a specific YouTube/Google search keyword
+- [RETENTION HOOKS] — what you'll reveal at 4:00 and 7:00 minutes that keeps viewers watching
+
+**EXPECTED OUTPUT:**
+A 10-minute SEO script (~1,500 words) with timestamp chapter markers, 3+ natural keyword uses, two retention hooks, and consistent value delivery. Both YouTube and Google search optimized.
+
+---
+
+### VS-33: Reels Script — "Day in the Life" Business Version
+
+**CONTEXT:**
+Use for a day-in-the-life Reel showing a typical productive day. Day-in-the-life content builds audience connection and, when it shows the tools you use, naturally promotes those tools.
+
+**PROMPT:**
+Act as a day-in-the-life Reels scriptwriter. Write a 60-second Instagram Reel script showing "[ROLE — e.g., 'a solopreneur's content creation day']" using [PRODUCT NAME] as one of the tools. Structure: Morning moment (0-10 sec), Task 1 using [PRODUCT NAME] (10-25 sec), Task 2 result shown (25-40 sec), Completed work (40-50 sec), CTA (50-60 sec). Fast-paced — each scene is 5-15 seconds. Show, don't tell.
+
+**VARIABLES TO CUSTOMIZE:**
+- [ROLE] — the specific professional role you're depicting
+- [PRODUCT NAME] — integrate naturally — not a commercial segment
+
+**EXPECTED OUTPUT:**
+A 60-second day-in-the-life Reel script with fast-paced scene changes, natural product integration, and CTA. Show more than tell — on-screen activity is the content.
+
+---
+
+### VS-34: YouTube Long-Form — Case Study Documentary
+
+**CONTEXT:**
+Use for a documentary-style case study video where you follow one customer's journey using your product. Case study documentaries earn high views because they tell a complete, dramatic story.
+
+**PROMPT:**
+Act as a documentary video scriptwriter. Write a 12-minute YouTube case study documentary script following [CUSTOMER TYPE — e.g., "a freelance marketer who built a system using AI prompts"]. Structure: Introduction (0-1 min), The problem they faced (1-3 min), What they tried that didn't work (3-5 min), Discovery and implementation (5-8 min), The turning point (8-10 min), Results and reflection (10-11:30 min), Invitation for the viewer (11:30-12 min). ~1,800 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CUSTOMER TYPE] — a specific real or composite customer story
+- [TURNING POINT] — the specific moment things changed — the most dramatic part
+- [RESULTS] — specific, real outcomes — what actually happened
+
+**EXPECTED OUTPUT:**
+A 12-minute case study documentary script (~1,800 words) with a complete customer story arc. Documentary style — interviews, B-roll notes, and reflection moments. Tells a complete, dramatic story.
+
+---
+
+### VS-35: TikTok/Reels Script — "Watch Me Do This" Screen Record
+
+**CONTEXT:**
+Use for screen-recording short videos that show a specific process in real time. "Watch me do this" videos convert skeptical viewers because they see the product working before any purchase commitment.
+
+**PROMPT:**
+Act as a screen-recording video scriptwriter. Write a 60-second "Watch me [TASK — e.g., 'write a Facebook ad using one AI prompt']" TikTok/Reels script. Voiceover style: talking while doing — natural commentary, not script-reading. Structure: "Let's go" opener (0-3 sec), start the task with commentary (3-50 sec, step-by-step), result reveal (50-55 sec), CTA (55-60 sec). [ON-SCREEN NOTES] describe what appears on screen. ~150 narrated words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TASK] — a specific product use case that's visually demonstrable
+- [ON-SCREEN NOTES] — step-by-step description of what viewers see
+
+**EXPECTED OUTPUT:**
+A 60-second screen-recording commentary script (~150 words) with step-by-step on-screen notes and a result reveal. Conversational narration — sounds like a person talking while working.
+
+---
+
+### VS-36: YouTube Comments Section Strategy — Pinned Comment
+
+**CONTEXT:**
+Use to write a pinned comment that appears at the top of your YouTube video's comment section. Pinned comments drive CTA conversions because they're the first thing viewers see when they scroll to comments.
+
+**PROMPT:**
+Act as a YouTube engagement specialist. Write 3 pinned comment variants for a YouTube video about [TOPIC]. Each pinned comment: (1) one sentence that adds value or asks an engagement question, (2) 1-sentence CTA to [DESTINATION — e.g., "free prompt download in bio / product page / next video"]. Under 100 characters each. Variant 1: value add. Variant 2: engagement question. Variant 3: direct CTA. Label each.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the video's topic
+- [DESTINATION] — where you want viewers to go from the comment
+- Under 100 characters keeps it readable without expanding
+
+**EXPECTED OUTPUT:**
+3 pinned comment variants (under 100 characters each) with labeled approaches. Each adds value or asks a question while directing viewers to a specific destination.
+
+---
+
+### VS-37: YouTube End Screen — Verbal CTA Script
+
+**CONTEXT:**
+Use to write the verbal CTA for the last 20 seconds of a YouTube video where the end screen appears. The verbal CTA during end screen dramatically increases click-through rates on subscribe/next video prompts.
+
+**PROMPT:**
+Act as a YouTube end screen copywriter. Write the verbal CTA script for the last 20 seconds of a video about [TOPIC]. Script must verbally reference the end screen elements: subscribe button, next video recommendation, and any playlist or product link. Duration: exactly 20 seconds (~50 spoken words). Make the subscribe and next video asks feel natural — not formulaic.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the video topic
+- [NEXT VIDEO TITLE] — the specific video you're recommending on the end screen
+- Vary the phrasing across different videos — same script every time trains viewers to tune it out
+
+**EXPECTED OUTPUT:**
+A 20-second verbal end screen CTA (~50 words) that naturally references the subscribe button, next video, and optional product link. Sounds like a natural close, not a scripted formula.
+
+---
+
+### VS-38: YouTube — Response to Comments Video
+
+**CONTEXT:**
+Use to create a video that responds to viewer questions or comments from a previous video. Response videos drive high engagement because the commenters feel acknowledged and other viewers see real community interaction.
+
+**PROMPT:**
+Act as a viewer response video scriptwriter. Write a 5-minute "responding to your comments about [TOPIC]" YouTube video script. Structure: Setup (0-30 sec): reference the original video briefly. Comment responses (30 sec-4:30 min): 5 comments answered, each 60-90 seconds. Each response: read or paraphrase the comment, give a specific 60-second answer, expand with examples. Wrap-up (4:30-5:00 min): invite more questions + subscribe CTA. ~750 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — the topic of the video you're responding to
+- [5 COMMENTS] — use real viewer comments or representative questions
+- Genuine questions make better content than softball comments
+
+**EXPECTED OUTPUT:**
+A 5-minute comment response script (~750 words) with 5 specific comment responses (each 60-90 seconds), setup, and CTA wrap-up. Reads as a genuine community conversation.
+
+---
+
+### VS-39: Video Podcast — Solo Episode Script (20 minutes)
+
+**CONTEXT:**
+Use for a solo video podcast episode — the scripted version of a podcast where you're the only host covering a single topic. Solo episodes require more structure than interviews because there's no conversation to provide natural pacing.
+
+**PROMPT:**
+Act as a solo podcast episode scriptwriter. Write a 20-minute solo video podcast episode on [TOPIC — e.g., "5 ways AI is changing content marketing in 2025"]. Structure: Cold open teaser (0-1 min), Intro + episode overview (1-2 min), Point 1 (2-6 min), Point 2 (6-10 min), Point 3 (10-14 min), Point 4 (14-17 min), Point 5 (17-19 min), CTA (19-20 min). ~3,000 spoken words. Conversational — not lecture tone.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — a meaty topic worth 20 minutes of coverage
+- [5 POINTS] — 5 substantive points that each deserve 3-4 minutes
+
+**EXPECTED OUTPUT:**
+A 20-minute solo podcast script (~3,000 words) with cold open, 5 main points, and CTA. Conversational tone — sounds natural when spoken, not read-aloud written copy.
+
+---
+
+### VS-40: YouTube Live Stream — Content Template (60 minutes)
+
+**CONTEXT:**
+Use for a recurring YouTube Live stream format. Consistent live stream structure helps viewers know what to expect each week, improving return viewership.
+
+**PROMPT:**
+Act as a live stream format designer. Write a 60-minute recurring YouTube Live template for [SHOW NAME — e.g., "ContentKit Live: AI Marketing Weekly"]. Format breakdown: Opening + community catch-up (0-5 min), Main topic + teaching (5-30 min), Live Q&A from chat (30-50 min), Week ahead + product/resource mention (50-58 min), Wrap-up (58-60 min). For each segment: talking point structure + chat engagement prompts. Reusable for every episode.
+
+**VARIABLES TO CUSTOMIZE:**
+- [SHOW NAME] — your actual live stream name
+- [MAIN TOPIC FORMAT] — how you'll structure the teaching segment each week
+- [PRODUCT/RESOURCE] — the consistent CTA at the end of each stream
+
+**EXPECTED OUTPUT:**
+A 60-minute live stream format template with 5 segment structures, talking point formats, and chat engagement prompts. Designed for weekly reuse — just fill in the episode-specific topic.
+
+---
+
+### VS-41: Video Script — Customer Objection Handler
+
+**CONTEXT:**
+Use for a video that specifically addresses and handles the top objection to purchasing your product. Objection handler videos rank well for "[product name] worth it" and "[product name] review" searches.
+
+**PROMPT:**
+Act as an objection video scriptwriter. Write a 5-minute YouTube video script titled "[PRODUCT NAME]: Is It Actually Worth It? Honest Answer." Structure: Name the objection (0-30 sec). Why the objection is reasonable (30-1:30 min). The counter-evidence (1:30-3:30 min — 3 specific pieces of proof). Who it IS worth it for (3:30-4:15 min). Who it is NOT worth it for (4:15-4:45 min). Final verdict + CTA (4:45-5:00 min). ~750 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TOP OBJECTION] — the most common reason prospects don't buy
+- [3 PROOF PIECES] — specific evidence that answers the objection
+
+**EXPECTED OUTPUT:**
+A 5-minute objection handler video script (~750 words) with named objection, reasonable acknowledgment, 3 evidence pieces, audience fit guidance, and honest verdict.
+
+---
+
+### VS-42: Instagram Story — 5-Slide Tutorial Series
+
+**CONTEXT:**
+Use for a 5-slide Instagram Stories tutorial that teaches a specific skill. Story tutorials earn high saves and DMs because they deliver value in a bite-size format.
+
+**PROMPT:**
+Act as an Instagram Stories tutorial scriptwriter. Write a 5-slide story tutorial on [TOPIC — e.g., "how to fill in an AI prompt to get better ad copy"]. Each slide: on-screen copy (under 25 words), visual instruction note (what to show/tap/swipe), duration note (3-7 seconds per slide). Slide 1: setup + promise. Slides 2-4: one step each. Slide 5: result + CTA. Include poll or tap sticker suggestion where it adds value.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — a 3-step process that fits in 5 slides
+- Keep each slide scannable — 3 seconds to read and understand
+
+**EXPECTED OUTPUT:**
+5 story slide scripts (under 25 words each) with visual instruction notes, duration notes, and engagement sticker suggestions. Complete 3-step tutorial that's scannable in under 30 seconds.
+
+---
+
+### VS-43: YouTube Documentary — Origin Story of a Product
+
+**CONTEXT:**
+Use for a mini-documentary video about how and why your product was built. Origin story documentaries build brand mythology and convert buyers who want to know the "why" behind what they're purchasing.
+
+**PROMPT:**
+Act as a mini-documentary scriptwriter. Write a 6-minute origin story documentary for [PRODUCT NAME]. Structure: The inciting moment (0-1 min). The problem landscape (1-2 min). What I tried and why it failed (2-3 min). The insight that changed things (3-4 min). Building it (4-5 min). Who it's for and why I care (5-6 min). Honest and specific — not a corporate "our journey" video. ~900 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [INCITING MOMENT] — the specific moment that started the journey
+- [INSIGHT] — the specific realization that led to the product design
+
+**EXPECTED OUTPUT:**
+A 6-minute origin documentary script (~900 words) with 6 narrative sections. Honest and specific — includes failures and the exact insight that made the product possible.
+
+---
+
+### VS-44: TikTok — "Rate My [Work]" Engagement Format
+
+**CONTEXT:**
+Use for engagement-driving TikToks that invite viewers to rate something. "Rate my X" TikToks drive comment volume because they give a clear, easy task to the viewer.
+
+**PROMPT:**
+Act as a TikTok engagement scriptwriter. Write a "Rate my [WORK — e.g., 'AI prompt'] out of 10" TikTok script (30-45 seconds). Structure: Show what you're rating (0-10 sec), give your own take briefly (10-25 sec), ask viewers to rate in comments: "Rate it 1-10 — and tell me what you'd change" (25-35 sec), CTA to your product if relevant (35-45 sec). On-screen text: show the rating scale.
+
+**VARIABLES TO CUSTOMIZE:**
+- [WORK] — a specific piece of work that invites genuine rating
+- The work must be good enough to earn 7-9 ratings — obvious flaws kill engagement
+
+**EXPECTED OUTPUT:**
+A 30-45 second "Rate my X" TikTok script with show/take/ask/CTA structure. On-screen rating scale shown. Comment driver at 25-35 seconds. Optional product CTA at end.
+
+---
+
+### VS-45: YouTube Short — "Quick Tip" Series Format
+
+**CONTEXT:**
+Use for a recurring daily or weekly YouTube Shorts "quick tip" series. Consistent short-form series build subscriber counts rapidly when they deliver one specific, actionable tip per episode.
+
+**PROMPT:**
+Act as a YouTube Shorts quick tip series writer. Write 7 tip Short scripts for [SERIES NAME — e.g., "Daily AI Marketing Tip"]. Each: 30-45 seconds, one specific, actionable tip. Structure: tip number + topic label (0-3 sec), the tip explained with one example (3-30 sec), one-sentence application for the viewer (30-40 sec), subscribe + next tip tease (40-45 sec). ~100 spoken words per tip. Label each by day and topic.
+
+**VARIABLES TO CUSTOMIZE:**
+- [SERIES NAME] — e.g., "Daily AI Marketing Tip" or "60-Second Copywriting School"
+- [7 TIPS] — 7 distinct, specific, actionable tips — no overlap
+
+**EXPECTED OUTPUT:**
+7 quick-tip Short scripts (30-45 seconds, ~100 words each) labeled by day and topic. Each delivers one specific actionable tip with an example. Subscribe/tease CTA at end of each.
+
+---
+
+### VS-46: Webinar Replay — Video Sales Page Script
+
+**CONTEXT:**
+Use when converting a webinar recording into a video sales page. Webinar replays on sales pages convert warm traffic who want to evaluate before buying — the replay delivers education and sells simultaneously.
+
+**PROMPT:**
+Act as a webinar replay sales page writer. Write the copy for a webinar replay page for [WEBINAR TITLE — e.g., "How to Write Your Q2 Marketing in One Afternoon Using AI"]. Include: (1) headline under 12 words, (2) watch-now subheadline (1 sentence — why they should watch), (3) what they'll learn (3 bullets, each under 15 words), (4) CTA after the video: offer + buy button, (5) guarantee (1 sentence). Under 200 words total.
+
+**VARIABLES TO CUSTOMIZE:**
+- [WEBINAR TITLE] — your actual webinar title
+- [WHAT THEY'LL LEARN] — 3 specific takeaways from the webinar
+- [OFFER] — the product being sold after the replay
+
+**EXPECTED OUTPUT:**
+A webinar replay page copy block (under 200 words) with headline, watch-now prompt, 3 learning bullets, post-video CTA, and guarantee. Converts viewers who watch the full replay.
+
+---
+
+### VS-47: Live Video — Spontaneous "Hot Take" Format
+
+**CONTEXT:**
+Use for impromptu live or recorded "hot take" videos that share a strong, immediate opinion on an industry development. Hot take videos drive high engagement when the opinion is specific and defensible.
+
+**PROMPT:**
+Act as a hot take video scriptwriter. Write a 2-3 minute "hot take on [TOPIC/EVENT — e.g., 'the new ChatGPT update and what it means for marketers']" video script. Structure: state the take immediately (0-15 sec), why you hold this position (15-90 sec — 2-3 reasons), acknowledgment of the counter-argument (90-2:00 min), your reinforced position (2:00-2:30 min), invite debate in comments (2:30-3:00 min). ~400 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC/EVENT] — a real, current industry development
+- [HOT TAKE] — a specific, defensible position — not just "this is interesting"
+- Be willing to be wrong — the defensibility is what earns respect
+
+**EXPECTED OUTPUT:**
+A 2-3 minute hot take script (~400 words) with immediate take, 3 supporting reasons, counter-argument acknowledgment, reinforced position, and comment invitation. Structured controversy.
+
+---
+
+### VS-48: YouTube Video — Full Transcript Repurpose
+
+**CONTEXT:**
+Use to create a blog post or social media repurposing plan from a YouTube video transcript. Repurposing one video into multiple content formats maximizes the ROI of each production.
+
+**PROMPT:**
+Act as a content repurposing strategist. Write a repurposing plan for a YouTube video about [TOPIC]. From one 10-minute video, produce: (1) blog post structure (how to adapt the transcript to a 1,500-word post), (2) 3 Twitter/X thread sections, (3) 1 LinkedIn post angle, (4) 5 Instagram caption ideas, (5) 3 YouTube Shorts moments (timestamp-marked in the video). Each repurpose: brief content summary and format guidance.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — your video topic
+- [TIMESTAMP MOMENTS] — note the most quotable/shareable moments for Shorts
+
+**EXPECTED OUTPUT:**
+A content repurposing plan converting one 10-minute video into 10+ pieces of content across 5 platforms. Each repurpose has a brief summary and format guidance — ready to execute.
+
+---
+
+### VS-49: Video Testimonial Request — Email + Script
+
+**CONTEXT:**
+Use to request and structure video testimonials from satisfied customers. Video testimonials convert 5x better than text testimonials — this prompt provides both the request email and the filming guide.
+
+**PROMPT:**
+Act as a video testimonial collection specialist. Write: (1) request email to buyers of [PRODUCT NAME] asking for a 60-second video testimonial (under 175 words — make it easy, not burdensome), (2) a 6-question filming guide they can read before recording to structure their 60 seconds, (3) technical tips (lighting, sound, framing — 3 tips, each under 20 words). All three pieces together form the video testimonial request package.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [FILMING GUIDE QUESTIONS] — 6 questions that cover before/during/after/recommendation arc
+
+**EXPECTED OUTPUT:**
+A 3-piece video testimonial request package: request email (175 words), 6-question filming guide, and 3 technical tips. Makes recording a testimonial feel easy — reduces friction from the ask.
+
+---
+
+### VS-50: TikTok Script — Duet Challenge Invitation
+
+**CONTEXT:**
+Use to invite your audience to participate in a Duet challenge. Duet challenges create user-generated content that expands your reach — each participant shares the duet with their own followers.
+
+**PROMPT:**
+Act as a TikTok challenge scriptwriter. Write a Duet challenge invitation TikTok script for [BRAND NAME]. Challenge format: [CHALLENGE — e.g., "show us your before/after copy using our prompts — duet this video"]. Script (30-45 sec): explain the challenge, show what a response looks like, tell them exactly how to participate, promise to stitch the best responses. Clear, simple instructions — challenge must be completable in under 60 seconds.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [CHALLENGE] — a specific, completable challenge related to your product
+- Challenge must require minimal effort — complexity kills participation
+
+**EXPECTED OUTPUT:**
+A 30-45 second Duet challenge invitation script with clear challenge explanation, example response description, participation instructions, and response stitch promise.
+
+---
+
+### VS-51: Corporate Overview Video — Investor-Facing (2 minutes)
+
+**CONTEXT:**
+Use for a company overview video for investor meetings, pitch competitions, or partnership conversations. Corporate overview videos must be professional, specific, and data-forward.
+
+**PROMPT:**
+Act as a corporate overview video scriptwriter. Write a 2-minute company overview video script for [COMPANY NAME] for an investor-facing context. Structure: Problem + market size (0-20 sec), Solution overview (20-40 sec), Product demonstration summary (40-80 sec), Traction (80-100 sec), Team + ask (100-120 sec). ~300 spoken words. Data-forward — specific numbers throughout. Confident but not hype-y.
+
+**VARIABLES TO CUSTOMIZE:**
+- [COMPANY NAME] — e.g., "ContentKit"
+- [MARKET SIZE] — a researched, credible market size number
+- [TRACTION] — actual metrics: users, revenue, growth rate
+
+**EXPECTED OUTPUT:**
+A 2-minute investor-facing company overview script (~300 words) with problem, solution, demo summary, traction, and ask. Specific numbers throughout. Confident and data-forward.
+
+---
+
+### VS-52: Tutorial Series — 3-Part YouTube Series Outline
+
+**CONTEXT:**
+Use when planning a multi-part tutorial series. Series create appointment viewing — subscribers return weekly for the next episode. The series outline ensures logical progression across episodes.
+
+**PROMPT:**
+Act as a YouTube series planner. Write a 3-part tutorial series outline for [TOPIC — e.g., "AI Marketing From Scratch: A 3-Part Series"]. For each episode: episode title, target keyword, 3-minute structure breakdown, key teaching points, how it connects to the next episode (cliff-hanger or logical continuation), and end screen recommendation. Progression: Episode 1 (beginner) → Episode 2 (intermediate) → Episode 3 (advanced/application).
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — your series topic
+- [TARGET KEYWORDS] — a distinct keyword target for each episode
+- Each episode should stand alone but reward viewers who watch the series in order
+
+**EXPECTED OUTPUT:**
+A 3-episode series outline with title, keyword, structure, teaching points, series connection, and end screen recommendation per episode. Logical progression from beginner to application.
+
+---
+
+### VS-53: Video Script — "Honest Review" Format (Self-Critique)
+
+**CONTEXT:**
+Use for an honest self-critique of your own product — a format where you point out its limitations and who it's not for. Counterintuitive self-critique videos build extraordinary trust and often convert better than pure promotional videos.
+
+**PROMPT:**
+Act as an honest self-review scriptwriter. Write a 4-minute "I need to be honest about [PRODUCT NAME]" video script. Acknowledge: 2 real limitations of the product, who should NOT buy it, what it doesn't do. Then: who it IS perfect for, what it does exceptionally well, the overall honest verdict. Structure: headline acknowledgment (0-30 sec), limitations (30-2:00 min), ideal buyer (2:00-3:30 min), verdict + CTA (3:30-4:00 min). ~600 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [REAL LIMITATIONS] — genuine product limitations — not fake humility
+- Fake limitations ("it works TOO well") destroy the credibility of this format
+
+**EXPECTED OUTPUT:**
+A 4-minute honest self-review script (~600 words) with real limitations, non-ideal buyer profile, ideal buyer profile, and honest verdict. Counterintuitive self-critique builds trust.
+
+---
+
+### VS-54: TikTok/Reels — "Results in X Minutes" Speed Run
+
+**CONTEXT:**
+Use for speed-run demonstration videos that show a task completed in a surprisingly short time. Speed-run videos convert skeptics because they show real-time proof of the product's efficiency.
+
+**PROMPT:**
+Act as a speed-run video scriptwriter. Write a "Watch me [TASK — e.g., 'write 5 Facebook ads'] in [TIME — e.g., '10 minutes']" Reel/TikTok script (60-90 sec). This is a real-time or condensed screen recording. Structure: bold claim (0-5 sec), start the clock/timer visible (5-10 sec), rapid task completion with voiceover narration (10-75 sec), reveal the result (75-80 sec), CTA (80-90 sec). On-screen timer shown throughout.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TASK] — a task where speed is the selling point
+- [TIME] — a genuinely fast time — don't overclaim what the product can do
+- Visible timer builds credibility — viewers can see the real duration
+
+**EXPECTED OUTPUT:**
+A 60-90 second speed-run video script with visible timer, rapid narration, result reveal, and CTA. Timer builds credibility — the speed is the selling point.
+
+---
+
+### VS-55: Animated Explainer — Script for Motion Design
+
+**CONTEXT:**
+Use when commissioning an animated explainer video from a motion designer or using tools like Descript or Lumen5. Animated explainer scripts need very specific visual scene directions.
+
+**PROMPT:**
+Act as an animated explainer scriptwriter. Write a 90-second animated explainer script for [PRODUCT NAME]. Specify both: voiceover text AND on-screen animation direction (in [ANIMATION NOTE] brackets) for every scene. Structure: Problem scene (0-20 sec), Solution intro (20-35 sec), How it works — 3 scenes (35-75 sec), Result scene (75-85 sec), CTA (85-90 sec). ~225 spoken words. Animation notes describe character/icon/text motion.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [ANIMATION STYLE] — e.g., "flat design icons / character animation / kinetic typography"
+- Give specific animation directions — "a person typing → AI icon appears → copy pops up"
+
+**EXPECTED OUTPUT:**
+A 90-second animated explainer script with voiceover text and [ANIMATION NOTE] directions for every scene. Ready to send to an animator or motion designer.
+
+---
+
+### VS-56: YouTube Shorts — Trending Topic Integration
+
+**CONTEXT:**
+Use to create a YouTube Short that rides a trending topic while staying relevant to your content area. Trend integration earns algorithm boosts while keeping your content meaningful.
+
+**PROMPT:**
+Act as a trend integration Shorts writer. Write a 30-45 second YouTube Short that uses the trending topic "[TRENDING TOPIC — e.g., 'AI tools everyone's talking about']" as a hook while delivering value relevant to [YOUR CONTENT AREA]. Structure: trending hook (0-5 sec), your unique angle on the trend (5-30 sec), how it relates to your specific expertise (30-40 sec), CTA (40-45 sec). On-screen text references the trend.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TRENDING TOPIC] — a real current trend — research before scripting
+- [YOUR CONTENT AREA] — your specific expertise that connects to the trend
+
+**EXPECTED OUTPUT:**
+A 30-45 second trend-integration Short with trending hook, unique angle, expertise connection, and CTA. The trend earns the click; the expertise earns the follow.
+
+---
+
+### VS-57: Video Script — FAQ Series Episode
+
+**CONTEXT:**
+Use for a recurring FAQ video series where each episode answers one common question in depth. FAQ series rank well because they exactly match "how to X" and "why does X" search intent.
+
+**PROMPT:**
+Act as an FAQ video scriptwriter. Write a 3-minute "FAQ: [QUESTION — e.g., 'Why does AI-written copy sound robotic?']" video script for the FAQ series [SERIES NAME]. Structure: State the question (0-15 sec), Why people ask this (15-45 sec), The actual answer — specific and actionable (45-2:30 min), How to apply this today (2:30-2:50 min), Series CTA + next question teaser (2:50-3:00 min). ~450 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [QUESTION] — a genuine question your audience frequently asks
+- [SERIES NAME] — your FAQ series name
+- The answer must be specific enough to be immediately useful
+
+**EXPECTED OUTPUT:**
+A 3-minute FAQ video script (~450 words) that answers one question specifically and actionably. Series CTA at end builds recurring viewers.
+
+---
+
+### VS-58: Podcast-to-YouTube Video Adaptation
+
+**CONTEXT:**
+Use to adapt an existing podcast episode into a YouTube video. Podcasts and YouTube videos require different pacing and visual planning — this prompt bridges the format gap.
+
+**PROMPT:**
+Act as a podcast-to-YouTube adapter. Take this podcast episode summary and adapt it for a YouTube audience: [PODCAST EPISODE SUMMARY — describe the episode]. YouTube adaptations needed: (1) new hook (podcasts can start slow; YouTube cannot), (2) chapter structure with timestamps (podcasts are linear; YouTube benefits from chapters), (3) visual cue notes for what to show on screen at key points, (4) shorter conclusion (YouTube viewers are more impatient). Rewrite intro and add chapter notes.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PODCAST EPISODE SUMMARY] — describe your existing podcast episode
+- Keep the core content — adapt the delivery and structure
+
+**EXPECTED OUTPUT:**
+A YouTube adaptation plan with new hook, chapter structure, visual cue notes, and shortened conclusion. Shows exactly what to change from the podcast version and why.
+
+---
+
+### VS-59: Video Script — "What's in My Stack" Tool Showcase
+
+**CONTEXT:**
+Use for a "tools I use" video that showcases your toolkit. These videos earn affiliate commissions, product collaborations, and subscriber growth because audiences are curious about the tools behind visible results.
+
+**PROMPT:**
+Act as a tool showcase video scriptwriter. Write a 7-minute "my [ROLE — e.g., 'AI marketing'] toolkit in 2025" YouTube video script. Include 5-7 tools. For each tool: what it is (1 sentence), why I use it specifically (2-3 sentences), one specific use case, and honest limitation (1 sentence). Structure: intro (0-1 min), tools 1-7 (1-6 min), overall system summary (6-7 min). ~1,050 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [ROLE] — your specific role or focus area
+- [5-7 TOOLS] — the actual tools you use — include your own product if relevant
+- Honest limitations for each tool build credibility
+
+**EXPECTED OUTPUT:**
+A 7-minute tool showcase script (~1,050 words) covering 5-7 tools with use case and honest limitation for each. Overall system summary at end shows how tools work together.
+
+---
+
+### VS-60: YouTube Live — Q&A Session Script Structure
+
+**CONTEXT:**
+Use for planning a live Q&A session on YouTube. Q&A Lives require a structure that accommodates unpredictable questions while keeping pacing consistent.
+
+**PROMPT:**
+Act as a YouTube Live Q&A format designer. Write a 45-minute Q&A Live structure for [CHANNEL NAME] on topic: [TOPIC]. Structure: Opening monologue (0-5 min): hot take or insight to prime the audience. Q&A rounds (5-40 min): questions from chat, organized into 3-4 thematic clusters to keep pacing. Closing segment (40-45 min): weekly resource or product mention + subscriber CTA. Provide: talking points for opening, Q&A cluster themes, and closing script.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CHANNEL NAME] — your YouTube channel
+- [TOPIC] — the Q&A focus area
+- Prepare 10 seed questions in advance in case chat is slow
+
+**EXPECTED OUTPUT:**
+A 45-minute Q&A Live structure with opening talking points, 3-4 Q&A cluster themes, and closing script. Flexible enough to accommodate live chat while maintaining pacing.
+
+---
+
+### VS-61: Sales Video — Short Form Vertical (Instagram/TikTok)
+
+**CONTEXT:**
+Use for a vertical video (9:16) that drives sales directly from social media. Short-form sales videos must create desire and urgency in under 45 seconds — every word is expensive.
+
+**PROMPT:**
+Act as a short-form sales video writer. Write a 45-second vertical sales video script for [PRODUCT NAME] at [PRICE]. Structure: Problem hook (0-5 sec), What it is (5-15 sec), What you get (15-30 sec — 3 quick bullets), Price + CTA (30-40 sec), Urgency close (40-45 sec). On-screen text for every spoken claim. ~100 spoken words. No wasted words — every sentence sells.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PRICE] — e.g., "$47"
+- [3 QUICK BULLETS] — the 3 most compelling inclusions
+
+**EXPECTED OUTPUT:**
+A 45-second vertical sales video script (~100 words) with problem hook, product intro, 3 bullets, price, CTA, and urgency close. On-screen text for every claim. Zero wasted sentences.
+
+---
+
+### VS-62: YouTube — "Reacting to [Viral Content]" Format
+
+**CONTEXT:**
+Use for reaction videos to viral content in your niche. Reaction videos inherit reach from the original content's virality while letting you establish your expert perspective.
+
+**PROMPT:**
+Act as a reaction video scriptwriter. Write a 5-minute reaction video script for [CREATOR NAME/CHANNEL] reacting to [VIDEO TITLE/CONTENT — describe the original video]. Structure: Brief intro — why you're reacting (0-30 sec), Clip 1 + reaction (30-90 sec), Clip 2 + reaction (90-3:00 min), Clip 3 + reaction (3:00-4:00 min), Overall verdict + your take (4:00-4:45 min), Subscribe CTA (4:45-5:00 min). Each reaction adds genuine expert insight.
+
+**VARIABLES TO CUSTOMIZE:**
+- [CREATOR NAME/CHANNEL] — the creator you're reacting to
+- [CONTENT] — describe the original content fairly and specifically
+- Each reaction must add value — not just "interesting" or "I agree"
+
+**EXPECTED OUTPUT:**
+A 5-minute reaction script with 3 clip reactions (each adding expert insight) and an overall verdict. Reactions add analysis, context, or disagreement — not just commentary.
+
+---
+
+### VS-63: YouTube Series Trailer — 60 Seconds
+
+**CONTEXT:**
+Use to create a trailer for a new YouTube video series before the first episode launches. Series trailers build anticipation and drive pre-subscriptions from people interested in the topic.
+
+**PROMPT:**
+Act as a series trailer scriptwriter. Write a 60-second trailer for [SERIES NAME — e.g., "The AI Marketing Masterclass"]. Structure: Bold promise (0-10 sec): what viewers will be able to do by the end of the series. Episode teasers (10-40 sec): 3 episode highlights or reveals, each 10 seconds. Why watch this series instead of others on the topic (40-50 sec). Subscribe + launch date (50-60 sec). ~150 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [SERIES NAME] — your actual series name
+- [3 EPISODE HIGHLIGHTS] — the most compelling moments or reveals from upcoming episodes
+- [LAUNCH DATE] — specific launch date
+
+**EXPECTED OUTPUT:**
+A 60-second series trailer script (~150 words) with promise, 3 episode teasers, differentiation, and subscribe CTA. Creates genuine anticipation — each tease makes viewers want to see that episode.
+
+---
+
+### VS-64: Video Sales Letter — Mobile-First Short Version (2 minutes)
+
+**CONTEXT:**
+Use for a mobile-optimized 2-minute VSL. Full-length VSLs don't perform on mobile because viewers have shorter attention spans and scroll faster. This compressed version delivers the essential conversion elements in 2 minutes.
+
+**PROMPT:**
+Act as a mobile VSL scriptwriter. Write a 2-minute mobile-first VSL for [PRODUCT NAME]. Mobile VSL rules: no preamble, result in first 10 seconds, 3 benefits maximum, price mentioned mid-script not end, guarantee in final 15 seconds, CTA twice. Structure: Result hook (0-10 sec), Problem (10-25 sec), Product intro (25-45 sec), 3 benefits (45-85 sec), Price + offer (85-100 sec), Guarantee + CTA (100-120 sec). ~300 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Mobile viewers are 60% of your traffic — this VSL must work on a 5" screen
+- On-screen text reinforces every spoken claim
+
+**EXPECTED OUTPUT:**
+A 2-minute mobile VSL script (~300 words) with result-first hook, compressed structure, mid-script price mention, and double CTA. Every element is mobile-first.
+
+---
+
+### VS-65: YouTube Long-Form — Complete Content Strategy Video (15 minutes)
+
+**CONTEXT:**
+Use for a comprehensive YouTube video that functions as a complete strategy guide. These "complete guide" videos rank extremely well because they satisfy every query variation related to the topic.
+
+**PROMPT:**
+Act as a comprehensive guide video scriptwriter. Write a 15-minute YouTube video script: "The Complete [TOPIC — e.g., 'AI Marketing Strategy'] in 2025." Target keyword: [KEYWORD]. Structure: Hook + what they'll learn (0-1 min), Market context (1-3 min), Core framework (3-7 min, 4 components), Implementation steps (7-11 min), Common mistakes + fixes (11-13 min), Resources + tools (13-14 min), Summary + CTA (14-15 min). ~2,250 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TOPIC] — a comprehensive topic worth 15 minutes
+- [KEYWORD] — the "complete guide" keyword target
+- [4 CORE COMPONENTS] — the framework that structures the video
+
+**EXPECTED OUTPUT:**
+A 15-minute comprehensive guide script (~2,250 words) with keyword in hook, 4-component framework, implementation steps, common mistakes, resources, and CTA. Designed to be the definitive video on this topic.
+
+---
+
+
