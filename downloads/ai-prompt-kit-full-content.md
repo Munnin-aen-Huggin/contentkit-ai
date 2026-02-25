@@ -5668,3 +5668,2147 @@ Review schema field-value guidance with compliance notes. Enables star rating di
 
 ---
 
+## Category 6: Brand Strategy
+
+These prompts cover the foundational brand strategy elements that most businesses skip — positioning statements, messaging hierarchies, tone of voice, ideal customer profiles, competitive differentiation, and brand stories. Each prompt produces a strategic document, not just copy.
+
+---
+
+### BS-01: Brand Positioning Statement
+
+**CONTEXT:**
+Use when defining or refining the foundational positioning of your brand. A positioning statement is internal strategy — not customer-facing tagline copy. It anchors every other brand decision.
+
+**PROMPT:**
+Act as a brand strategist. Write a positioning statement for [BRAND NAME] using the classic format: "For [TARGET AUDIENCE], [BRAND NAME] is the [CATEGORY] that [UNIQUE VALUE] because [REASON TO BELIEVE]." Then: (1) expand it to a 2-paragraph positioning paragraph for internal use, (2) identify the primary competitor frame you're positioning against, (3) name the one thing you must be better at than anyone else in your category. Use this information: [BRAND/PRODUCT DETAILS].
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [TARGET AUDIENCE] — specific, not "everyone"
+- [BRAND/PRODUCT DETAILS] — describe your product, audience, differentiators
+
+**EXPECTED OUTPUT:**
+A positioning statement in the classic format, 2-paragraph positioning paragraph, competitive frame, and single differentiator. Internal strategy document — not customer-facing copy.
+
+---
+
+### BS-02: Ideal Customer Profile (ICP) — Full Definition
+
+**CONTEXT:**
+Use when defining your ideal customer for the first time or refining an existing ICP. A true ICP goes beyond demographics — it describes psychographics, motivations, fears, and decision-making patterns.
+
+**PROMPT:**
+Act as a brand strategist. Write a detailed Ideal Customer Profile (ICP) for [BRAND NAME]. Include: (1) demographic profile (age range, role/title, company size if B2B), (2) psychographic profile (values, self-image, aspirations), (3) current situation (what they're doing today that [PRODUCT NAME] improves), (4) core problem (what pain they experience), (5) desired outcome (what success looks like), (6) purchase triggers (what makes them buy now vs. later), (7) objections (top 3), (8) where they spend time online.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Use real customer interviews or data if available — not assumed demographics
+
+**EXPECTED OUTPUT:**
+An 8-section ICP document covering demographics through online behavior. Specific enough to inform all copywriting, ad targeting, and product decisions. One page.
+
+---
+
+### BS-03: Brand Messaging Hierarchy
+
+**CONTEXT:**
+Use when creating a messaging framework that cascades from the brand level down to individual audience segments. A messaging hierarchy ensures consistency across all channels without making every message identical.
+
+**PROMPT:**
+Act as a messaging strategist. Build a 3-level messaging hierarchy for [BRAND NAME]: Level 1 — Core Brand Message: one sentence that communicates the essence of [BRAND NAME] for all audiences. Level 2 — Audience Segment Messages: 3 variations for [SEGMENT 1], [SEGMENT 2], [SEGMENT 3] — same core idea, different language for each. Level 3 — Channel-Specific Messages: adapt Level 2 messages for: website homepage, Facebook ad, email subject line. Format as a cascade table.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [SEGMENT 1/2/3] — e.g., "freelancers / agency owners / solopreneurs"
+
+**EXPECTED OUTPUT:**
+A 3-level messaging hierarchy table with core message, 3 audience variations, and channel-specific adaptations. Shows how the same positioning message flexes for different audiences and formats.
+
+---
+
+### BS-04: Tone of Voice Guide
+
+**CONTEXT:**
+Use to define and document your brand's tone of voice. A written tone guide ensures all content — from ads to emails to social posts — sounds consistent, even when written by different people or AI tools.
+
+**PROMPT:**
+Act as a brand voice strategist. Write a tone of voice guide for [BRAND NAME]. Include: (1) voice description: 4 adjectives that characterize the brand voice, each with a 2-sentence explanation, (2) voice dial: for each adjective, describe where the brand sits on a spectrum (e.g., "Professional — but not corporate," "Confident — but not arrogant"), (3) do/don't examples: 5 pairs of on-brand vs. off-brand phrases, (4) platform variations: how voice shifts slightly for email vs. social vs. ad copy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [4 ADJECTIVES] — e.g., "Direct / Practical / Approachable / Expert"
+- Derive adjectives from: how you want customers to feel after interacting with the brand
+
+**EXPECTED OUTPUT:**
+A 4-section tone of voice guide: voice adjectives (with explanations), voice dials, do/don't phrase examples (5 pairs), and platform variations. Reference document for any content creator.
+
+---
+
+### BS-05: Brand Story (Origin Narrative)
+
+**CONTEXT:**
+Use to craft the founding story of your brand. A compelling brand story creates connection, trust, and memorability — it answers why the brand exists in a way that resonates emotionally with the target audience.
+
+**PROMPT:**
+Act as a brand storytelling strategist. Write the brand story for [BRAND NAME] in three versions: (1) long version (300-400 words): full narrative — the problem the founder faced, what they tried that didn't work, the moment of insight, and why [BRAND NAME] was built for buyers like them, (2) medium version (100-150 words): used on About page, (3) short version (25-35 words): used as elevator pitch or social bio. All three must be consistent in facts but calibrated in length.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [FOUNDER PROBLEM] — the real situation that motivated creating the brand
+- [INSIGHT MOMENT] — the specific realization that led to the product
+
+**EXPECTED OUTPUT:**
+Three brand story versions (long/medium/short) at different lengths for different use cases. All factually consistent. Long version reads as a genuine narrative — not a bio.
+
+---
+
+### BS-06: Value Proposition Canvas
+
+**CONTEXT:**
+Use to map the full value proposition of your product against customer jobs, pains, and gains. The Value Proposition Canvas (Osterwalder/Pigneur) is a strategic tool — this prompt adapts it for prompt-based use.
+
+**PROMPT:**
+Act as a value proposition strategist. Complete a Value Proposition Canvas for [PRODUCT NAME]: Customer Profile side — (1) Customer Jobs (what tasks/goals your buyer has), (2) Pains (frustrations, risks, obstacles), (3) Gains (desired outcomes, benefits sought). Value Map side — (4) Pain Relievers (how [PRODUCT NAME] addresses each pain), (5) Gain Creators (how [PRODUCT NAME] creates each gain), (6) Products and Services (what [PRODUCT NAME] actually delivers). Format as two columns.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Use real customer feedback or interviews for the Customer Profile side
+
+**EXPECTED OUTPUT:**
+A Value Proposition Canvas with 6 completed sections in two columns. Shows specifically how product features (right side) map to customer needs (left side). Used for product/marketing alignment.
+
+---
+
+### BS-07: Competitive Differentiation Map
+
+**CONTEXT:**
+Use to identify and articulate how your brand is meaningfully different from alternatives. Differentiation must be real, relevant, and defensible — not just "we care more" or "better quality."
+
+**PROMPT:**
+Act as a competitive strategist. Build a differentiation map for [BRAND NAME] against [COMPETITOR TYPE — e.g., "AI writing subscription tools"]. For each differentiation dimension, rate your brand and the competitor category on a 1-5 scale, then write a 1-sentence articulation of your advantage. Dimensions: price model, output quality, ease of use, ownership model, customizability, customer support, integration breadth. Add 2 custom dimensions relevant to your specific category: [CUSTOM DIM 1], [CUSTOM DIM 2].
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [COMPETITOR TYPE] — e.g., "subscription AI writing tools" or "generic prompt libraries"
+- [CUSTOM DIMENSIONS] — add dimensions where you have a clear advantage
+
+**EXPECTED OUTPUT:**
+A 9-dimension differentiation map with 1-5 ratings for your brand and competitor category, plus a 1-sentence advantage statement per dimension. Identifies your strongest differentiators.
+
+---
+
+### BS-08: Brand Promise Statement
+
+**CONTEXT:**
+Use to define the explicit promise your brand makes to customers. A brand promise is the commitment that every product, interaction, and communication must fulfill — it's the standard you're held to.
+
+**PROMPT:**
+Act as a brand strategist. Write a brand promise statement for [BRAND NAME] that: (1) is specific enough to be testable ("we will [X]"), (2) is relevant enough to motivate purchase, (3) is authentic enough to actually deliver on. Format: (1) the 1-sentence promise, (2) what it means operationally (what you must do to fulfill it), (3) what failure looks like (what would break this promise), (4) how it shows up in the product. Under 200 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Base the promise on what you can actually deliver — not aspirational claims
+
+**EXPECTED OUTPUT:**
+A brand promise (1 sentence) plus 3 supporting definitions: operational meaning, failure conditions, product manifestation. Under 200 words. Specific enough to audit against.
+
+---
+
+### BS-09: Messaging Pillars — 3-Pillar Framework
+
+**CONTEXT:**
+Use to define the 3 core themes that all brand messaging returns to. Messaging pillars are the 3 things you always say, no matter the channel, audience, or format — they create the consistency of a recognizable brand.
+
+**PROMPT:**
+Act as a messaging framework strategist. Define 3 messaging pillars for [BRAND NAME]. For each pillar: (1) pillar name (2-4 words), (2) core claim (1 sentence — what this pillar asserts), (3) supporting proof points (3 facts, features, or results that back the claim), (4) how it shows up in copy (example headline, email subject, and social post each embodying this pillar). Format: 3 parallel blocks.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Pillars should be distinct — no two pillars should overlap in meaning
+
+**EXPECTED OUTPUT:**
+3 messaging pillar blocks, each with name, claim, 3 proof points, and 3 copy examples (headline/email subject/social post). Shows how the same pillar theme manifests across different formats.
+
+---
+
+### BS-10: Brand Name Evaluation Framework
+
+**CONTEXT:**
+Use when evaluating a brand name shortlist. Naming decisions are high-stakes and irreversible — this framework applies consistent criteria across candidates so the decision isn't made on gut feel alone.
+
+**PROMPT:**
+Act as a brand naming strategist. Evaluate these brand name candidates for [PRODUCT/BRAND TYPE — e.g., "an AI marketing prompt kit"]: [NAME 1], [NAME 2], [NAME 3]. Evaluate each on: (1) memorability (1-5), (2) pronunciation clarity (1-5), (3) domain availability likelihood (high/med/low), (4) trademark risk assessment (high/med/low), (5) category fit (does it communicate what the product is?), (6) international concerns (offensive/confusing in other languages?). Total score + recommendation.
+
+**VARIABLES TO CUSTOMIZE:**
+- [NAME 1/2/3] — your actual name candidates
+- [PRODUCT/BRAND TYPE] — what this brand is
+- Verify domain and trademark availability yourself — this is a framework, not legal advice
+
+**EXPECTED OUTPUT:**
+A scored evaluation table for 3 name candidates across 6 criteria, with a total score and a recommendation with rationale. Use alongside domain + trademark checks.
+
+---
+
+### BS-11: Customer Journey Map — 5 Stages
+
+**CONTEXT:**
+Use to map the full customer journey from awareness through advocacy. A customer journey map shows what the customer is thinking and feeling at each stage, which informs messaging strategy at every touchpoint.
+
+**PROMPT:**
+Act as a customer experience strategist. Write a customer journey map for a buyer of [PRODUCT NAME]. Map 5 stages: (1) Unaware, (2) Problem Aware, (3) Solution Aware, (4) Product Aware, (5) Post-Purchase. For each stage: (a) what the customer is thinking, (b) what they feel, (c) what marketing touchpoint reaches them here, (d) what message they need to move to the next stage. Format as a table with 4 columns across 5 rows.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Base the thinking/feeling columns on real customer insights, not assumptions
+
+**EXPECTED OUTPUT:**
+A 5-stage customer journey map table (5 rows × 4 columns: stage / thinking / feeling / touchpoint / message). Shows what to say, where, and why at each stage. Drives content and channel strategy.
+
+---
+
+### BS-12: Brand Architecture — Product Naming System
+
+**CONTEXT:**
+Use when you have or are planning multiple products. A naming architecture system ensures products feel related without being confusingly similar, and positions each tier or product clearly in the buyer's mind.
+
+**PROMPT:**
+Act as a brand architecture strategist. Design a product naming system for [BRAND NAME] with [NUMBER] products or tiers: [PRODUCT LIST]. For each, provide: (1) recommended product name (descriptive, memorable, fits architecture), (2) naming rationale (why this name vs. alternatives), (3) how it positions within the portfolio (entry/mid/premium), (4) the naming pattern (so future products fit the same system). Overall: does the naming system feel coherent as a family?
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [NUMBER/PRODUCT LIST] — e.g., "2 products: Starter kit ($27) and Full Kit ($47)"
+
+**EXPECTED OUTPUT:**
+A naming system document for [N] products with name, rationale, portfolio positioning, and pattern description per product. Includes an overall coherence assessment.
+
+---
+
+### BS-13: Competitor Analysis — 4-Competitor Brief
+
+**CONTEXT:**
+Use to conduct a structured competitor analysis before building or refreshing brand messaging. Understanding the competitive landscape prevents positioning overlap — you can't differentiate without knowing what you're differentiating from.
+
+**PROMPT:**
+Act as a competitive intelligence analyst. Write a brief competitor analysis for [BRAND NAME] in the [MARKET — e.g., "AI marketing tools"] space. Analyze 4 competitors: [COMPETITOR 1 TYPE], [COMPETITOR 2 TYPE], [COMPETITOR 3 TYPE], [COMPETITOR 4 TYPE]. For each: (1) primary positioning (how they describe themselves), (2) target customer, (3) key differentiators they claim, (4) apparent weaknesses, (5) what they own in the mind of buyers (their category position). Conclude: the positioning gap [BRAND NAME] should occupy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [COMPETITOR TYPES] — describe competitor categories without naming specific brands
+- Base analysis on publicly available information: websites, ads, reviews
+
+**EXPECTED OUTPUT:**
+A 4-competitor brief with 5 fields per competitor and a positioning gap conclusion. Shows specifically where the market is crowded and where there's space to position uniquely.
+
+---
+
+### BS-14: Category Design Brief
+
+**CONTEXT:**
+Use when you want to create or define your own category rather than competing in an existing one. Category design is the most powerful brand strategy — owning a category makes you the default leader within it.
+
+**PROMPT:**
+Act as a category design strategist. Write a category design brief for [BRAND NAME]. Include: (1) the existing category you'd be competing in if you don't create your own, (2) what's wrong with that category from the buyer's perspective, (3) the new category you're creating — give it a name and define it in 1-2 sentences, (4) the "before/after" of the old category vs. your new one, (5) who the buyers are in this new category, (6) the enemy (what you're against, not who). Under 400 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Think: "Instead of being 'another AI writing tool,' what new category could we define?"
+
+**EXPECTED OUTPUT:**
+A 400-word category design brief with old category, category problem, new category name and definition, before/after contrast, buyer description, and "enemy." Strategic foundation for category-first positioning.
+
+---
+
+### BS-15: Brand Tagline — 10 Candidates
+
+**CONTEXT:**
+Use when developing or testing brand taglines. Taglines are the compressed expression of your brand's positioning — they're heard thousands of times, so they must be simple, specific, and memorable.
+
+**PROMPT:**
+Act as a brand tagline strategist. Write 10 tagline candidates for [BRAND NAME]. Requirements for each: (1) under 7 words, (2) specific enough to be meaningful, (3) not a generic category claim ("the best X" rejects), (4) memorable on first hearing. Generate 2 each of: outcome-focused, process-focused, promise-focused, identity-focused, and contrast-focused taglines. Label each by type and rate memorability (1-5).
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [CORE POSITIONING] — what the brand fundamentally does or stands for
+- Test shortlisted taglines with your target audience before committing
+
+**EXPECTED OUTPUT:**
+10 tagline candidates labeled by type (outcome/process/promise/identity/contrast) with memorability ratings (1-5). All under 7 words. Specific, not generic. Use for audience testing.
+
+---
+
+### BS-16: Brand Mission and Vision Statements
+
+**CONTEXT:**
+Use to define mission (what you do and why today) and vision (where you're going). These are internal north stars and external trust signals — they're often on About pages, decks, and job postings.
+
+**PROMPT:**
+Act as a purpose-driven brand strategist. Write mission and vision statements for [BRAND NAME]. Mission: what [BRAND NAME] does, for whom, and why it matters — present tense, specific, achievable today. Vision: the world you're working toward if [BRAND NAME] succeeds at scale — ambitious but grounded, not marketing hyperbole. Also write: 3 core values with 1-sentence explanations each. Format: mission / vision / values as three labeled sections.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Mission: specific enough to audit against — can you do this today?
+- Vision: ambitious enough to inspire but not so abstract it's meaningless
+
+**EXPECTED OUTPUT:**
+Three sections: mission statement (1-2 sentences), vision statement (1-2 sentences), 3 core values with 1-sentence explanations. All grounded in what the brand actually does and believes.
+
+---
+
+### BS-17: Brand Voice Persona — Character Profile
+
+**CONTEXT:**
+Use to define your brand voice as a character — an exercise that makes voice guidelines concrete and memorable. When brand voice is defined as "who would say this," it's easier to write consistently.
+
+**PROMPT:**
+Act as a brand character designer. Define [BRAND NAME]'s brand voice as a specific character. Answer: (1) If [BRAND NAME] were a person, what would their job title be? (2) What's their communication style in a conversation? (3) What would they never say? (4) What are they passionate about? (5) How do they respond to customer frustration? (6) What books/podcasts do they reference? (7) Celebrity or fictional character closest to the voice. Use this to create a 200-word character profile.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Character should reflect the brand you want to project — not the founder's personal voice
+
+**EXPECTED OUTPUT:**
+A 200-word brand voice character profile with 7 defining attributes. Used as a reference when writing any brand copy — ask "would this character say this?"
+
+---
+
+### BS-18: Customer Persona — Detailed Profile (3 Personas)
+
+**CONTEXT:**
+Use when defining multiple buyer personas for a product with a broad audience. Personas help copywriters, ad buyers, and product teams speak to specific people rather than an imaginary average.
+
+**PROMPT:**
+Act as a persona development strategist. Write 3 distinct buyer personas for [PRODUCT NAME]. For each persona: name + role (fictional but specific), current situation (what they're doing professionally), core frustration with their current approach, what they've tried before, goal with [PRODUCT NAME], purchase trigger (what makes them buy today), preferred communication channel, and a direct quote that captures their mindset. Personas: [PERSONA 1 TYPE], [PERSONA 2 TYPE], [PERSONA 3 TYPE].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PERSONA 1/2/3] — e.g., "freelance marketer / agency owner / solopreneur building their own brand"
+
+**EXPECTED OUTPUT:**
+3 persona profiles, each with 8 fields (role, situation, frustration, tried, goal, trigger, channel, quote). Distinct enough that copy targeting one persona is clearly different from copy targeting another.
+
+---
+
+### BS-19: Unique Selling Proposition (USP) Development
+
+**CONTEXT:**
+Use to develop and sharpen the Unique Selling Proposition — the one reason buyers should choose you over all alternatives. A true USP is verifiable, specific, and important to the buyer.
+
+**PROMPT:**
+Act as a USP strategist. Develop the Unique Selling Proposition for [PRODUCT NAME]. Process: (1) list 8 potential differentiators (features, outcomes, model, price, experience), (2) score each on: is it important to buyers (1-5)? Is it unique to us (1-5)? Is it defensible (1-5)? (3) Highest total score = primary USP. (4) Write the USP in 3 formats: 10-word headline, 25-word statement, 50-word elevator pitch. Show the scoring.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Be honest in the scoring — inflated uniqueness scores lead to weak positioning
+
+**EXPECTED OUTPUT:**
+A USP development worksheet: 8 differentiators with 3-criteria scores, a primary USP identified by highest score, and 3 USP format expressions (10/25/50 words). Shows the reasoning behind the final USP.
+
+---
+
+### BS-20: Brand Values — Articulation and Expression
+
+**CONTEXT:**
+Use to define brand values that are specific and operational — not generic words like "integrity" that every brand claims and none can measure. This prompt produces values that guide actual decisions.
+
+**PROMPT:**
+Act as a brand values strategist. Define 5 core values for [BRAND NAME]. For each value: (1) value name (2-4 words), (2) what it means operationally — what behavior does it require?, (3) what it would mean to violate this value — a specific example, (4) how it shows up in the product and in customer communication. Values should be specific enough to create tension with other choices.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Avoid: innovation, integrity, excellence, quality — choose values specific to your brand
+
+**EXPECTED OUTPUT:**
+5 brand values with 4-part definitions (name/operational meaning/violation example/expression). Specific enough to guide real product and communication decisions.
+
+---
+
+### BS-21: Content Strategy Framework — Brand Voice to Content Types
+
+**CONTEXT:**
+Use to translate brand positioning and voice into a content strategy. This framework ensures all content types serve both audience needs and brand goals simultaneously.
+
+**PROMPT:**
+Act as a content strategy architect. Build a content strategy framework for [BRAND NAME]. Include: (1) content mission statement (1 sentence: who you create content for, what you want them to do with it), (2) 4 content pillars (themes that all content maps to), (3) content types per pillar (3 formats per pillar), (4) content-to-business goal mapping (which content type serves: awareness / consideration / conversion / retention). Format as a structured framework.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [4 PILLARS] — themes central to your brand and audience's interests
+- Each content type should serve a specific business goal — not just fill a calendar
+
+**EXPECTED OUTPUT:**
+A content strategy framework with mission statement, 4 pillars, 3 formats per pillar, and content-to-goal mapping. Serves as the strategic foundation for a content calendar.
+
+---
+
+### BS-22: Brand Audit — Self-Evaluation Checklist
+
+**CONTEXT:**
+Use to conduct a periodic brand audit evaluating consistency, clarity, and impact across all brand touchpoints. Brand audits identify gaps between intended positioning and actual customer perception.
+
+**PROMPT:**
+Act as a brand audit specialist. Create a 20-point brand audit checklist for [BRAND NAME]. Cover 5 sections of 4 points each: (1) Clarity (can someone new understand what [BRAND NAME] does in 5 seconds?), (2) Consistency (is messaging consistent across website, ads, email, social?), (3) Differentiation (does positioning clearly separate from competitors?), (4) Relevance (is the brand speaking to current buyer needs?), (5) Experience (does the buying/onboarding experience match the brand promise?). Each point: audit question + pass criteria.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Conduct this audit annually or after major product/messaging changes
+
+**EXPECTED OUTPUT:**
+A 20-point brand audit checklist in 5 sections. Each point has an audit question and pass criteria. Run this across your actual brand assets: website, ads, emails, social, product.
+
+---
+
+### BS-23: Brand Repositioning Strategy — When to Pivot
+
+**CONTEXT:**
+Use when your current brand positioning isn't converting or when the market has changed. Repositioning is high-risk — this framework identifies when it's necessary and how to do it without confusing existing customers.
+
+**PROMPT:**
+Act as a brand strategy consultant. Write a repositioning strategy brief for [BRAND NAME]. Current positioning: [CURRENT POSITIONING]. Reason for considering reposition: [REASON — e.g., "not resonating with target audience / market has shifted / product has evolved beyond original positioning"]. Proposed new positioning: [NEW DIRECTION]. Include: (1) repositioning risk assessment, (2) what must stay the same (brand equity to preserve), (3) what must change, (4) transition communication plan for existing customers. Under 400 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [CURRENT/NEW POSITIONING] — be specific about both
+- [REASON] — the specific market or business trigger for the reposition
+
+**EXPECTED OUTPUT:**
+A 400-word repositioning brief with risk assessment, equity-to-preserve list, change requirements, and transition communication plan. Structured decision framework — not just a new tagline.
+
+---
+
+### BS-24: Brand Story — Founder Background Version
+
+**CONTEXT:**
+Use when the founder's personal background is a key part of the brand's credibility and differentiation. Founder-led brand stories must be specific and genuine — they build trust by showing the human behind the product.
+
+**PROMPT:**
+Act as a founder brand story writer. Write the founder story for [BRAND NAME] that positions [FOUNDER BACKGROUND — e.g., "10 years in marketing agencies"] as the source of the product's credibility. Structure: (1) where they started and what they were doing, (2) the specific problem they kept encountering (not vague), (3) the moment they decided to build a solution, (4) what they built and why it's different from what they'd tried, (5) who they built it for (and why those people matter to them). 300-word long version.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [FOUNDER BACKGROUND] — the specific experience that qualifies the founder
+- Be specific — avoid generic "I've always been passionate about X"
+
+**EXPECTED OUTPUT:**
+A 300-word founder story with 5-part structure (background / problem / decision / solution / audience). Reads as a genuine personal account that builds credibility through specificity.
+
+---
+
+### BS-25: Emotional Brand Positioning — The Feeling You Sell
+
+**CONTEXT:**
+Use to articulate the emotional core of your brand. Every successful brand sells a feeling, not just a product. Naming that feeling precisely allows you to create emotionally resonant copy, design, and experience.
+
+**PROMPT:**
+Act as an emotional positioning strategist. Identify and articulate the core emotional promise of [BRAND NAME]. Process: (1) list the 5 emotions your ideal customer feels after using [PRODUCT NAME] successfully, (2) the single most important emotion from that list — your "primary emotion," (3) the emotion they feel before buying (the negative state you're relieving), (4) the emotional transformation arc: from [NEGATIVE EMOTION] to [POSITIVE EMOTION], (5) how this emotional positioning shows up in tone, visuals, and copy. Under 250 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Base the emotions on actual customer feedback, not assumptions
+
+**EXPECTED OUTPUT:**
+A 250-word emotional positioning document with 5 post-use emotions, primary emotion, negative-to-positive arc, and expression guidance. Grounds all creative decisions in the emotional outcome the brand delivers.
+
+---
+
+### BS-26: Brand Naming — Descriptive vs. Abstract Evaluation
+
+**CONTEXT:**
+Use when deciding between a descriptive name (tells what it does) vs. an abstract name (memorable but needs building). Neither is universally better — this framework evaluates which approach is right for your specific context.
+
+**PROMPT:**
+Act as a brand naming strategist. Write an evaluation of descriptive vs. abstract naming for [BRAND TYPE — e.g., "an AI marketing tool brand"]. Include: (1) advantages of descriptive naming for this context, (2) advantages of abstract naming for this context, (3) decision criteria (what factors tip the balance?), (4) recommendation for [BRAND TYPE] with rationale, (5) 3 descriptive name examples and 3 abstract name examples that fit the brand. Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND TYPE] — describe your product/business type
+- Consider: budget for brand building, competition, SEO needs, international expansion
+
+**EXPECTED OUTPUT:**
+A 300-word naming approach evaluation with advantage analysis, decision criteria, recommendation, and 3+3 name examples. Applies to any brand naming decision.
+
+---
+
+### BS-27: Marketing Calendar Strategy — Annual Planning
+
+**CONTEXT:**
+Use to plan the annual brand marketing calendar. An annual calendar aligned with business goals, seasonal moments, and content themes prevents reactive, scattered marketing and creates consistent audience build.
+
+**PROMPT:**
+Act as a marketing calendar strategist. Write a 12-month marketing calendar framework for [BRAND NAME]. For each quarter: (1) primary marketing theme, (2) product focus (what to promote), (3) key seasonal moments to activate, (4) content pillar emphasis, (5) launch/promotion windows. Format as 4 quarterly blocks (not month-by-month — high-level planning only). This is a strategy framework, not a day-by-day schedule.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCTS TO PROMOTE] — list your products and which quarters they're most relevant
+- [SEASONAL MOMENTS] — what seasons or events matter to your specific audience
+
+**EXPECTED OUTPUT:**
+A 4-quarter marketing calendar framework with 5 fields per quarter. High-level strategy — not tactical execution. Serves as the annual planning document that content calendars are built from.
+
+---
+
+### BS-28: Brand Partnership Criteria — Vetting Framework
+
+**CONTEXT:**
+Use before entering any brand partnership, co-marketing deal, or affiliate relationship. Partnerships that misalign values or audiences dilute brand positioning — this framework prevents costly misalignments.
+
+**PROMPT:**
+Act as a brand partnership strategist. Write a brand partnership criteria framework for [BRAND NAME]. Include: (1) 5 must-haves (criteria a partner must meet), (2) 5 deal-breakers (criteria that automatically disqualify a partner), (3) audience alignment score methodology (how to assess whether their audience matches your ICP), (4) values alignment check (3 questions to ask before signing), (5) partnership evaluation scorecard (7 criteria, 1-5 scale). Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [MUST-HAVES] — based on your specific brand values and audience requirements
+
+**EXPECTED OUTPUT:**
+A 5-section partnership criteria framework with must-haves, deal-breakers, audience alignment method, values check, and 7-criteria scorecard. Use before committing to any partnership.
+
+---
+
+### BS-29: Brand Color Psychology Brief
+
+**CONTEXT:**
+Use when selecting or validating brand colors. Color psychology directly influences how your brand makes people feel — and whether it's appropriate for your category and audience. This prompt produces a brief for a designer.
+
+**PROMPT:**
+Act as a brand design strategist. Write a brand color psychology brief for [BRAND NAME]. Include: (1) emotional values to express visually (from your brand voice/positioning), (2) analysis of 3 primary colors being considered: [COLOR 1], [COLOR 2], [COLOR 3] — psychological associations, category norms, and competitor usage for each, (3) recommended primary color with rationale, (4) recommended accent color combination, (5) colors to avoid and why. Brief for a designer — under 250 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [COLOR 1/2/3] — color options you're considering (e.g., "Navy blue / Bright orange / Forest green")
+- Reference your competitor's color choices — differentiation applies to visual identity too
+
+**EXPECTED OUTPUT:**
+A 250-word color psychology brief with emotional values, 3-color analysis, recommendation, accent combination, and avoidance list. Designer-ready input for visual identity development.
+
+---
+
+### BS-30: Elevator Pitch — 3 Versions (15/30/60 seconds)
+
+**CONTEXT:**
+Use to develop a polished, consistent elevator pitch in three lengths for different contexts. A 15-second version is for casual intro; 30 seconds for a networking event; 60 seconds for a sales call opening.
+
+**PROMPT:**
+Act as a pitch writer. Write 3 elevator pitch versions for [BRAND NAME / PRODUCT NAME]: (1) 15-second version (~30 words): one sentence on who you help + one sentence on how + CTA. (2) 30-second version (~60 words): add the problem and one proof point. (3) 60-second version (~120 words): add the mechanism, one customer example, and a specific ask. All three must be consistent in positioning and comfortable to say aloud — test for natural speech rhythm.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME / PRODUCT NAME] — e.g., "ContentKit / AI Marketing Prompt Kit"
+- [PROOF POINT] — e.g., "used by 500+ marketers"
+- [CUSTOMER EXAMPLE] — a brief, relatable use case
+- [SPECIFIC ASK] — what you want the listener to do next
+
+**EXPECTED OUTPUT:**
+3 elevator pitch versions (15/30/60 second) with word counts. All consistent in positioning. Each ends with a specific ask or CTA appropriate to the conversation length.
+
+---
+
+### BS-31: Brand Refresh Brief — Minor vs. Major
+
+**CONTEXT:**
+Use when evaluating whether your brand needs a minor refresh (tone, copy, secondary visual elements) or a major rebrand (name, primary color, positioning). This framework structures the decision.
+
+**PROMPT:**
+Act as a brand strategy consultant. Write a brand refresh evaluation for [BRAND NAME]. Evaluate whether a minor refresh (update copy/tone/secondary visuals) or major rebrand (name/color/positioning) is warranted based on: (1) current brand equity (what customers associate with the brand today), (2) the gap between intended and perceived positioning, (3) competitive landscape changes, (4) product evolution since last brand update, (5) cost-benefit of each approach. Recommendation: minor or major, with rationale. Under 350 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Conduct customer interviews or survey before using this framework — it requires real data
+
+**EXPECTED OUTPUT:**
+A 350-word brand refresh evaluation with 5-criteria analysis and a minor/major recommendation with rationale. Prevents over-investing in a full rebrand when copy/tone updates would suffice.
+
+---
+
+### BS-32: Affiliate Program Brand Guidelines
+
+**CONTEXT:**
+Use to define how affiliates can and cannot represent your brand. Clear brand usage guidelines for affiliates protect brand integrity while making affiliates more effective.
+
+**PROMPT:**
+Act as a brand protection specialist. Write affiliate brand usage guidelines for [BRAND NAME]. Include: (1) approved brand name and product name usage (exact spellings, capitalization), (2) approved claims affiliates can make (3-5 specific, factual claims), (3) prohibited claims (5 things affiliates cannot say), (4) approved creative assets description and where to find them, (5) tone guidance (2-3 sentences on how [BRAND NAME] should sound in affiliate content), (6) compliance/FTC disclosure requirement. Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [APPROVED CLAIMS] — specific, factual claims that are verified
+- [PROHIBITED CLAIMS] — specific examples of the types of misleading claims to prohibit
+
+**EXPECTED OUTPUT:**
+A 300-word affiliate brand guidelines document with 6 sections: naming, approved claims, prohibited claims, creative assets, tone guidance, and FTC disclosure requirement.
+
+---
+
+### BS-33: ICP Interview Script — Customer Research
+
+**CONTEXT:**
+Use to conduct customer discovery interviews that deepen ICP knowledge. Real ICP data from interviews consistently outperforms assumed personas — this script is designed to surface unexpected insights.
+
+**PROMPT:**
+Act as a customer research specialist. Write a 30-minute customer interview script for [BRAND NAME] targeting [CUSTOMER TYPE — e.g., "freelance marketers who purchased the AI Marketing Prompt Kit"]. Include: (1) opening/rapport (2 minutes), (2) situation questions (before discovery of [PRODUCT NAME]) — 5 questions, (3) problem exploration — 3 questions, (4) decision questions (why they bought) — 4 questions, (5) usage and outcomes — 3 questions, (6) improvement and referral — 2 questions. Total: 20 questions.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [CUSTOMER TYPE] — the specific segment you're interviewing
+- Ask open-ended questions — avoid yes/no questions that don't generate insight
+
+**EXPECTED OUTPUT:**
+A 20-question interview script organized in 6 sections, each with a stated purpose. Questions are open-ended and sequenced to build rapport before asking difficult/critical questions.
+
+---
+
+### BS-34: Brand Consistency Audit — Multi-Channel Check
+
+**CONTEXT:**
+Use to verify that brand voice, positioning, and visual identity are consistent across all active marketing channels. Inconsistency creates brand confusion that reduces conversion across every channel simultaneously.
+
+**PROMPT:**
+Act as a brand consistency auditor. Write a 5-channel consistency audit for [BRAND NAME]. Channels to audit: (1) website homepage, (2) Facebook ads, (3) email newsletter, (4) LinkedIn company page, (5) Instagram. For each channel: check that headline/tagline language matches positioning, tone matches brand voice guide, visual style is consistent, and CTA aligns with channel-appropriate goal. Format: audit questions per channel. 4 questions per channel.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Replace channels with your actual active channels
+- Run this audit quarterly — brand consistency drifts over time
+
+**EXPECTED OUTPUT:**
+A 5-channel, 4-question-per-channel brand consistency audit (20 questions total). Questions are yes/no with improvement guidance if "no." Run against actual live assets.
+
+---
+
+### BS-35: Brand Narrative Framework — Hero's Journey
+
+**CONTEXT:**
+Use to map your brand's story onto the Hero's Journey narrative structure. This framework makes brand stories more compelling by giving them the universal structure that all memorable stories share.
+
+**PROMPT:**
+Act as a brand narrative strategist. Map [BRAND NAME]'s brand story onto the Hero's Journey. Stages to complete: (1) Ordinary World — the market before [BRAND NAME] existed, (2) Call to Adventure — the problem that demanded a solution, (3) Refusal — what was tried and failed, (4) Mentor — the insight or discovery that changed things, (5) Transformation — what [PRODUCT NAME] enables, (6) Return with the Elixir — the world with [BRAND NAME] in it. The customer is the Hero — not the brand. 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- The customer = the Hero; [BRAND NAME] = the Mentor/Guide
+- Avoid making the brand the hero — the buyer must see themselves in the story
+
+**EXPECTED OUTPUT:**
+A 300-word Hero's Journey brand narrative mapping with 6 stages. Customer-as-hero framing throughout. Serves as a storytelling framework for landing pages, About pages, and pitch decks.
+
+---
+
+### BS-36: Messaging Testing Framework — 4-Variable Test
+
+**CONTEXT:**
+Use to design a systematic messaging test that identifies which message resonates most with your audience. Testing 4 variables simultaneously (audience, problem, outcome, mechanism) reveals the highest-impact message.
+
+**PROMPT:**
+Act as a messaging test designer. Write a 4-variable messaging test framework for [BRAND NAME]. Test 4 variables: (1) Audience framing (2 variants: broad vs. specific), (2) Problem framing (2 variants: tactical problem vs. emotional pain), (3) Outcome framing (2 variants: time-based vs. quality-based), (4) Mechanism framing (2 variants: how-it-works vs. what-you-get). For each variable: write the 2 message variants. Test via Facebook ads (cheapest message testing method). Total: 8 ad variants.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Design the 8 variants around your actual product's genuine attributes
+
+**EXPECTED OUTPUT:**
+A messaging test framework with 8 labeled ad message variants testing 4 variables (2 variants each). Each variant is a complete ad headline or primary text. Structure for a $200-$400 Facebook message test.
+
+---
+
+### BS-37: Brand Crisis Communication Template
+
+**CONTEXT:**
+Use to prepare brand crisis response templates before a crisis occurs. Having pre-written templates for common crisis scenarios (negative review blowup, product failure, controversial post) dramatically reduces response time.
+
+**PROMPT:**
+Act as a brand crisis communications specialist. Write response templates for 3 brand crisis scenarios for [BRAND NAME]: Scenario 1: product didn't work for a customer and they posted publicly. Scenario 2: misleading claim made by an affiliate caused customer complaints. Scenario 3: pricing change announced poorly and customers are angry. For each: (1) platform-appropriate response (public comment), (2) private follow-up message, (3) proactive post if needed. Under 150 words per scenario.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Customize Scenarios 1-3 to your most likely real crisis types
+
+**EXPECTED OUTPUT:**
+3 crisis response template sets (public response + private follow-up + optional proactive post), each under 150 words. Tone: honest, empathetic, solution-oriented. Prepared before crisis, not during.
+
+---
+
+### BS-38: Brand Differentiation Statement — One Page
+
+**CONTEXT:**
+Use to create a one-page brand differentiation document for internal alignment and external communications. This document should be referenced whenever writing any customer-facing copy.
+
+**PROMPT:**
+Act as a differentiation communications specialist. Write a one-page brand differentiation document for [BRAND NAME]. Sections: (1) who we serve (ICP in 50 words), (2) what problem we solve (the specific pain, not generic), (3) how we solve it differently from alternatives, (4) what makes that difference credible (proof), (5) the most important thing to communicate in any context (1 sentence). Use this information: [BRAND DETAILS]. Total: one page, under 400 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [BRAND DETAILS] — describe your product, audience, differentiators, and proof
+
+**EXPECTED OUTPUT:**
+A one-page (under 400 words) brand differentiation document with 5 labeled sections. Used by anyone writing copy for the brand to stay aligned on what to say and why.
+
+---
+
+### BS-39: Brand Playbook Outline — Full Document Structure
+
+**CONTEXT:**
+Use to create the structure for a comprehensive brand playbook. A brand playbook ensures consistent execution across team members, freelancers, and AI tools — anyone creating brand content starts from the same foundation.
+
+**PROMPT:**
+Act as a brand documentation specialist. Write the complete outline for a brand playbook for [BRAND NAME]. Include all sections: brand overview, positioning statement, ICP, messaging hierarchy, tone of voice guide, visual identity summary, writing style guide, content pillars, product descriptions, key claims, and prohibited language. For each section: section name, 2-sentence description of what it contains, and recommended length. Format as an annotated table of contents.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Add or remove sections based on your brand's complexity and team size
+
+**EXPECTED OUTPUT:**
+A brand playbook table of contents with 10+ sections, 2-sentence descriptions per section, and recommended lengths. Use as the master brief for actually writing the playbook.
+
+---
+
+### BS-40: Pricing Strategy — Value Communication Brief
+
+**CONTEXT:**
+Use when setting or communicating pricing. Price is a brand signal — a $27 product communicates something different than a $47 product, even if the content is identical. This brief aligns pricing with positioning.
+
+**PROMPT:**
+Act as a pricing and value communication strategist. Write a pricing strategy brief for [PRODUCT NAME]. Current or planned pricing: [PRICE]. Include: (1) what this price signals about the brand (premium / accessible / fair), (2) anchor points — what alternatives cost that justify this price, (3) the "table" (what's included that makes this price feel like a deal), (4) price barrier assessment (at what price does purchase hesitation significantly increase?), (5) value communication recommendations for landing page. Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit — Full Kit"
+- [PRICE] — your actual price or the price you're considering
+- [ANCHOR POINTS] — real costs of alternatives (freelancers, subscriptions, DIY time)
+
+**EXPECTED OUTPUT:**
+A 300-word pricing strategy brief with price signal analysis, anchor points, value table, barrier assessment, and landing page recommendations. Grounds pricing decisions in positioning, not just margin.
+
+---
+
+### BS-41: Brand Milestone Announcement Framework
+
+**CONTEXT:**
+Use when announcing a brand milestone (first 100 customers, $10K month, product launch, anniversary). Milestone announcements, when done well, build community and show momentum without feeling self-congratulatory.
+
+**PROMPT:**
+Act as a milestone communications writer. Write a milestone announcement for [BRAND NAME]'s achievement: [MILESTONE — e.g., "500 customers in the first 90 days"]. Format: 3 versions. Social media post (200 words): thank the community, share the number, explain what it means for the future. Email to existing customers (250 words): more personal, includes a gift or bonus to celebrate with them. Internal team reflection (150 words): honest about what worked, what was hard, what comes next.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [MILESTONE] — your actual specific milestone number or achievement
+- [GIFT/BONUS] — something tangible to share with customers as a celebration
+
+**EXPECTED OUTPUT:**
+Three milestone announcement versions (social/email/internal) at different lengths and tones. Social: public and celebratory. Email: personal and grateful. Internal: honest and forward-looking.
+
+---
+
+### BS-42: Brand Story — Customer Transformation Version
+
+**CONTEXT:**
+Use when the brand story is told from the customer's perspective — their transformation, not the founder's journey. Customer transformation stories are often more persuasive for conversion because the reader sees themselves.
+
+**PROMPT:**
+Act as a customer story brand writer. Write the brand story for [BRAND NAME] told from the buyer's perspective. Structure: (1) The world before: what buyers were doing before [PRODUCT NAME] existed, (2) The frustration: specific things that were broken or missing, (3) The discovery: how they found [PRODUCT NAME], (4) The transformation: specific things that changed after using it, (5) The world now: what's possible for buyers with [PRODUCT NAME] in their toolkit. 300 words. Second person — "you."
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TRANSFORMATION] — based on real buyer results, not assumed outcomes
+
+**EXPECTED OUTPUT:**
+A 300-word second-person brand story from the customer's transformation perspective. Used on About pages, sales pages, and onboarding content where the buyer needs to see themselves in the narrative.
+
+---
+
+### BS-43: Competitive Positioning Statement — "We're Different Because"
+
+**CONTEXT:**
+Use to create a clear, concise competitive positioning statement for use in ads, pitches, and sales conversations. The "we're different because" statement answers the most important question in a competitive landscape.
+
+**PROMPT:**
+Act as a competitive positioning writer. Write the "we're different because" statement for [BRAND NAME] in 3 formats. Format 1: 10 words. Format 2: 25 words. Format 3: 50 words. All three must be specific — not "we're more innovative" but "we're the only [CATEGORY] that [SPECIFIC THING] without [LIMITATION]." Generate 3 candidate statements for each format and rate each on specificity (1-5) and memorability (1-5).
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [CATEGORY] — the category you're competing in
+- [SPECIFIC THING] — your actual, defensible differentiator
+
+**EXPECTED OUTPUT:**
+9 candidate statements (3 per format) with specificity and memorability ratings. Choose the highest-rated from each format for use. Specific enough that a prospect could repeat it to a colleague.
+
+---
+
+### BS-44: Social Proof Strategy — Types and Placement
+
+**CONTEXT:**
+Use to design a systematic social proof strategy. Different types of social proof (testimonials, counts, ratings, authority mentions, peer comparisons) work at different stages of the buyer journey. This strategy ensures the right proof appears at the right moment.
+
+**PROMPT:**
+Act as a social proof strategist. Write a social proof deployment plan for [PRODUCT NAME]. Include: (1) 5 types of social proof available (describe each type and what you'd need to collect it), (2) buyer journey placement map (which type of proof belongs at: awareness / consideration / purchase decision / post-purchase), (3) collection strategy (how to get each type), (4) the single highest-impact social proof element for [PRODUCT NAME] and why. Under 350 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [5 PROOF TYPES] — e.g., testimonials / review count / star rating / buyer count / case study
+- Prioritize proof types you can actually collect with your current customer base
+
+**EXPECTED OUTPUT:**
+A 350-word social proof strategy with 5 proof types, placement map, collection strategy, and single highest-impact recommendation. Actionable — tells you what to collect and where to use it.
+
+---
+
+### BS-45: Brand Story Testing — 3 Narrative Angles
+
+**CONTEXT:**
+Use when you're unsure which version of your brand story will resonate most. Testing 3 different narrative angles through ad copy or email is faster and more reliable than picking one based on intuition.
+
+**PROMPT:**
+Act as a brand narrative tester. Write 3 versions of [BRAND NAME]'s brand story for testing — each uses a different narrative angle. Angle 1: Founder frustration — the pain the founder personally experienced. Angle 2: Customer transformation — a buyer's before/after. Angle 3: Category problem — why the existing market options are all inadequate. Each version: 150 words. Same core facts, different narrative lens. Label which angle each is.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Keep facts consistent across all 3 angles — you're testing the angle, not the information
+
+**EXPECTED OUTPUT:**
+3 brand story versions (150 words each) testing 3 narrative angles. Same facts, different perspective and emotional hook. Test via email A/B test or ad copy to see which drives the most engagement.
+
+---
+
+### BS-46: Brand Vocabulary Guide — Words to Use and Avoid
+
+**CONTEXT:**
+Use to create a vocabulary guide that ensures all brand communications use consistent language. The specific words a brand uses (and refuses to use) are a powerful part of its identity.
+
+**PROMPT:**
+Act as a brand language strategist. Write a vocabulary guide for [BRAND NAME]. Include: (1) 10 words/phrases we actively use — and why each fits the brand voice, (2) 10 words/phrases we never use — and why each is off-brand, (3) 5 industry clichés to avoid in our category, (4) 3 competitor language patterns to avoid (so we don't sound like them). Format as two lists with brief explanations.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [USE WORDS] — words that express your brand's specific voice and values
+- [AVOID WORDS] — generic/cliché/competitor language that dilutes your brand
+
+**EXPECTED OUTPUT:**
+A brand vocabulary guide with 10 use words, 10 avoid words, 5 category clichés, and 3 competitor patterns — each with a brief explanation. Reference document for any copywriter or AI tool.
+
+---
+
+### BS-47: Brand Launch Strategy — Go-to-Market Summary
+
+**CONTEXT:**
+Use when planning the launch strategy for a new brand or product. A go-to-market summary coordinates positioning, channels, messaging, and timing into a single coherent plan.
+
+**PROMPT:**
+Act as a launch strategy consultant. Write a go-to-market strategy summary for [BRAND NAME / PRODUCT NAME]. Include: (1) launch positioning (2 sentences: who this is for and why now), (2) primary distribution channel and rationale, (3) secondary channels, (4) launch week sequence (Day 1 → Day 7), (5) first 30-day success metrics, (6) the one thing that will make or break the launch. Under 400 words. Strategy document — not a task list.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME / PRODUCT NAME] — e.g., "ContentKit / AI Marketing Prompt Kit"
+- [PRIMARY CHANNEL] — your main traffic/distribution channel
+- [SUCCESS METRICS] — specific, measurable goals for the first 30 days
+
+**EXPECTED OUTPUT:**
+A 400-word go-to-market strategy summary with 6 sections: positioning, primary channel, secondary channels, launch week sequence, 30-day metrics, and critical success factor. One-page strategic overview.
+
+---
+
+### BS-48: Brand Voice — AI Prompt Calibration Prompt
+
+**CONTEXT:**
+Use to calibrate any AI writing tool (ChatGPT, Claude, etc.) to write in your brand's specific voice. This meta-prompt teaches the AI your voice so all subsequent copy outputs are on-brand.
+
+**PROMPT:**
+Act as a brand voice configuration specialist. Write a brand voice calibration prompt for [BRAND NAME] that can be pasted into any AI tool to configure its writing style. The calibration prompt should include: (1) brand voice description, (2) 3 writing style rules, (3) 3 phrases to always use, (4) 3 phrases to never use, (5) a before/after example showing off-brand → on-brand rewrite, (6) the instruction: "When I ask you to write as [BRAND NAME], follow these rules." Under 200 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [VOICE RULES] — specific, actionable rules (not "be professional" — "use contractions, keep sentences under 20 words, always lead with the benefit")
+
+**EXPECTED OUTPUT:**
+A 200-word AI voice calibration prompt for [BRAND NAME]. Paste this at the beginning of any AI session to get on-brand copy outputs. Teachable and specific — not vague voice descriptors.
+
+---
+
+### BS-49: Brand Touchpoint Inventory
+
+**CONTEXT:**
+Use to audit every point where a customer interacts with your brand. Most brands have more touchpoints than they realize — and many go unbranded. Inventorying them reveals gaps in brand experience.
+
+**PROMPT:**
+Act as a brand experience auditor. Create a comprehensive brand touchpoint inventory for [BRAND NAME]. Categories to inventory: pre-purchase (7+ touchpoints), purchase experience (5+ touchpoints), post-purchase (6+ touchpoints), ongoing relationship (4+ touchpoints). For each touchpoint: name it, describe what happens at that touchpoint, rate the current brand experience quality (1-5), and flag if it needs copy/design attention. Format as a table.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Be exhaustive — include every email, page, notification, and packaging element
+
+**EXPECTED OUTPUT:**
+A touchpoint inventory table organized in 4 phases (pre-purchase/purchase/post-purchase/ongoing) with 22+ touchpoints rated 1-5. Flags which touchpoints need copy or design attention.
+
+---
+
+### BS-50: Brand Story for Sales Deck / Pitch
+
+**CONTEXT:**
+Use when building a pitch deck for investors, partners, or enterprise clients. A pitch deck brand story must be compressed into 2-3 slides while conveying the essence of the opportunity.
+
+**PROMPT:**
+Act as a pitch deck brand story writer. Write the brand story for [BRAND NAME] formatted for a 3-slide pitch deck section: Slide 1 (The Problem): 1 headline + 3 bullet points quantifying the problem. Slide 2 (The Solution): 1 headline + 3 bullet points describing the solution and differentiation. Slide 3 (The Traction): 1 headline + 3 proof points (metrics, early results, social proof). Each slide: under 60 words. Investor-facing tone: opportunity, not mission statement.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PROBLEM METRICS] — quantify the problem with real data
+- [TRACTION PROOF] — real early metrics or customer results
+
+**EXPECTED OUTPUT:**
+A 3-slide pitch deck copy set with slide headline and 3 bullets per slide. Under 60 words per slide. Investor-facing — leads with opportunity and evidence, not passion and vision.
+
+---
+
+### BS-51: Competitive Response Playbook
+
+**CONTEXT:**
+Use when a key competitor changes their strategy, pricing, or positioning. A competitive response playbook helps you decide how to react — and whether to react at all.
+
+**PROMPT:**
+Act as a competitive strategy consultant. Write a competitive response playbook for [BRAND NAME] responding to [COMPETITIVE CHANGE — e.g., "a key competitor reducing their price by 40%"]. Include: (1) assess the threat level (critical / moderate / low) and why, (2) response options (3 options: ignore / match / differentiate), (3) recommended response with rationale, (4) messaging adjustment if needed, (5) what NOT to do (common overreactions). Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [COMPETITIVE CHANGE] — the specific change in the competitive landscape
+- Base the threat level on actual market impact, not fear
+
+**EXPECTED OUTPUT:**
+A 300-word competitive response playbook with threat assessment, 3 response options, recommendation, messaging guidance, and overreaction warnings. Structured decision framework for competitive pressure.
+
+---
+
+### BS-52: Brand Health Survey — 10-Question Template
+
+**CONTEXT:**
+Use to measure brand health with existing customers and subscribers. Brand health surveys reveal gaps between intended and perceived positioning — data that's impossible to get from analytics alone.
+
+**PROMPT:**
+Act as a brand research specialist. Write a 10-question brand health survey for [BRAND NAME]. Question types: 2 awareness (do they know what the brand is/does?), 2 perception (how do they describe it to others?), 2 differentiation (do they see it as different from alternatives?), 2 satisfaction (are they happy with the product/experience?), 2 advocacy (would they recommend it?). Include: question text, answer format (NPS/open/multiple choice), and what the answer reveals.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- Run this survey with 30-50 current customers for statistically usable results
+
+**EXPECTED OUTPUT:**
+A 10-question brand health survey with question text, answer format, and insight label for each. Organized by question type. Run annually to track brand perception over time.
+
+---
+
+### BS-53: PR Strategy Brief — Earned Media Plan
+
+**CONTEXT:**
+Use to plan an earned media strategy. Earned media (press coverage, podcast features, newsletter mentions) builds authority and SEO simultaneously. This brief structures the outreach strategy.
+
+**PROMPT:**
+Act as a PR strategist. Write a 90-day earned media brief for [BRAND NAME]. Include: (1) 3 angles/stories that make [BRAND NAME] newsworthy (not just "we launched"), (2) target media types (blogs, newsletters, podcasts, publications — specific to your niche), (3) outreach approach for each media type, (4) 5 specific targets with rationale (name the outlet, not the contact), (5) content assets needed before outreach begins. Under 350 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [NEWSWORTHY ANGLES] — e.g., "data/research we have / founder expertise story / contrarian industry take"
+- [TARGET MEDIA] — research specific outlets, not just categories
+
+**EXPECTED OUTPUT:**
+A 350-word 90-day PR brief with 3 story angles, 3 target media types with outreach approaches, 5 specific outlet targets, and required content assets. Actionable — drives outreach from day one.
+
+---
+
+### BS-54: Brand Identity Brief for Designer
+
+**CONTEXT:**
+Use when briefing a graphic designer for logo, color, and visual identity development. A strong creative brief saves design rounds and prevents expensive misalignments between brand strategy and visual expression.
+
+**PROMPT:**
+Act as a brand identity briefing specialist. Write a comprehensive brand identity brief for [BRAND NAME]. Include: (1) brand personality summary (5 adjectives with 1-sentence explanations), (2) visual direction (3 reference brand aesthetics and why each resonates), (3) what to avoid (2 competitor visual styles), (4) color direction (general mood/palette, not specific hex codes), (5) typography direction (formal/casual, serif/sans-serif, display/body text goals), (6) logo concept direction (abstract / wordmark / lettermark / combination — with rationale). Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [REFERENCE BRANDS] — brands whose visual style resonates — not your competitors
+- Brief the feeling, not specific execution — let the designer solve the visual problem
+
+**EXPECTED OUTPUT:**
+A 300-word brand identity brief with 6 sections covering personality, visual direction, avoidance, color, typography, and logo concept. Designer-ready input that directs without over-constraining.
+
+---
+
+### BS-55: Brand Manifesto
+
+**CONTEXT:**
+Use to write a brand manifesto — a declaration of what the brand believes, why it exists, and what it stands against. Manifestos are used on About pages, pitches, social posts, and as internal culture documents.
+
+**PROMPT:**
+Act as a brand manifesto writer. Write a brand manifesto for [BRAND NAME] (150-200 words). Structure: (1) what [BRAND NAME] believes about [CORE TOPIC], (2) what [BRAND NAME] stands against (the enemy), (3) who [BRAND NAME] is for, (4) the promise [BRAND NAME] makes. Tone: declarative and passionate — not corporate. Every sentence should be something the brand is willing to be held to. Open with "We believe" or a bold declaration.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [CORE TOPIC] — the topic the brand cares most about
+- Be willing to take a position — manifestos without a point of view are useless
+
+**EXPECTED OUTPUT:**
+A 150-200 word brand manifesto with 4 elements: belief statement, enemy declaration, audience definition, and brand promise. Bold and specific — reads as something the brand would tattoo on its proverbial arm.
+
+---
+
+## Category 7: Product Launch
+
+These prompts cover every stage of a product launch — from pre-launch waitlist copy to launch day campaigns to post-launch follow-up. Each prompt targets a specific launch objective: building anticipation, driving Day 1 sales, handling objections, and capitalizing on launch momentum.
+
+---
+
+### PL-01: Pre-Launch Waitlist Landing Page
+
+**CONTEXT:**
+Use to build a pre-launch email list before your product goes live. Waitlist pages that reveal specifics (price, launch date, key features) convert better than vague "be the first to know" pages.
+
+**PROMPT:**
+Act as a pre-launch copywriter. Write a waitlist landing page for [PRODUCT NAME] launching on [DATE]. Include: (1) headline: what's coming and who it's for (under 12 words), (2) 3-sentence tease: enough specifics to create desire, not enough to satisfy it, (3) waitlist benefit: [EARLY BENEFIT — e.g., "early access + $10 off launch price"], (4) email form: label + button text + privacy line. Under 200 words. Create genuine anticipation without overpromising.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [DATE] — specific launch date
+- [EARLY BENEFIT] — something genuinely valuable for signing up early
+
+**EXPECTED OUTPUT:**
+A 200-word waitlist page with headline, tease paragraph, benefit statement, and form copy. Creates real anticipation with specific details while keeping some mystery for launch day.
+
+---
+
+### PL-02: Launch Announcement Email to Waitlist
+
+**CONTEXT:**
+Use on launch day to notify waitlist subscribers. These are your warmest leads — they signed up specifically for this. The email must make them feel like insiders getting something before everyone else.
+
+**PROMPT:**
+Act as a launch day email writer. Write the launch announcement email to waitlist subscribers for [PRODUCT NAME]. Structure: (1) acknowledge their wait with genuine appreciation, (2) it's live — direct link, (3) their exclusive access window: [WINDOW — e.g., "24 hours before public launch"], (4) any waitlist exclusive: [EXCLUSIVE — e.g., "$10 off — code applied automatically"], (5) what's inside — 3 bullets, (6) CTA. Under 200 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [WINDOW] — their exclusive access period
+- [EXCLUSIVE] — the specific benefit for being on the waitlist
+
+**EXPECTED OUTPUT:**
+A 200-word launch email to waitlist with insider framing, exclusive benefit, 3 product bullets, and CTA. Warm and specific — rewards the patience of early subscribers.
+
+---
+
+### PL-03: Product Hunt Launch Post
+
+**CONTEXT:**
+Use for your Product Hunt launch day. Product Hunt requires a tagline, description, and first comment from the maker. Getting upvotes in the first 2-3 hours determines the final ranking.
+
+**PROMPT:**
+Act as a Product Hunt launch copywriter. Write the launch package for [PRODUCT NAME]: (1) Tagline (under 60 chars): what it does + for whom + result, (2) Description (under 260 chars): expand tagline with one specific detail, (3) First comment from maker (150-200 words): personal story of building it, who it's for, 3 things it does, what you'd love feedback on, genuine thanks. Tone: founder-to-community, honest, specific.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PERSONAL STORY] — your actual motivation for building it
+- [SPECIFIC DETAIL] — a specific feature or number in the description
+
+**EXPECTED OUTPUT:**
+A Product Hunt launch package: tagline (under 60 chars), description (under 260 chars), first comment (150-200 words). Sounds like a real founder, not a marketing team.
+
+---
+
+### PL-04: Press Release — Product Launch
+
+**CONTEXT:**
+Use when distributing a press release for your product launch. Modern press releases earn backlinks from PR services and can generate journalist/blogger coverage when they have a real news hook.
+
+**PROMPT:**
+Act as a PR writer. Write a product launch press release for [PRODUCT NAME]. Include: headline (news-focused, under 12 words, keyword included), dateline, lead paragraph (who/what/when/where/why), supporting paragraph (key features and target audience), founder quote, about section (100 words), boilerplate, and contact info. Keyword: [KEYWORD]. Newsworthy angle: [NEWS HOOK — e.g., "new product offers alternatives to $50/month AI subscriptions at a $47 one-time price"]. 400-600 words, AP Style.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [KEYWORD] — primary keyword for the release
+- [NEWS HOOK] — the genuinely newsworthy angle
+
+**EXPECTED OUTPUT:**
+A 400-600 word press release in AP Style with all standard sections. News-focused headline, keyword placement, and a genuine hook that could earn coverage. Distribute via EIN Presswire or PR Newswire.
+
+---
+
+### PL-05: Launch Day Social Posts — 5-Platform Set
+
+**CONTEXT:**
+Use to announce launch across all social platforms simultaneously on day one. Each platform requires different length and format — this prompt generates platform-native copy for all five.
+
+**PROMPT:**
+Act as a launch day social media writer. Write launch day posts for [PRODUCT NAME] across 5 platforms: (1) Twitter/X (under 280 chars + link), (2) LinkedIn (200-300 words, professional tone), (3) Instagram caption (under 150 words + 5 hashtags), (4) Facebook (150 words), (5) TikTok hook text (3 sentences for the caption). Each must feel native to the platform, not copy-pasted. Core message: [LAUNCH MESSAGE].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH MESSAGE] — the one-sentence core announcement
+- [URL] — your product page URL
+
+**EXPECTED OUTPUT:**
+5 platform-specific launch day posts. Each is native to its platform in length, tone, and format. Not the same text copy-pasted — genuinely adapted for each audience.
+
+---
+
+### PL-06: Launch Week Email Sequence (7 days)
+
+**CONTEXT:**
+Use for a 7-day launch window email sequence. Each email has one job — together they move subscribers from awareness through consideration to purchase, with escalating urgency as the launch window closes.
+
+**PROMPT:**
+Act as a launch email sequence writer. Write subject lines and 3-sentence summaries for a 7-day launch sequence for [PRODUCT NAME] at [LAUNCH PRICE]. Day 1: announcement + what's inside. Day 2: feature spotlight (show one specific prompt/feature in action). Day 3: buyer story/social proof. Day 4: objection handler. Day 5: bonus reveal or new angle. Day 6: deadline warning. Day 7: final hours + price increase. Each: subject line + 3-sentence email summary + CTA.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH PRICE] — e.g., "$47 (going to $67 after launch week)"
+- [BONUS] — the Day 5 new thing you introduce
+
+**EXPECTED OUTPUT:**
+A 7-day launch email sequence plan with subject lines, 3-sentence summaries, and CTAs. Each day has a distinct angle. Escalating urgency from Day 1 to Day 7.
+
+---
+
+### PL-07: Webinar/Live Event Launch Copy
+
+**CONTEXT:**
+Use when launching a product via a live webinar or training. Webinar launches convert at higher rates than email-only launches because they create a live event experience with real-time social proof.
+
+**PROMPT:**
+Act as a webinar launch copywriter. Write the copy package for a live launch webinar for [PRODUCT NAME]. Include: (1) webinar registration page headline + subheadline (under 12 words each), (2) what attendees will learn (3 bullets), (3) webinar pitch: the offer reveal moment — what to say when you present the product (100-word script), (4) post-webinar email to non-buyers (150 words, sent within 1 hour). Product launch offer: [OFFER].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [WEBINAR TOPIC] — the educational topic that leads naturally into the product
+- [OFFER] — the specific webinar-exclusive deal
+
+**EXPECTED OUTPUT:**
+A 4-piece webinar launch copy set: registration page, learning bullets, pitch script (100 words), and post-webinar non-buyer email. Each piece serves a specific conversion role.
+
+---
+
+### PL-08: Affiliate Launch Email — For Partners to Send
+
+**CONTEXT:**
+Use to write the email that affiliates send to their lists promoting your launch. Provide this pre-written email to affiliates — most affiliates won't promote without a template. The easier you make it, the more they send.
+
+**PROMPT:**
+Act as an affiliate launch email writer. Write a promotional email for affiliates to send to their lists promoting [PRODUCT NAME]. The affiliate's audience: [AFFILIATE AUDIENCE — e.g., "marketing professionals and business owners"]. Include: subject line (curiosity-gap, under 50 chars), email body (200 words): introduce the product from the affiliate's perspective, highlight 3 benefits, include the affiliate's link placeholder [AFFILIATE LINK], bonus or exclusive if applicable. Tone: peer recommendation, not sales blast.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [AFFILIATE AUDIENCE] — who affiliates' lists typically consist of
+- [AFFILIATE LINK] — leave as [AFFILIATE LINK] placeholder
+
+**EXPECTED OUTPUT:**
+A ready-to-send affiliate email with subject line and 200-word body. Affiliates fill in [AFFILIATE LINK] and send. Reads as a personal recommendation from the affiliate, not a vendor template.
+
+---
+
+### PL-09: Launch Countdown Social Posts (3-day countdown)
+
+**CONTEXT:**
+Use in the 3 days before launch to build anticipation on social media. Each countdown day reveals something new about the product, escalating excitement without giving away the final offer.
+
+**PROMPT:**
+Act as a launch countdown social media writer. Write a 3-day countdown post sequence for [PRODUCT NAME] on [PLATFORM — e.g., "Instagram"]. Day 3 (72 hours out): tease the category and audience — no price or full details. Day 2 (48 hours out): reveal one specific feature or benefit — build desire. Day 1 (24 hours out): preview the offer — price, what's included, when to buy. Each post under 150 words. Progressive reveal — don't front-load all information.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PLATFORM] — customize format for your primary platform
+- Plan reveals in advance — what does each day reveal?
+
+**EXPECTED OUTPUT:**
+3 countdown posts (under 150 words each) with escalating reveals. Day 3 teases, Day 2 builds desire, Day 1 previews the offer. Reads as genuine anticipation-building, not a scheduling template.
+
+---
+
+### PL-10: Behind-the-Scenes Launch Content
+
+**CONTEXT:**
+Use to create launch content that shows the process behind the product — how it was built, what decisions were made. Behind-the-scenes content builds trust and creates genuine anticipation for what's coming.
+
+**PROMPT:**
+Act as a behind-the-scenes launch content writer. Write a 300-word behind-the-scenes post about [PRODUCT NAME]'s creation. Reveal: (1) one specific challenge you solved in building it, (2) a decision you almost made differently (and why you're glad you didn't), (3) one surprising insight from the creation process. This post is for [PLATFORM — e.g., "LinkedIn" or "a launch email"]. Tone: reflective and genuine — shows the human behind the product.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PLATFORM] — adjust length and format for the destination
+- Be specific — "I almost organized it by platform instead of by task" is better than "it was challenging"
+
+**EXPECTED OUTPUT:**
+A 300-word behind-the-scenes post with 3 genuine reveals from the creation process. Builds trust and anticipation without giving away the final product details.
+
+---
+
+### PL-11: Launch Event Invite — Free Training
+
+**CONTEXT:**
+Use to invite your list or audience to a free training that leads into a product launch. Free training invites convert better than direct sales invitations because they feel like an opportunity rather than a pitch.
+
+**PROMPT:**
+Act as a live training invite writer. Write an email inviting subscribers to a free training titled [TRAINING TITLE — e.g., "Live: How to Use AI to Write Your Marketing Copy in 30 Minutes"]. Structure: (1) what they'll be able to do after (specific), (2) what the training covers (3 bullets), (3) why it's live (not recorded), (4) logistics (date, time, registration link), (5) what's NOT going to happen (no fluff, no 2-hour pitch). Under 250 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [TRAINING TITLE] — your actual training title — must be specific
+- [DATE/TIME] — exact date, time, and timezone
+- [REGISTRATION LINK] — your actual Zoom or webinar link
+
+**EXPECTED OUTPUT:**
+A 250-word training invite email with outcome promise, 3 content bullets, live-event rationale, logistics, and a "what you won't get" section that builds trust. Drives RSVPs through genuine value promise.
+
+---
+
+### PL-12: Post-Launch Email to Non-Buyers
+
+**CONTEXT:**
+Use after the initial launch window closes to follow up with subscribers who didn't purchase. This email acknowledges the launch window closed and introduces a permanent option or next steps.
+
+**PROMPT:**
+Act as a post-launch follow-up email writer. Write an email to [PRODUCT NAME]'s launch list subscribers who didn't purchase during launch week. Acknowledge: the launch window closed. Inform: what changed (e.g., "price is now $67 permanently" or "launch bonuses have been removed"). Invite: they can still buy at the new terms. Include: 1 final reason they should consider it. Under 200 words. Tone: informational and non-pushy — this is news, not a final pitch.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [WHAT CHANGED] — price increase, bonus removal, or other terms that changed after launch
+- [FINAL REASON] — one compelling reason to still consider it
+
+**EXPECTED OUTPUT:**
+A 175-word post-launch informational email that communicates what changed and offers a final purchase path. Not a high-pressure close — an honest update that some non-buyers convert from.
+
+---
+
+### PL-13: Launch Metrics Dashboard Brief
+
+**CONTEXT:**
+Use to plan the metrics you'll track during a product launch. Knowing what to measure before launch prevents scrambling for data during launch week and enables real-time optimization.
+
+**PROMPT:**
+Act as a launch analytics specialist. Write a launch metrics dashboard brief for [PRODUCT NAME]. Include metrics to track for: (1) email (open rate, CTR, conversions per email), (2) ads (CPM, CTR, CPA, ROAS), (3) landing page (traffic, conversion rate, bounce rate, time on page), (4) revenue (total revenue, AOV, refund rate), (5) launch sequence performance (which email or day drove most revenue). Format: metric name, target benchmark, how to measure, what to do if below benchmark.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [BENCHMARKS] — set realistic benchmarks based on industry averages or previous launches
+
+**EXPECTED OUTPUT:**
+A launch metrics dashboard brief with 5 category sections, each containing 3-5 metrics with targets, measurement methods, and below-benchmark actions. Set this up before launch week begins.
+
+---
+
+### PL-14: Product Hunt Community Prep — First 100 Upvotes Strategy
+
+**CONTEXT:**
+Use to plan the strategy for driving the first 100 upvotes on Product Hunt. The first 2-3 hours determine if you'll trend — you need a coordinated rollout plan for your existing network.
+
+**PROMPT:**
+Act as a Product Hunt launch strategist. Write a pre-launch mobilization plan for [PRODUCT NAME] on Product Hunt. Include: (1) who to contact before launch and what to ask of them, (2) the exact ask message (30 words): specific, non-spammy, personal, (3) timing plan (launch at 12:01am PST — why?), (4) where to share the PH link on launch day (which communities, channels, lists), (5) what to do if you're not trending by 9am PST. Under 350 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [NETWORK] — who in your network could upvote (colleagues, customers, followers)
+
+**EXPECTED OUTPUT:**
+A 350-word PH launch mobilization plan with pre-launch contact strategy, ask message (30 words), timing rationale, distribution channels, and contingency plan. Specific enough to execute the day before launch.
+
+---
+
+### PL-15: Beta Launch Program Invitation
+
+**CONTEXT:**
+Use to invite a small group of beta testers before the public launch. Beta programs build a group of advocates who provide social proof for the public launch while validating the product.
+
+**PROMPT:**
+Act as a beta program invitation writer. Write an invitation email for [PRODUCT NAME]'s beta program. Details: [NUMBER] spots available, beta access in exchange for [WHAT YOU'RE ASKING — e.g., "30 minutes of feedback + a testimonial if it's helpful"]. Structure: (1) why they were specifically chosen, (2) what beta access includes, (3) what you're asking of them, (4) the timeline, (5) how to claim a spot. Under 225 words. Makes them feel specially chosen.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [NUMBER] — how many beta spots are available
+- [WHAT YOU'RE ASKING] — specific feedback format or commitment required
+
+**EXPECTED OUTPUT:**
+A 225-word beta invitation email with personalized framing, access description, ask, timeline, and claim CTA. Reads as a genuine insider invitation, not a free trial offer.
+
+---
+
+### PL-16: Launch Bonus Stack — Copy and Rationale
+
+**CONTEXT:**
+Use to write copy for a bonus stack that increases the perceived value of a product launch offer. Bonuses must feel genuinely valuable and directly related to the main product — not random add-ons.
+
+**PROMPT:**
+Act as a bonus copy writer. Write copy for a [NUMBER]-bonus stack for [PRODUCT NAME]'s launch offer. For each bonus: (1) name + retail value (e.g., "Bonus 1: Email Swipe File — Retail: $27, Yours Free"), (2) 2-sentence description (what it is + why it pairs perfectly with the main product), (3) why it's only available during launch. Total value summary. Section headline: "Everything you get when you order during launch week." Format: 1 block per bonus.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [NUMBER] — how many bonuses
+- [BONUSES] — genuine add-ons that complement the main product
+
+**EXPECTED OUTPUT:**
+A bonus stack section with [N] bonus blocks (name/value/description/exclusivity) and total value summary. Each bonus feels genuinely valuable — not padded filler to inflate perceived value.
+
+---
+
+### PL-17: Referral Launch Campaign — "Share and Earn"
+
+**CONTEXT:**
+Use to launch a referral campaign simultaneously with your product launch. Referral campaigns on launch day create compound growth — every buyer becomes a potential promoter.
+
+**PROMPT:**
+Act as a referral launch campaign copywriter. Write a referral campaign launch email for [PRODUCT NAME] buyers. Program: for every referral who purchases, the referrer gets [REWARD — e.g., "$10 credit toward a future purchase" or "30% commission via affiliate link"]. Structure: (1) launch the program announcement, (2) explain exactly how to share (provide a pre-written shareable message), (3) what they earn per referral, (4) how long the offer lasts. Under 200 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [REWARD] — the specific incentive for referring
+- [PRE-WRITTEN MESSAGE] — a ready-to-share message they can forward or post
+
+**EXPECTED OUTPUT:**
+A 200-word referral launch email with program announcement, sharing mechanism, reward description, and timeline. Includes a pre-written shareable message that removes all friction from referring.
+
+---
+
+### PL-18: App Store Launch Description
+
+**CONTEXT:**
+Use for launching a digital product on app-like platforms (Gumroad, Payhip, Etsy, etc.). Platform listing descriptions must work in a browsing context where buyers are comparing multiple products.
+
+**PROMPT:**
+Act as a marketplace listing launch copywriter. Write the product listing description for [PRODUCT NAME] launching on [PLATFORM — e.g., "Gumroad"]. Structure: (1) headline result (outcome in under 15 words), (2) what's included (bulleted: 5-7 specific items), (3) who it's for (2 sentences), (4) why now (the launch offer), (5) guarantee. Total: 250-350 words. Primary keyword: [KEYWORD]. Formatted for platform scanning — short paragraphs, bullets.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PLATFORM] — adjust format and length for the specific marketplace
+- [LAUNCH OFFER] — the specific time-limited launch deal
+
+**EXPECTED OUTPUT:**
+A 250-350 word marketplace launch listing with outcome lead, feature bullets, audience description, launch offer, and guarantee. Keyword-included. Formatted for scanning not reading.
+
+---
+
+### PL-19: Launch Day DM Outreach — Personal Invite
+
+**CONTEXT:**
+Use to personally invite your most relevant connections to check out the launch. Direct message outreach on launch day from a real person converts significantly better than broadcast emails.
+
+**PROMPT:**
+Act as a personal launch outreach writer. Write a 3-message DM template for personally inviting [CONNECTION TYPE — e.g., "colleagues and professional network connections"] to check out [PRODUCT NAME]'s launch. Message 1: brief, personal, relevant — no hard pitch (under 50 words). Message 2: if they respond with interest — share the link + one specific reason it's relevant to them. Message 3: if no reply after 48 hours — brief follow-up (under 25 words). Label each message.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [CONNECTION TYPE] — who you're reaching out to personally
+- Personalize Message 1 for each person — one detail makes it not feel like a template
+
+**EXPECTED OUTPUT:**
+3 DM templates (labeled Message 1/2/3) for personal launch outreach. Message 1 is under 50 words, casual, no pitch. Message 2 delivers the link with a personal hook. Message 3 is a brief, non-pushy follow-up.
+
+---
+
+### PL-20: Soft Launch vs. Hard Launch Decision Brief
+
+**CONTEXT:**
+Use when deciding between a soft launch (quiet rollout with no urgency) and a hard launch (coordinated campaign with a specific window). The right approach depends on your list size, product readiness, and goals.
+
+**PROMPT:**
+Act as a launch strategist. Write a decision brief for [PRODUCT NAME] comparing soft launch vs. hard launch. Soft launch: what it is, when it's the right choice, what it forfeits. Hard launch: what it is, when it's the right choice, what it requires. Evaluation criteria: list size, product maturity, available bandwidth, urgency goals. Recommendation for [PRODUCT NAME] based on [CONTEXT — e.g., "first product, small list of 200 subscribers"]. Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [CONTEXT] — your specific situation: list size, product readiness, bandwidth
+
+**EXPECTED OUTPUT:**
+A 300-word launch decision brief with soft vs. hard launch comparison, evaluation criteria, and a specific recommendation based on the provided context.
+
+---
+
+### PL-21: Launch Retrospective — Post-Mortem Template
+
+**CONTEXT:**
+Use after a product launch to document what worked, what didn't, and what to do differently. Launch retrospectives are often skipped — but the patterns discovered in retrospective significantly improve future launches.
+
+**PROMPT:**
+Act as a launch retrospective facilitator. Write a post-launch retrospective template for [PRODUCT NAME]. Sections: (1) Results summary (revenue, units sold, conversion rate, traffic, email list growth), (2) What worked (3 things — specific), (3) What didn't work (3 things — honest), (4) Surprises (what you didn't expect), (5) What to do differently next time, (6) Decisions to make before the next launch. Format: fill-in document. Under 300 words of framework copy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Run this within 2 weeks of launch close while details are fresh
+
+**EXPECTED OUTPUT:**
+A post-launch retrospective template with 6 sections and fill-in fields. Under 300 words of framework copy. Structured enough to complete in 30 minutes after a launch.
+
+---
+
+### PL-22: Launch Email — "Here's What You Missed" (Late Arrival)
+
+**CONTEXT:**
+Use to convert subscribers who missed the initial launch emails. "Here's what you missed" emails have high open rates because they acknowledge the reader wasn't engaged without shaming them.
+
+**PROMPT:**
+Act as a catch-up email copywriter. Write a "here's what you missed" email for subscribers who didn't open the [PRODUCT NAME] launch emails. Acknowledge they may have been busy. Brief them on what launched and what the offer is. If the launch window is still open: give them the link and deadline. If the window is closed: inform them of the current price and how to get it. Under 200 words. No guilt language.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH WINDOW STATUS] — still open or closed
+- [CURRENT OFFER] — either launch offer or post-launch price
+
+**EXPECTED OUTPUT:**
+A 175-word catch-up email with acknowledgment, brief on what launched, current offer/status, and CTA. No guilt. Reads as a friendly catch-up note, not passive-aggressive marketing.
+
+---
+
+### PL-23: Launch Testimonial Collection — Early Buyer Ask
+
+**CONTEXT:**
+Use 5-7 days after launch to collect testimonials from early buyers. Early buyer testimonials are launch gold — they're generated while enthusiasm is highest and can be used for ongoing promotion.
+
+**PROMPT:**
+Act as a testimonial collection email writer. Write an email to [PRODUCT NAME]'s first buyers (5-7 days after purchase) asking for feedback. Keep it short and specific — ask one question: "[SPECIFIC QUESTION — e.g., 'What's one marketing task you've already used the kit for?']." Explain that their answer helps future buyers. Optional incentive: [INCENTIVE]. Under 175 words. Subject line should not say "feedback" or "review request."
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [SPECIFIC QUESTION] — one question that prompts a usable testimonial
+- [INCENTIVE] — optional: something specific for responding
+
+**EXPECTED OUTPUT:**
+A 150-word early-buyer testimonial email with a curiosity-gap subject line, single specific question, explanation of purpose, and optional incentive. Open rate increases when subject doesn't say "feedback."
+
+---
+
+### PL-24: Launch Day Celebration Post — Community Update
+
+**CONTEXT:**
+Use on launch day to announce to your community (newsletter, social, Slack group) that the product is live. Celebration posts invite community members to share and earn goodwill simultaneously.
+
+**PROMPT:**
+Act as a launch celebration post writer. Write a launch day community announcement for [BRAND NAME]'s launch of [PRODUCT NAME]. Platform: [PLATFORM — e.g., "Twitter/X thread"]. Structure: (1) announce it's live with a direct link, (2) share one specific thing that makes this product different, (3) share the launch story in 2-3 sentences (genuine), (4) invite community to share/upvote/tell someone, (5) thank the people who helped. Tone: genuine excitement, not hype.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PLATFORM] — adjust format to platform
+
+**EXPECTED OUTPUT:**
+A platform-appropriate launch celebration post with announcement, differentiator, brief story, share invite, and thank you. Reads as genuine community celebration, not a launch blast.
+
+---
+
+### PL-25: Cold Email Launch Outreach — Potential Customers
+
+**CONTEXT:**
+Use to reach out to a manually curated list of highly relevant potential buyers on launch day. Cold email on launch day should be personal and targeted — not a blast list.
+
+**PROMPT:**
+Act as a launch cold email writer. Write a launch day cold email to a [TARGET COMPANY/PERSON TYPE — e.g., "freelance marketing consultant with their own client roster"]. Subject (under 50 chars): specific and relevant to their role. Body (under 150 words): (1) one-line on why you're reaching out to them specifically, (2) one-sentence product description relevant to their work, (3) what they'd use it for in their specific context, (4) launch offer and link. Small ask — not a meeting request.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TARGET COMPANY/PERSON TYPE] — be specific about who you're emailing
+- Personalize the first sentence for each recipient — generic cold emails don't work
+
+**EXPECTED OUTPUT:**
+A 150-word launch cold email with personalized subject line and 4-section body. Personal enough to feel non-automated. Small ask at the end (check it out / let me know if useful).
+
+---
+
+### PL-26: Relaunch Campaign — Reviving a Dormant Product
+
+**CONTEXT:**
+Use when relaunching a product that's been available but hasn't been actively promoted. Relaunch campaigns breathe new life into existing offers by adding new reasons to buy now.
+
+**PROMPT:**
+Act as a relaunch campaign writer. Write a relaunch campaign for [PRODUCT NAME] that has been available but not actively promoted for [TIME PERIOD — e.g., "3 months"]. New reason to buy now: [NEW ANGLE — e.g., "we just added 100 new prompts" or "new bonus added for this week only"]. Structure: 3-email relaunch sequence — Day 1: new development, Day 3: case study/proof, Day 5: deadline. Each email: subject line + 3-sentence summary. Under 200 words each.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [NEW ANGLE] — something genuinely new — not just "buy this product"
+- [DEADLINE] — a real or event-based reason to act during this window
+
+**EXPECTED OUTPUT:**
+A 3-email relaunch sequence (under 200 words each) with subject lines and 3-sentence summaries. Each email introduces something new — doesn't repeat the original launch copy.
+
+---
+
+### PL-27: Launch FAQ for Sales Page
+
+**CONTEXT:**
+Use to write FAQs specifically for the launch offer — questions that arise around the time-limited nature of the launch, the price, and the bonuses.
+
+**PROMPT:**
+Act as a launch FAQ copywriter. Write 6 launch-specific FAQs for [PRODUCT NAME]'s sales page. Launch FAQs cover: (1) what happens after the launch window closes, (2) is the launch price available forever, (3) are the bonuses permanent or launch-only, (4) is there a money-back guarantee, (5) can I buy later at the same price, (6) how do I access my purchase immediately. Each answer: 2-4 sentences, specific and honest.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH TERMS] — be accurate about what changes after launch and what stays the same
+
+**EXPECTED OUTPUT:**
+6 launch-specific FAQ entries (2-4 sentences each) covering urgency, price changes, bonuses, guarantee, future availability, and access. Handles the most common decision-blockers during launch.
+
+---
+
+### PL-28: Influencer Outreach — Product Gift + Review Request
+
+**CONTEXT:**
+Use to reach out to influencers, bloggers, or newsletter writers about reviewing your product. Influencer review coverage drives credibility and traffic — this email makes the ask without being transactional.
+
+**PROMPT:**
+Act as an influencer relations writer. Write an outreach email to [INFLUENCER TYPE — e.g., "a marketing newsletter with 10K subscribers"] for a review or feature of [PRODUCT NAME]. Subject (under 50 chars): mention their specific content, not your product. Body (under 200 words): (1) reference their specific audience, (2) offer a complimentary copy for review — no obligation, (3) brief product description relevant to their audience, (4) small ask: would they be interested in reviewing?
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [INFLUENCER TYPE] — be specific about the type of creator/outlet
+- Personalize each outreach with the specific outlet's name and recent content
+
+**EXPECTED OUTPUT:**
+A 200-word influencer outreach email with personalized subject, audience reference, complimentary offer, brief product description, and a small ask. Reads as a genuine recommendation opportunity, not a paid partnership request.
+
+---
+
+### PL-29: Launch Metrics Email to Investors / Advisors
+
+**CONTEXT:**
+Use if you have investors or advisors to update after a launch. Investor update emails must be specific, data-forward, and honest about both wins and challenges.
+
+**PROMPT:**
+Act as an investor update email writer. Write a post-launch update email for [BRAND NAME]'s [PRODUCT NAME] launch to investors/advisors. Include: (1) headline metric — the most impressive number from launch, (2) full results summary (revenue, units, conversion rate, refund rate, list growth), (3) what worked best, (4) what didn't work, (5) next 30-day plan. Tone: confident but honest — include the challenges, not just wins. Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Fill in real launch metrics — this template doesn't work with made-up numbers
+
+**EXPECTED OUTPUT:**
+A 300-word investor/advisor update email with headline metric, full results, analysis (wins + challenges), and 30-day plan. Confident and honest — appropriate for advisor-level transparency.
+
+---
+
+### PL-30: Launch Copy Audit — Pre-Launch Checklist
+
+**CONTEXT:**
+Use in the 48 hours before launch to audit all launch copy for consistency, accuracy, and completeness. Pre-launch copy audits catch errors that would undermine trust on launch day.
+
+**PROMPT:**
+Act as a pre-launch copy auditor. Write a 20-point pre-launch copy checklist for [PRODUCT NAME]. Cover 5 categories: (1) Landing Page (4 checks: headline, price, guarantee, CTA), (2) Emails (4 checks: subject lines, links, price accuracy, countdown timing), (3) Ads (4 checks: headline, URL, offer details, compliance), (4) Social Posts (4 checks: platform-appropriate, link tested, hashtags), (5) Checkout (4 checks: price, product name, confirmation email, download link). Each check: specific action + pass criteria.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Complete this checklist personally within 24 hours of launch — not before
+
+**EXPECTED OUTPUT:**
+A 20-point pre-launch checklist in 5 categories. Each check is a specific, testable action with pass criteria. Complete this before going live to catch errors that would embarrass or mislead buyers.
+
+---
+
+### PL-31: Launch Community AMA — Script
+
+**CONTEXT:**
+Use when hosting an Ask Me Anything session on launch day or the day before. AMAs on Reddit, Twitter Spaces, Discord, or Slack create authentic launch buzz and answer questions that your copy may not address.
+
+**PROMPT:**
+Act as an AMA launch host. Write a launch AMA post/announcement for [BRAND NAME]'s [PRODUCT NAME] launch. Platform: [PLATFORM — e.g., "Reddit r/marketing"]. Include: (1) AMA announcement post (under 200 words: who you are, what you're launching, why you're doing the AMA, when it starts, what to ask), (2) 5 example questions you'll be ready to answer (with 75-word answers each for common questions). Post + 5 prepared Q&As.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PLATFORM] — the community platform where you're hosting the AMA
+- [5 QUESTIONS] — anticipate the most common questions about your product
+
+**EXPECTED OUTPUT:**
+An AMA announcement post (under 200 words) plus 5 prepared Q&A pairs (75 words each). Q&As cover your most commonly asked questions. AMA announcement is specific and invites genuine questions.
+
+---
+
+### PL-32: Cross-Sell During Launch — Existing Customers
+
+**CONTEXT:**
+Use during a new product launch to notify your existing buyers about the new product. Existing customer launch emails convert at much higher rates than cold email because trust is already established.
+
+**PROMPT:**
+Act as an existing customer launch email writer. Write a launch email for [BRAND NAME]'s existing buyers of [EXISTING PRODUCT] announcing the launch of [NEW PRODUCT]. Structure: (1) acknowledge what they already own, (2) introduce what's new and how it complements what they have, (3) exclusive existing-buyer benefit: [EXCLUSIVE — e.g., "$15 off as an existing buyer"], (4) how the two products work together. Under 225 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [EXISTING PRODUCT] — e.g., "AI Marketing Prompt Kit — Starter"
+- [NEW PRODUCT] — e.g., "Notion Content Calendar Template"
+- [EXCLUSIVE] — a genuine existing-buyer benefit
+
+**EXPECTED OUTPUT:**
+A 200-word existing customer cross-sell launch email that acknowledges prior purchase, introduces new product as complementary, offers an exclusive benefit, and shows how they work together.
+
+---
+
+### PL-33: Launch "Stack" Email — Multiple Offers
+
+**CONTEXT:**
+Use when launching multiple products or tiers simultaneously. Stack emails present all options in one email and let buyers self-select — they work best when tiers are clearly differentiated.
+
+**PROMPT:**
+Act as a launch stack email writer. Write a launch email presenting [NUMBER — 2 or 3] product options for [BRAND NAME]: [OPTION 1], [OPTION 2], [OPTION 3 optional]. For each: 1-sentence description, key feature list (3 bullets), price, and who it's for. Overall email structure: (1) launch announcement, (2) which option is right for me? (3) options presented, (4) single CTA link to pricing page where they choose. Under 250 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [OPTIONS] — e.g., "Starter $27 / Full Kit $47 / Bundle $67"
+- Make the differentiation between options immediately obvious
+
+**EXPECTED OUTPUT:**
+A 250-word multi-option launch email with per-option descriptions, bullets, and prices, plus a routing CTA to the pricing page. Clear differentiation — buyers can self-select in under 30 seconds.
+
+---
+
+### PL-34: Partnership Launch Announcement
+
+**CONTEXT:**
+Use when launching a product with a co-creator or distribution partner. Partnership launches reach audiences you couldn't reach alone — this copy frames the partnership as additive value for both audiences.
+
+**PROMPT:**
+Act as a partnership launch announcement writer. Write a joint launch announcement email from [BRAND 1] and [BRAND 2] announcing [JOINT PRODUCT/PROMOTION]. Each brand sends to their own list — this email is from [YOUR BRAND]'s perspective. Structure: (1) who [BRAND 2] is and why their audience will care, (2) what was created together, (3) why it's better together than separately, (4) the launch offer, (5) CTA. Under 250 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND 1] — your brand
+- [BRAND 2] — your partner's brand
+- [JOINT PRODUCT/PROMOTION] — what you created or are promoting together
+
+**EXPECTED OUTPUT:**
+A 250-word partnership launch email that frames the collaboration as buyer-first value, introduces the partner authentically, and drives the joint offer. Reads as a genuine product collaboration, not a co-marketing transaction.
+
+---
+
+### PL-35: Virtual Launch Event — Agenda and Copy
+
+**CONTEXT:**
+Use when hosting a virtual launch event — a live product walkthrough, panel discussion, or celebration for a major product launch. Virtual events create shared experience and urgency around launch day.
+
+**PROMPT:**
+Act as a virtual event launch coordinator. Write the copy package for a virtual launch event for [PRODUCT NAME]. Include: (1) event invitation email (under 200 words), (2) registration confirmation email (under 150 words), (3) event agenda (30-60 minute event, 5 agenda items), (4) post-event follow-up for attendees (under 150 words, includes replay link or purchase link). Event format: [FORMAT — e.g., "live product walkthrough + Q&A" or "panel discussion + launch announcement"].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [FORMAT] — the specific format of your virtual event
+- [DATE/TIME] — exact event details
+
+**EXPECTED OUTPUT:**
+A 4-piece virtual event copy package: invitation email, confirmation, agenda, and post-event follow-up. All pieces work together as a coherent event experience.
+
+---
+
+### PL-36: Podcast Launch Appearance — Talking Points
+
+**CONTEXT:**
+Use when appearing on a podcast to launch or promote a product. Podcast talking points prepare you for common interview questions while keeping the product mention natural and contextually appropriate.
+
+**PROMPT:**
+Act as a podcast media trainer. Write launch talking points for [BRAND NAME]'s [PRODUCT NAME] launch for use on podcast appearances. Include: (1) 60-second elevator pitch (when asked "tell us about your product"), (2) 3 story angles that make good podcast segments, (3) natural product mention — how to introduce the product in conversation without it feeling like an ad, (4) answer to "where can people find you?" (5) what NOT to say (3 common pitfalls). Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PODCAST TYPE] — what type of show you're appearing on
+
+**EXPECTED OUTPUT:**
+A 300-word podcast talking points brief with elevator pitch, 3 story angles, natural product mention, closing answer, and 3 pitfalls. Reference before any podcast recording to stay on message.
+
+---
+
+### PL-37: Early Adopter Program — Terms and Copy
+
+**CONTEXT:**
+Use when creating an early adopter program that rewards your first N customers with permanent benefits. Early adopter programs drive first-mover urgency and create a loyal founding community.
+
+**PROMPT:**
+Act as an early adopter program designer. Write the program terms and email copy for [PRODUCT NAME]'s Early Adopter program: [BENEFIT — e.g., "first 100 buyers get access to all future updates for free" or "founding member pricing locked forever"]. Terms document: what early adopters get, how many spots, what's required. Launch email (under 200 words): announce the program, make the urgency clear, CTA. Keep the benefit specific and genuinely valuable.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [BENEFIT] — a genuine, long-term benefit for being an early adopter
+- [NUMBER OF SPOTS] — create real scarcity — not an unlimited "early adopter" badge
+
+**EXPECTED OUTPUT:**
+A 2-piece early adopter package: program terms document (what/how many/what's required) and 200-word launch email. Benefit is specific and genuinely valuable. Scarcity is real.
+
+---
+
+### PL-38: Post-Launch Blog Post — "We Launched" Story
+
+**CONTEXT:**
+Use after launch to write a blog post documenting the launch story. Launch blog posts serve as SEO content, social proof, and authentic behind-the-scenes content that builds brand trust.
+
+**PROMPT:**
+Act as a launch story blogger. Write a "we launched" blog post for [PRODUCT NAME]'s launch. Structure: (1) what launched (brief description), (2) the problem it solves (personal story), (3) launch results (specific numbers if comfortable sharing), (4) what surprised you about the launch, (5) what's next. Tone: personal and reflective — this is the authentic story, not a press release. Target length: 600-800 words. Include an SEO keyword: [KEYWORD].
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH RESULTS] — share real numbers if comfortable — they build enormous trust
+- [KEYWORD] — an SEO keyword this post could rank for
+
+**EXPECTED OUTPUT:**
+A 600-800 word launch story blog post with 5-section structure. Includes keyword naturally. Reads as genuine reflection — not a victory lap or press announcement.
+
+---
+
+### PL-39: Launch Case Study — First Buyer Story
+
+**CONTEXT:**
+Use to document the first buyer's experience as a launch case study. First buyer case studies are powerful launch assets — they show real, immediate results that validate the product for skeptical prospects.
+
+**PROMPT:**
+Act as a launch case study writer. Write a first-buyer case study for [PRODUCT NAME]. Buyer type: [BUYER DESCRIPTION — e.g., "a freelance marketer with 3 clients"]. Their situation before buying. What they did with the product in the first 48 hours. Specific result: [RESULT]. Format: 3-section narrative (before/during/after), under 300 words. Quote from buyer if available: [QUOTE]. Publishable as a blog post section, social post, or email content.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [BUYER DESCRIPTION] — be specific about who this buyer is
+- [RESULT] — a specific, measurable outcome from using the product early
+
+**EXPECTED OUTPUT:**
+A 300-word first-buyer case study with before/during/after structure and optional quote. Specific enough to be credible. Used across multiple channels: blog, email, social proof section.
+
+---
+
+### PL-40: Launch Copy — "Why I Built This" Authentic Letter
+
+**CONTEXT:**
+Use as a personal letter that accompanies the launch announcement. Authentic "why I built this" letters build massive trust — especially for solo founders or small teams where the personal motivation matters to buyers.
+
+**PROMPT:**
+Act as an authentic launch letter writer. Write a personal "why I built [PRODUCT NAME]" letter for [BRAND NAME]'s launch. Tell the honest story: [MOTIVATION — the real reason]. What you wanted to build and why it didn't exist. What you tried that didn't work. What you spent to create this. Who you built it for and why you care whether they succeed with it. 400-500 words. Authentic letter format — not marketing copy. Ends with a direct invitation to buy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [BRAND NAME] — e.g., "ContentKit"
+- [MOTIVATION] — the real, specific reason this product exists
+
+**EXPECTED OUTPUT:**
+A 400-500 word authentic launch letter in personal voice. Honest, specific, and human — ends with a direct invitation. Not polished marketing copy — reads as a letter from a person.
+
+---
+
+### PL-41: Launch Email — Subject Line Battery (30 variants)
+
+**CONTEXT:**
+Use to test subject lines for all 7 days of a launch email sequence. Having 4-5 subject line options per day lets you A/B test or select the best option for your specific list.
+
+**PROMPT:**
+Act as a launch email subject line specialist. Write 30 subject line variants for a 7-day [PRODUCT NAME] launch email sequence (4-5 per day). Day 1 (launch): 5 variants. Day 2 (feature/story): 4 variants. Day 3 (social proof): 4 variants. Day 4 (objection): 4 variants. Day 5 (bonus): 4 variants. Day 6 (deadline warning): 5 variants. Day 7 (final hours): 4 variants. Each under 50 characters. Label by day.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Test top 2 variants via A/B split to your largest segments
+
+**EXPECTED OUTPUT:**
+30 launch email subject lines organized by day (4-5 per day). Each under 50 characters. Diverse approaches within each day — not variations of the same line.
+
+---
+
+### PL-42: Podcast Episode — Product Launch Special
+
+**CONTEXT:**
+Use if you have a podcast and want to use an episode to launch your product. Podcast launch episodes combine education and promotion — listeners who complete the episode are highly qualified buyers.
+
+**PROMPT:**
+Act as a podcast launch episode scriptwriter. Write a podcast episode outline for a [LENGTH — e.g., "30-minute"] launch episode for [PRODUCT NAME]. Structure: intro hook (2 min), value segment (teach something relevant to the product — 15 min, 3 key lessons), product introduction (5 min — what it is, why you built it, who it's for), offer presentation (5 min — price, bonuses, deadline), CTA (3 min). Include: talking points per section.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [VALUE SEGMENT TOPIC] — a teaching topic that makes the product reveal feel natural
+- [LENGTH] — adjust time allocation based on your typical episode length
+
+**EXPECTED OUTPUT:**
+A 5-section podcast episode outline with time allocations and talking points per section. Value segment is substantial enough that listeners feel they got something even if they don't buy.
+
+---
+
+### PL-43: Launch Day Checklist — Hour-by-Hour
+
+**CONTEXT:**
+Use as the operational checklist for launch day execution. Launch days are chaotic — a specific hour-by-hour checklist prevents mistakes and ensures every platform is activated in the right order.
+
+**PROMPT:**
+Act as a launch operations specialist. Write an hour-by-hour launch day checklist for [PRODUCT NAME] launching at [LAUNCH TIME — e.g., "9am EST"]. Cover T-24 hours through T+8 hours. For each time block: specific actions (make the link live, schedule email send, post on social, respond to comments, check checkout works, respond to refund requests). Format: time / action / owner (founder / scheduled / automation). Approximately 25 action items.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH TIME] — exact launch time and timezone
+- Add your specific platforms and channels to the checklist
+
+**EXPECTED OUTPUT:**
+A 25-item hour-by-hour launch day checklist with time blocks, specific actions, and ownership (founder/scheduled/automation). Operational — reduces launch day chaos by specifying exactly what happens when.
+
+---
+
+### PL-44: Post-Launch Sales Page Update
+
+**CONTEXT:**
+Use to update your sales page after the launch window closes. The post-launch page removes urgency messaging, updates pricing, and removes launch-only bonuses — this template guides the copy changes.
+
+**PROMPT:**
+Act as a post-launch copy update specialist. Write the post-launch updates needed for [PRODUCT NAME]'s sales page. Current (launch version): [LAUNCH HEADLINE + OFFER + BONUSES]. Post-launch changes needed: (1) remove countdown timer and deadline copy, (2) update pricing from [LAUNCH PRICE] to [POST-LAUNCH PRICE], (3) remove launch-only bonuses (note which remain permanently), (4) update hero headline to remove urgency, (5) any new proof points to add from the launch. Format: change list with old copy → new copy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH PRICE vs. POST-LAUNCH PRICE] — e.g., "$47 → $67"
+- [BONUSES STATUS] — which bonuses remain permanently vs. are removed
+
+**EXPECTED OUTPUT:**
+A post-launch page change list with 5 specific changes (old copy → new copy format). Prevents accidentally leaving urgency copy live after the launch window closes.
+
+---
+
+### PL-45: Media Kit — Launch PR Document
+
+**CONTEXT:**
+Use to create a media kit for journalists, bloggers, and podcast hosts covering your launch. A media kit makes it easy for media contacts to write about your product accurately without needing a briefing call.
+
+**PROMPT:**
+Act as a PR media kit writer. Write a one-page media kit for [PRODUCT NAME]'s launch. Include: (1) product description (50 words — who it's for, what it does, key differentiator), (2) founder bio (50 words), (3) key facts (product, price, launch date, website), (4) 3 key stats or proof points, (5) 3 story angles (why this is newsworthy), (6) sample questions for an interview, (7) press contact. Format: one-page document. Under 400 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [KEY STATS] — real, verifiable statistics
+- [NEWSWORTHY ANGLES] — what specifically makes this launch worth covering
+
+**EXPECTED OUTPUT:**
+A one-page media kit (under 400 words) with all 7 sections. Makes it easy for a journalist to write about the launch without a call. Specific and factual throughout.
+
+---
+
+### PL-46: Launch Day Twitter/X Live Thread
+
+**CONTEXT:**
+Use to run a live Twitter thread on launch day, sharing real-time updates, results, and behind-the-scenes moments. Live launch threads earn high engagement because followers can witness the launch unfolding.
+
+**PROMPT:**
+Act as a live launch Twitter thread writer. Write a 10-tweet live launch thread structure for [PRODUCT NAME]'s launch day. Tweet 1 (launch moment): it's live + link. Tweets 2-4 (hourly updates): what's happening, early results, buyer feedback. Tweets 5-7 (behind the scenes): honest moments from the launch day. Tweets 8-9 (social proof): share first testimonials or results. Tweet 10 (day 1 close): results summary + thank you. Template with [FILL IN LIVE] placeholders.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Fill in [REAL NUMBERS] as they happen on launch day — don't fabricate
+- Tweet 10: share real Day 1 results, even if they're modest
+
+**EXPECTED OUTPUT:**
+A 10-tweet live launch thread template with [FILL IN LIVE] placeholders for real-time data. Structure and copy for each tweet provided. Launch day thread documents the journey authentically.
+
+---
+
+### PL-47: Launch Social Proof Aggregation — Post-Launch
+
+**CONTEXT:**
+Use after launch to collect, curate, and deploy the social proof generated during the launch window. First-week testimonials are the most enthusiastic and varied — capturing them systematically creates ongoing marketing assets.
+
+**PROMPT:**
+Act as a social proof aggregation specialist. Write a post-launch social proof collection and deployment plan for [PRODUCT NAME]. Include: (1) where to look for organic mentions (Twitter, email replies, DMs, support tickets), (2) how to request permission to use quotes, (3) 3 templates for requesting testimonials from buyers who expressed satisfaction, (4) where to deploy collected proof (landing page, ads, email, social). Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [PROOF CHANNELS] — adjust based on your specific buyer communication channels
+
+**EXPECTED OUTPUT:**
+A 300-word social proof aggregation plan with 4 sections: discovery locations, permission process, 3 request templates, and deployment map. Captures launch enthusiasm before it fades.
+
+---
+
+### PL-48: Product Hunt Launch — Hunter / Community Outreach
+
+**CONTEXT:**
+Use to reach out to established Product Hunt hunters who can feature your product. Being hunted by an established hunter with followers significantly increases launch day visibility compared to self-hunting.
+
+**PROMPT:**
+Act as a Product Hunt outreach writer. Write an outreach email to an established Product Hunt hunter to ask them to hunt [PRODUCT NAME]. Subject (under 50 chars): reference their past hunts specifically. Body (under 200 words): (1) reference one specific product they've hunted that's relevant, (2) describe [PRODUCT NAME] in 2 sentences, (3) why their audience would find it valuable, (4) ask if they'd be willing to hunt it, (5) offer to provide all assets needed.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Research: find hunters who have hunted similar products before
+- [RELEVANT PAST HUNT] — reference their actual hunting history
+
+**EXPECTED OUTPUT:**
+A 200-word hunter outreach email with personalized subject and 5-section body. References their specific past hunts. Provides all information they need to evaluate in under 60 seconds.
+
+---
+
+### PL-49: Launch Recap Email to List (Post-Launch)
+
+**CONTEXT:**
+Use after the launch window closes to send a transparent recap to your entire list — including those who didn't buy. Transparent recaps build community trust and often convert late-decision buyers.
+
+**PROMPT:**
+Act as a post-launch community recap writer. Write a post-launch recap email for [BRAND NAME]'s [PRODUCT NAME] launch. Send to entire list — buyers and non-buyers. Include: (1) launch results (units sold, revenue — optional if comfortable), (2) what you learned from the launch, (3) one thing you'll do differently next time, (4) what's next for the product, (5) current purchase path for non-buyers (link to post-launch price). Under 250 words. Honest and transparent.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Share real numbers if you're comfortable — transparency builds enormous trust
+
+**EXPECTED OUTPUT:**
+A 250-word post-launch recap email with launch results, lesson learned, improvement pledge, next steps, and purchase path. Sent to entire list — builds community regardless of purchase status.
+
+---
+
+### PL-50: Launch Copy Brief — Full Campaign Summary
+
+**CONTEXT:**
+Use before writing any launch copy as the master brief that aligns all copywriters, designers, and team members on the same message. A launch copy brief prevents inconsistent messaging across channels.
+
+**PROMPT:**
+Act as a launch copy director. Write a launch copy brief for [PRODUCT NAME]. Include: (1) campaign theme (the single story running through all launch copy), (2) primary audience, (3) core message (1 sentence), (4) supporting messages (3 sentences that fill out the story), (5) proof points to use (5 specific claims), (6) objections to handle, (7) urgency mechanism, (8) channel list (where copy is needed), (9) tone notes. Under 400 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [CAMPAIGN THEME] — the coherent narrative that runs through all copy
+- Share this brief with everyone creating copy for the launch
+
+**EXPECTED OUTPUT:**
+A 400-word launch copy brief with 9 sections. Anyone writing copy for this launch starts from this document — ensures consistent story, message, and tone across all channels.
+
+---
+
+### PL-51: Deadline Email Sequence — 3-Email Close
+
+**CONTEXT:**
+Use for the final 3 days of a launch window. The deadline close sequence is the highest-converting period of any launch — these emails must be brief, urgent, and specific.
+
+**PROMPT:**
+Act as a launch deadline sequence writer. Write a 3-email deadline close sequence for [PRODUCT NAME]'s launch ending on [DEADLINE — e.g., "Sunday at midnight EST"]. Day 1 (72 hours left): remind of the deadline + one compelling reason to act now. Day 2 (24 hours left): harder urgency + what they'll miss. Day 3 (3 hours left): final call, direct link only, brief. Each: subject line + email body under 150 words. Escalating urgency — not monotone.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [DEADLINE] — exact date, time, and timezone
+- [WHAT THEY LOSE] — specifically what changes after the deadline (price, bonuses)
+
+**EXPECTED OUTPUT:**
+3 deadline close emails (under 150 words each) with subject lines. Escalating urgency: reminder → warning → final call. Each email is shorter than the previous one.
+
+---
+
+### PL-52: New Version / Major Update Launch
+
+**CONTEXT:**
+Use when launching a significantly updated version of an existing product. Version launches need to clearly communicate what changed and give existing buyers a reason to upgrade.
+
+**PROMPT:**
+Act as a version launch copywriter. Write a version launch email for [PRODUCT NAME] v2.0 (or major update). Audience: existing buyers + new potential buyers. Existing buyer message: what's new in v2.0 and how to access it. New buyer message: what v2.0 includes that makes it the best version yet. Structure: unified email that addresses both audiences. Include: top 5 changes in v2.0, upgrade offer for existing buyers if applicable, and CTA for new buyers. Under 275 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit v2.0"
+- [TOP 5 CHANGES] — the 5 most significant improvements in v2.0
+- [UPGRADE OFFER] — if existing buyers need to pay for the upgrade, the offer terms
+
+**EXPECTED OUTPUT:**
+A 275-word version launch email addressing both existing buyers (upgrade framing) and new buyers (best version framing). Top 5 changes are specific. Upgrade offer is clear and fair.
+
+---
+
+### PL-53: Launch Prediction Post — "Here's What I Expect"
+
+**CONTEXT:**
+Use before launch to share your predictions for the launch publicly. Prediction posts build anticipation and create a narrative thread — you can follow up with actual results, creating a compelling before/after story.
+
+**PROMPT:**
+Act as a founder transparency post writer. Write a pre-launch prediction post for [BRAND NAME]'s [PRODUCT NAME] launch. Publish on [PLATFORM — e.g., "Twitter/X" or "LinkedIn"]. Share: (1) your revenue/sales goal for launch week, (2) your strategy for hitting it, (3) what would make you consider the launch a success vs. a failure, (4) what you're most uncertain about. Under 200 words. Genuine prediction — not a humble-brag.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- Share real numbers — vague predictions ("I hope it does well") aren't interesting
+
+**EXPECTED OUTPUT:**
+A 200-word pre-launch prediction post with specific goal, strategy, success/failure definition, and genuine uncertainty. Followed by a post-launch results post — creates authentic narrative arc.
+
+---
+
+### PL-54: Strategic Launch Timing Analysis
+
+**CONTEXT:**
+Use when deciding when to launch your product. Launch timing affects conversion rates — certain months, days of week, and times of day convert better than others for specific audiences.
+
+**PROMPT:**
+Act as a launch timing strategist. Write a launch timing analysis for [PRODUCT NAME] targeting [TARGET AUDIENCE]. Include: (1) best month for this audience (when is their buying intent highest?), (2) best day of week to launch (when is email/social engagement highest?), (3) best time of day to send launch email, (4) seasons/events to avoid, (5) how long to run the launch window (3 days vs. 7 days vs. 14 days). Under 300 words. Support recommendations with reasoning.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [TARGET AUDIENCE] — e.g., "freelancers and solopreneurs"
+- Research your specific audience's engagement patterns from your email analytics
+
+**EXPECTED OUTPUT:**
+A 300-word launch timing analysis with 5 recommendations (month/day/time/avoid/window length) each with supporting reasoning. Based on audience behavior, not generic advice.
+
+---
+
+### PL-55: Launch Email — "Still Thinking About It" Nurture
+
+**CONTEXT:**
+Use for subscribers who opened launch emails but didn't purchase. These people showed interest but haven't converted — a specific, direct email addressing their hesitation can move them to purchase.
+
+**PROMPT:**
+Act as a hesitation-nurture email writer. Write an email for subscribers who opened the [PRODUCT NAME] launch emails but haven't purchased. They're interested but hesitating. This email: (1) acknowledges they've been following along, (2) names the most common hesitation: [HESITATION — e.g., "wondering if it'll work for your specific business"], (3) addresses it directly and specifically, (4) reduces risk: guarantee + purchase link. Under 175 words. Direct and helpful — not pushy.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [HESITATION] — the specific objection openers-but-non-buyers most commonly have
+- Trigger: send to subscribers who opened 2+ launch emails but didn't click purchase link
+
+**EXPECTED OUTPUT:**
+A 150-word hesitation-nurture email with subject line that addresses one specific objection, reduces risk with the guarantee, and closes with a direct purchase link.
+
+---
+
+### PL-56: Abandoned Checkout Recovery — Launch Version
+
+**CONTEXT:**
+Use for buyers who started checkout during the launch window but didn't complete purchase. Launch abandoned checkouts convert at higher rates than regular abandoned checkouts because the launch urgency is still active.
+
+**PROMPT:**
+Act as a launch checkout recovery email writer. Write an abandoned checkout recovery email for [PRODUCT NAME] during the launch window. This person got to checkout but didn't complete. Email 1 (1 hour after abandonment, under 100 words): gentle reminder — their cart is saved, link is right here. Email 2 (4 hours, under 125 words): address likely hesitation + launch deadline reminder. Subject lines for both. No aggressive language.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH DEADLINE] — specific end time of the launch window
+- [LIKELY HESITATION] — the most common reason people don't complete checkout
+
+**EXPECTED OUTPUT:**
+Two launch abandoned checkout emails (Email 1: under 100 words, Email 2: under 125 words) with subject lines. Email 1 is a gentle reminder; Email 2 handles hesitation and adds launch urgency.
+
+---
+
+### PL-57: Launch Influencer Partnership — Content Brief
+
+**CONTEXT:**
+Use when partnering with influencers for your product launch. A content brief ensures influencers create content that's authentic to them while accurately representing your product.
+
+**PROMPT:**
+Act as an influencer content brief writer. Write a content brief for an influencer partner promoting [PRODUCT NAME]'s launch. Brief sections: (1) product overview (what it is, who it's for, key benefit), (2) key claims they can make (approved and verified), (3) key claims they cannot make (FTC compliance + accuracy), (4) their unique discount code or link, (5) content format suggestions (what types of posts/videos would work), (6) deadline for content publication. Under 300 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [APPROVED CLAIMS] — 3-5 specific, truthful claims
+- [PROHIBITED CLAIMS] — specific things not to say (most important for compliance)
+
+**EXPECTED OUTPUT:**
+A 300-word influencer content brief with product overview, approved/prohibited claims, unique link, content format suggestions, and deadline. FTC-aware — ensures disclosure and accuracy.
+
+---
+
+### PL-58: Launch Thank You Video Script
+
+**CONTEXT:**
+Use to record a personal thank you video for buyers at the end of launch week. Thank you videos build goodwill, reduce refund rates, and generate referrals — 60 seconds of genuine gratitude is highly effective.
+
+**PROMPT:**
+Act as a thank you video script writer. Write a 60-90 second thank you video script for [BRAND NAME]'s launch buyers. Structure: (1) specific number acknowledged (e.g., "X of you bought in the first week"), (2) genuine thanks — what this means to you, (3) one thing you want them to know about the product they may have missed, (4) invitation to reach out with questions or share their results, (5) brief preview of what's coming next for the product. ~175 spoken words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [LAUNCH NUMBER] — actual number of buyers
+- [HIDDEN FEATURE] — something buyers may have overlooked
+
+**EXPECTED OUTPUT:**
+A 60-90 second thank you video script (~175 words) with 5-section structure. Genuine and specific — references the actual launch number. Ends with a forward-looking invitation.
+
+---
+
+### PL-59: Launch Email — Day Before (Final Reminder)
+
+**CONTEXT:**
+Use the day before launch to warm up your list one final time. The day-before email creates anticipation and primes subscribers to open the launch announcement email the next day.
+
+**PROMPT:**
+Act as a pre-launch day-before email writer. Write the email sent the day before [PRODUCT NAME] launches. Goal: prime the list to open tomorrow's launch email. Include: (1) it's happening tomorrow — specific time, (2) one specific thing they'll be able to do/get tomorrow that they can't today, (3) soft ask: look for an email from [BRAND NAME] at [TIME] tomorrow. Under 150 words. Creates anticipation without giving away the full offer.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [BRAND NAME] — e.g., "ContentKit"
+- [LAUNCH TIME] — exact time and timezone
+
+**EXPECTED OUTPUT:**
+A 135-word day-before email with launch date/time, specific tomorrow-value, and a soft engagement ask. Primes the list to expect and open the launch email. Brief and anticipation-building.
+
+---
+
+### PL-60: Customer Onboarding Sequence — Post-Launch
+
+**CONTEXT:**
+Use after the launch window closes to onboard new buyers who purchased during launch. Proper onboarding reduces refunds, increases product usage, and generates the early testimonials that fuel future launches.
+
+**PROMPT:**
+Act as a post-purchase onboarding sequence writer. Write a 5-email onboarding sequence for [PRODUCT NAME] buyers who purchased during launch. Day 1: delivery + quick-start instruction. Day 3: activation — share one specific use case to try today. Day 7: check-in — ask how it's going, offer help. Day 14: testimonial request — ask one specific question. Day 30: celebration + feature you may have missed. Each email: subject line + under 175 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [QUICK-START] — the single most important first step
+- [USE CASE] — one specific task they should try on Day 3
+
+**EXPECTED OUTPUT:**
+A 5-email post-purchase onboarding sequence with subject lines and under-175-word bodies. Progressively activates usage, checks in, collects feedback, and prevents buyer's remorse.
+
+---
+
+### PL-61: Partnership Deal Memo — Co-Launch Terms
+
+**CONTEXT:**
+Use when formalizing a co-launch arrangement with a partner. A clear deal memo prevents misaligned expectations — even informal arrangements benefit from written terms.
+
+**PROMPT:**
+Act as a partnership deal memo writer. Write a co-launch partnership memo between [BRAND 1] and [BRAND 2] for [JOINT OFFER/PROMOTION]. Include: (1) what each party contributes, (2) revenue split or commission structure, (3) each party's audience size/list size for the promotion, (4) promotion timeline and channels, (5) exclusivity terms (if any), (6) what happens if either party cancels. Under 350 words. Informal but clear — not a legal contract, just a written agreement.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND 1/2] — both parties' brand names
+- [JOINT OFFER] — the specific product or promotion being co-launched
+- [REVENUE SPLIT] — the actual agreed-upon commercial terms
+
+**EXPECTED OUTPUT:**
+A 350-word partnership deal memo with 6 sections covering contributions, revenue, audiences, timeline, exclusivity, and cancellation. Not a legal contract — a clear written understanding.
+
+---
+
+### PL-62: Launch Sequence — Minimum Viable Launch (3 emails)
+
+**CONTEXT:**
+Use when you're launching with minimal time or resources. A 3-email minimum viable launch (announcement, mid-launch, deadline) can drive significant revenue without a full 7-day sequence.
+
+**PROMPT:**
+Act as a minimal launch copywriter. Write a 3-email minimum viable launch sequence for [PRODUCT NAME]. Email 1 (Day 1 — announcement): launch announcement, what it is, price, link. Under 200 words. Email 2 (Day 4 — mid-launch): one compelling reason to buy now (new angle, proof, or feature demo). Under 175 words. Email 3 (Day 7 — deadline): final call, deadline, price after. Under 150 words. Include subject lines. Simple, direct, no fluff.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [LAUNCH WINDOW] — 7 days for a MVL sequence
+- [POST-LAUNCH TERMS] — what changes after Day 7
+
+**EXPECTED OUTPUT:**
+A 3-email MVL sequence with subject lines and shrinking word counts (200 → 175 → 150). Direct and action-focused — each email has one job. Ready to send with minimal customization.
+
+---
+
+### PL-63: Launch Day Slack/Community Message
+
+**CONTEXT:**
+Use to announce your launch in Slack communities, Discord servers, or online communities where your audience gathers. Community launch posts must follow community rules and lead with value, not promotion.
+
+**PROMPT:**
+Act as a community launch announcement writer. Write a launch announcement for posting in [COMMUNITY TYPE — e.g., "a Slack group for freelance marketers"]. Rules: lead with value (share something useful first), mention the product second, no hard sell. Structure: (1) valuable share (a tip or insight related to the product), (2) natural product mention ("I built something to solve this — [PRODUCT NAME] just launched"), (3) invitation to check it out — no pressure. Under 150 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [COMMUNITY TYPE] — the specific community type and its rules
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [VALUABLE SHARE] — a genuine tip that provides value before the product mention
+
+**EXPECTED OUTPUT:**
+A 130-word community launch post that leads with genuine value, mentions the product naturally, and invites without pressuring. Follows community norms — not a sales blast.
+
+---
+
+### PL-64: Affiliate Commission Structure Brief
+
+**CONTEXT:**
+Use to define and communicate your affiliate program's commission structure to potential affiliates. The commission brief must make the earning potential clear and the mechanics simple.
+
+**PROMPT:**
+Act as an affiliate program designer. Write a commission structure brief for [PRODUCT NAME]'s affiliate program. Include: (1) commission rate: [RATE — e.g., "30% per sale"], (2) payment terms: when and how affiliates are paid, (3) cookie duration: how long the affiliate gets credit after a click, (4) what counts as a qualifying sale (vs. refunds), (5) payout threshold (minimum before payment), (6) top affiliate earnings example: "Affiliates who send 10 buyers/month earn $[X]." Under 250 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [RATE] — your actual commission rate
+- [PAYMENT TERMS] — e.g., "monthly via PayPal, net 30"
+- [COOKIE DURATION] — e.g., "30 days"
+
+**EXPECTED OUTPUT:**
+A 250-word affiliate commission structure brief with 6 sections. Clear and specific — potential affiliates can calculate their earning potential without guessing. No ambiguity about payment mechanics.
+
+---
+
+### PL-65: Launch Lessons Learned — Public Post
+
+**CONTEXT:**
+Use after launch to write a public "lessons learned" post. Public transparency posts about launch results and lessons build enormous trust, earn significant shares, and position you as an authentic founder in your space.
+
+**PROMPT:**
+Act as a transparent founder post writer. Write a public "launch lessons learned" post for [BRAND NAME]'s [PRODUCT NAME] launch. Share: (1) one thing that worked better than expected, (2) one thing that performed worse than expected, (3) one thing you'd do completely differently, (4) the surprising thing no one told you about launching a product, (5) what you're going to do next. Include real numbers if you can — even modest ones. Platform: [PLATFORM — e.g., "LinkedIn"]. Under 350 words.
+
+**VARIABLES TO CUSTOMIZE:**
+- [BRAND NAME] — e.g., "ContentKit"
+- [PRODUCT NAME] — e.g., "AI Marketing Prompt Kit"
+- [REAL NUMBERS] — share whatever you're comfortable with — even round numbers
+- Specific lessons are 10x more valuable than vague ones
+
+**EXPECTED OUTPUT:**
+A 350-word public lessons learned post with 5 specific lessons and real numbers. Builds trust through transparency. Earns shares from other founders who recognize their own experiences.
+
+---
+
