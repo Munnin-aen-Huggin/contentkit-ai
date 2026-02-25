@@ -1,0 +1,162 @@
+/* ContentKit AI — PDF Stylesheet */
+
+@page {
+  size: A4;
+  margin: 2.2cm 2.5cm 2.2cm 2.5cm;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 11pt;
+  line-height: 1.65;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  font-size: 22pt;
+  font-weight: 700;
+  color: #111111;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  page-break-after: avoid;
+}
+
+h2 {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  font-size: 15pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #e0e0e0;
+  page-break-after: avoid;
+}
+
+h3 {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  font-size: 12pt;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-top: 1.6em;
+  margin-bottom: 0.3em;
+  page-break-after: avoid;
+}
+
+h4 {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  font-size: 11pt;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0.5em 0 0.8em 0;
+  orphans: 3;
+  widows: 3;
+}
+
+/* Prompt blocks rendered as blockquotes */
+blockquote {
+  background-color: #f7f7f7;
+  border-left: 4px solid #555555;
+  margin: 1em 0;
+  padding: 0.8em 1.2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 9.5pt;
+  line-height: 1.55;
+  color: #222222;
+  page-break-inside: avoid;
+}
+
+/* Inline code */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 9pt;
+  background-color: #f2f2f2;
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+  color: #333333;
+}
+
+/* Code fences */
+pre {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 0.8em 1em;
+  font-size: 9pt;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  page-break-inside: avoid;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0.4em 0 0.8em 0;
+  padding-left: 1.6em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+strong {
+  font-weight: 700;
+  color: #111111;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 1.8em 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+  margin: 1em 0;
+  page-break-inside: avoid;
+}
+
+th {
+  background-color: #e8e8e8;
+  font-weight: 700;
+  padding: 0.4em 0.6em;
+  border: 1px solid #bbbbbb;
+  text-align: left;
+}
+
+td {
+  padding: 0.35em 0.6em;
+  border: 1px solid #cccccc;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background-color: #fafafa;
+}
+
+/* Page break helpers */
+.page-break {
+  page-break-after: always;
+}
+
+/* Ensure H3 prompt entries don't orphan from their body */
+h3 + p, h3 + blockquote {
+  page-break-before: avoid;
+}
