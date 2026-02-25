@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 1 of 5 (Product Assets)
-Plan: 3 of 4 in current phase (01-02 COMPLETE — advancing to 01-03)
+Plan: 4 of 4 in current phase (01-03 COMPLETE — advancing to 01-04)
 Status: Active
-Last activity: 2026-02-25 — 01-02 COMPLETE; 4 Notion template markdown files delivered as product assets
+Last activity: 2026-02-25 — 01-03 COMPLETE; lead magnet content and asset manifest delivered
 
-Progress: [██░░░░░░░░] 10%
+Progress: [███░░░░░░░] 15%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 77min
-- Total execution time: 155min
+- Total plans completed: 3
+- Average duration: 54min
+- Total execution time: 162min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01 | 2 | 155min | 77min |
+| 01 | 3 | 162min | 54min |
 
 **Recent Trend:**
-- Last 5 plans: 120min (01-01), 35min (01-02)
+- Last 5 plans: 120min (01-01), 35min (01-02), 7min (01-03)
 - Trend: —
 
 *Updated after each plan completion*
@@ -39,6 +39,7 @@ Progress: [██░░░░░░░░] 10%
 
 | Phase | Plan | Duration | Tasks | Files |
 |-------|------|----------|-------|-------|
+| 01 | 03 | 7min | 2 | 2 |
 | 01 | 02 | 35min | 2 | 5 |
 | 01 | 02 | 10min | 1 | 1 |
 | 01 | 01 | 120min | 2 | 2 |
@@ -63,6 +64,9 @@ Recent decisions affecting current work:
 - [Phase 01-01]: Variable format includes concrete example ("e.g., 'freelance graphic designers charging under $50/hr'") — not just [VARIABLE NAME]
 - [Phase 01-02]: Notion templates delivered as markdown files, not Notion GUI builds — per user instruction; files are immediately usable as product deliverables, also importable into Notion
 - [Phase 01-02]: Pre-filled with realistic sample content (not generic placeholders) — buyers see a populated workspace that shows the level of specificity the kit enables
+- [Phase 01-03]: Notion templates referenced by file path in asset manifest, not Notion URLs — consistent with markdown file delivery format from 01-02
+- [Phase 01-03]: yourdomain.com placeholder convention throughout asset manifest — Phase 2 does single find-replace after domain is established
+- [Phase 01-03]: Lead magnet prompts are fresh simplified versions of Full Kit categories — Instagram hooks, email subject lines, PAS ad, hero section, launch email
 
 ### Pending Todos
 
@@ -77,7 +81,8 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 01-02 — 4 Notion template markdown files created and committed. Ready for 01-03.
+Stopped at: Completed 01-03 — lead magnet content (544aae4) and asset manifest (bd9e07a) created and committed. Ready for 01-04.
 Resume file: None
 Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
 Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
+Note: 01-03 COMPLETE (2026-02-25) — lead-magnet-content.md (544aae4) and asset-manifest.md (bd9e07a)
