@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** A single landing page that converts visitors into buyers of a high-value digital marketing toolkit — with zero ongoing costs and maximum profit margins.
-**Current focus:** Phase 2 — Infrastructure
+**Current focus:** Phase 3 — Email Automation
 
 ## Current Position
 
-Phase: 2 of 5 (Infrastructure)
-Plan: 1 of 4 in current phase (02-01 COMPLETE — Tailwind toolchain, output.css, Alpine.js, thank-you.html)
-Status: Active
-Last activity: 2026-02-25 — 02-01 COMPLETE; Tailwind v4 CLI compiled output.css, index.html updated, thank-you.html created
+Phase: 3 of 5 (Email Automation)
+Plan: 0 of 3 in current phase (not yet planned)
+Status: Ready to plan
+Last activity: 2026-02-25 — Phase 2 COMPLETE; GitHub Pages live, Lemon Squeezy checkout URLs created
 
-Progress: [████░░░░░░] 25%
+Progress: [████████░░░░░░░░░░░░] 40%
 
 ## Performance Metrics
 
@@ -77,6 +77,9 @@ Recent decisions affecting current work:
 - [Phase 02-01]: output.css committed to git (not gitignored) — static deployable artifact, no CI/CD build required
 - [Phase 02-01]: Alpine.js v3 via jsDelivr CDN with defer in head — defer ensures DOM-ready init without moving script to body bottom
 - [Phase 02-01]: oklch color space for custom theme tokens — Tailwind v4 default, perceptually uniform, modern browser support
+- [Phase 02-02]: GitHub Pages over Cloudflare Pages — user preference, simpler setup, same outcome
+- [Phase 02-03]: Lemon Squeezy over Stripe — user cannot meet Stripe's western business/bank requirements; LS is merchant of record, handles VAT globally
+- [Phase 02-03]: Product file delivery via Lemon Squeezy receipt email — simplifies Phase 3 (Kit handles lead magnet + nurture only, not product delivery)
 
 ### Pending Todos
 
@@ -84,14 +87,14 @@ None yet.
 
 ### Blockers/Concerns
 
-- [Phase 2]: Verify Zapier template availability for Stripe checkout.session.completed → Kit add subscriber with buyer tag before committing to Zapier over Cloudflare Worker
-- [Phase 2]: EU VAT handling — explicit decision required before first sale; cannot be deferred after revenue begins
+- [Phase 2]: RESOLVED — EU VAT handled by Lemon Squeezy as merchant of record
+- [Phase 3]: Verify Lemon Squeezy → Kit integration (built-in ConvertKit integration or Zapier webhook)
 - [Phase 1]: Social proof dependency — testimonials from 10-20 beta users are a hard dependency for PAGE-05; collect during Phase 1 before Phase 4 begins
 
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 02-01 — Tailwind v4 toolchain setup (494eb44, 5d31108, 9fd62a7). output.css compiled (22KB), index.html updated, thank-you.html stub created.
+Stopped at: Phase 2 COMPLETE. All 3 plans done. Ready for Phase 3 planning.
 Resume file: None
 Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
 Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
