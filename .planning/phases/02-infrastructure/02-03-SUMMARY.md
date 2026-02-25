@@ -59,7 +59,7 @@ completed: 2026-02-25
 - **Lemon Squeezy Store:** https://contentkit-ai.lemonsqueezy.com
 - **Starter Kit ($27) Checkout URL:** https://contentkit-ai.lemonsqueezy.com/checkout/buy/91776603-aff0-4efb-9513-0be0a1514540
 - **Full Kit ($47) Checkout URL:** https://contentkit-ai.lemonsqueezy.com/checkout/buy/5a44db7f-e439-4acf-9a90-96073b40fe9a
-- **Thank-you redirect:** https://munnin-aen-huggin.github.io/contentkit-ai/thank-you.html
+- **Thank-you redirect:** https://getcontentkit.com/thank-you.html
 
 ## Deviation from Plan
 

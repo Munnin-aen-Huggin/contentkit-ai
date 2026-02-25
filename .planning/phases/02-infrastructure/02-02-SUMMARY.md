@@ -15,7 +15,7 @@
 ## Key artifacts
 
 - **GitHub Repo:** https://github.com/Munnin-aen-Huggin/contentkit-ai
-- **Live Site URL:** https://munnin-aen-huggin.github.io/contentkit-ai/
+- **Live Site URL:** https://getcontentkit.com/
 - **Deploy Workflow:** `.github/workflows/deploy.yml`
 
 ## Deviation from plan

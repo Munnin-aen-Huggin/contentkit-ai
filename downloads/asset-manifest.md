@@ -2,7 +2,7 @@
 
 Generated: 2026-02-25
 Status: LIVE — All assets deployed to GitHub Pages. Product files also uploaded to Lemon Squeezy for automatic delivery on purchase.
-Domain: munnin-aen-huggin.github.io/contentkit-ai
+Domain: getcontentkit.com
 Payment processor: Lemon Squeezy (merchant of record)
 Store URL: https://contentkit-ai.lemonsqueezy.com
 
@@ -25,9 +25,9 @@ These files are committed to the repo and served as static files by GitHub Pages
 
 | Asset | Local Content File | Local PDF Path (post-design) | Live URL (after Phase 2 deploy) | File Status |
 |-------|-------------------|------------------------------|--------------------------------|-------------|
-| Full Kit PDF | downloads/ai-prompt-kit-full-content.md | downloads/ai-prompt-kit-full.pdf | https://munnin-aen-huggin.github.io/contentkit-ai/downloads/ai-prompt-kit-full.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
-| Starter Kit PDF | downloads/ai-prompt-kit-starter-content.md | downloads/ai-prompt-kit-starter.pdf | https://munnin-aen-huggin.github.io/contentkit-ai/downloads/ai-prompt-kit-starter.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
-| Lead Magnet PDF | downloads/lead-magnet-content.md | downloads/5-ai-prompts-lead-magnet.pdf | https://munnin-aen-huggin.github.io/contentkit-ai/downloads/5-ai-prompts-lead-magnet.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
+| Full Kit PDF | downloads/ai-prompt-kit-full-content.md | downloads/ai-prompt-kit-full.pdf | https://getcontentkit.com/downloads/ai-prompt-kit-full.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
+| Starter Kit PDF | downloads/ai-prompt-kit-starter-content.md | downloads/ai-prompt-kit-starter.pdf | https://getcontentkit.com/downloads/ai-prompt-kit-starter.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
+| Lead Magnet PDF | downloads/lead-magnet-content.md | downloads/5-ai-prompts-lead-magnet.pdf | https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf | [x] Generated — md-to-pdf (Plan 01-04) |
 
 Note: PDFs were generated programmatically from content .md files using md-to-pdf (Plan 01-04).
 Files are in downloads/ and ready to commit to the repo for Cloudflare Pages hosting.
@@ -40,10 +40,10 @@ These templates were created as markdown files in Plan 01-02. They are immediate
 
 | Template | Local File Path | Live URL (after Phase 2 deploy) | Verified |
 |----------|-----------------|--------------------------------|----------|
-| 30-Day Content Calendar | downloads/notion-30-day-content-calendar.md | https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-30-day-content-calendar.md | [x] File exists |
-| 90-Day Content Calendar | downloads/notion-90-day-content-calendar.md | https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-90-day-content-calendar.md | [x] File exists |
-| Brand Strategy Workspace | downloads/notion-brand-strategy-workspace.md | https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-brand-strategy-workspace.md | [x] File exists |
-| Campaign Planner | downloads/notion-campaign-planner.md | https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-campaign-planner.md | [x] File exists |
+| 30-Day Content Calendar | downloads/notion-30-day-content-calendar.md | https://getcontentkit.com/downloads/notion-30-day-content-calendar.md | [x] File exists |
+| 90-Day Content Calendar | downloads/notion-90-day-content-calendar.md | https://getcontentkit.com/downloads/notion-90-day-content-calendar.md | [x] File exists |
+| Brand Strategy Workspace | downloads/notion-brand-strategy-workspace.md | https://getcontentkit.com/downloads/notion-brand-strategy-workspace.md | [x] File exists |
+| Campaign Planner | downloads/notion-campaign-planner.md | https://getcontentkit.com/downloads/notion-campaign-planner.md | [x] File exists |
 
 Note: If Phase 2 decision requires separate public Notion page URLs (for in-browser preview before download), those URLs will be added here. Current status: file-based delivery.
 
@@ -53,7 +53,7 @@ Note: If Phase 2 decision requires separate public Notion page URLs (for in-brow
 
 ### Starter — $27
 Email delivers:
-- Download link: https://munnin-aen-huggin.github.io/contentkit-ai/downloads/ai-prompt-kit-starter.pdf
+- Download link: https://getcontentkit.com/downloads/ai-prompt-kit-starter.pdf
 - Note: Starter does NOT include Notion templates (that's the Full Kit upsell)
 
 Kit tag to apply: `purchased-starter`
@@ -61,11 +61,11 @@ Kit sequence: `post-purchase-starter`
 
 ### Full Kit — $47
 Email delivers:
-- Download link: https://munnin-aen-huggin.github.io/contentkit-ai/downloads/ai-prompt-kit-full.pdf
-- Notion 30-Day Calendar: https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-30-day-content-calendar.md
-- Notion 90-Day Calendar: https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-90-day-content-calendar.md
-- Notion Brand Strategy Workspace: https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-brand-strategy-workspace.md
-- Notion Campaign Planner: https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-campaign-planner.md
+- Download link: https://getcontentkit.com/downloads/ai-prompt-kit-full.pdf
+- Notion 30-Day Calendar: https://getcontentkit.com/downloads/notion-30-day-content-calendar.md
+- Notion 90-Day Calendar: https://getcontentkit.com/downloads/notion-90-day-content-calendar.md
+- Notion Brand Strategy Workspace: https://getcontentkit.com/downloads/notion-brand-strategy-workspace.md
+- Notion Campaign Planner: https://getcontentkit.com/downloads/notion-campaign-planner.md
 
 Kit tag to apply: `purchased-full-kit`
 Kit sequence: `post-purchase-full-kit`
@@ -76,7 +76,7 @@ Kit sequence: `post-purchase-full-kit`
 
 | Asset | URL | Kit Sequence |
 |-------|-----|-------------|
-| Lead Magnet PDF | https://munnin-aen-huggin.github.io/contentkit-ai/downloads/5-ai-prompts-lead-magnet.pdf | `lead-magnet-delivery` (Day 0) |
+| Lead Magnet PDF | https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf | `lead-magnet-delivery` (Day 0) |
 
 Kit tag to apply on opt-in: `lead-magnet-subscriber`
 
@@ -94,7 +94,7 @@ Hi {{subscriber.first_name}},
 Here's your free guide: 5 AI Prompts That Replace a $5K Copywriter
 
 [Download Your Free Guide]
-https://munnin-aen-huggin.github.io/contentkit-ai/downloads/5-ai-prompts-lead-magnet.pdf
+https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf
 
 These prompts work with ChatGPT, Claude, Gemini — or any AI writing tool you prefer.
 
@@ -114,13 +114,13 @@ Hi {{subscriber.first_name}},
 Thank you for your purchase! Here's your download:
 
 [Download Your Prompt Pack (200+ Prompts)]
-https://munnin-aen-huggin.github.io/contentkit-ai/downloads/ai-prompt-kit-starter.pdf
+https://getcontentkit.com/downloads/ai-prompt-kit-starter.pdf
 
 This pack works with any AI tool — ChatGPT, Claude, Gemini.
 Start with Category 1 (Ads) or Category 2 (Emails) — those get results fastest.
 
 Want the full 500+ prompt pack plus four Notion templates for content planning?
-Upgrade to the Full Kit: https://munnin-aen-huggin.github.io/contentkit-ai/[upgrade-page-placeholder]
+Upgrade to the Full Kit: https://getcontentkit.com/[upgrade-page-placeholder]
 
 Questions? Reply to this email.
 ContentKit AI
@@ -140,15 +140,15 @@ Thank you for your purchase! Everything is ready for you below.
 ━━━ YOUR DOWNLOADS ━━━
 
 [Download Your Full Prompt Pack (500+ Prompts)]
-https://munnin-aen-huggin.github.io/contentkit-ai/downloads/ai-prompt-kit-full.pdf
+https://getcontentkit.com/downloads/ai-prompt-kit-full.pdf
 
 ━━━ YOUR NOTION TEMPLATES ━━━
 Click each link to download your template files:
 
-• 30-Day Content Calendar → https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-30-day-content-calendar.md
-• 90-Day Content Calendar → https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-90-day-content-calendar.md
-• Brand Strategy Workspace → https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-brand-strategy-workspace.md
-• Campaign Planner → https://munnin-aen-huggin.github.io/contentkit-ai/downloads/notion-campaign-planner.md
+• 30-Day Content Calendar → https://getcontentkit.com/downloads/notion-30-day-content-calendar.md
+• 90-Day Content Calendar → https://getcontentkit.com/downloads/notion-90-day-content-calendar.md
+• Brand Strategy Workspace → https://getcontentkit.com/downloads/notion-brand-strategy-workspace.md
+• Campaign Planner → https://getcontentkit.com/downloads/notion-campaign-planner.md
 
 To use in Notion: Open the file, copy the content, create a new Notion page, paste as Markdown.
 
@@ -166,7 +166,7 @@ ContentKit AI
 ## Phase Handoff Notes
 
 Phase 2 (Infrastructure): COMPLETE
-- GitHub Pages live at https://munnin-aen-huggin.github.io/contentkit-ai/
+- GitHub Pages live at https://getcontentkit.com/
 - Lemon Squeezy store and checkout URLs created
 - Domain placeholders replaced with real URLs
 
@@ -180,5 +180,5 @@ Phase 3 (Email Automation) needs:
 Phase 4 (Front-End) needs:
 - Starter checkout URL: https://contentkit-ai.lemonsqueezy.com/checkout/buy/91776603-aff0-4efb-9513-0be0a1514540
 - Full Kit checkout URL: https://contentkit-ai.lemonsqueezy.com/checkout/buy/5a44db7f-e439-4acf-9a90-96073b40fe9a
-- Lead magnet PDF URL: https://munnin-aen-huggin.github.io/contentkit-ai/downloads/5-ai-prompts-lead-magnet.pdf
+- Lead magnet PDF URL: https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf
 - Upgrade page URL to replace `[upgrade-page-placeholder]` in post-purchase-starter email
