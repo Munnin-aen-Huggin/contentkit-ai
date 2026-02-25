@@ -52,12 +52,12 @@ Plans:
   3. Tailwind CSS v4 CLI compiles a stylesheet locally without a Node project or npm install
   4. Alpine.js v3 loads from CDN in the project's HTML and the FAQ accordion interactive example works in a browser
   5. The Cloudflare Pages deployment URL resolves and serves the site without errors
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: Initialize git repo, connect to Cloudflare Pages, and verify push-to-deploy pipeline
-- [ ] 02-02: Set up Tailwind CSS v4 standalone CLI and Alpine.js v3 CDN; create base HTML shell
-- [ ] 02-03: Create two Stripe Payment Links ($27/$47) with post-purchase redirect to thank-you URL
+- [ ] 02-01-PLAN.md — Download Tailwind v4 CLI, compile output.css, update index.html (swap CDN → compiled CSS + Alpine.js), create thank-you.html stub
+- [ ] 02-02-PLAN.md — Create GitHub repository, connect Cloudflare Pages, verify push-to-deploy pipeline
+- [ ] 02-03-PLAN.md — Create two Stripe Payment Links ($27 Starter, $47 Full Kit) with redirect to thank-you.html
 
 ---
 
