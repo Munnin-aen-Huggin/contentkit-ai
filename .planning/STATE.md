@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 1 of 5 (Product Assets)
-Plan: 4 of 4 in current phase (01-03 COMPLETE — advancing to 01-04)
+Plan: 4 of 4 in current phase (01-04 COMPLETE — Phase 1 complete)
 Status: Active
-Last activity: 2026-02-25 — 01-03 COMPLETE; lead magnet content and asset manifest delivered
+Last activity: 2026-02-25 — 01-04 COMPLETE; three product PDFs generated from markdown content
 
-Progress: [███░░░░░░░] 15%
+Progress: [████░░░░░░] 20%
 
 ## Performance Metrics
 
@@ -27,10 +27,10 @@ Progress: [███░░░░░░░] 15%
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01 | 3 | 162min | 54min |
+| 01 | 4 | 172min | 43min |
 
 **Recent Trend:**
-- Last 5 plans: 120min (01-01), 35min (01-02), 7min (01-03)
+- Last 5 plans: 120min (01-01), 35min (01-02), 7min (01-03), 10min (01-04)
 - Trend: —
 
 *Updated after each plan completion*
@@ -39,6 +39,7 @@ Progress: [███░░░░░░░] 15%
 
 | Phase | Plan | Duration | Tasks | Files |
 |-------|------|----------|-------|-------|
+| 01 | 04 | 10min | 2 | 5 |
 | 01 | 03 | 7min | 2 | 2 |
 | 01 | 02 | 35min | 2 | 5 |
 | 01 | 02 | 10min | 1 | 1 |
@@ -67,6 +68,9 @@ Recent decisions affecting current work:
 - [Phase 01-03]: Notion templates referenced by file path in asset manifest, not Notion URLs — consistent with markdown file delivery format from 01-02
 - [Phase 01-03]: yourdomain.com placeholder convention throughout asset manifest — Phase 2 does single find-replace after domain is established
 - [Phase 01-03]: Lead magnet prompts are fresh simplified versions of Full Kit categories — Instagram hooks, email subject lines, PAS ad, hero section, launch email
+- [Phase 01-04]: md-to-pdf via npx --yes chosen over pandoc/wkhtmltopdf — puppeteer handles CSS @page rules and blockquote styling without system PDF engine dependencies
+- [Phase 01-04]: Shared pdf-style.css applied to all three PDFs — consistent branding, single source for typography changes
+- [Phase 01-04]: PDFs stored at flat paths in downloads/ — consistent with other Phase 1 deliverables, simplifies Cloudflare Pages static routing
 
 ### Pending Todos
 
@@ -81,8 +85,9 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 01-03 — lead magnet content (544aae4) and asset manifest (bd9e07a) created and committed. Ready for 01-04.
+Stopped at: Completed 01-04 — three product PDFs generated (e076c58) and asset manifest updated (b7067b0). Phase 1 complete.
 Resume file: None
 Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
 Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
 Note: 01-03 COMPLETE (2026-02-25) — lead-magnet-content.md (544aae4) and asset-manifest.md (bd9e07a)
+Note: 01-04 COMPLETE (2026-02-25) — ai-prompt-kit-full.pdf (3.0MB), ai-prompt-kit-starter.pdf (1.3MB), 5-ai-prompts-lead-magnet.pdf (261KB) committed at e076c58; asset-manifest.md updated at b7067b0. Phase 1 all 4 plans complete.
