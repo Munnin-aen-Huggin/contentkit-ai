@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** A single landing page that converts visitors into buyers of a high-value digital marketing toolkit — with zero ongoing costs and maximum profit margins.
-**Current focus:** Phase 1 — Product Assets
+**Current focus:** Phase 2 — Infrastructure
 
 ## Current Position
 
-Phase: 1 of 5 (Product Assets)
-Plan: 4 of 4 in current phase (01-04 COMPLETE — Phase 1 complete)
+Phase: 2 of 5 (Infrastructure)
+Plan: 1 of 4 in current phase (02-01 COMPLETE — Tailwind toolchain, output.css, Alpine.js, thank-you.html)
 Status: Active
-Last activity: 2026-02-25 — 01-04 COMPLETE; three product PDFs generated from markdown content
+Last activity: 2026-02-25 — 02-01 COMPLETE; Tailwind v4 CLI compiled output.css, index.html updated, thank-you.html created
 
-Progress: [████░░░░░░] 20%
+Progress: [████░░░░░░] 25%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 54min
-- Total execution time: 162min
+- Total plans completed: 5
+- Average duration: 44min
+- Total execution time: 175min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01 | 4 | 172min | 43min |
+| 02 | 1 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: 120min (01-01), 35min (01-02), 7min (01-03), 10min (01-04)
-- Trend: —
+- Last 5 plans: 120min (01-01), 35min (01-02), 7min (01-03), 10min (01-04), 3min (02-01)
+- Trend: Fast
 
 *Updated after each plan completion*
 
@@ -39,6 +40,7 @@ Progress: [████░░░░░░] 20%
 
 | Phase | Plan | Duration | Tasks | Files |
 |-------|------|----------|-------|-------|
+| 02 | 01 | 3min | 3 | 5 |
 | 01 | 04 | 10min | 2 | 5 |
 | 01 | 03 | 7min | 2 | 2 |
 | 01 | 02 | 35min | 2 | 5 |
@@ -71,6 +73,10 @@ Recent decisions affecting current work:
 - [Phase 01-04]: md-to-pdf via npx --yes chosen over pandoc/wkhtmltopdf — puppeteer handles CSS @page rules and blockquote styling without system PDF engine dependencies
 - [Phase 01-04]: Shared pdf-style.css applied to all three PDFs — consistent branding, single source for typography changes
 - [Phase 01-04]: PDFs stored at flat paths in downloads/ — consistent with other Phase 1 deliverables, simplifies Cloudflare Pages static routing
+- [Phase 02-01]: Tailwind v4 standalone CLI over npm/package.json — no build step, Cloudflare Pages serves committed output.css directly
+- [Phase 02-01]: output.css committed to git (not gitignored) — static deployable artifact, no CI/CD build required
+- [Phase 02-01]: Alpine.js v3 via jsDelivr CDN with defer in head — defer ensures DOM-ready init without moving script to body bottom
+- [Phase 02-01]: oklch color space for custom theme tokens — Tailwind v4 default, perceptually uniform, modern browser support
 
 ### Pending Todos
 
@@ -85,9 +91,10 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 01-04 — three product PDFs generated (e076c58) and asset manifest updated (b7067b0). Phase 1 complete.
+Stopped at: Completed 02-01 — Tailwind v4 toolchain setup (494eb44, 5d31108, 9fd62a7). output.css compiled (22KB), index.html updated, thank-you.html stub created.
 Resume file: None
 Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
 Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
 Note: 01-03 COMPLETE (2026-02-25) — lead-magnet-content.md (544aae4) and asset-manifest.md (bd9e07a)
 Note: 01-04 COMPLETE (2026-02-25) — ai-prompt-kit-full.pdf (3.0MB), ai-prompt-kit-starter.pdf (1.3MB), 5-ai-prompts-lead-magnet.pdf (261KB) committed at e076c58; asset-manifest.md updated at b7067b0. Phase 1 all 4 plans complete.
+Note: 02-01 COMPLETE (2026-02-25) — .gitignore (494eb44), src/input.css, thank-you.html; output.css compiled 22KB (5d31108); index.html CDN swap + Alpine.js (9fd62a7)
