@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 4 of 5 (Front-End Build)
-Plan: 3 of 4 (in progress)
-Status: Executing
-Last activity: 2026-02-26 — 04-03 COMPLETE (legal pages: privacy-policy.html, terms-of-service.html, refund-policy.html)
+Plan: 4 of 4 (checkpoint — awaiting human verification)
+Status: Checkpoint
+Last activity: 2026-02-26 — 04-04 Task 1 COMPLETE (output.css recompiled 26KB; og-image.png 1200x630px created at 19d87e9)
 
-Progress: [██████████████░░░░░░] 70%
+Progress: [███████████████░░░░░] 75%
 
 ## Performance Metrics
 
@@ -107,7 +107,7 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-26
-Stopped at: Completed 04-03-PLAN.md. Legal pages live. Ready for 04-04.
+Stopped at: 04-04 Task 1 complete. Awaiting human verify at Task 2 checkpoint (full front-end verification + Stripe redirect config).
 Resume file: None
 Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
 Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
@@ -119,3 +119,4 @@ Note: 03-03 Task 1 COMPLETE (2026-02-26) — webhook/netlify/functions/ls-webhoo
 Note: 04-01 COMPLETE (2026-02-26) — Sample Prompt Preview (PAGE-04) + Who This Is NOT For (PAGE-08) added; Stripe Payment Links wired; OG/Twitter meta added; Google Fonts @import fixed; dark-700 token added. Committed at e4b4209, de4015f
 Note: 04-02 COMPLETE (2026-02-26) — thank-you.html complete branded confirmation page committed at 755032e; output.css rebuilt
 Note: 04-03 COMPLETE (2026-02-26) — privacy-policy.html (b50a652), terms-of-service.html + refund-policy.html (1a7b5ad)
+Note: 04-04 Task 1 COMPLETE (2026-02-26) — output.css recompiled (26KB, tailwindcss v4.2.1), og-image.png created 1200x630px (39KB) at 19d87e9; awaiting human-verify checkpoint at Task 2
