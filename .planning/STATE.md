@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 3 of 5 (Email Automation)
-Plan: 0 of 3 in current phase (not yet planned)
-Status: Ready to plan
-Last activity: 2026-02-25 — Phase 2 COMPLETE; GitHub Pages live, Lemon Squeezy checkout URLs created
+Plan: 3 of 3 in current phase (03-03 paused at checkpoint — awaiting Netlify deploy + LS webhook config)
+Status: Paused at checkpoint:human-action — user must deploy webhook and configure Lemon Squeezy
+Last activity: 2026-02-26 — 03-01 COMPLETE (Kit infra), 03-02 (sequence copy), 03-03 Task 1 COMPLETE (webhook code ready)
 
-Progress: [████████░░░░░░░░░░░░] 40%
+Progress: [█████████░░░░░░░░░░░] 48%
 
 ## Performance Metrics
 
@@ -40,6 +40,7 @@ Progress: [████████░░░░░░░░░░░░] 40%
 
 | Phase | Plan | Duration | Tasks | Files |
 |-------|------|----------|-------|-------|
+| 03 | 03 | 10min | 1 | 2 |
 | 02 | 01 | 3min | 3 | 5 |
 | 01 | 04 | 10min | 2 | 5 |
 | 01 | 03 | 7min | 2 | 2 |
@@ -80,6 +81,9 @@ Recent decisions affecting current work:
 - [Phase 02-02]: GitHub Pages over Cloudflare Pages — user preference, simpler setup, same outcome
 - [Phase 02-03]: Lemon Squeezy over Stripe — user cannot meet Stripe's western business/bank requirements; LS is merchant of record, handles VAT globally
 - [Phase 02-03]: Product file delivery via Lemon Squeezy receipt email — simplifies Phase 3 (Kit handles lead magnet + nurture only, not product delivery)
+- [Phase 03-03]: Netlify Function over Zapier/Make for LS→Kit webhook — direct API calls, no third-party automation cost, full control over HMAC verification
+- [Phase 03-03]: Buyer tag failure handling — product-specific tag is critical (500 on failure triggers LS retry); generic buyer tag is supplementary (log error, return 200)
+- [Phase 03-03]: Sequence removal deferred — no clean Kit API endpoint without extra GET subscriber lookup; buyers in sequence will see upsell emails but won't click (acceptable)
 
 ### Pending Todos
 
@@ -88,16 +92,19 @@ None yet.
 ### Blockers/Concerns
 
 - [Phase 2]: RESOLVED — EU VAT handled by Lemon Squeezy as merchant of record
-- [Phase 3]: Verify Lemon Squeezy → Kit integration (built-in ConvertKit integration or Zapier webhook)
+- [Phase 3]: RESOLVED — Lemon Squeezy → Kit integration via custom Netlify Function webhook (03-03)
+- [Phase 3 - 03-03]: ACTIVE BLOCKER — user must deploy webhook to Netlify and configure LS webhook; function code ready at webhook/netlify/functions/ls-webhook.js
 - [Phase 1]: Social proof dependency — testimonials from 10-20 beta users are a hard dependency for PAGE-05; collect during Phase 1 before Phase 4 begins
 
 ## Session Continuity
 
-Last session: 2026-02-25
-Stopped at: Phase 2 COMPLETE. All 3 plans done. Ready for Phase 3 planning.
+Last session: 2026-02-26
+Stopped at: 03-03 Task 1 COMPLETE (webhook code ready at c0e008e). Paused at checkpoint:human-action — Task 2 requires Netlify deploy + LS webhook config. See 03-03-SUMMARY.md User Setup Required section for exact steps.
 Resume file: None
 Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
 Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
 Note: 01-03 COMPLETE (2026-02-25) — lead-magnet-content.md (544aae4) and asset-manifest.md (bd9e07a)
 Note: 01-04 COMPLETE (2026-02-25) — ai-prompt-kit-full.pdf (3.0MB), ai-prompt-kit-starter.pdf (1.3MB), 5-ai-prompts-lead-magnet.pdf (261KB) committed at e076c58; asset-manifest.md updated at b7067b0. Phase 1 all 4 plans complete.
 Note: 02-01 COMPLETE (2026-02-25) — .gitignore (494eb44), src/input.css, thank-you.html; output.css compiled 22KB (5d31108); index.html CDN swap + Alpine.js (9fd62a7)
+Note: 03-01 COMPLETE (2026-02-26) — Kit infra: 4 tags, form embed, sequence, nurture copy committed at a9f3dbc, 119ab9c
+Note: 03-03 Task 1 COMPLETE (2026-02-26) — webhook/netlify/functions/ls-webhook.js + webhook/netlify.toml committed at c0e008e
