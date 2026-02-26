@@ -1,69 +1,14 @@
-# Nurture Email Copy — ContentKit AI
+# Kit Email Updates — Copy-Paste Into Kit Dashboard
 # Sequence: lead-magnet-delivery
-# Generated: 2026-02-26
+# Prices: $147 Starter / $499 Full Kit
+# Stripe URLs updated (Lemon Squeezy removed)
 
 ---
 
-## Email 1 — Day 0 (Send Immediately): Lead Magnet Delivery
-
-**Subject:** Here are your 5 AI copywriting prompts [download inside]
-
-**Body:**
-
-Hi {{subscriber.first_name}},
-
-Here's your free guide: **5 AI Prompts That Replace a $5K Copywriter**
-
-[Download Your Free Guide]
-https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf
-
-These prompts work with ChatGPT, Claude, Gemini — or any AI writing tool you prefer.
-
-Each one is engineered to produce copy that sounds human, converts readers, and saves you hours of staring at a blank screen.
-
-More coming your way over the next few days,
-
-**ContentKit AI**
-
----
-
-## Email 2 — Day 2: Value/Credibility
-
-**Subject:** The AI copy mistake 90% of marketers make
-
-**Body:**
-
-Hi {{subscriber.first_name}},
-
-Quick question: when you open a fresh ChatGPT chat and type "write me an Instagram caption," what do you get?
-
-Generic. Robotic. Forgettable.
-
-The problem isn't the AI — it's the prompt.
-
-Most marketers treat AI like a search engine. They ask vague questions and get vague answers. The ones producing scroll-stopping copy do something different: they give the AI a *character brief*.
-
-Here's what that looks like in practice:
-
-Instead of: "Write me an email subject line for my sale."
-
-Try: "You are a direct-response copywriter for a DTC brand targeting millennial women aged 25–34. Write 5 subject lines for a 48-hour flash sale on skincare. Tone: urgent but not desperate. Use curiosity, specificity, and one emotional trigger. Reference the reader's fear of missing out without using the word 'hurry.'"
-
-The second prompt produces 5 subject lines you'd actually test.
-
-That's the principle behind every prompt in ContentKit — each one is pre-loaded with role, tone, audience, and output format so the AI knows exactly what to produce.
-
-More insights coming in a couple days.
-
-ContentKit AI
-
----
-
-## Email 3 — Day 4: Product Introduction
-
+## Email 3 (Position 2, ID 9538626)
 **Subject:** I built something for marketers who hate staring at blank screens
 
-**Body:**
+**Body (paste into Kit editor):**
 
 Hi {{subscriber.first_name}},
 
@@ -97,11 +42,10 @@ ContentKit AI
 
 ---
 
-## Email 4 — Day 6: Social Proof/Case Study
-
+## Email 4 (Position 3, ID 9538631)
 **Subject:** How one freelancer cut their content time by 70%
 
-**Body:**
+**Body (paste into Kit editor):**
 
 Hi {{subscriber.first_name}},
 
@@ -127,7 +71,7 @@ That's the multiplier effect of good prompts.
 
 If you're still producing content the old way — starting from scratch every time — ContentKit is the upgrade your workflow needs.
 
-**Starter Kit — $67:**
+**Starter Kit — $147:**
 https://buy.stripe.com/bJefZi8NU2lgfHc9TG9ws06
 
 **Full Kit — $499** (recommended for client work):
@@ -137,11 +81,10 @@ ContentKit AI
 
 ---
 
-## Email 5 — Day 9: Urgency/Final Offer
-
+## Email 5 (Position 4, ID 9538635)
 **Subject:** Last chance: Your AI marketing toolkit is waiting
 
-**Body:**
+**Body (paste into Kit editor):**
 
 Hi {{subscriber.first_name}},
 
@@ -155,7 +98,7 @@ ContentKit is that system.
 
 **Here's everything you get:**
 
-**Starter Kit — $67:**
+**Starter Kit — $147:**
 - 200+ prompts across ads, email, and social media
 - 30-day content calendar (Notion-compatible)
 - Lifetime access + free updates
@@ -173,15 +116,3 @@ One-time payment. Instant download. 30-day money-back guarantee — if it doesn'
 This is the last nudge. You've got the lead magnet. You've seen what well-engineered prompts can do. The next step is up to you.
 
 ContentKit AI
-
----
-
-## Reference Notes
-
-**Kit merge tags used:** `{{subscriber.first_name}}`
-**Sequence name:** lead-magnet-delivery
-**Email delays:** Day 0, Day 2, Day 4, Day 6, Day 9
-**Checkout URLs:**
-- Starter ($147): https://buy.stripe.com/bJefZi8NU2lgfHc9TG9ws06
-- Full Kit ($499): https://buy.stripe.com/4gM8wQ0ho7FA3Yu1na9ws05
-**Lead magnet URL:** https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf
