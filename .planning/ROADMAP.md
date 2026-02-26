@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Product Assets** - Create and finalize all deliverable product files before any code is written ✓ (2026-02-25)
 - [x] **Phase 2: Infrastructure** - Deploy pipeline, Lemon Squeezy checkout links, and GitHub Pages hosting live and verified ✓ (2026-02-25)
-- [ ] **Phase 3: Email Automation** - Kit capture forms, lead magnet delivery, nurture sequence, and buyer tagging wired end-to-end
+- [x] **Phase 3: Email Automation** - Kit capture forms, lead magnet delivery, nurture sequence, and buyer tagging wired end-to-end ✓ (2026-02-26)
 - [ ] **Phase 4: Front-End Build** - All pages (index, sales, thank-you, legal) built, styled, and connected to live services
 - [ ] **Phase 5: Launch Readiness** - Analytics configured, full funnel verified with a real charge, site ready for paid traffic
 
@@ -92,14 +92,13 @@ Plans:
   3. The thank-you page (`thank-you.html`) displays download instructions and directs the buyer to check their email for product links — accessible via the Stripe redirect URL
   4. Legal pages (Privacy Policy, Terms of Service, Refund Policy) exist and are linked from the footer
   5. Google PageSpeed Insights (mobile) reports the page loads in under 2 seconds on a 3G simulation, and all Open Graph and SEO meta tags are present and correct when tested with a social preview tool
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 04-01: Build `index.html` — lead magnet landing page with all sections and Kit form embed
-- [ ] 04-02: Build `sales.html` — full sales page with both pricing tiers and Stripe Payment Link buttons
-- [ ] 04-03: Build `thank-you.html` — post-purchase confirmation with download instructions
-- [ ] 04-04: Build legal pages (Privacy Policy, Terms of Service, Refund Policy) and wire footer links
-- [ ] 04-05: Performance and SEO audit — validate load time under 2 seconds, Open Graph tags, mobile layout
+- [ ] 04-01-PLAN.md — Complete index.html: add sample prompt preview + "Who This Is NOT For" sections, wire Stripe Payment Links, add OG/SEO meta tags, fix render-blocking fonts, update footer links
+- [ ] 04-02-PLAN.md — Build complete thank-you.html with purchase confirmation, download instructions, and consistent branding
+- [ ] 04-03-PLAN.md — Create three legal pages (privacy-policy.html, terms-of-service.html, refund-policy.html)
+- [ ] 04-04-PLAN.md — Recompile Tailwind CSS, create OG image, verify complete front-end, configure Stripe redirects
 
 ---
 
@@ -130,6 +129,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Product Assets | 4/4 | ✓ Complete | 2026-02-25 |
 | 2. Infrastructure | 3/3 | ✓ Complete | 2026-02-25 |
-| 3. Email Automation | 0/3 | Planning complete | - |
-| 4. Front-End Build | 0/5 | Not started | - |
+| 3. Email Automation | 3/3 | ✓ Complete | 2026-02-26 |
+| 4. Front-End Build | 0/4 | Planned | - |
 | 5. Launch Readiness | 0/2 | Not started | - |
