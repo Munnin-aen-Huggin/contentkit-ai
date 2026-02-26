@@ -1,226 +1,176 @@
 const crypto = require("node:crypto");
 
-// Lemon Squeezy → Kit buyer tagging webhook handler
-// Receives order_created events, verifies HMAC signature, tags buyer in Kit
+// Stripe → Kit buyer tagging webhook handler
+// Receives checkout.session.completed events, verifies signature, tags buyer in Kit
 
 exports.handler = async function (event) {
   const corsHeaders = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type, x-signature",
+    "Access-Control-Allow-Headers": "Content-Type, stripe-signature",
   };
 
-  // Handle OPTIONS preflight (Netlify health checks)
   if (event.httpMethod === "OPTIONS") {
-    return {
-      statusCode: 200,
-      headers: corsHeaders,
-      body: "",
-    };
+    return { statusCode: 200, headers: corsHeaders, body: "" };
   }
 
-  // Only accept POST requests
   if (event.httpMethod !== "POST") {
-    return {
-      statusCode: 405,
-      headers: corsHeaders,
-      body: "Method Not Allowed",
-    };
+    return { statusCode: 405, headers: corsHeaders, body: "Method Not Allowed" };
   }
 
-  // --- 1. VERIFY WEBHOOK SIGNATURE ---
-  // CRITICAL: Verify BEFORE parsing JSON — raw body must match what LS signed
+  // --- 1. VERIFY STRIPE WEBHOOK SIGNATURE ---
   const rawBody = event.body;
-  const signature = event.headers["x-signature"];
+  const sigHeader = event.headers["stripe-signature"];
 
-  if (!signature) {
-    console.error("[ls-webhook] Missing x-signature header");
-    return {
-      statusCode: 401,
-      headers: corsHeaders,
-      body: "Unauthorized: Missing signature",
-    };
+  if (!sigHeader) {
+    console.error("[webhook] Missing stripe-signature header");
+    return { statusCode: 401, headers: corsHeaders, body: "Unauthorized: Missing signature" };
   }
 
-  const webhookSecret = process.env.LEMONSQUEEZY_WEBHOOK_SECRET;
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
   if (!webhookSecret) {
-    console.error("[ls-webhook] LEMONSQUEEZY_WEBHOOK_SECRET env var not set");
-    return {
-      statusCode: 500,
-      headers: corsHeaders,
-      body: "Internal Server Error: Missing webhook secret config",
-    };
+    console.error("[webhook] STRIPE_WEBHOOK_SECRET env var not set");
+    return { statusCode: 500, headers: corsHeaders, body: "Server Error: Missing webhook secret" };
   }
 
-  const computedSignature = crypto
+  // Parse Stripe signature header: t=timestamp,v1=signature
+  const parts = {};
+  sigHeader.split(",").forEach((item) => {
+    const [key, value] = item.split("=");
+    parts[key] = value;
+  });
+
+  const timestamp = parts["t"];
+  const expectedSig = parts["v1"];
+
+  if (!timestamp || !expectedSig) {
+    console.error("[webhook] Malformed stripe-signature header");
+    return { statusCode: 401, headers: corsHeaders, body: "Unauthorized: Malformed signature" };
+  }
+
+  // Stripe signs: timestamp + "." + rawBody
+  const signedPayload = `${timestamp}.${rawBody}`;
+  const computedSig = crypto
     .createHmac("sha256", webhookSecret)
-    .update(rawBody)
+    .update(signedPayload)
     .digest("hex");
 
   let signaturesMatch;
   try {
     signaturesMatch = crypto.timingSafeEqual(
-      Buffer.from(computedSignature, "hex"),
-      Buffer.from(signature, "hex")
+      Buffer.from(computedSig, "hex"),
+      Buffer.from(expectedSig, "hex")
     );
   } catch (err) {
-    // Buffer.from throws if lengths differ — treat as mismatch
     signaturesMatch = false;
   }
 
   if (!signaturesMatch) {
-    console.error("[ls-webhook] Invalid signature — rejecting request");
-    return {
-      statusCode: 401,
-      headers: corsHeaders,
-      body: "Unauthorized: Invalid signature",
-    };
+    console.error("[webhook] Invalid Stripe signature — rejecting");
+    return { statusCode: 401, headers: corsHeaders, body: "Unauthorized: Invalid signature" };
   }
 
-  // --- 2. PARSE EVENT AND CHECK EVENT TYPE ---
-  let data;
+  // Reject if timestamp is older than 5 minutes (replay protection)
+  const now = Math.floor(Date.now() / 1000);
+  if (Math.abs(now - parseInt(timestamp)) > 300) {
+    console.error("[webhook] Timestamp too old — possible replay attack");
+    return { statusCode: 401, headers: corsHeaders, body: "Unauthorized: Timestamp expired" };
+  }
+
+  // --- 2. PARSE EVENT ---
+  let stripeEvent;
   try {
-    data = JSON.parse(rawBody);
+    stripeEvent = JSON.parse(rawBody);
   } catch (err) {
-    console.error("[ls-webhook] Failed to parse request body as JSON:", err.message);
-    return {
-      statusCode: 400,
-      headers: corsHeaders,
-      body: "Bad Request: Invalid JSON",
-    };
+    console.error("[webhook] Failed to parse JSON:", err.message);
+    return { statusCode: 400, headers: corsHeaders, body: "Bad Request: Invalid JSON" };
   }
 
-  const eventName = data?.meta?.event_name;
-  if (eventName !== "order_created") {
-    console.log(`[ls-webhook] Ignoring event: ${eventName}`);
-    return {
-      statusCode: 200,
-      headers: corsHeaders,
-      body: "Ignored",
-    };
+  if (stripeEvent.type !== "checkout.session.completed") {
+    console.log(`[webhook] Ignoring event: ${stripeEvent.type}`);
+    return { statusCode: 200, headers: corsHeaders, body: "Ignored" };
   }
 
   // --- 3. EXTRACT BUYER INFO ---
-  const attributes = data?.data?.attributes;
-  const buyerEmail = attributes?.user_email;
-  // product_id lives inside first_order_item
-  const productId = String(attributes?.first_order_item?.product_id ?? "");
+  const session = stripeEvent.data.object;
+  const buyerEmail = session.customer_details?.email || session.customer_email;
+  const amountTotal = session.amount_total; // in cents
 
   if (!buyerEmail) {
-    console.error("[ls-webhook] Missing buyer email in payload");
-    return {
-      statusCode: 400,
-      headers: corsHeaders,
-      body: "Bad Request: Missing buyer email",
-    };
+    console.error("[webhook] Missing buyer email in checkout session");
+    return { statusCode: 400, headers: corsHeaders, body: "Bad Request: No email" };
   }
 
-  console.log(`[ls-webhook] order_created — buyer: ${buyerEmail}, productId: ${productId}`);
+  console.log(`[webhook] checkout.session.completed — buyer: ${buyerEmail}, amount: ${amountTotal}`);
 
-  // --- 4. MAP PRODUCT ID TO KIT TAG ID ---
-  const productTagMap = {
-    [process.env.LS_PRODUCT_ID_STARTER]: process.env.KIT_TAG_ID_PURCHASED_STARTER,
-    [process.env.LS_PRODUCT_ID_FULL_KIT]: process.env.KIT_TAG_ID_PURCHASED_FULL_KIT,
-  };
+  // --- 4. MAP AMOUNT TO KIT TAG ---
+  // $27 = 2700 cents (Starter), $47 = 4700 cents (Full Kit)
+  const STARTER_AMOUNT = parseInt(process.env.STRIPE_STARTER_AMOUNT || "2700");
+  const FULL_KIT_AMOUNT = parseInt(process.env.STRIPE_FULL_KIT_AMOUNT || "4700");
 
-  const kitTagId = productTagMap[productId];
+  let kitTagId;
+  if (amountTotal === STARTER_AMOUNT) {
+    kitTagId = process.env.KIT_TAG_ID_PURCHASED_STARTER;
+  } else if (amountTotal === FULL_KIT_AMOUNT) {
+    kitTagId = process.env.KIT_TAG_ID_PURCHASED_FULL_KIT;
+  } else {
+    console.warn(`[webhook] Unknown amount: ${amountTotal} cents. No tag mapping.`);
+    return { statusCode: 200, headers: corsHeaders, body: "Unknown product amount" };
+  }
 
   if (!kitTagId) {
-    console.warn(
-      `[ls-webhook] Unknown product ID: ${productId}. No tag mapping found. Env: STARTER=${process.env.LS_PRODUCT_ID_STARTER}, FULL_KIT=${process.env.LS_PRODUCT_ID_FULL_KIT}`
-    );
-    return {
-      statusCode: 200,
-      headers: corsHeaders,
-      body: "Unknown product",
-    };
+    console.error("[webhook] Kit tag ID env var not set for this product");
+    return { statusCode: 500, headers: corsHeaders, body: "Server Error: Missing tag config" };
   }
 
   const kitApiSecret = process.env.KIT_API_SECRET;
   if (!kitApiSecret) {
-    console.error("[ls-webhook] KIT_API_SECRET env var not set");
-    return {
-      statusCode: 500,
-      headers: corsHeaders,
-      body: "Internal Server Error: Missing Kit API secret config",
-    };
+    console.error("[webhook] KIT_API_SECRET env var not set");
+    return { statusCode: 500, headers: corsHeaders, body: "Server Error: Missing Kit secret" };
   }
 
   // --- 5. TAG BUYER IN KIT (product-specific tag) ---
-  // This is the CRITICAL tag — return 500 on failure so Lemon Squeezy retries
-  let productTagResponse;
   try {
-    productTagResponse = await fetch(
+    const res = await fetch(
       `https://api.convertkit.com/v3/tags/${kitTagId}/subscribe`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          api_secret: kitApiSecret,
-          email: buyerEmail,
-        }),
+        body: JSON.stringify({ api_secret: kitApiSecret, email: buyerEmail }),
       }
     );
+    if (!res.ok) {
+      const errText = await res.text();
+      console.error(`[webhook] Kit tag error: ${res.status} — ${errText}`);
+      return { statusCode: 500, headers: corsHeaders, body: "Kit API error" };
+    }
+    console.log(`[webhook] Product tag ${kitTagId} applied to ${buyerEmail}`);
   } catch (err) {
-    console.error("[ls-webhook] Kit API request failed (product tag):", err.message);
-    return {
-      statusCode: 500,
-      headers: corsHeaders,
-      body: "Internal Server Error: Kit API unreachable",
-    };
+    console.error("[webhook] Kit API request failed:", err.message);
+    return { statusCode: 500, headers: corsHeaders, body: "Kit API unreachable" };
   }
 
-  if (!productTagResponse.ok) {
-    const errorText = await productTagResponse.text();
-    console.error(
-      `[ls-webhook] Kit API error (product tag) — status: ${productTagResponse.status}, body: ${errorText}`
-    );
-    return {
-      statusCode: 500,
-      headers: corsHeaders,
-      body: "Internal Server Error: Kit API returned error for product tag",
-    };
-  }
-
-  console.log(`[ls-webhook] Product tag ${kitTagId} applied to ${buyerEmail}`);
-
-  // --- 6. TAG BUYER IN KIT (generic "buyer" tag) ---
-  // Supplementary tag — log failure but still return 200 (product tag already applied)
+  // --- 6. TAG BUYER WITH GENERIC "buyer" TAG ---
   const buyerTagId = process.env.KIT_TAG_ID_BUYER;
-  if (!buyerTagId) {
-    console.warn("[ls-webhook] KIT_TAG_ID_BUYER env var not set — skipping generic buyer tag");
-  } else {
+  if (buyerTagId) {
     try {
-      const buyerTagResponse = await fetch(
+      const res = await fetch(
         `https://api.convertkit.com/v3/tags/${buyerTagId}/subscribe`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            api_secret: kitApiSecret,
-            email: buyerEmail,
-          }),
+          body: JSON.stringify({ api_secret: kitApiSecret, email: buyerEmail }),
         }
       );
-
-      if (!buyerTagResponse.ok) {
-        const errorText = await buyerTagResponse.text();
-        console.error(
-          `[ls-webhook] Kit API error (buyer tag) — status: ${buyerTagResponse.status}, body: ${errorText}`
-        );
-        // Don't return 500 — product tag was applied successfully
+      if (res.ok) {
+        console.log(`[webhook] Buyer tag ${buyerTagId} applied to ${buyerEmail}`);
       } else {
-        console.log(`[ls-webhook] Generic buyer tag ${buyerTagId} applied to ${buyerEmail}`);
+        console.error(`[webhook] Buyer tag error: ${res.status}`);
       }
     } catch (err) {
-      console.error("[ls-webhook] Kit API request failed (buyer tag):", err.message);
-      // Don't return 500 — product tag was applied successfully
+      console.error("[webhook] Buyer tag request failed:", err.message);
     }
   }
 
-  return {
-    statusCode: 200,
-    headers: corsHeaders,
-    body: "OK",
-  };
+  return { statusCode: 200, headers: corsHeaders, body: "OK" };
 };
