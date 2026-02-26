@@ -4,13 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You — ContentKit AI</title>
+  <meta name="description" content="Thank you for purchasing ContentKit AI. Check your email for download links.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="output.css">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(135deg, #0ea5e9, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glow { box-shadow: 0 0 60px rgba(14, 165, 233, 0.15); }
+    .fade-in { animation: fadeIn 0.6s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
 </head>
-<body class="bg-dark-900 text-white min-h-screen flex items-center justify-center">
-  <div class="text-center max-w-lg mx-auto px-6">
-    <h1 class="text-3xl font-bold mb-4">Thank you for your purchase!</h1>
-    <p class="text-gray-400 mb-6">Check your email — your download links are on their way.</p>
-    <a href="index.html" class="text-brand-500 hover:text-brand-400">← Back to ContentKit AI</a>
-  </div>
+<body class="bg-dark-900 text-white min-h-screen flex flex-col">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold">Content<span class="gradient-text">Kit</span> AI</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-1 pt-32 pb-20 px-6">
+    <div class="max-w-2xl mx-auto text-center fade-in">
+
+      <!-- Checkmark -->
+      <div class="flex justify-center mb-8">
+        <div class="w-20 h-20 rounded-full bg-green-500/15 border-2 border-green-500/40 flex items-center justify-center">
+          <svg class="w-10 h-10 text-green-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-4xl md:text-5xl font-black mb-4">You're In! Check Your Email</h1>
+      <p class="text-lg text-gray-400 mb-16 max-w-xl mx-auto">
+        Your purchase was successful. We're sending your download links to the email you used at checkout.
+      </p>
+
+      <!-- What Happens Next -->
+      <div class="text-left mb-16">
+        <h2 class="text-xl font-bold text-center mb-8 text-gray-300">What Happens Next</h2>
+        <div class="space-y-4">
+
+          <!-- Step 1 -->
+          <div class="bg-dark-800/50 border border-white/5 rounded-xl p-6 flex gap-5 items-start">
+            <div class="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background-color: oklch(0.65 0.19 212);">1</div>
+            <div>
+              <h3 class="font-semibold text-base mb-1">Check Your Inbox</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Look for an email from ContentKit AI with your download links. Check spam/promotions if you don't see it within 5 minutes.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-dark-800/50 border border-white/5 rounded-xl p-6 flex gap-5 items-start">
+            <div class="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background-color: oklch(0.65 0.19 212);">2</div>
+            <div>
+              <h3 class="font-semibold text-base mb-1">Download Your Files</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Click the download links in your email to get your AI Prompt Kit PDF and Notion templates.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-dark-800/50 border border-white/5 rounded-xl p-6 flex gap-5 items-start">
+            <div class="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background-color: oklch(0.65 0.19 212);">3</div>
+            <div>
+              <h3 class="font-semibold text-base mb-1">Start Creating</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Open any prompt, fill in your business details, paste into ChatGPT or Claude, and watch the magic happen.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Help Section -->
+      <div class="mb-12 text-center">
+        <p class="text-gray-500 text-sm mb-3">
+          Didn't receive your email? Check your spam folder or contact us at
+          <a href="mailto:support@contentkit.ai" class="text-brand-500 hover:text-brand-600 transition">support@contentkit.ai</a>
+        </p>
+        <a href="index.html" class="inline-block text-sm font-semibold text-gray-400 hover:text-white transition">
+          &larr; Back to ContentKit AI
+        </a>
+      </div>
+
+      <!-- Social Sharing Prompt -->
+      <div class="border border-white/5 rounded-xl p-6 text-center bg-dark-800/30">
+        <p class="text-gray-400 text-sm">Know someone who'd love this? Share ContentKit AI with a fellow marketer or founder who's tired of staring at a blank screen.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+      <div>Content<span class="text-white font-semibold">Kit</span> AI &copy; 2026. All rights reserved.</div>
+      <div class="flex gap-6">
+        <a href="terms-of-service.html" class="hover:text-white transition">Terms</a>
+        <a href="privacy-policy.html" class="hover:text-white transition">Privacy</a>
+        <a href="refund-policy.html" class="hover:text-white transition">Refunds</a>
+        <a href="mailto:support@contentkit.ai" class="hover:text-white transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
