@@ -104,9 +104,9 @@ exports.handler = async function (event) {
   console.log(`[webhook] checkout.session.completed — buyer: ${buyerEmail}, amount: ${amountTotal}`);
 
   // --- 4. MAP AMOUNT TO KIT TAG ---
-  // $67 = 6700 cents (Starter), $127 = 12700 cents (Full Kit)
-  const STARTER_AMOUNT = 6700;
-  const FULL_KIT_AMOUNT = 12700;
+  // $197 = 19700 cents (Starter), $499 = 49900 cents (Full Kit)
+  const STARTER_AMOUNT = 19700;
+  const FULL_KIT_AMOUNT = 49900;
 
   let kitTagId;
   if (amountTotal === STARTER_AMOUNT) {

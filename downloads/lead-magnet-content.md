@@ -307,16 +307,16 @@ BONUS TEMPLATES:
 
 ## Get the Full AI Marketing Prompt Kit
 
-**Starter — $67**
+**Starter — $197**
 200+ prompts across all 8 categories. The most universally useful prompts, selected for anyone who wants to move fast.
 
-[Buy Starter — $67] ← placeholder for Stripe Payment Link
+[Buy Starter — $197] ← placeholder for Stripe Payment Link
 
-**Full Kit — $127**
+**Full Kit — $499**
 500+ prompts across all 8 categories PLUS all four Notion templates.
 Everything in Starter, plus the advanced prompts and the workspace to use them.
 
-[Get Full Kit — $127] ← placeholder for Stripe Payment Link
+[Get Full Kit — $499] ← placeholder for Stripe Payment Link
 
 ---
 
