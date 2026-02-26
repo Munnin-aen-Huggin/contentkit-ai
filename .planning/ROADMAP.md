@@ -63,21 +63,21 @@ Plans:
 
 ### Phase 3: Email Automation
 
-**Goal**: The full email funnel runs without manual intervention — opt-in delivers lead magnet instantly, nurture sequence runs over 9 days, and buyer tagging fires independently of whether the buyer's browser completes the Stripe redirect
-**Depends on**: Phase 1 (lead magnet PDF URL), Phase 2 (Cloudflare Pages URL for form target, Stripe Payment Links created)
+**Goal**: The full email funnel runs without manual intervention — opt-in delivers lead magnet instantly, nurture sequence runs over 9 days, and buyer tagging fires independently of whether the buyer's browser completes the Lemon Squeezy redirect
+**Depends on**: Phase 1 (lead magnet PDF URL), Phase 2 (GitHub Pages URL for form target, Lemon Squeezy checkout URLs)
 **Requirements**: MAIL-01, MAIL-02, MAIL-03, MAIL-04, MAIL-05, PAY-03, PAY-05
 **Success Criteria** (what must be TRUE):
-  1. Submitting the Kit opt-in form triggers an automated email delivering the lead magnet PDF within 60 seconds — verified by submitting the form and checking a real inbox
+  1. Submitting the Kit opt-in form triggers an automated email delivering the lead magnet PDF within 60 seconds
   2. The 5-email nurture sequence is configured in Kit for the lead segment: Day 0 (PDF delivery), Day 2 (value/credibility), Day 4 (product intro), Day 6 (social proof), Day 9 (urgency/final offer)
-  3. After a Stripe test purchase, the buyer receives an order confirmation email with download links — delivered via Kit, triggered by the Stripe webhook/Zapier automation, not the browser redirect
-  4. Stripe buyers are automatically tagged with the "buyer" tag in Kit (verified in Kit subscriber view after test purchase)
+  3. After a Lemon Squeezy purchase, the buyer receives an order confirmation email with download links — delivered via Lemon Squeezy automatically
+  4. Lemon Squeezy buyers are automatically tagged with the "buyer" tag in Kit
   5. The lead segment and buyer segment are two distinct, non-overlapping sequences in Kit
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: Set up Kit account, configure lead magnet form, and verify instant delivery automation
-- [ ] 03-02: Build the 5-email nurture sequence in Kit for the lead segment
-- [ ] 03-03: Configure Zapier (or Cloudflare Worker) webhook: Stripe checkout.session.completed → Kit buyer tag + order confirmation email; test with real charge in Stripe test mode
+- [ ] 03-01-PLAN.md — Kit account setup, form + tags + automation, write nurture email copy, embed form on landing page
+- [ ] 03-02-PLAN.md — Configure 5-email nurture sequence in Kit and verify with test subscriber
+- [ ] 03-03-PLAN.md — Build and deploy Netlify Function webhook for Lemon Squeezy → Kit buyer tagging
 
 ---
 
@@ -130,6 +130,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Product Assets | 4/4 | ✓ Complete | 2026-02-25 |
 | 2. Infrastructure | 3/3 | ✓ Complete | 2026-02-25 |
-| 3. Email Automation | 0/3 | Not started | - |
+| 3. Email Automation | 0/3 | Planning complete | - |
 | 4. Front-End Build | 0/5 | Not started | - |
 | 5. Launch Readiness | 0/2 | Not started | - |
