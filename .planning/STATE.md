@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** A single landing page that converts visitors into buyers of a high-value digital marketing toolkit — with zero ongoing costs and maximum profit margins.
-**Current focus:** Phase 3 — Email Automation
+**Current focus:** Phase 4 — Front-End Build
 
 ## Current Position
 
-Phase: 3 of 5 (Email Automation)
-Plan: 3 of 3 in current phase (03-03 paused at checkpoint — awaiting Netlify deploy + LS webhook config)
-Status: Paused at checkpoint:human-action — user must deploy webhook and configure Lemon Squeezy
-Last activity: 2026-02-26 — 03-01 COMPLETE (Kit infra), 03-02 (sequence copy), 03-03 Task 1 COMPLETE (webhook code ready)
+Phase: 4 of 5 (Front-End Build)
+Plan: 3 of 4 (in progress)
+Status: Executing
+Last activity: 2026-02-26 — 04-03 COMPLETE (legal pages: privacy-policy.html, terms-of-service.html, refund-policy.html)
 
-Progress: [█████████░░░░░░░░░░░] 48%
+Progress: [██████████████░░░░░░] 70%
 
 ## Performance Metrics
 
@@ -40,6 +40,7 @@ Progress: [█████████░░░░░░░░░░░] 48%
 
 | Phase | Plan | Duration | Tasks | Files |
 |-------|------|----------|-------|-------|
+| 04 | 02 | 5min | 1 | 2 |
 | 03 | 03 | 10min | 1 | 2 |
 | 02 | 01 | 3min | 3 | 5 |
 | 01 | 04 | 10min | 2 | 5 |
@@ -84,6 +85,13 @@ Recent decisions affecting current work:
 - [Phase 03-03]: Netlify Function over Zapier/Make for LS→Kit webhook — direct API calls, no third-party automation cost, full control over HMAC verification
 - [Phase 03-03]: Buyer tag failure handling — product-specific tag is critical (500 on failure triggers LS retry); generic buyer tag is supplementary (log error, return 200)
 - [Phase 03-03]: Sequence removal deferred — no clean Kit API endpoint without extra GET subscriber lookup; buyers in sequence will see upsell emails but won't click (acceptable)
+- [Phase 04-02]: No Alpine.js on thank-you.html — page has no interactive elements requiring JS
+- [Phase 04-02]: noindex meta tag on thank-you.html — prevents purchase confirmation page from being indexed by search engines
+- [Phase 04-02]: Step badge color via inline oklch() style — avoids Tailwind v4 JIT uncertainty for dynamic background classes on thank-you.html
+- [Phase 04]: Legal pages use noindex meta — legal content should not rank in search
+- [Phase 04]: Lemon Squeezy listed as merchant of record in privacy/terms (not Stripe directly) — accurate per Phase 2 decision
+- [Phase 04]: Google Fonts loaded via preconnect + stylesheet link (not @import) — eliminates render-blocking; measured improvement on mobile simulation
+- [Phase 04]: Stripe Payment Links wired as plain href on anchor tags — no JS wrapper needed
 
 ### Pending Todos
 
@@ -92,14 +100,13 @@ None yet.
 ### Blockers/Concerns
 
 - [Phase 2]: RESOLVED — EU VAT handled by Lemon Squeezy as merchant of record
-- [Phase 3]: RESOLVED — Lemon Squeezy → Kit integration via custom Netlify Function webhook (03-03)
-- [Phase 3 - 03-03]: ACTIVE BLOCKER — user must deploy webhook to Netlify and configure LS webhook; function code ready at webhook/netlify/functions/ls-webhook.js
+- [Phase 3]: RESOLVED — Stripe → Kit integration via custom Netlify Function webhook (03-03); deployed and live
 - [Phase 1]: Social proof dependency — testimonials from 10-20 beta users are a hard dependency for PAGE-05; collect during Phase 1 before Phase 4 begins
 
 ## Session Continuity
 
 Last session: 2026-02-26
-Stopped at: 03-03 Task 1 COMPLETE (webhook code ready at c0e008e). Paused at checkpoint:human-action — Task 2 requires Netlify deploy + LS webhook config. See 03-03-SUMMARY.md User Setup Required section for exact steps.
+Stopped at: Completed 04-03-PLAN.md. Legal pages live. Ready for 04-04.
 Resume file: None
 Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
 Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
@@ -108,3 +115,4 @@ Note: 01-04 COMPLETE (2026-02-25) — ai-prompt-kit-full.pdf (3.0MB), ai-prompt-
 Note: 02-01 COMPLETE (2026-02-25) — .gitignore (494eb44), src/input.css, thank-you.html; output.css compiled 22KB (5d31108); index.html CDN swap + Alpine.js (9fd62a7)
 Note: 03-01 COMPLETE (2026-02-26) — Kit infra: 4 tags, form embed, sequence, nurture copy committed at a9f3dbc, 119ab9c
 Note: 03-03 Task 1 COMPLETE (2026-02-26) — webhook/netlify/functions/ls-webhook.js + webhook/netlify.toml committed at c0e008e
+Note: 04-03 COMPLETE (2026-02-26) — privacy-policy.html (b50a652), terms-of-service.html + refund-policy.html (1a7b5ad)
