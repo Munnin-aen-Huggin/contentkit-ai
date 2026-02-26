@@ -105,8 +105,8 @@ exports.handler = async function (event) {
 
   // --- 4. MAP AMOUNT TO KIT TAG ---
   // $67 = 6700 cents (Starter), $127 = 12700 cents (Full Kit)
-  const STARTER_AMOUNT = parseInt(process.env.STRIPE_STARTER_AMOUNT || "6700");
-  const FULL_KIT_AMOUNT = parseInt(process.env.STRIPE_FULL_KIT_AMOUNT || "12700");
+  const STARTER_AMOUNT = 6700;
+  const FULL_KIT_AMOUNT = 12700;
 
   let kitTagId;
   if (amountTotal === STARTER_AMOUNT) {
