@@ -11,8 +11,8 @@ Payment processor: Stripe (Payment Links, live mode)
 
 | Product | Price | Checkout URL |
 |---------|-------|-------------|
-| Starter Kit | $27 | https://buy.stripe.com/cNidRa7JQaRMbqWaXK9ws00 |
-| Full Kit | $47 | https://buy.stripe.com/5kQ8wQ8NUe3Y2Uq7Ly9ws01 |
+| Starter Kit | $67 | https://buy.stripe.com/28E3cw0hobVQ66C0j69ws02 |
+| Full Kit | $127 | https://buy.stripe.com/9B69AU3tA8JE8eKaXK9ws03 |
 
 Note: Stripe redirects to thank-you.html after purchase. These URLs go in "Buy Now" buttons on the sales page.
 
@@ -50,7 +50,7 @@ Note: If Phase 2 decision requires separate public Notion page URLs (for in-brow
 
 ## Product Tiers — What Each Buyer Receives
 
-### Starter — $27
+### Starter — $67
 Email delivers:
 - Download link: https://getcontentkit.com/downloads/ai-prompt-kit-starter.pdf
 - Note: Starter does NOT include Notion templates (that's the Full Kit upsell)
@@ -58,7 +58,7 @@ Email delivers:
 Kit tag to apply: `purchased-starter`
 Kit sequence: `post-purchase-starter`
 
-### Full Kit — $47
+### Full Kit — $127
 Email delivers:
 - Download link: https://getcontentkit.com/downloads/ai-prompt-kit-full.pdf
 - Notion 30-Day Calendar: https://getcontentkit.com/downloads/notion-30-day-content-calendar.md
@@ -177,7 +177,7 @@ Phase 3 (Email Automation) needs:
 - Note: Product file delivery is handled by Lemon Squeezy automatically — Kit handles lead magnet + nurture only
 
 Phase 4 (Front-End) needs:
-- Starter checkout URL: https://buy.stripe.com/cNidRa7JQaRMbqWaXK9ws00
-- Full Kit checkout URL: https://buy.stripe.com/5kQ8wQ8NUe3Y2Uq7Ly9ws01
+- Starter checkout URL: https://buy.stripe.com/28E3cw0hobVQ66C0j69ws02
+- Full Kit checkout URL: https://buy.stripe.com/9B69AU3tA8JE8eKaXK9ws03
 - Lead magnet PDF URL: https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf
 - Upgrade page URL to replace `[upgrade-page-placeholder]` in post-purchase-starter email

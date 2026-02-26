@@ -85,11 +85,11 @@ Solopreneurs, freelancers, and agency owners who need to produce high-quality ma
 
 Every prompt is pre-engineered with the variables that make AI output actually usable: role, audience specificity, tone parameters, and output format. You fill in your details, paste the prompt, and get professional-grade copy in seconds.
 
-**Starter Kit — $27** (200+ prompts, 30-day calendar):
-https://buy.stripe.com/cNidRa7JQaRMbqWaXK9ws00
+**Starter Kit — $67** (200+ prompts, 30-day calendar):
+https://buy.stripe.com/28E3cw0hobVQ66C0j69ws02
 
-**Full Kit — $47** (500+ prompts, all 4 Notion templates):
-https://buy.stripe.com/5kQ8wQ8NUe3Y2Uq7Ly9ws01
+**Full Kit — $127** (500+ prompts, all 4 Notion templates):
+https://buy.stripe.com/9B69AU3tA8JE8eKaXK9ws03
 
 One-time payment. Lifetime access. Instant download.
 
@@ -127,11 +127,11 @@ That's the multiplier effect of good prompts.
 
 If you're still producing content the old way — starting from scratch every time — ContentKit is the upgrade your workflow needs.
 
-**Starter Kit — $27:**
-https://buy.stripe.com/cNidRa7JQaRMbqWaXK9ws00
+**Starter Kit — $67:**
+https://buy.stripe.com/28E3cw0hobVQ66C0j69ws02
 
-**Full Kit — $47** (recommended for client work):
-https://buy.stripe.com/5kQ8wQ8NUe3Y2Uq7Ly9ws01
+**Full Kit — $127** (recommended for client work):
+https://buy.stripe.com/9B69AU3tA8JE8eKaXK9ws03
 
 ContentKit AI
 
@@ -155,18 +155,18 @@ ContentKit is that system.
 
 **Here's everything you get:**
 
-**Starter Kit — $27:**
+**Starter Kit — $67:**
 - 200+ prompts across ads, email, and social media
 - 30-day content calendar (Notion-compatible)
 - Lifetime access + free updates
-- → https://buy.stripe.com/cNidRa7JQaRMbqWaXK9ws00
+- → https://buy.stripe.com/28E3cw0hobVQ66C0j69ws02
 
-**Full Kit — $47 (most popular):**
+**Full Kit — $127 (most popular):**
 - 500+ prompts across all 8 marketing categories
 - 4 Notion templates (30-day calendar, 90-day calendar, brand strategy workspace, campaign planner)
 - Landing page copy prompts, SEO prompts, video scripts, product launch kit
 - Everything in Starter, plus everything that scales
-- → https://buy.stripe.com/5kQ8wQ8NUe3Y2Uq7Ly9ws01
+- → https://buy.stripe.com/9B69AU3tA8JE8eKaXK9ws03
 
 One-time payment. Instant download. 30-day money-back guarantee — if it doesn't save you time and improve your output, email me for a full refund. No questions asked.
 
@@ -182,6 +182,6 @@ ContentKit AI
 **Sequence name:** lead-magnet-delivery
 **Email delays:** Day 0, Day 2, Day 4, Day 6, Day 9
 **Checkout URLs:**
-- Starter ($27): https://buy.stripe.com/cNidRa7JQaRMbqWaXK9ws00
-- Full Kit ($47): https://buy.stripe.com/5kQ8wQ8NUe3Y2Uq7Ly9ws01
+- Starter ($67): https://buy.stripe.com/28E3cw0hobVQ66C0j69ws02
+- Full Kit ($127): https://buy.stripe.com/9B69AU3tA8JE8eKaXK9ws03
 **Lead magnet URL:** https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf
