@@ -3,19 +3,18 @@
 Generated: 2026-02-25
 Status: LIVE — All assets deployed to GitHub Pages. Product files also uploaded to Lemon Squeezy for automatic delivery on purchase.
 Domain: getcontentkit.com
-Payment processor: Lemon Squeezy (merchant of record)
-Store URL: https://contentkit-ai.lemonsqueezy.com
+Payment processor: Stripe (Payment Links, live mode)
 
 ---
 
-## Checkout URLs (Lemon Squeezy)
+## Checkout URLs (Stripe Payment Links)
 
 | Product | Price | Checkout URL |
 |---------|-------|-------------|
-| Starter Kit | $27 | https://contentkit-ai.lemonsqueezy.com/checkout/buy/91776603-aff0-4efb-9513-0be0a1514540 |
-| Full Kit | $47 | https://contentkit-ai.lemonsqueezy.com/checkout/buy/5a44db7f-e439-4acf-9a90-96073b40fe9a |
+| Starter Kit | $27 | https://buy.stripe.com/cNidRa7JQaRMbqWaXK9ws00 |
+| Full Kit | $47 | https://buy.stripe.com/5kQ8wQ8NUe3Y2Uq7Ly9ws01 |
 
-Note: Lemon Squeezy delivers product files automatically via receipt email. These URLs go in "Buy Now" buttons on the sales page.
+Note: Stripe redirects to thank-you.html after purchase. These URLs go in "Buy Now" buttons on the sales page.
 
 ---
 
@@ -178,7 +177,7 @@ Phase 3 (Email Automation) needs:
 - Note: Product file delivery is handled by Lemon Squeezy automatically — Kit handles lead magnet + nurture only
 
 Phase 4 (Front-End) needs:
-- Starter checkout URL: https://contentkit-ai.lemonsqueezy.com/checkout/buy/91776603-aff0-4efb-9513-0be0a1514540
-- Full Kit checkout URL: https://contentkit-ai.lemonsqueezy.com/checkout/buy/5a44db7f-e439-4acf-9a90-96073b40fe9a
+- Starter checkout URL: https://buy.stripe.com/cNidRa7JQaRMbqWaXK9ws00
+- Full Kit checkout URL: https://buy.stripe.com/5kQ8wQ8NUe3Y2Uq7Ly9ws01
 - Lead magnet PDF URL: https://getcontentkit.com/downloads/5-ai-prompts-lead-magnet.pdf
 - Upgrade page URL to replace `[upgrade-page-placeholder]` in post-purchase-starter email
