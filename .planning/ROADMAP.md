@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Product Assets** - Create and finalize all deliverable product files before any code is written ✓ (2026-02-25)
 - [x] **Phase 2: Infrastructure** - Deploy pipeline, Lemon Squeezy checkout links, and GitHub Pages hosting live and verified ✓ (2026-02-25)
 - [x] **Phase 3: Email Automation** - Kit capture forms, lead magnet delivery, nurture sequence, and buyer tagging wired end-to-end ✓ (2026-02-26)
-- [ ] **Phase 4: Front-End Build** - All pages (index, sales, thank-you, legal) built, styled, and connected to live services
+- [x] **Phase 4: Front-End Build** - All pages (index, sales, thank-you, legal) built, styled, and connected to live services ✓ (2026-02-27)
 - [ ] **Phase 5: Launch Readiness** - Analytics configured, full funnel verified with a real charge, site ready for paid traffic
 
 ## Phase Details
@@ -110,13 +110,13 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. A real Stripe charge (using a real card, not test mode) completes and the buyer receives the order confirmation email with download links — verified end-to-end before any paid traffic is sent
   2. The entire mobile purchase flow (landing page → opt-in → email → sales page → Stripe checkout → thank-you page) completes without errors on a physical iOS or Android device
-  3. Cloudflare Web Analytics (or equivalent) is active, page views are recording, and conversion events (opt-in, purchase) are visible in the dashboard
-  4. All page links, navigation buttons, and Stripe Payment Link URLs are verified as working after the Cloudflare Pages production deployment (not localhost)
-**Plans**: TBD
+  3. Plausible Analytics is active, page views are recording, and conversion events (opt-in, purchase) are visible in the dashboard
+  4. All page links, navigation buttons, and Stripe Payment Link URLs are verified as working on the live GitHub Pages production domain (not localhost)
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: Configure Cloudflare Web Analytics and verify conversion event tracking
-- [ ] 05-02: Run full end-to-end verification checklist: real charge test, mobile device flow, email deliverability to Gmail Primary and Outlook, Notion template duplication from fresh account, all links post-deploy
+- [ ] 05-01-PLAN.md — Analytics configuration and pre-launch setup: ad tracking ID decision, Plausible goal creation, Stripe redirect configuration with ?tier= parameters
+- [ ] 05-02-PLAN.md — End-to-end verification checklist: real charge test, mobile device flow, email deliverability, link audit, go/no-go decision
 
 ---
 
@@ -130,5 +130,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Product Assets | 4/4 | ✓ Complete | 2026-02-25 |
 | 2. Infrastructure | 3/3 | ✓ Complete | 2026-02-25 |
 | 3. Email Automation | 3/3 | ✓ Complete | 2026-02-26 |
-| 4. Front-End Build | 0/4 | Planned | - |
+| 4. Front-End Build | 4/4 | ✓ Complete | 2026-02-27 |
 | 5. Launch Readiness | 0/2 | Not started | - |
