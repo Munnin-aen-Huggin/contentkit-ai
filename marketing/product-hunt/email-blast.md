@@ -40,7 +40,7 @@ It takes about 10 seconds and it makes a massive difference in how many people d
 
 And if you want to leave a comment about your experience or what you're most excited about, that helps even more -- Product Hunt's algorithm rewards engagement.
 
-If you haven't grabbed ContentKit yet, you can check it out here: **https://getcontentkit.com/**
+If you haven't grabbed ContentKit yet, you can check it out here: **https://getcontentkit.com/?utm_source=producthunt&utm_medium=organic&utm_campaign=launch**
 
 Thank you for being part of this from the beginning. Your support -- whether it's an upvote, a comment, or just reading these emails -- genuinely means a lot.
 

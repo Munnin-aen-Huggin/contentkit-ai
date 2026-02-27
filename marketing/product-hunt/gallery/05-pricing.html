@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1270">
+  <title>ContentKit AI — Pricing Gallery Image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { dark: '#08090d', blue: '#0ea5e9', purple: '#8b5cf6' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { width: 1270px; height: 760px; margin: 0; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-border-featured {
+      position: relative;
+    }
+    .gradient-border-featured::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      padding: 2px;
+      background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  </style>
+</head>
+<body class="bg-[#08090d] flex items-center justify-center relative">
+
+  <!-- Background grid -->
+  <div class="absolute inset-0" style="background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+  <!-- Ambient glow behind featured card -->
+  <div class="absolute top-1/2 right-[35%] -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-15" style="background: radial-gradient(circle, rgba(14,165,233,0.4) 0%, rgba(139,92,246,0.2) 50%, transparent 70%); filter: blur(80px);"></div>
+
+  <div class="relative z-10 w-full px-14">
+
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <div class="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20">
+        <div class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></div>
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest">Launch Pricing</span>
+      </div>
+      <h2 class="text-4xl font-extrabold tracking-tight mb-2">
+        <span class="text-white">One Payment. </span>
+        <span class="gradient-text">Lifetime Access.</span>
+      </h2>
+      <p class="text-white/40 text-lg font-medium">No subscriptions. No upsells. Pay once, use forever.</p>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="flex gap-8 max-w-[980px] mx-auto items-stretch">
+
+      <!-- Starter Kit -->
+      <div class="flex-1 bg-white/[0.04] border border-white/[0.08] rounded-2xl p-8 flex flex-col">
+
+        <div class="mb-6">
+          <div class="text-white/50 text-sm font-semibold uppercase tracking-wider mb-1">Starter Kit</div>
+          <div class="flex items-baseline gap-1">
+            <span class="text-5xl font-extrabold text-white">$147</span>
+            <span class="text-white/30 text-base font-medium">one-time</span>
+          </div>
+        </div>
+
+        <div class="space-y-3 flex-1">
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/60 text-[15px]">200+ core marketing prompts</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/60 text-[15px]">5 categories (Ads, Email, Social, Landing Pages, Blog)</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/60 text-[15px]">Quick-start guide</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/60 text-[15px]">Lifetime updates</span>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-white/[0.06]">
+          <div class="text-white/30 text-sm text-center">Perfect for solopreneurs</div>
+        </div>
+
+      </div>
+
+      <!-- Full Kit (Featured) -->
+      <div class="flex-1 gradient-border-featured bg-white/[0.06] rounded-2xl p-8 flex flex-col relative">
+
+        <!-- Popular badge -->
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+          <div class="px-4 py-1 rounded-full bg-gradient-to-r from-brand-blue to-brand-purple text-white text-xs font-bold uppercase tracking-wider">
+            Most Popular
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <div class="gradient-text text-sm font-semibold uppercase tracking-wider mb-1">Full Kit</div>
+          <div class="flex items-baseline gap-1">
+            <span class="text-5xl font-extrabold text-white">$499</span>
+            <span class="text-white/30 text-base font-medium">one-time</span>
+          </div>
+        </div>
+
+        <div class="space-y-3 flex-1">
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-purple flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/80 text-[15px] font-medium">500+ prompts & templates</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-purple flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/80 text-[15px] font-medium">All 9 marketing categories</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-purple flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/80 text-[15px] font-medium">30-day content calendar</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-purple flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/80 text-[15px] font-medium">Brand voice customization</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-brand-purple flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-white/80 text-[15px] font-medium">Priority updates + bonus packs</span>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-white/[0.08]">
+          <div class="text-white/40 text-sm text-center">For teams & agencies</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer CTA -->
+    <div class="text-center mt-8">
+      <span class="text-white/30 text-sm font-medium">getcontentkit.com</span>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -24,10 +24,12 @@ I pulled 12 of the most founder-relevant prompts into a free Google Doc. These a
 
 Each prompt includes context for when to use it, the full prompt text, and the variables you swap in for your specific product.
 
-Here is the doc: [GOOGLE DOC LINK]
+Here is the doc: [GOOGLE_DOC_URL_FOR_ENTREPRENEUR]
 
 No email gate. No pitch. Just the prompts.
 
 I built these because every bootstrapped founder I know faces the same problem -- you can build the product, but marketing it solo is a completely different skill set. These prompts do not replace marketing thinking, but they eliminate the blank page and give you a strong first draft in minutes.
 
 Would love to hear which prompts are most useful for your stage. Happy to answer questions.
+
+<!-- UTM landing page link: https://getcontentkit.com/?utm_source=reddit&utm_medium=organic&utm_campaign=entrepreneur -->

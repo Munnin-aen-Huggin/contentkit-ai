@@ -24,6 +24,8 @@ Here's what's inside:
 
 Each prompt works with ChatGPT, Claude, or Gemini. Copy, paste, fill in the variables for your firm, and get professional marketing copy in minutes.
 
-Here's the Google Doc: [GOOGLE DOC LINK]
+Here's the Google Doc: [GOOGLE_DOC_URL_FOR_ACCOUNTING]
 
 No email gate, no signup. If any of these are useful for your firm, I'd genuinely like to hear about it. Happy to answer questions.
+
+<!-- UTM landing page link: https://getcontentkit.com/?utm_source=reddit&utm_medium=organic&utm_campaign=accounting -->

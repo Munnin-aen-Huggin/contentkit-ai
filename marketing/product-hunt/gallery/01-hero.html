@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1270">
+  <title>ContentKit AI — Hero Gallery Image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { dark: '#08090d', blue: '#0ea5e9', purple: '#8b5cf6' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { width: 1270px; height: 760px; margin: 0; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glow-ring {
+      box-shadow: 0 0 80px rgba(14, 165, 233, 0.15), 0 0 160px rgba(139, 92, 246, 0.1);
+    }
+    .gradient-border {
+      background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+      padding: 2px;
+      border-radius: 16px;
+    }
+    .gradient-border-inner {
+      background: #08090d;
+      border-radius: 14px;
+    }
+  </style>
+</head>
+<body class="bg-[#08090d] flex items-center justify-center relative">
+
+  <!-- Subtle background grid -->
+  <div class="absolute inset-0" style="background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+  <!-- Top-left glow -->
+  <div class="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-20" style="background: radial-gradient(circle, rgba(14,165,233,0.3) 0%, transparent 70%); filter: blur(80px);"></div>
+
+  <!-- Bottom-right glow -->
+  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full opacity-20" style="background: radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%); filter: blur(80px);"></div>
+
+  <!-- Main content -->
+  <div class="relative z-10 text-center px-16 max-w-[1100px]">
+
+    <!-- Logo / Badge -->
+    <div class="inline-flex items-center gap-2 mb-8 px-5 py-2.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+      <div class="w-6 h-6 rounded-md bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center">
+        <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+        </svg>
+      </div>
+      <span class="text-white/70 text-sm font-medium tracking-wide">ContentKit AI</span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="text-[72px] font-extrabold leading-[1.05] tracking-tight mb-6">
+      <span class="gradient-text">500+ AI Marketing</span><br>
+      <span class="text-white">Prompts & Templates</span>
+    </h1>
+
+    <!-- Tagline -->
+    <p class="text-xl text-white/50 font-medium mb-12 tracking-wide">
+      Stop staring at a blank screen. Start printing content.
+    </p>
+
+    <!-- Feature pills -->
+    <div class="flex items-center justify-center gap-4">
+      <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+        <div class="w-2 h-2 rounded-full bg-brand-blue"></div>
+        <span class="text-white/60 text-sm font-medium">9 Marketing Categories</span>
+      </div>
+      <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+        <div class="w-2 h-2 rounded-full bg-brand-purple"></div>
+        <span class="text-white/60 text-sm font-medium">Copy-Paste Ready</span>
+      </div>
+      <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        <span class="text-white/60 text-sm font-medium">Works with Any AI</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

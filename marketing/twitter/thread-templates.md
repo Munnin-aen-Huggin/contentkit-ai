@@ -4,7 +4,7 @@
 
 Product: ContentKit AI — AI Marketing Prompt Kit (500+ prompts across 8 categories)
 Pricing: $147 Starter / $499 Full Kit
-URL: https://getcontentkit.com/
+URL: https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread?utm_source=twitter&utm_medium=organic&utm_campaign=thread-{N}
 
 ---
 
@@ -85,7 +85,7 @@ I put 500+ prompts like this into one kit — organized across ads, email, socia
 
 No subscriptions. No fluff. Just structured prompts that produce real output.
 
-ContentKit AI: https://getcontentkit.com/
+ContentKit AI: https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -165,7 +165,7 @@ ContentKit AI has 60+ social media prompts across Instagram, LinkedIn, Twitter/X
 
 Write a month of content before lunch.
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -246,7 +246,7 @@ EM-19 is one of 50+ email prompts inside ContentKit AI — covering welcome sequ
 
 Stop guessing. Start testing.
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -330,7 +330,7 @@ ContentKit AI includes 10+ landing page prompts — from hero headlines to FAQ s
 
 Build a sales page in an afternoon, not a week.
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -407,7 +407,7 @@ ContentKit AI has 60+ social media prompts — for LinkedIn, Instagram, Twitter/
 
 Each one built with platform-specific formatting, engagement drivers, and word count targets.
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -480,7 +480,7 @@ ContentKit AI includes 15+ brand strategy prompts — from positioning to compet
 
 Build a strategy document your brand can actually use.
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -556,7 +556,7 @@ ContentKit AI includes 10+ Google Ads prompts — Responsive Search Ads, Shoppin
 
 Stop guessing at headlines. Start with structure.
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -629,7 +629,7 @@ ContentKit AI includes 10+ product launch prompts — waitlist pages, launch ema
 
 Launch like a team of 5. By yourself.
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -706,7 +706,7 @@ ContentKit AI includes prompts for cold outreach, follow-up sequences, warm re-e
 
 Your outreach deserves better than "just following up."
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread
 
 ---
 
@@ -784,4 +784,4 @@ ContentKit AI includes 10+ video script prompts — YouTube hooks, full tutorial
 
 Stop winging your scripts. Start with structure.
 
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=thread

@@ -24,8 +24,10 @@ Here's what's covered:
 
 Every prompt is copy-paste ready. I use these in my own work and they've dramatically cut the time it takes to produce professional marketing content.
 
-Here's the Google Doc: [GOOGLE DOC LINK]
+Here's the Google Doc: [GOOGLE_DOC_URL_FOR_REALTORS]
 
 No email required, no signup wall. Just the prompts.
 
 Would love to hear which ones resonate with your business. Happy to answer any questions about how to customize them for your specific market.
+
+<!-- UTM landing page link: https://getcontentkit.com/?utm_source=reddit&utm_medium=organic&utm_campaign=realtors -->

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1270">
+  <title>ContentKit AI — Social Proof Gallery Image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { dark: '#08090d', blue: '#0ea5e9', purple: '#8b5cf6' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { width: 1270px; height: 760px; margin: 0; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-border {
+      position: relative;
+    }
+    .gradient-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      padding: 1px;
+      background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  </style>
+</head>
+<body class="bg-[#08090d] flex items-center justify-center relative">
+
+  <!-- Background grid -->
+  <div class="absolute inset-0" style="background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+  <!-- Ambient glow -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] rounded-full opacity-10" style="background: radial-gradient(circle, rgba(14,165,233,0.4) 0%, rgba(139,92,246,0.2) 40%, transparent 70%); filter: blur(80px);"></div>
+
+  <div class="relative z-10 w-full px-16">
+
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-extrabold tracking-tight mb-2">
+        <span class="gradient-text">Real Results.</span>
+        <span class="text-white"> Real People.</span>
+      </h2>
+    </div>
+
+    <!-- Main testimonial card -->
+    <div class="max-w-[1000px] mx-auto">
+
+      <div class="gradient-border bg-white/[0.03] rounded-2xl p-10">
+
+        <!-- Quote -->
+        <div class="relative mb-8">
+          <svg class="absolute -top-2 -left-2 w-10 h-10 text-brand-blue/20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983z"/>
+          </svg>
+          <p class="text-white/80 text-xl leading-relaxed font-medium pl-10">
+            "ContentKit completely changed how I deliver for clients. I used to spend entire weekends writing email sequences and ad copy. Now I get <span class="text-brand-blue">first drafts in 20-30 minutes</span> that I just polish and send. My clients think I hired a team."
+          </p>
+        </div>
+
+        <!-- Author -->
+        <div class="flex items-center gap-4 pl-10 mb-10">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center text-white font-bold text-lg">
+            M
+          </div>
+          <div>
+            <div class="text-white font-semibold text-base">Marcus</div>
+            <div class="text-white/40 text-sm">Freelance Marketing Consultant</div>
+          </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="grid grid-cols-3 gap-6">
+
+          <!-- Before: Hours -->
+          <div class="bg-white/[0.04] rounded-xl p-6 text-center border border-white/[0.06]">
+            <div class="text-white/40 text-xs font-semibold uppercase tracking-wider mb-2">Before</div>
+            <div class="text-3xl font-extrabold text-red-400 mb-1">12-15 hrs</div>
+            <div class="text-white/40 text-sm">per week writing content</div>
+          </div>
+
+          <!-- After: Time -->
+          <div class="bg-white/[0.04] rounded-xl p-6 text-center border border-white/[0.06]">
+            <div class="text-white/40 text-xs font-semibold uppercase tracking-wider mb-2">After</div>
+            <div class="text-3xl font-extrabold text-emerald-400 mb-1">20-30 min</div>
+            <div class="text-white/40 text-sm">for first drafts</div>
+          </div>
+
+          <!-- Result: Revenue -->
+          <div class="bg-gradient-to-br from-brand-blue/10 to-brand-purple/10 rounded-xl p-6 text-center border border-brand-blue/20">
+            <div class="text-brand-blue/70 text-xs font-semibold uppercase tracking-wider mb-2">Result</div>
+            <div class="text-3xl font-extrabold mb-1">
+              <span class="text-white/50">$800</span>
+              <span class="text-white/30 mx-1">&rarr;</span>
+              <span class="gradient-text">$1,400</span>
+            </div>
+            <div class="text-white/40 text-sm">/month per client</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

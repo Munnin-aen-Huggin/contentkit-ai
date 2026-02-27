@@ -27,8 +27,10 @@ Here's what's inside:
 
 Every prompt works with ChatGPT, Claude, or Gemini. Copy, paste, fill in the variables, and get usable copy in minutes.
 
-Here's the Google Doc: [GOOGLE DOC LINK]
+Here's the Google Doc: [GOOGLE_DOC_URL_FOR_SALES]
 
 No email required. No signup. Just the prompts.
 
 If you try any of them on your outbound, I'd genuinely like to hear what reply rates you see. Happy to answer questions about how to customize them for specific verticals.
+
+<!-- UTM landing page link: https://getcontentkit.com/?utm_source=reddit&utm_medium=organic&utm_campaign=sales -->

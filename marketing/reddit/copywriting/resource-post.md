@@ -22,7 +22,7 @@ I compiled 10 of these prompts into a free Google Doc, focused specifically on t
 
 Each prompt includes context for when to use it, the full prompt you copy-paste, and variables you customize per client.
 
-Here is the doc: [GOOGLE DOC LINK]
+Here is the doc: [GOOGLE_DOC_URL_FOR_COPYWRITING]
 
 No email gate. No funnel. Just the prompts.
 
@@ -31,3 +31,5 @@ I built these because the conversation around "AI vs. copywriters" misses the po
 These prompts handle the structural 80%. You bring the other 20%.
 
 Curious which frameworks you use most in your workflow -- happy to discuss in comments.
+
+<!-- UTM landing page link: https://getcontentkit.com/?utm_source=reddit&utm_medium=organic&utm_campaign=copywriting -->

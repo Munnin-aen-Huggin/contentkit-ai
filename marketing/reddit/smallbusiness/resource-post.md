@@ -27,8 +27,10 @@ Here is what the 12 prompts cover:
 
 Every prompt includes when to use it, the exact text to copy-paste, and the variables to swap in for your specific business.
 
-Here is the doc: [GOOGLE DOC LINK]
+Here is the doc: [GOOGLE_DOC_URL_FOR_SMALLBUSINESS]
 
 No email required. No signup. Just the prompts.
 
 I built these because I watched too many small business owners either overpay for mediocre marketing help or give up on marketing entirely. You do not need a marketing team -- you just need better tools. Let me know which prompts work best for your business.
+
+<!-- UTM landing page link: https://getcontentkit.com/?utm_source=reddit&utm_medium=organic&utm_campaign=smallbusiness -->

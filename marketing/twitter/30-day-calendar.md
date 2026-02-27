@@ -140,7 +140,7 @@ I put together a free PDF with 5 of my best AI marketing prompts:
 - Landing Page Hero Section
 
 No email required. Just grab it:
-[link to free PDF]
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=promo#free-guide?utm_source=twitter&utm_medium=organic&utm_campaign=lead-magnet
 
 These are the same prompt structures used in the full ContentKit AI kit.
 **Notes:** First promo post. Soft sell — free resource, no email gate. Drives traffic and builds goodwill. Track clicks to measure interest.
@@ -345,7 +345,7 @@ Every prompt includes the role, framework, variables to customize, and expected 
 It's the system I wish I had when I started.
 
 Starter Kit: $147 | Full Kit: $499
-https://getcontentkit.com/
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=promo
 **Notes:** First direct product mention. Mid-week, sandwiched between value posts. Straightforward — no hype, just facts about what's included.
 
 ---
@@ -426,7 +426,7 @@ I'm giving away a free 5-prompt sample pack:
 5. Instagram Carousel caption + slide titles
 
 Free. No email required. Just grab it and test:
-[link to free PDF]
+https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=promo#free-guide?utm_source=twitter&utm_medium=organic&utm_campaign=lead-magnet
 
 If these 5 save you time, imagine what 500+ would do.
 **Notes:** Second lead magnet CTA. References earlier thread content so followers feel continuity. Last Monday of the month — drives traffic before the final push.
@@ -444,7 +444,7 @@ Follow up 2 hours after the thread with a reply:
 
 If you've been reading these threads all month, you've seen what structured prompts produce. The full kit covers ads, email, social, landing pages, brand strategy, product launches, and video scripts.
 
-Starter Kit ($147) or Full Kit ($499): https://getcontentkit.com/
+Starter Kit ($147) or Full Kit ($499): https://getcontentkit.com/?utm_source=twitter&utm_medium=organic&utm_campaign=promo
 
 Thanks for following along this month."
 **Notes:** Final day. Thread + soft product mention in the reply. Feels like a natural conclusion to the month, not a sales push. The thread itself delivers full value; the CTA is a reply, not the thread.

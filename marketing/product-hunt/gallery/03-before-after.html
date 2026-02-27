@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1270">
+  <title>ContentKit AI — Before/After Gallery Image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          },
+          colors: {
+            brand: { dark: '#08090d', blue: '#0ea5e9', purple: '#8b5cf6' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { width: 1270px; height: 760px; margin: 0; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+</head>
+<body class="bg-[#08090d] flex flex-col items-center justify-center relative">
+
+  <!-- Background grid -->
+  <div class="absolute inset-0" style="background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+  <div class="relative z-10 w-full px-14">
+
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h2 class="text-4xl font-extrabold tracking-tight">
+        <span class="text-white">The Prompt Makes </span>
+        <span class="gradient-text">All the Difference</span>
+      </h2>
+    </div>
+
+    <!-- Comparison columns -->
+    <div class="flex gap-6">
+
+      <!-- BEFORE (Left) -->
+      <div class="flex-1">
+        <!-- Label -->
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+          <span class="text-red-400 font-bold text-sm uppercase tracking-widest">Without ContentKit</span>
+        </div>
+
+        <!-- Prompt card -->
+        <div class="bg-red-500/[0.06] border border-red-500/20 rounded-xl p-5 mb-4">
+          <div class="text-red-400/60 text-xs font-semibold uppercase tracking-wider mb-2">Your Prompt</div>
+          <div class="font-mono text-[13px] text-white/70 leading-relaxed">
+            "Write me a Facebook ad for my product"
+          </div>
+        </div>
+
+        <!-- Output card -->
+        <div class="bg-red-500/[0.04] border border-red-500/10 rounded-xl p-5">
+          <div class="text-red-400/60 text-xs font-semibold uppercase tracking-wider mb-3">AI Output</div>
+          <div class="text-white/50 text-[13px] leading-relaxed space-y-2">
+            <p>Introducing our amazing product! It's great for everyone who wants to improve their life.</p>
+            <p>Our product has many features that you'll love. It's affordable and easy to use.</p>
+            <p class="text-white/30">Click here to learn more!</p>
+          </div>
+          <div class="mt-4 flex items-center gap-2">
+            <svg class="w-4 h-4 text-red-400/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            <span class="text-red-400/60 text-xs font-medium">Generic, no hook, no CTA, no framework</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="flex flex-col items-center justify-center gap-2 px-2">
+        <div class="w-px h-16 bg-white/10"></div>
+        <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+          <span class="text-white/40 text-lg font-bold">vs</span>
+        </div>
+        <div class="w-px h-16 bg-white/10"></div>
+      </div>
+
+      <!-- AFTER (Right) -->
+      <div class="flex-1">
+        <!-- Label -->
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+          <span class="text-emerald-400 font-bold text-sm uppercase tracking-widest">With ContentKit</span>
+        </div>
+
+        <!-- Prompt card -->
+        <div class="bg-emerald-500/[0.06] border border-emerald-500/20 rounded-xl p-5 mb-4">
+          <div class="text-emerald-400/60 text-xs font-semibold uppercase tracking-wider mb-2">ContentKit Prompt (PAS Framework)</div>
+          <div class="font-mono text-[13px] text-white/70 leading-relaxed">
+            "Write a Facebook ad using PAS: <span class="text-emerald-400/80">Problem</span> — freelancers waste 12+ hrs/week writing content. <span class="text-emerald-400/80">Agitate</span> — while competitors use AI to publish 10x faster. <span class="text-emerald-400/80">Solution</span> — 500+ tested prompts. Tone: urgent but professional. Include social proof. CTA: limited-time pricing."
+          </div>
+        </div>
+
+        <!-- Output card -->
+        <div class="bg-emerald-500/[0.04] border border-emerald-500/10 rounded-xl p-5">
+          <div class="text-emerald-400/60 text-xs font-semibold uppercase tracking-wider mb-3">AI Output</div>
+          <div class="text-white/70 text-[13px] leading-relaxed space-y-2">
+            <p class="font-semibold text-white/90">Still spending 12+ hours a week writing marketing copy?</p>
+            <p>Your competitors aren't. They're using AI-powered prompts to publish ads, emails, and social posts 10x faster — while you're still staring at a blank screen.</p>
+            <p class="text-emerald-400/90 font-medium">500+ battle-tested prompts. One toolkit. Lifetime access at launch pricing.</p>
+          </div>
+          <div class="mt-4 flex items-center gap-2">
+            <svg class="w-4 h-4 text-emerald-400/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span class="text-emerald-400/60 text-xs font-medium">Targeted, emotional, framework-driven, clear CTA</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

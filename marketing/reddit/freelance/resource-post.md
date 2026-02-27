@@ -23,8 +23,10 @@ I pulled 15 of the most useful ones into a free guide specifically for freelance
 
 Each prompt is copy-paste ready with customizable variables. I use these daily across multiple client accounts and they've probably saved me 10-12 hours a week on first drafts alone.
 
-Here's the Google Doc: [GOOGLE DOC LINK]
+Here's the Google Doc: [GOOGLE_DOC_URL_FOR_FREELANCE]
 
 No email gate, no signup. Just the prompts.
 
 If you try any of them, I'd genuinely like to hear which ones you found most useful. Happy to answer questions about how I use them in my workflow.
+
+<!-- UTM landing page link: https://getcontentkit.com/?utm_source=reddit&utm_medium=organic&utm_campaign=freelance -->
