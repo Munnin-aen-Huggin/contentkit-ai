@@ -10,6 +10,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="output.css">
+
+  <!-- Google Ads Global Site Tag — replace AW-XXXXXXXXXX with your Conversion ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Base Code — replace PIXEL_ID_HERE with your Pixel ID -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_HERE');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID_HERE&ev=PageView&noscript=1"/></noscript>
+
   <style>
     body { font-family: 'Inter', sans-serif; }
     .gradient-text { background: linear-gradient(135deg, #0ea5e9, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -113,5 +138,43 @@
     </div>
   </footer>
 
+  <!-- Conversion Tracking — fires on page load -->
+  <script>
+    (function() {
+      // Detect tier from URL param (?tier=starter or ?tier=full)
+      var params = new URLSearchParams(window.location.search);
+      var tier = params.get('tier') || 'unknown';
+      var value = tier === 'starter' ? 147 : tier === 'full' ? 499 : 0;
+
+      // Google Ads Conversion — replace AW-XXXXXXXXXX/CONVERSION_LABEL with your values
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXXX/CONVERSION_LABEL',
+          'value': value,
+          'currency': 'USD',
+          'transaction_id': ''
+        });
+      }
+
+      // Meta Pixel Purchase Event
+      if (typeof fbq === 'function') {
+        fbq('track', 'Purchase', {
+          value: value,
+          currency: 'USD',
+          content_name: 'ContentKit AI ' + (tier === 'starter' ? 'Starter Kit' : tier === 'full' ? 'Full Kit' : 'Unknown'),
+          content_ids: [tier],
+          content_type: 'product'
+        });
+      }
+
+      // Plausible Purchase Event
+      if (window.plausible) {
+        plausible('Purchase', { revenue: { currency: 'USD', amount: value }, props: { tier: tier } });
+      }
+    })();
+  </script>
+
+  <!-- Plausible Analytics — privacy-friendly, no cookies -->
+  <script defer data-domain="getcontentkit.com" src="https://plausible.io/js/script.revenue.js"></script>
 </body>
 </html>

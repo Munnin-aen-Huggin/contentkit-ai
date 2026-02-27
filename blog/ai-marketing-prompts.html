@@ -25,6 +25,30 @@
   <meta name="twitter:image" content="https://getcontentkit.com/og-image.png">
   <meta name="twitter:image:alt" content="AI Marketing Prompts: 50+ Templates That Work">
 
+  <!-- Google Ads Global Site Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel Base Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID_HERE');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID_HERE&ev=PageView&noscript=1"/></noscript>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -383,6 +407,23 @@
       </div>
     </div>
   </footer>
+
+  <!-- Buy button tracking — Google Ads + Meta Pixel -->
+  <script>
+    document.querySelectorAll('a[href*="buy.stripe.com"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var isStarter = btn.textContent.indexOf('147') !== -1;
+        var tier = isStarter ? 'starter' : 'full';
+        var value = isStarter ? 147 : 499;
+        if (typeof gtag === 'function') {
+          gtag('event', 'begin_checkout', { value: value, currency: 'USD', items: [{ item_name: 'ContentKit AI ' + (isStarter ? 'Starter Kit' : 'Full Kit'), price: value }] });
+        }
+        if (typeof fbq === 'function') {
+          fbq('track', 'InitiateCheckout', { value: value, currency: 'USD', content_name: 'ContentKit AI ' + (isStarter ? 'Starter Kit' : 'Full Kit'), content_ids: [tier], content_type: 'product' });
+        }
+      });
+    });
+  </script>
 
   <!-- Plausible Analytics -->
   <script defer data-domain="getcontentkit.com" src="https://plausible.io/js/script.tagged-events.js"></script>
