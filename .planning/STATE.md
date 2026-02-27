@@ -5,16 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** A single landing page that converts visitors into buyers of a high-value digital marketing toolkit — with zero ongoing costs and maximum profit margins.
-**Current focus:** Phase 4 — Front-End Build
+**Current focus:** Phase 6 — Organic Marketing Rollout (Wave 1 complete, Wave 2 ready for human execution)
 
 ## Current Position
 
-Phase: 4 of 5 (Front-End Build)
-Plan: 4 of 4 (checkpoint — awaiting human verification)
-Status: Checkpoint
-Last activity: 2026-02-26 — 04-04 Task 1 COMPLETE (output.css recompiled 26KB; og-image.png 1200x630px created at 19d87e9)
+Phase: 6 of 6 (Organic Marketing Rollout)
+Plan: 06-01 and 06-02 COMPLETE (Wave 1). 06-03 through 06-05 ready for execution.
+Status: Wave 1 complete. Wave 2 requires human execution (Reddit seeding, Twitter posting, Product Hunt launch).
+Last activity: 2026-02-27 — Phase 6 Wave 1 implemented: UTM tracking, CRO fixes, analytics, social proof cleanup, blog CTAs, email variants, PH gallery templates, execution trackers
+Live pricing: Starter $147 (anchor $397) / Full Kit $499 (anchor $997)
 
-Progress: [███████████████░░░░░] 75%
+Progress: [█████████████████░░░] 85%
 
 ## Performance Metrics
 
@@ -93,10 +94,24 @@ Recent decisions affecting current work:
 - [Phase 04]: Lemon Squeezy listed as merchant of record in privacy/terms (not Stripe directly) — accurate per Phase 2 decision
 - [Phase 04]: Google Fonts loaded via preconnect + stylesheet link (not @import) — eliminates render-blocking; measured improvement on mobile simulation
 - [Phase 04]: Stripe Payment Links wired as plain href on anchor tags — no JS wrapper needed
+- [Post-04]: Pricing evolved through 3 rounds: $27/$47 → $67/$127 → $197/$499 → $147/$499 (current). Starter at $147 (anchor $397), Full Kit at $499 (anchor $997)
+- [Post-04]: Webhook amounts hardcoded to match new pricing (8a43810), lead magnet PDF regenerated
+- [Post-04]: Organic marketing playbook created with Reddit-first strategy across 8 subreddits (0c3ab90)
+- [Post-04]: 34 organic marketing rollout files created across 4 channels — Reddit (24 files), Twitter/X (2), Product Hunt (3), Blog (5) at a45668b
+- [Post-04]: SEO blog deployed with 5 long-form articles + blog index page (84aa374) — targeting high-intent keywords (ai marketing prompts, chatgpt marketing templates, ai copywriting prompts, ai social media prompts, ai email marketing prompts)
+- [Post-04]: .nojekyll added for GitHub Pages compatibility (fe13eb5)
+- [Post-04]: robots.txt and sitemap.xml created (uncommitted)
 
 ### Pending Todos
 
-None yet.
+- Complete 04-04 Task 2 checkpoint: deploy verification, buy button test, mobile check, Lemon Squeezy redirect config, PageSpeed LCP < 2s
+- Sign up for Plausible Analytics (plausible.io) and verify domain getcontentkit.com
+- Create 8 Google Docs from free-resource.md files (human-execute, see marketing/reddit/google-doc-links.md)
+- Execute Reddit Batch 1 seeding: r/freelance, r/smallbusiness, r/marketing, r/entrepreneur (see marketing/reddit/execution-tracker.md)
+- Start Twitter/X 30-day calendar posting (see marketing/twitter/execution-tracker.md)
+- Execute Product Hunt launch after Reddit/Twitter establish initial traction (see marketing/product-hunt/launch-checklist.md)
+- Set up ConvertKit automation rules for reddit-welcome-variant and producthunt-welcome-variant sequences
+- Screenshot Product Hunt gallery HTML templates with Puppeteer at 1270x760px
 
 ### Blockers/Concerns
 
@@ -106,17 +121,27 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-26
-Stopped at: 04-04 Task 1 complete. Awaiting human verify at Task 2 checkpoint (full front-end verification + Stripe redirect config).
+Last session: 2026-02-27
+Stopped at: Phase 6 Wave 1 complete. Wave 2 (Reddit seeding, Twitter, Product Hunt) requires human execution.
 Resume file: None
-Note: 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
-Note: 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
-Note: 01-03 COMPLETE (2026-02-25) — lead-magnet-content.md (544aae4) and asset-manifest.md (bd9e07a)
-Note: 01-04 COMPLETE (2026-02-25) — ai-prompt-kit-full.pdf (3.0MB), ai-prompt-kit-starter.pdf (1.3MB), 5-ai-prompts-lead-magnet.pdf (261KB) committed at e076c58; asset-manifest.md updated at b7067b0. Phase 1 all 4 plans complete.
-Note: 02-01 COMPLETE (2026-02-25) — .gitignore (494eb44), src/input.css, thank-you.html; output.css compiled 22KB (5d31108); index.html CDN swap + Alpine.js (9fd62a7)
-Note: 03-01 COMPLETE (2026-02-26) — Kit infra: 4 tags, form embed, sequence, nurture copy committed at a9f3dbc, 119ab9c
-Note: 03-03 Task 1 COMPLETE (2026-02-26) — webhook/netlify/functions/ls-webhook.js + webhook/netlify.toml committed at c0e008e
-Note: 04-01 COMPLETE (2026-02-26) — Sample Prompt Preview (PAGE-04) + Who This Is NOT For (PAGE-08) added; Stripe Payment Links wired; OG/Twitter meta added; Google Fonts @import fixed; dark-700 token added. Committed at e4b4209, de4015f
-Note: 04-02 COMPLETE (2026-02-26) — thank-you.html complete branded confirmation page committed at 755032e; output.css rebuilt
-Note: 04-03 COMPLETE (2026-02-26) — privacy-policy.html (b50a652), terms-of-service.html + refund-policy.html (1a7b5ad)
-Note: 04-04 Task 1 COMPLETE (2026-02-26) — output.css recompiled (26KB, tailwindcss v4.2.1), og-image.png created 1200x630px (39KB) at 19d87e9; awaiting human-verify checkpoint at Task 2
+
+### Completed Work Log
+- 01-01 COMPLETE (2026-02-25) — Full Kit (500 prompts) and Starter (200 prompts) committed at f249aed
+- 01-02 COMPLETE (2026-02-25) — 4 template markdown files committed at 78b482f, d8d3271, 93bdfc5, ff33679
+- 01-03 COMPLETE (2026-02-25) — lead-magnet-content.md (544aae4) and asset-manifest.md (bd9e07a)
+- 01-04 COMPLETE (2026-02-25) — ai-prompt-kit-full.pdf (3.0MB), ai-prompt-kit-starter.pdf (1.3MB), 5-ai-prompts-lead-magnet.pdf (261KB) at e076c58
+- 02-01 COMPLETE (2026-02-25) — .gitignore (494eb44), src/input.css, thank-you.html; output.css compiled 22KB (5d31108)
+- 03-01 COMPLETE (2026-02-26) — Kit infra: 4 tags, form embed, sequence, nurture copy at a9f3dbc, 119ab9c
+- 03-03 COMPLETE (2026-02-26) — webhook/netlify/functions/ls-webhook.js at c0e008e
+- 04-01 COMPLETE (2026-02-26) — Landing page sections, Stripe links, OG/SEO meta at e4b4209, de4015f
+- 04-02 COMPLETE (2026-02-26) — thank-you.html branded confirmation at 755032e
+- 04-03 COMPLETE (2026-02-26) — Legal pages (privacy, terms, refund) at b50a652, 1a7b5ad
+- 04-04 Task 1 COMPLETE (2026-02-26) — output.css recompiled, og-image.png created at 19d87e9
+- Post-04 (2026-02-26) — Pricing raised to $67/$127 (8e19fde), then $197/$499 (d26ca9f), finalized at $147/$499 (360ab64)
+- Post-04 (2026-02-26) — Organic marketing playbook (0c3ab90), 34 rollout files across 4 channels (a45668b)
+- Post-04 (2026-02-26) — SEO blog: 5 articles + blog index deployed (84aa374)
+- Post-04 (2026-02-26) — .nojekyll for GitHub Pages (fe13eb5), webhook amounts fixed (8a43810)
+
+### Uncommitted Changes
+- Modified: index.html, blog/*.html (6 files), marketing/reddit/*/resource-post.md (8 files), marketing/twitter/*.md (2 files), marketing/product-hunt/email-blast.md
+- New: robots.txt, sitemap.xml, marketing/tracking/utm-links.md, marketing/reddit/google-doc-links.md, marketing/email/*.md (2 files), marketing/reddit/execution-tracker.md, marketing/twitter/execution-tracker.md, marketing/twitter/marketing-tips-schedule.md, marketing/analytics/*.md (2 files), marketing/reddit/scale-playbook.md, marketing/product-hunt/gallery/*.html (5 files)

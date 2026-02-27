@@ -49,6 +49,25 @@
     .prompt-box .prompt-text { font-family: ui-monospace, monospace; font-size: 0.875rem; color: #d1d5db; line-height: 1.6; }
     .prompt-box .prompt-text .variable { color: #0ea5e9; }
   </style>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/og-image.png" type="image/png">
+  <link rel="apple-touch-icon" href="/og-image.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "ChatGPT Marketing Templates for Every Channel (2026)",
+    "description": "Ready-to-use ChatGPT marketing templates for ads, email, social media & landing pages. Copy-paste prompts that produce professional marketing copy fast.",
+    "author": { "@type": "Organization", "name": "ContentKit AI" },
+    "publisher": { "@type": "Organization", "name": "ContentKit AI", "url": "https://getcontentkit.com" },
+    "datePublished": "2026-02-26",
+    "dateModified": "2026-02-26",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://getcontentkit.com/blog/chatgpt-marketing-templates.html" }
+  }
+  </script>
 </head>
 <body class="bg-dark-900 text-white">
 
@@ -196,10 +215,13 @@
         <div class="text-brand-500 text-sm font-semibold mb-4">FREE DOWNLOAD</div>
         <h3 class="text-2xl font-bold mb-4">Get 5 Free AI Prompts That Replace a <span class="gradient-text">$5K Copywriter</span></h3>
         <p class="text-gray-400 mb-6">Copy-paste prompts for ads, emails, landing pages & more. Works with ChatGPT, Claude, or any AI.</p>
-        <form action="https://app.convertkit.com/forms/9136765/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto mb-4">
+        <form action="https://app.convertkit.com/forms/9136765/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto mb-4" x-data>
           <input name="email_address" type="email" placeholder="Your best email" required class="flex-1 px-4 py-3 rounded-lg bg-dark-700 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 transition" />
+          <input type="hidden" name="fields[utm_source]" x-init="$el.value = new URLSearchParams(window.location.search).get('utm_source') || 'blog'" />
+          <input type="hidden" name="fields[utm_campaign]" x-init="$el.value = new URLSearchParams(window.location.search).get('utm_campaign') || 'chatgpt-marketing-templates'" />
           <button type="submit" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-lg font-bold transition whitespace-nowrap">Get the Free Guide</button>
         </form>
+        <p class="text-gray-500 text-sm">Or <a href="/#pricing" class="text-brand-500 hover:underline font-semibold">get all 500+ prompts — starting at $147</a></p>
       </div>
 
       <!-- Continue article content -->
@@ -378,5 +400,7 @@
     </div>
   </footer>
 
+  <!-- Plausible Analytics -->
+  <script defer data-domain="getcontentkit.com" src="https://plausible.io/js/script.tagged-events.js"></script>
 </body>
 </html>

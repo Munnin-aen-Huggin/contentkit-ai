@@ -39,6 +39,45 @@
     .pulse-border { animation: pulseBorder 2s ease-in-out infinite; }
     @keyframes pulseBorder { 0%, 100% { border-color: #0ea5e9; } 50% { border-color: #8b5cf6; } }
   </style>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/og-image.png" type="image/png">
+  <link rel="apple-touch-icon" href="/og-image.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ContentKit AI",
+    "url": "https://getcontentkit.com",
+    "description": "The ultimate AI marketing toolkit. 500+ battle-tested prompts & templates."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "ContentKit AI",
+    "description": "500+ AI marketing prompts & templates for ads, emails, social media, landing pages, SEO, brand strategy, product launch, and video scripts.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Starter Kit",
+        "price": "147",
+        "priceCurrency": "USD",
+        "url": "https://getcontentkit.com/#pricing"
+      },
+      {
+        "@type": "Offer",
+        "name": "Full Kit",
+        "price": "499",
+        "priceCurrency": "USD",
+        "url": "https://getcontentkit.com/#pricing"
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-dark-900 text-white">
 
@@ -56,7 +95,7 @@
   <!-- Hero -->
   <section class="pt-32 pb-20 px-6">
     <div class="max-w-4xl mx-auto text-center fade-in">
-      <div class="inline-block bg-brand-500/10 text-brand-500 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">Used by 2,400+ marketers & founders</div>
+      <div class="inline-block bg-brand-500/10 text-brand-500 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">The AI Marketing Toolkit for Marketers & Founders</div>
       <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
         Stop Staring at a<br><span class="gradient-text">Blank Screen.</span><br>Start Printing Content.
       </h1>
@@ -76,9 +115,9 @@
   <section class="border-y border-white/5 py-8 px-6">
     <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
       <div><div class="text-2xl font-bold gradient-text">500+</div><div class="text-gray-500 text-sm">Prompts & Templates</div></div>
-      <div><div class="text-2xl font-bold gradient-text">12</div><div class="text-gray-500 text-sm">Marketing Categories</div></div>
-      <div><div class="text-2xl font-bold gradient-text">2,400+</div><div class="text-gray-500 text-sm">Happy Customers</div></div>
-      <div><div class="text-2xl font-bold gradient-text">4.9/5</div><div class="text-gray-500 text-sm">Average Rating</div></div>
+      <div><div class="text-2xl font-bold gradient-text">9</div><div class="text-gray-500 text-sm">Marketing Categories</div></div>
+      <div><div class="text-2xl font-bold gradient-text">One-Time</div><div class="text-gray-500 text-sm">No Subscriptions</div></div>
+      <div><div class="text-2xl font-bold gradient-text">Any AI</div><div class="text-gray-500 text-sm">ChatGPT, Claude & More</div></div>
     </div>
   </section>
 
@@ -212,9 +251,12 @@
       <div class="inline-block bg-brand-500/10 text-brand-500 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">FREE DOWNLOAD</div>
       <h2 class="text-3xl md:text-4xl font-bold mb-4">Get 5 Free AI Prompts That Replace a <span class="gradient-text">$5K Copywriter</span></h2>
       <p class="text-gray-400 mb-8 text-lg">See exactly how AI can write high-converting copy for your business — with real examples and ready-to-use prompts.</p>
-      <form action="https://app.convertkit.com/forms/9136765/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto mb-4">
+      <form action="https://app.convertkit.com/forms/9136765/subscriptions" method="post" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto mb-4" x-data x-ref="leadForm">
         <input name="email_address" type="email" placeholder="Your best email" required
                class="flex-1 px-4 py-3 rounded-lg bg-dark-700 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-brand-500 transition" />
+        <input type="hidden" name="fields[utm_source]" x-init="$el.value = new URLSearchParams(window.location.search).get('utm_source') || ''" />
+        <input type="hidden" name="fields[utm_campaign]" x-init="$el.value = new URLSearchParams(window.location.search).get('utm_campaign') || ''" />
+        <input type="hidden" name="fields[utm_medium]" x-init="$el.value = new URLSearchParams(window.location.search).get('utm_medium') || ''" />
         <button type="submit"
                 class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-lg font-bold transition transform hover:scale-105 shadow-lg shadow-brand-500/25 whitespace-nowrap">
           Get the Free Guide
@@ -232,7 +274,8 @@
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 
         <!-- Starter -->
-        <div class="bg-dark-900 border border-white/10 rounded-2xl p-8 text-left">
+        <div class="bg-dark-900 border border-white/10 rounded-2xl p-8 text-left relative">
+          <div class="absolute -top-3 left-6 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">LAUNCH PRICING</div>
           <div class="text-sm font-semibold text-gray-400 mb-2">STARTER KIT</div>
           <div class="flex items-end gap-2 mb-2">
             <span class="text-4xl font-black">$147</span>
@@ -344,7 +387,7 @@
   <section class="py-20 px-6 bg-dark-800/50">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">Your Content Bottleneck Ends Today</h2>
-      <p class="text-gray-400 text-lg mb-8">Join 2,400+ marketers who stopped struggling with content and started scaling with AI.</p>
+      <p class="text-gray-400 text-lg mb-8">Stop struggling with content. Start scaling with AI-powered prompts and templates.</p>
       <a href="#pricing" class="inline-block bg-brand-500 hover:bg-brand-600 text-white px-10 py-4 rounded-xl text-lg font-bold transition transform hover:scale-105 shadow-lg shadow-brand-500/25">
         Get ContentKit AI — Starting at $147
       </a>
@@ -365,7 +408,13 @@
     </div>
   </footer>
 
-  <!-- Simple analytics-free scroll tracking -->
+  <!-- Mobile Sticky Bottom CTA -->
+  <div id="mobile-cta" class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-dark-900/95 backdrop-blur-md border-t border-white/10 p-3 translate-y-full transition-transform duration-300">
+    <a href="#pricing" class="block w-full text-center bg-brand-500 hover:bg-brand-600 text-white py-3 rounded-xl font-bold transition">
+      Get ContentKit AI — From $147
+    </a>
+  </div>
+
   <script>
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -374,6 +423,45 @@
         document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
       });
     });
+
+    // Mobile sticky CTA — show after scrolling past hero
+    (function() {
+      var mobileCta = document.getElementById('mobile-cta');
+      var hero = document.querySelector('section.pt-32');
+      if (!mobileCta || !hero) return;
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            mobileCta.classList.add('translate-y-full');
+          } else {
+            mobileCta.classList.remove('translate-y-full');
+          }
+        });
+      }, { threshold: 0 });
+      observer.observe(hero);
+    })();
+
+    // Conversion tracking — fire custom events for analytics
+    (function() {
+      // Track buy button clicks
+      document.querySelectorAll('#starter-btn, #full-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var tier = btn.id === 'starter-btn' ? 'starter' : 'full';
+          if (window.plausible) plausible('Purchase Click', { props: { tier: tier } });
+        });
+      });
+
+      // Track email form submissions
+      document.querySelectorAll('form[action*="convertkit"]').forEach(function(form) {
+        form.addEventListener('submit', function() {
+          var source = new URLSearchParams(window.location.search).get('utm_source') || 'direct';
+          if (window.plausible) plausible('Email Signup', { props: { source: source } });
+        });
+      });
+    })();
   </script>
+
+  <!-- Plausible Analytics — privacy-friendly, no cookies -->
+  <script defer data-domain="getcontentkit.com" src="https://plausible.io/js/script.tagged-events.js"></script>
 </body>
 </html>
