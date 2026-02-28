@@ -35,12 +35,12 @@ Full details: `.planning/milestones/v1.0-ROADMAP.md`
   3. Refreshing thank-you.html after a purchase does not fire duplicate conversion events (sessionStorage guard active)
   4. lp-google.html and lp-meta.html load under 2 seconds on mobile, have no site navigation, and contain a single CTA that links to the correct Stripe Payment Link
   5. Privacy policy page discloses Google Ads and Meta Pixel data collection
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 06-01: Inject real Google Ads and Meta Pixel IDs into all HTML files + sessionStorage dedup on thank-you page
-- [ ] 06-02: Build lp-google.html and lp-meta.html — dedicated ad landing pages
-- [ ] 06-03: Update privacy policy with ad tracking disclosures
+- [ ] 06-01-PLAN.md — Replace all tracking placeholder IDs across 8 HTML files + sessionStorage dedup on thank-you.html
+- [ ] 06-02-PLAN.md — Build lp-google.html and lp-meta.html dedicated ad landing pages
+- [ ] 06-03-PLAN.md — Audit and confirm privacy policy ad tracking disclosures
 
 #### Phase 7: Email Automation
 
