@@ -40,11 +40,27 @@ A single landing page that converts visitors into buyers of a high-value digital
 
 ### Active
 
-- [ ] Real charge end-to-end verification (pre-launch action item from Phase 5)
-- [ ] Mobile device physical test
-- [ ] Email deliverability verification (Gmail + Outlook)
-- [ ] Production link audit
-- [ ] Replace ad tracking placeholder IDs when ready for paid ads
+- [ ] Post-purchase onboarding email sequence (5 emails teaching buyers to use prompts)
+- [ ] Win-back email sequence for leads who didn't convert
+- [ ] Advanced email segmentation by interest/industry/behavior
+- [ ] Google Ads account setup, real conversion IDs, live campaigns
+- [ ] Meta Ads account setup, real Pixel ID, live campaigns
+- [ ] Dedicated ad landing pages optimized for paid traffic
+- [ ] Real charge end-to-end verification
+- [ ] Mobile device physical test + email deliverability verification
+
+## Current Milestone: v1.1 Growth & Revenue
+
+**Goal:** Build growth infrastructure and launch paid marketing — post-purchase onboarding, win-back sequences, email segmentation, Google Ads + Meta Ads live with real budget, measurable revenue from at least 2 channels.
+
+**Target features:**
+- Post-purchase onboarding email sequence (reduce refunds, build loyalty)
+- Win-back sequence for non-converting leads
+- Advanced email segmentation (interest, industry, behavior)
+- Google Ads live campaigns with real conversion tracking
+- Meta Ads live campaigns with real Pixel tracking
+- Dedicated ad landing pages
+- Revenue flowing from paid + organic channels
 
 ### Out of Scope
 
@@ -89,4 +105,4 @@ A single landing page that converts visitors into buyers of a high-value digital
 | Ad tracking deferred | Plausible handles organic; add Google/Meta IDs later | Good — reduces launch complexity |
 
 ---
-*Last updated: 2026-02-28 after v1.0 milestone*
+*Last updated: 2026-02-28 after v1.1 milestone start*

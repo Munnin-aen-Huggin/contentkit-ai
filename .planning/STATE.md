@@ -5,13 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-02-28)
 
 **Core value:** A single landing page that converts visitors into buyers of a high-value digital marketing toolkit — with zero ongoing costs and maximum profit margins.
-**Current focus:** v1.0 shipped. Planning next milestone or executing pre-launch action items.
+**Current focus:** v1.1 Growth & Revenue — defining requirements
 
 ## Current Position
 
-Milestone: v1.0 MVP Launch — SHIPPED (2026-02-28)
-Status: All 5 phases complete. Site live at getcontentkit.com.
-Last activity: 2026-02-28 — v1.0 milestone archived.
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements for v1.1
+Last activity: 2026-02-28 — Milestone v1.1 started
 
 ## Accumulated Context
 
