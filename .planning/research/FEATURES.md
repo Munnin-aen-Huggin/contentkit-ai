@@ -1,8 +1,22 @@
 # Feature Research
 
-**Domain:** Digital product sales page + email capture funnel (AI prompt packs + Notion templates)
-**Researched:** 2026-02-24
-**Confidence:** MEDIUM-HIGH (WebSearch-verified across multiple credible sources; no proprietary conversion data)
+**Domain:** Digital product growth & revenue — post-purchase lifecycle, email segmentation, paid acquisition (ContentKit AI v1.1)
+**Researched:** 2026-02-28
+**Confidence:** MEDIUM-HIGH (multi-source WebSearch; Kit-specific claims verified against official Kit help docs; paid ad benchmarks from 2026 industry sources)
+
+---
+
+## Scope Note
+
+This document covers ONLY v1.1 features — the growth and revenue infrastructure being added to an already-shipped v1.0. The existing v1.0 funnel (landing page, lead magnet opt-in, 5-email nurture sequence Day 0/2/4/6/9, Stripe webhooks, Kit buyer tags, Plausible analytics, thank-you page) is the baseline. Everything below assumes those components are working.
+
+**Existing infrastructure this research builds on:**
+- Kit tags: `purchased-starter` (16547727), `purchased-full-kit` (16547728), `buyer` (16547729)
+- Kit form: 9136765 (lead magnet opt-in)
+- Stripe webhook → Netlify function → Kit tag (already live)
+- Nurture sequence: 5 emails, Days 0/2/4/6/9 (already active)
+- Plausible: Purchase, Email Signup, Purchase Click goals (already tracking)
+- Google Ads pixel placeholder and Meta Pixel placeholder: already in `index.html` (need real IDs)
 
 ---
 
@@ -10,208 +24,256 @@
 
 ### Table Stakes (Users Expect These)
 
-Features that users assume exist. Missing these = product feels incomplete or untrustworthy. Absence directly causes abandonment.
+Features that are standard practice in mature digital product businesses. Missing these = leaving money on the table or burning list health.
 
 | Feature | Why Expected | Complexity | Notes |
 |---------|--------------|------------|-------|
-| Benefit-led headline above the fold | First 3 seconds determine bounce — users expect an immediate answer to "what is this for me?" | LOW | PAS or AIDA structure: lead with the outcome, not the product name. "Replace a $5K copywriter with 5 prompts" beats "ContentKit AI Prompt Pack." |
-| Clear value proposition in hero section | Users need to self-qualify instantly. No VP = they leave to find clarity elsewhere. | LOW | Must answer: who this is for, what they get, and what changes for them. One sentence, above the fold. |
-| Product mockup / visual representation | Digital products are intangible — a visual (PDF cover, Notion screenshot) makes it feel real and worth buying. | LOW | Static image works fine. Do not skip this; perceived value drops without it. |
-| Social proof (testimonials) | Buyers are skeptical of digital products. Testimonials reduce purchase risk. Studies show up to 34% conversion lift. | LOW | Minimum: 3 testimonials with specific outcomes. "This saved me 4 hours/week" beats "Great product!" |
-| Clear pricing with tier comparison | Two tiers ($27 Starter vs $47 Full Kit) require visible comparison so buyers self-select without confusion. | LOW | "Most popular" tag on Full Kit anchors attention and nudges upgrades. |
-| Primary CTA button (repeated) | Users scroll at different depths — the CTA must be accessible wherever they stop. | LOW | Repeat CTA minimum 3x: hero, mid-page after social proof, footer. Action language: "Get Instant Access" not "Buy Now." |
-| Money-back guarantee | Digital products have no tactile inspection. A guarantee removes the final purchase objection. Research shows 12% of cart abandonment is caused by unsatisfactory return policy. | LOW | 14–30 day no-questions-asked. Display with a visual badge near the CTA. |
-| Mobile-responsive design | 83% of visits are mobile; cart abandonment on mobile is ~79% without optimized UX. | MEDIUM | Single-column layout, large tap targets, no horizontal scroll, fast load. |
-| Fast page load (<3 seconds) | Pages loading 5.7+ seconds convert at 0.6% vs 1.9% at 2.4 seconds. Slow = invisible in 2026. | MEDIUM | Optimize images, minimize JS, use CDN. Static site helps significantly here. |
-| Lead magnet opt-in form (name + email only) | Email capture is the primary funnel entry. Asking for more than name + email measurably reduces opt-in rate. | LOW | Form must be above the fold on the lead magnet landing page. One field (email only) can outperform two. |
-| Instant lead magnet delivery email | Users expect the PDF immediately. Delay kills trust and reduces open rates on follow-up emails. | LOW | Trigger on form submit. Email 1 delivers PDF link. No delay acceptable. |
-| Secure checkout signals | SSL badge, card network logos, Stripe branding reduce purchase hesitation on the checkout step. | LOW | These are expected by default when using Stripe. Do not remove Stripe's trust UI. |
-| Refund / legal policy pages | Required for compliance and trust. Users who check "Terms" and find nothing will not buy. | LOW | Privacy Policy, Terms of Service, Refund Policy. Keep them linked in footer. |
-| FAQ section | Buyers have objections. FAQ pre-empts them at the moment of decision. Structured-data FAQ also gets AEO visibility. | LOW | Minimum 5–7 questions covering: "What do I get?", "Is this for beginners?", "What if I'm not happy?", "Do I need any tools?", "How is this delivered?" |
+| Post-purchase onboarding email sequence (3–5 emails, Days 1/3/7/14) | Buyers who get zero follow-up after purchase report lower satisfaction and product usage. "Thank you + download link" alone is insufficient — buyers need confirmation they did the right thing and guidance to get value fast. Studies show 88% of customers are more likely to stay loyal when businesses invest in onboarding. | MEDIUM | Triggered by Kit `purchased-starter` or `purchased-full-kit` tag. Separate from nurture sequence. Must be NEW subscribers entering a NEW sequence, not re-entering the nurture sequence. |
+| Buyer removal from nurture sequence | A buyer who receives nurture emails pitching the product they already bought feels unseen and unsubscribes. Kit's automation rules prevent this. | LOW | Kit Visual Automation: when `purchased-starter` or `purchased-full-kit` tag is applied, remove subscriber from lead-magnet-delivery sequence. This requires adding an automation step — not just a tag. |
+| Win-back sequence for non-converters (3 emails, sent after Day 21–30) | Leads who completed the 9-day nurture and did not buy are the warmest non-buyers on the list. A separate re-engagement sequence (distinct from the nurture) is standard practice before these contacts go cold. | MEDIUM | Triggered by: subscribed + opened at least one email + NOT tagged as buyer + 21+ days since opt-in. Kit segments can define this group. |
+| Engagement-based list segmentation | Emailing the entire list identically ignores behavior and crushes deliverability. Separating active (opened in 60 days) from cold (90+ days inactive) is a sender reputation requirement at scale. | MEDIUM | Kit tag-based approach: add `engaged` tag on click/open events; create segment excluding `engaged` for re-engagement flows. No paid Kit plan required for basic tag automation. |
+| Dedicated ad landing page (separate from index.html) | Sending paid traffic to the homepage — which has a lead magnet opt-in and a sales page combined — splits conversion intent and degrades Quality Score in Google Ads. A dedicated page with single CTA converts 5–15% vs homepage 0.5–2%. | HIGH | New static HTML page, separate from `index.html`. Removes lead magnet opt-in, removes nav links, matches ad headline verbatim (message match). Single CTA: direct Stripe Payment Link. |
+| Google Ads Search campaign (not Performance Max) | Search captures high-intent queries ("AI marketing prompts," "ChatGPT marketing prompts") that Performance Max cannot efficiently target on small budgets. Search campaigns convert at ~3.5% vs PMax ~1.5% at small scale. | HIGH | Requires: real Google Ads account, real Conversion ID to replace placeholder in `index.html`, keyword list, ad copy, negative keywords, bid strategy (Manual CPC to start). Budget: minimum $10–15/day during learning. |
+| Meta Ads campaign (cold traffic awareness) | Meta reaches buyers who don't know they need AI marketing prompts yet — interest-based targeting (solopreneurs, digital marketing, content creators). Two-campaign structure: creative testing (20% budget) + winning ads (80% budget). | HIGH | Requires: real Meta Pixel ID to replace placeholder in `index.html`, ad creative (UGC-style performs best in 2026), campaign objective = Conversions. Budget: minimum $20–30/day during learning. |
 
 ---
 
 ### Differentiators (Competitive Advantage)
 
-Features not universally expected, but that create meaningful lift in conversions and trust for this specific product in this market.
+Features that go beyond standard practice and create meaningful lift for this specific business.
 
 | Feature | Value Proposition | Complexity | Notes |
 |---------|-------------------|------------|-------|
-| "Before / After" outcome framing in copy | Solopreneurs buy transformation, not information. Showing the gap ("spending 3 hours on copy" → "done in 20 minutes with a prompt") converts better than feature lists. | LOW | Apply throughout page — not just once. Each section should map to a before/after state. |
-| Specific use-case examples in product preview | "Marketing agencies" and "freelancers" need to see their exact scenario addressed. Generic copy repels specialists. | LOW | Show 3–5 exact prompts or template screenshots. Let the product sell itself with a sample. |
-| Prompt pack sample embedded in page (not gated) | Giving one real prompt away for free (not behind the lead magnet) demonstrates quality and removes the "is this generic AI slop?" objection that sophisticated buyers in 2025 have. | LOW | One high-quality prompt visible on the sales page builds credibility; does not cannibalize sales. |
-| "Who this is for / Who this is NOT for" section | Specificity signals expertise. Listing who the product is not for paradoxically increases trust among the right audience. | LOW | "This is NOT for enterprise marketing teams with a dedicated copywriter. This IS for solopreneurs who write their own content." |
-| Urgency with integrity (launch pricing or cohort framing) | Scarcity lifts click-through rates ~9% and purchase completion ~7%. Must be authentic — fake countdown timers are detected and damage trust in 2026. | LOW | Options: "Intro price until [date]", "Price increases after [milestone]". Stripe Payment Links can be swapped when price changes. |
-| 5-email welcome sequence (post-lead-magnet) | Most lead magnets get downloaded once and forgotten. A 5-email sequence reactivates the lead, delivers additional value, and makes a timed pitch to convert to paid. Sequences convert 2–3x better than a single follow-up email. | MEDIUM | Email 1: deliver PDF. Email 2: "Did you try prompt #3?" (engagement). Email 3: pain point story. Email 4: case study/testimonial. Email 5: pitch with discount or bonus. |
-| Benefit-specific testimonials per tier | One testimonial for Starter ($27) and one for Full Kit ($47) reduces friction for buyers hovering between tiers. | LOW | Source during pre-launch/beta. Ask customers: "What specific result did you get?" |
-| "What's inside" visual breakdown | Naming and visually representing each deliverable (e.g., "50 Marketing Prompts," "Notion Campaign Planner") increases perceived value and justifies price. | LOW | Use a visual card or icon-based list. Show quantity + format + outcome for each asset. |
-| Social proof counter ("Join 500+ solopreneurs") | Adds herd behavior signal. Even small numbers (50+) signal product is real and tested — not a first launch with zero buyers. | LOW | Only use real numbers. Do not fabricate. Update as subscriber/buyer count grows. |
+| Tier-specific post-purchase sequences (Starter vs Full Kit) | Starter buyers ($27) need to see the path to Full Kit upsell while getting value. Full Kit buyers ($47) need to feel their premium purchase was correct. One generic sequence serves neither group well. Segmented sequences reduce post-purchase cognitive dissonance and open upsell revenue. | MEDIUM | Kit already has separate tags (`purchased-starter`, `purchased-full-kit`). Build two separate post-purchase sequences, each triggered by the appropriate tag. Starter sequence includes a Day-7 upsell email to Full Kit. |
+| Win-back with content re-engagement (not just discount) | Most win-back sequences lead with a discount. For a $27–$47 product, a 10% discount ($2.70–$4.70) is not compelling. Leading with a new piece of value (a bonus prompt, a "what most people missed" email) outperforms pure discount offers for info products. | LOW | Sequence structure: Email 1 (Day 21) — new value/reminder. Email 2 (Day 25) — social proof + use case. Email 3 (Day 30) — final offer with time anchor. |
+| Engagement scoring via Kit custom fields | Beyond binary engaged/inactive tagging, tracking a simple score (3-point scale: opened last 30 days = active, opened 31–90 days = warm, 90+ days = cold) enables fine-grained content targeting without expensive third-party tools. | MEDIUM | Achievable in Kit via automation rules on open events + custom field "engagement_level" with values "active," "warm," "cold." Requires Kit's visual automations to trigger on open events. |
+| Ad landing page with lead magnet path (dual CTA) | The single-CTA ad landing page (buy now) will convert the ready buyer. A secondary escape hatch (free lead magnet) captures the "not ready yet" visitor back into the nurture funnel. This recovers traffic that would otherwise bounce to zero. | MEDIUM | Add a small secondary CTA below the fold: "Not ready to buy? Get the free 5-prompt guide first." Links to opt-in form. Does NOT remove the primary CTA from its dominant position. Replaces a full bounce with a list-building event. |
+| UTM-tagged ad landing pages per campaign | Google Ads and Meta Ads traffic landing on separate UTM-parameter-aware pages (or even separate HTML files per campaign) allows Plausible to break revenue attribution by source without Google Analytics. | LOW | Plausible already captures UTM parameters. Create `/lp-google.html` and `/lp-meta.html` as ad-specific landing pages — identical content but separate URLs — for clean source attribution in Plausible. |
+| Sunset automation for irreversibly cold subscribers | Subscribers who receive the win-back sequence and still do not engage should be suppressed (not deleted) from sends. This protects sender reputation (bounces and spam complaints degrade Kit deliverability for the entire list) and reduces Kit subscriber count toward plan limits. | LOW | Kit automation: after win-back sequence ends + no open/click, add tag `sunset-candidate`, exclude from all broadcasts. Option to delete after 90 days if not re-engaged. |
 
 ---
 
 ### Anti-Features (Commonly Requested, Often Problematic)
 
-Features that seem like improvements but create complexity, dilute focus, or harm conversions in this specific context.
+Features that seem like logical additions but create complexity, dilute effectiveness, or are premature for this stage.
 
 | Feature | Why Requested | Why Problematic | Alternative |
 |---------|---------------|-----------------|-------------|
-| Video sales letter (VSL) / auto-play video | "Videos lift conversions 86%" is cited widely — true for some categories, not all. | For a faceless business, producing a quality VSL is high-effort. Auto-play is annoying on mobile (and often silenced by default). A poorly produced video hurts trust. | Use a product screenshot carousel or a text-based "What's Inside" breakdown instead. Add video only if customer testimonial recordings are available. |
-| Live chat / chatbot widget | Seems like a conversion booster. Many creators add Intercom or Drift. | Adds page weight, creates support obligations, and is nearly impossible to staff properly as a solopreneur. Distracts from CTA focus. | Use the FAQ section to pre-answer objections. Add a contact email in the footer for genuine edge cases. |
-| User accounts / login portal | Buyers want to "access their purchases" — seems like good UX. | Requires authentication infrastructure, password reset flows, database, and ongoing maintenance. Massive scope for a static + Stripe Payment Links setup. | Deliver products via email immediately on purchase. Stripe Payment Links send a receipt with download link. Gumroad handles this natively if needed. |
-| Affiliate / referral program | Viral growth sounds appealing. | Requires tracking, payout management, affiliate dashboard — all significant engineering. Premature before product-market fit is confirmed. | Build an audience first. Add affiliate program in v2 once conversion rates are validated and there is organic demand for referrals. |
-| Blog / content section on sales page | "SEO will bring free traffic." True long-term, but a blog on the sales page dilutes the single-goal focus. | Navigation away from the page = lost conversion. Blog also requires sustained content investment that a solopreneur launch cannot realistically maintain. | Separate blog subdomain or /blog path if SEO content is desired. Keep the sales page single-goal: one action, one CTA. |
-| Multiple payment options (PayPal, crypto, BNPL) | Buyers sometimes request alternative payment methods. | Too many payment options create choice paralysis and pull buyers out of the emotional decision to compare and calculate. Stripe covers cards + Apple Pay + Google Pay — more than sufficient for this audience. | Stripe Payment Links handle all major card networks and digital wallets natively. Sufficient for $27–$47 price points. |
-| Countdown timers that reset | FOMO is a real conversion lever. | Resetting timers are detected by repeat visitors and tech-savvy buyers in 2026. Destroys trust when caught — worse than no urgency at all. | Use date-anchored deadlines tied to real events (launch window, price increase date). If no real deadline exists, omit urgency rather than fake it. |
-| Pop-up exit-intent overlays | Seen as a recovery tactic for lost visitors. | Adds implementation complexity, degrades mobile UX (often broken on mobile), and increasingly associated with low-trust sites. The target audience (solopreneurs, agency owners) is sophistocated enough to ignore or resent them. | Invest that effort in the lead magnet opt-in page copy and email sequence instead. Recovering leads via email is more durable. |
+| Automated discount codes for win-back | Discounts feel like the standard win-back lever. | For a $27–$47 product, the discount itself ($2.70–$4.70) is too small to motivate action. Repeated discounting trains the list to wait for offers and cheapens the product positioning. | Lead with value content (new prompt, bonus resource) in Email 1. Reserve a modest urgency anchor ("for the next 48 hours") only in Email 3, tied to a real deadline, not a coupon code. |
+| A/B testing ad landing pages before enough traffic | Split testing sounds data-driven. | With small ad budgets ($300–$600/month), statistical significance on a 5–15% conversion rate requires 400–800 visitors per variant. At $1–3 CPC, that is $400–$2,400 per variant before significance. Premature split testing wastes budget on inconclusive data. | Run a single best-hypothesis landing page for 60 days. Make iterative improvements based on scroll depth (Plausible) and conversion rate, not formal A/B tests. Switch to split testing only when spending $1,500+/month. |
+| Performance Max campaigns (PMax) for this stage | Google pushes PMax as the default campaign type. | PMax requires substantial conversion data (30–50 conversions/month minimum) to train effectively. At a $147–$499 CPA for a digital product, this requires $4,410–$24,950/month in ad spend just to provide the learning signal. PMax on small budgets optimizes toward low-quality signals (views, partial scrolls) not purchases. | Use Search campaigns for high-intent keywords + Demand Gen for awareness. Add PMax only after 50+ purchase conversions are recorded in Google Ads. |
+| Full marketing automation platform (Klaviyo, ActiveCampaign, HubSpot) | These platforms have more sophisticated behavioral triggers than Kit. | Kit already tags buyers and supports visual automations. Migrating to a new ESP at this stage means rebuilding all sequences, re-verifying the domain, risking deliverability dip during migration, and paying higher monthly cost. The marginal capability gain does not justify the migration cost at this scale. | Build all sequences within Kit using tags + visual automations + custom fields. Kit's free plan supports 1,000 subscribers; paid plan supports up to 300 automations. Migrate if list exceeds 10K and revenue justifies the switch. |
+| Retargeting campaigns before purchase conversion data | Retargeting (Google Display, Meta custom audiences) is powerful but requires audience size. | Meta requires minimum 1,000 matched users in a custom audience for retargeting to work reliably. Google Display retargeting requires 100+ cookied users. Without sufficient traffic volume, retargeting audiences are too small for meaningful reach. | Enable retargeting pixel tracking now (Meta Pixel, Google tag are already placeholders in code — just need real IDs). Build the audience passively while running cold traffic. Launch retargeting campaigns after 1,000 unique visitors are recorded. |
+| Email broadcast newsletter cadence | Regular newsletters build audience relationships. | A weekly or biweekly newsletter to a list of non-buyers increases unsubscribe rate, dilutes urgency messaging, and creates ongoing content production burden for a solopreneur. | Limit broadcasts to event-triggered sends: new product, price change, limited-time offer. Use sequences (automated) as the primary communication vehicle — not broadcasts. |
+| Separate ad landing page builder (Unbounce, Leadpages, Instapage) | Dedicated landing page tools offer templates and built-in A/B testing. | The stack is static HTML + GitHub Pages. Adding a third-party landing page tool introduces monthly cost ($79–$299/month for Unbounce), a separate CMS, and a different domain/subdomain that breaks brand consistency. | Build the ad landing page as a static HTML file (`lp-google.html`, `lp-meta.html`) using the existing Tailwind token system. Same dev environment, zero additional cost, same hosting. |
 
 ---
 
 ## Feature Dependencies
 
 ```
-[Lead Magnet Opt-In Form]
-    └──requires──> [Email Delivery System] (Mailerlite / ConvertKit automation)
-                       └──requires──> [Welcome Sequence Emails] (5-email series)
-                                          └──enhances──> [Paid Product CTA] (Stripe Payment Link)
+[Post-Purchase Onboarding Sequence]
+    └──requires──> [Kit Buyer Tags] (purchased-starter, purchased-full-kit — ALREADY LIVE)
+    └──requires──> [Buyer removed from nurture sequence] (must run before onboarding starts)
+    └──depends-on──> [Tier-specific branching] (Starter and Full Kit get separate sequences)
 
-[Pricing Section with Tier Comparison]
-    └──requires──> [Two Stripe Payment Links] ($27 Starter link, $47 Full Kit link)
+[Tier-Specific Onboarding Sequences]
+    └──requires──> [Post-Purchase Onboarding Sequence] (same trigger, different branch)
+    └──enhances──> [Starter → Full Kit upsell] (Day-7 email in Starter sequence)
 
-[Social Proof Section]
-    └──requires──> [Testimonials] (must be collected pre-launch or at beta)
-    └──enhances──> [Pricing Section] (place testimonials near CTAs)
+[Win-Back Sequence]
+    └──requires──> [Engagement-Based Segmentation] (need a "non-buyer + 21+ days" segment in Kit)
+    └──requires──> [Nurture Sequence completed] (win-back fires after Day 9 nurture ends)
+    └──conflicts-with──> [Discount-led win-back] (see Anti-Features — value-first approach instead)
 
-[Money-Back Guarantee Badge]
-    └──requires──> [Refund Policy Page] (must exist before guarantee is displayed)
+[Engagement-Based Segmentation]
+    └──requires──> [Kit tags or custom fields] (add `engaged` tag on open/click via automation)
+    └──enables──> [Win-Back Sequence] (segment filters define trigger)
+    └──enables──> [Sunset Automation] (cold segment triggers suppression after win-back)
 
-[Product Preview / "What's Inside"]
-    └──requires──> [Finished Product Assets] (prompts written, Notion template built)
-    └──enhances──> [Pricing Section] (perceived value justifies price)
+[Sunset Automation]
+    └──requires──> [Win-Back Sequence completed] (sunset fires after last win-back email + no engagement)
+    └──enhances──> [List deliverability] (removes cold weight from sending list)
 
-[FAQ Section]
-    └──enhances──> [CTA conversion] (objection removal at decision point)
+[Google Ads Search Campaign]
+    └──requires──> [Real Google Ads Conversion ID] (replace placeholder in index.html)
+    └──requires──> [Dedicated Ad Landing Page] (send traffic to lp-google.html, not index.html)
+    └──requires──> [Stripe Payment Links] (ALREADY LIVE — buy buttons wired)
+    └──requires──> [Plausible Purchase goal] (ALREADY LIVE — tracks conversions)
 
-[Urgency Framing]
-    └──conflicts──> [Fake countdown timers] (do not combine — authenticity is non-negotiable)
+[Meta Ads Campaign]
+    └──requires──> [Real Meta Pixel ID] (replace placeholder in index.html)
+    └──requires──> [Dedicated Ad Landing Page] (send traffic to lp-meta.html, not index.html)
+    └──requires──> [Ad creative assets] (UGC-style image or video — must be produced)
+
+[Dedicated Ad Landing Page(s)]
+    └──requires──> [Message match with ad copy] (headline on page must echo ad headline verbatim)
+    └──enhances──> [Google Ads Quality Score] (page relevance directly affects CPC)
+    └──enhances──> [Meta Ads relevance score] (landing page experience is a ranking factor)
+    └──optional-enhances──> [Secondary lead magnet CTA] (escape hatch for non-buyers)
+
+[UTM-Tagged Landing Pages]
+    └──requires──> [Dedicated Ad Landing Pages] (separate URLs per source)
+    └──requires──> [Plausible] (ALREADY LIVE — reads UTM params automatically)
+
+[Retargeting Campaigns]
+    └──requires──> [Sufficient audience size] (1,000+ users — defer until cold traffic generates volume)
+    └──requires──> [Meta Pixel and Google Tag active] (pixel collects audience passively during cold traffic phase)
 ```
 
 ### Dependency Notes
 
-- **Email delivery requires opt-in form:** The lead magnet funnel is the primary list-building mechanism. Without an automated email delivery, the lead magnet promise breaks immediately — this is non-negotiable for launch.
-- **Testimonials require advance collection:** Social proof cannot be added post-launch without re-publishing. Collect 3–5 beta testimonials before the sales page goes live, or launch with a "founding members" framing that acknowledges early stage.
-- **Product assets must be finished before sales page:** The "What's Inside" section and product preview are impossible to build credibly with placeholder content. Writing and building the prompts + Notion template is a hard prerequisite to the landing page.
-- **Stripe Payment Links are a hard dependency for checkout:** All purchase CTAs point to Stripe-hosted checkout. No custom checkout logic is needed. Payment Links are configured in Stripe Dashboard — no code required.
-- **Refund policy is a legal prerequisite to money-back guarantee:** Displaying "30-day guarantee" without a written refund policy creates legal exposure. Policy page must exist first.
+- **Buyer removal from nurture is a prerequisite to onboarding:** If a buyer enters the post-purchase onboarding sequence while still in the nurture sequence, they receive both simultaneously. This produces duplicate emails and mixed messaging. Remove from nurture first, then trigger onboarding.
+- **Win-back requires segmentation to exist first:** Without a Kit segment defining "opted in 21+ days ago, no buyer tag, engaged with at least one email," there is no reliable trigger for the win-back sequence. Segmentation is the foundation.
+- **Ad landing pages must exist before campaigns launch:** Running Google Ads or Meta Ads to `index.html` will work but wastes budget. The landing page is not optional — it directly determines campaign efficiency and Quality Score.
+- **Meta Pixel and Google Tag IDs must be real before ad campaigns launch:** The placeholder code is in `index.html` but contains dummy IDs. Real IDs must be substituted before any ad spend, otherwise conversions are not tracked and campaigns cannot optimize.
+- **Retargeting is explicitly deferred:** Do not launch retargeting until cold traffic has accumulated 1,000+ unique visitors. Enable pixel tracking immediately (it costs nothing) so the audience builds passively.
 
 ---
 
 ## MVP Definition
 
-### Launch With (v1)
+This is v1.1 scope, not v1.0. "MVP" here means: minimum set of features to begin generating revenue from paid acquisition while protecting list health.
 
-Minimum viable product to validate that the product converts at both price points.
+### Ship First (v1.1 Immediate)
 
-- [ ] **Benefit-led hero section with headline + subheadline + CTA** — without this, nothing else matters; this is the page's reason for existing
-- [ ] **Product mockup visual** — makes the intangible tangible; directly impacts perceived value
-- [ ] **"What's Inside" section** — buyers need to know what they're getting; this is the core of the offer
-- [ ] **"Who this is for" + use-case specifics** — qualification copy that converts the right buyer and disqualifies the wrong one
-- [ ] **3–5 testimonials** — minimum social proof for a cold audience; collect from beta users before launch
-- [ ] **Two-tier pricing section with Stripe Payment Links** — the conversion event; must work flawlessly on mobile
-- [ ] **Money-back guarantee badge** — removes final objection at checkout; requires refund policy page
-- [ ] **FAQ (5–7 questions)** — objection removal at the point of decision
-- [ ] **Lead magnet opt-in form** — email capture is the funnel entry; collect name + email only
-- [ ] **Automated lead magnet delivery email** — instant delivery on opt-in; breach of trust if delayed
-- [ ] **Privacy Policy, Terms of Service, Refund Policy pages** — legal requirement + trust signal
-- [ ] **Mobile-responsive, fast-loading static page** — majority of traffic will be mobile
+These are the critical path — nothing generates revenue without them.
 
-### Add After Validation (v1.x)
+- [ ] **Buyer removal from nurture sequence** — eliminates the cross-contamination between nurture and post-purchase; required before any other email work
+- [ ] **Post-purchase onboarding sequence (Starter)** — 3–4 emails: Day 1 (welcome + quick win), Day 3 (prompt use tip), Day 7 (upsell to Full Kit), Day 14 (success check-in + testimonial ask)
+- [ ] **Post-purchase onboarding sequence (Full Kit)** — 3–4 emails: Day 1 (welcome + full overview), Day 3 (advanced use tip), Day 7 (success metric prompt), Day 14 (testimonial ask + referral nudge)
+- [ ] **Real Google Ads Conversion ID wired** — replace placeholder in `index.html` `<head>`; required before any Google Ads spend
+- [ ] **Real Meta Pixel ID wired** — replace placeholder in `index.html` `<head>`; required before any Meta Ads spend
+- [ ] **Dedicated ad landing page** — `lp-google.html` (or `lp-meta.html`); single CTA, message match, no nav distractions, built on existing Tailwind tokens
 
-Add when conversion rate is established and initial revenue justifies iteration.
+### Add Once First Revenue Comes In (v1.1 Secondary)
 
-- [ ] **5-email welcome sequence** — trigger: first 50+ email subscribers. Automates the conversion of leads who didn't buy immediately.
-- [ ] **"Before / After" copy refinement** — trigger: A/B test headline variants when traffic volume supports it (200+ visits/week)
-- [ ] **Urgency framing** — trigger: add a date-anchored intro pricing deadline for second launch push
-- [ ] **Social proof counter** — trigger: when buyer or subscriber count reaches 50+; do not fabricate
-- [ ] **Benefit-specific testimonials per tier** — trigger: once buyers at both price points can provide tier-specific feedback
+Add after initial campaigns are running and first purchase conversions are recorded.
 
-### Future Consideration (v2+)
+- [ ] **Engagement-based segmentation** — tag subscribers `engaged` on open/click via Kit automation; creates foundation for win-back and sunset
+- [ ] **Win-back sequence (3 emails)** — Email 1 (Day 21, new value), Email 2 (Day 25, social proof), Email 3 (Day 30, time-anchored offer); triggered by non-buyer segment
+- [ ] **UTM-tagged landing page variants** — `lp-google.html` and `lp-meta.html` as separate files for clean Plausible source attribution
 
-Defer until product-market fit is confirmed and revenue supports the investment.
+### Defer Until Proven Scale (v1.2+)
 
-- [ ] **Affiliate / referral program** — why defer: requires tracking infrastructure; premature before knowing which acquisition channels work
-- [ ] **Additional product SKUs or upsells** — why defer: focus on converting the existing two tiers before expanding the product catalog
-- [ ] **Blog / SEO content** — why defer: high time investment; solopreneur bandwidth is better spent on the funnel until initial validation is complete
-- [ ] **Video testimonials or demo** — why defer: high production effort for a faceless business; add only if organic demand emerges for video proof
+Build only after meaningful conversion volume validates the investment.
+
+- [ ] **Sunset automation** — add after win-back sequence is proven; protects deliverability at scale; not urgent until list exceeds 2,000 subscribers
+- [ ] **Retargeting campaigns (Meta / Google)** — defer until 1,000+ unique ad visitors are recorded; pixel builds audience passively in the meantime
+- [ ] **Engagement scoring (3-point custom field)** — adds granularity beyond binary engaged/inactive; worth building when list exceeds 1,000 active subscribers
+- [ ] **Affiliate/referral program** — defer until LTV is known and conversion rate is validated; high implementation cost for premature stage
 
 ---
 
 ## Feature Prioritization Matrix
 
-| Feature | User Value | Implementation Cost | Priority |
-|---------|------------|---------------------|----------|
-| Benefit-led headline + hero section | HIGH | LOW | P1 |
-| Lead magnet opt-in form + instant delivery | HIGH | LOW | P1 |
-| Product mockup visual | HIGH | LOW | P1 |
-| "What's Inside" breakdown | HIGH | LOW | P1 |
-| Two-tier pricing + Stripe Payment Links | HIGH | LOW | P1 |
-| 3–5 testimonials | HIGH | LOW | P1 |
-| Money-back guarantee badge | HIGH | LOW | P1 |
-| FAQ section (5–7 questions) | HIGH | LOW | P1 |
-| Mobile-responsive layout | HIGH | MEDIUM | P1 |
-| Fast page load (<3s) | HIGH | MEDIUM | P1 |
-| Legal/policy pages | MEDIUM | LOW | P1 |
-| "Who this is for / not for" | HIGH | LOW | P1 |
-| 5-email welcome sequence | HIGH | MEDIUM | P2 |
-| Urgency framing (authentic) | MEDIUM | LOW | P2 |
-| Social proof counter | MEDIUM | LOW | P2 |
-| Benefit-specific testimonials per tier | MEDIUM | LOW | P2 |
-| Product sample prompt (visible on page) | MEDIUM | LOW | P2 |
-| Before/After copy optimization | MEDIUM | LOW | P2 |
-| Affiliate program | LOW | HIGH | P3 |
-| Video testimonials / VSL | LOW | HIGH | P3 |
-| Blog / SEO content section | LOW | HIGH | P3 |
-| User account / login portal | LOW | HIGH | P3 |
+| Feature | User/Business Value | Implementation Cost | Priority |
+|---------|---------------------|---------------------|----------|
+| Buyer removal from nurture sequence | HIGH (prevents bad experience) | LOW (Kit automation rule) | P1 |
+| Post-purchase onboarding — Starter | HIGH (LTV, satisfaction) | MEDIUM (write 3–4 emails in Kit) | P1 |
+| Post-purchase onboarding — Full Kit | HIGH (LTV, satisfaction) | MEDIUM (write 3–4 emails in Kit) | P1 |
+| Real Google Ads Conversion ID wired | HIGH (enables paid acquisition) | LOW (replace one ID in HTML) | P1 |
+| Real Meta Pixel ID wired | HIGH (enables paid acquisition) | LOW (replace one ID in HTML) | P1 |
+| Dedicated ad landing page | HIGH (campaign efficiency, Quality Score) | MEDIUM (new static HTML file) | P1 |
+| Engagement-based segmentation | HIGH (list health, win-back trigger) | MEDIUM (Kit automation + tags) | P2 |
+| Win-back sequence | HIGH (recovers non-converting leads) | MEDIUM (write 3 emails + Kit segment) | P2 |
+| UTM-tagged landing page variants | MEDIUM (cleaner attribution) | LOW (duplicate HTML file, rename) | P2 |
+| Meta Ads cold traffic campaign | HIGH (revenue) | HIGH (creative production + campaign setup) | P2 |
+| Google Ads Search campaign | HIGH (revenue) | HIGH (keyword research + campaign setup) | P2 |
+| Sunset automation | MEDIUM (deliverability hygiene) | LOW (Kit tag + exclusion rule) | P3 |
+| Retargeting campaigns | MEDIUM (conversion lift on warm traffic) | MEDIUM (campaign setup, requires audience) | P3 |
+| Engagement scoring (custom field) | LOW at current scale | MEDIUM (Kit custom field + automation) | P3 |
 
 **Priority key:**
-- P1: Must have for launch
-- P2: Should have, add when possible
-- P3: Nice to have, future consideration
+- P1: Required for v1.1 launch — campaigns cannot run or list health at risk without these
+- P2: Ship within 30 days of first ad revenue
+- P3: Defer to v1.2 or when scale justifies
 
 ---
 
-## Competitor Feature Analysis
+## Sequence Structure Reference
 
-Relevant comparators: other AI prompt packs and digital product bundles targeting solopreneurs (Gumroad, Stan Store, direct landing pages).
+### Post-Purchase Onboarding (Starter — $27 tier)
 
-| Feature | Typical Gumroad Listing | Stan Store Creator | ContentKit AI Approach |
-|---------|------------------------|--------------------|------------------------|
-| Hero section | Minimal (product title + cover image) | Single CTA storefront card | Full-length landing page with copywritten sections |
-| Social proof | Star ratings, review count | Customer count badge | Named testimonials with specific outcomes |
-| Pricing tiers | Single price or "pay what you want" | One product per card | Two tiers with explicit comparison and "most popular" tag |
-| Lead magnet funnel | Not supported natively | Supported via Stan funnels | Custom opt-in page with dedicated email automation |
-| Email follow-up | Platform handles receipt only | Limited automation | 5-email welcome + pitch sequence |
-| Mobile UX | Platform-optimized | Platform-optimized | Custom — must be explicitly built |
-| Checkout | Platform-hosted | Platform-hosted | Stripe Payment Links (hosted, no custom code) |
-| Content preview | Optional file preview | Not standard | "What's Inside" section + one free sample prompt |
+| Email | Day | Subject Angle | Content Goal | CTA |
+|-------|-----|--------------|-------------|-----|
+| 1 | Immediately (Day 0 or Day 1) | "Here's how to get your first result in 20 minutes" | Confirm purchase + deliver quick win use case | Open the prompt kit |
+| 2 | Day 3 | "The prompt 80% of buyers miss first" | Practical use tip — one specific high-value prompt | Try this prompt now |
+| 3 | Day 7 | "Ready for the full toolkit?" | Upsell to Full Kit with Starter-specific frame | Upgrade to Full Kit |
+| 4 | Day 14 | "Quick question about your results" | Satisfaction check + testimonial ask + referral nudge | Reply with your result |
 
-**Key insight:** Most AI prompt packs sold on Gumroad or Stan Store rely entirely on platform UI and trust. A standalone static landing page with deliberate copywriting, social proof, and a lead magnet funnel is a meaningful differentiator at these price points. The differentiation is not in the feature set — it is in the intentionality and craft of the conversion copy.
+### Post-Purchase Onboarding (Full Kit — $47 tier)
+
+| Email | Day | Subject Angle | Content Goal | CTA |
+|-------|-----|--------------|-------------|-----|
+| 1 | Immediately (Day 0 or Day 1) | "Your full ContentKit is ready — start here" | Confirm purchase + overview of all 9 categories | Browse the kit |
+| 2 | Day 3 | "The advanced prompt structure most people skip" | Advanced use tip — chaining prompts, custom variables | Apply this today |
+| 3 | Day 7 | "What results are you getting?" | Engagement check + success metric prompt | Reply with your results |
+| 4 | Day 14 | "Would you share what worked?" | Testimonial ask + referral nudge with social share copy | Submit your result |
+
+### Win-Back Sequence (Non-Buyer, Post-Day-21)
+
+| Email | Day from opt-in | Subject Angle | Content Goal | CTA |
+|-------|----------------|--------------|-------------|-----|
+| 1 | Day 21–23 | "Something we didn't send you yet" | New value (bonus prompt or case study) — no pitch | Read the bonus prompt |
+| 2 | Day 25–27 | "How [persona] used this to [outcome]" | Social proof story — concrete, specific use case | Read the story |
+| 3 | Day 30–32 | "Last chance to get this at launch price" | Time-anchored offer — close the sequence with urgency | Get the kit now |
+
+**After Email 3 with no engagement:** Tag `win-back-completed-no-action`, exclude from all future sends.
+
+### Ad Landing Page Structure
+
+Single-page, no nav, no footer links, no lead magnet opt-in on the primary version.
+
+| Section | Content | Notes |
+|---------|---------|-------|
+| Hero | Headline matches ad copy verbatim. Subhead: "why this, why now." | Message match is the single highest-leverage conversion lever |
+| Problem statement | 2–3 lines on the pain — mirrors the ad creative's hook | No feature list here — pain first |
+| Product preview | 3–5 specific prompt examples, with variables shown | Demonstrates quality, answers "is this generic?" |
+| Social proof | 2–3 testimonials with outcomes ("saved 4 hours," "wrote 10 ads in 30 min") | Near the CTA — objection removal at decision point |
+| Pricing + CTA | Single tier or matched to ad (if ad promotes Full Kit, show Full Kit only) | One price, one button, no navigation away |
+| Guarantee | 30-day badge | Remove last purchase objection |
+| Secondary (below fold) | "Not ready to buy? Get the free guide first." Links to opt-in. | Recovers non-buyers; does not dilute primary CTA |
+
+---
+
+## Competitor / Benchmark Analysis
+
+| Feature | Typical AI Prompt Pack on Gumroad | Info Product Funnel (e.g., course creator) | ContentKit AI v1.1 Approach |
+|---------|----------------------------------|-------------------------------------------|----------------------------|
+| Post-purchase emails | Platform receipt only (no onboarding) | 3–7 email sequence, often generic | Tier-specific sequences, Day 1/3/7/14, outcomes-focused |
+| Win-back for non-buyers | None — Gumroad has no list | Sometimes, typically discount-first | Value-first 3-email sequence, discount only in Email 3 |
+| List segmentation | None — no email list | Basic (buyers vs non-buyers) | Engagement-tiered: buyer/non-buyer + engaged/warm/cold |
+| Paid ads | None (organic-only on Gumroad) | Google Search, Meta, some YouTube | Google Search (high-intent) + Meta (awareness); separate landing pages |
+| Ad landing page | Platform product page | Often homepage or generic sales page | Dedicated, message-matched, single-CTA, static HTML |
+| Attribution | None | Often Google Analytics (overkill) | Plausible with UTM params + separate page per source |
+
+**Key insight:** The v1.1 differentiator is not any individual feature — it is the complete lifecycle email management (onboarding + win-back + sunset) paired with purpose-built ad infrastructure. Most direct competitors on Gumroad/Stan Store have zero lifecycle email automation. Course creators have it but often do it generically. ContentKit AI can do it specifically and correctly from the start.
 
 ---
 
 ## Sources
 
-- Branded Agency — "Anatomy of a High-Converting Landing Page: 14 Elements" (2026): https://www.brandedagency.com/blog/the-anatomy-of-a-high-converting-landing-page-14-powerful-elements-you-must-use-in-2026 — MEDIUM confidence
-- Leadfeeder — "12 Landing Page Best Practices of 2026": https://www.leadfeeder.com/blog/landing-pages-convert/ — MEDIUM confidence
-- LifeMathMoney — "How to Write a High Converting Gumroad Sales Page": https://lifemathmoney.com/how-to-write-a-high-converting-gumroad-sales-page/ — MEDIUM confidence (direct practitioner experience)
-- ABMatic — "Role of money-back guarantees on landing page conversion": https://abmatic.ai/blog/role-of-money-back-guarantees-on-landing-page-conversion — MEDIUM confidence
-- GlockApps — "How to Build a Lead Magnet Email Sequence That Converts": https://glockapps.com/blog/how-to-build-a-lead-magnet-email-sequence-that-converts-strategies-and-examples/ — MEDIUM confidence
-- Stripe — "The Checkout Process: How to Reduce Friction": https://stripe.com/resources/more/the-checkout-process-how-businesses-can-reduce-friction-and-boost-conversion — HIGH confidence (official Stripe documentation)
-- ITeXchange — "12 Product Page Mistakes Killing Your Conversions": https://www.it.exchange/blog/12-product-page-mistakes-killing-your-conversions/ — MEDIUM confidence (multiple sources agree)
-- WiserNotify — "6 Winning Social Proof Tactics To Boost Sales (2025)": https://wisernotify.com/blog/social-proof-marketing/ — MEDIUM confidence
-- Copy.ai — "The Ultimate Lead Magnet Funnel Guide for 2025": https://www.copy.ai/blog/lead-magnet-funnel — MEDIUM confidence
-- Notion Marketplace — AI prompt and solopreneur template research: https://www.notion.com/templates/category/ai-prompts — HIGH confidence (direct product landscape observation)
+- Encharge — "The Onboarding Email Sequence We Use to Get 40%+ Open Rates": https://encharge.io/onboarding-email-sequence/ — MEDIUM confidence
+- ProsperStack — "The First 30 Days: Crafting a Winning Onboarding Email Sequence": https://prosperstack.com/blog/onboarding-email-sequence/ — MEDIUM confidence
+- ActiveCampaign — "5 Win-Back Email Campaign Examples": https://www.activecampaign.com/blog/win-back-email-campaigns — MEDIUM confidence
+- Klaviyo — "5 Win-Back Email Examples & Strategies for Success": https://www.klaviyo.com/blog/winback-email-campaign-examples — MEDIUM confidence
+- Kit Help Center — "Tags and Segments in Kit (and when to use which)": https://help.kit.com/en/articles/4257108-tags-and-segments-in-kit-and-when-to-use-which — HIGH confidence (official documentation)
+- Kit Blog — "11 Email Segmentation strategies": https://kit.com/resources/blog/email-segmentation — HIGH confidence (official documentation)
+- Passiveincomesuperstars — "ConvertKit Tags & Segments - 15 Powerful Ways": https://www.passiveincomesuperstars.com/convertkit-tags-segments/ — MEDIUM confidence
+- SmartPassiveIncome — "Create a Reengagement Campaign for Cold Email Subscribers": https://www.smartpassiveincome.com/blog/create-reengagement-campaign-cold-email-subscribers-automate-it/ — MEDIUM confidence
+- Google/LeadsBridge — "The perfect Google Ads campaign structure: A guide for 2026": https://leadsbridge.com/blog/google-ads-campaign-structure/ — MEDIUM confidence
+- Adventure PPC — "How to Run Google Ads Campaigns Profitably in 2026": https://www.adventureppc.com/blog/how-to-run-google-ads-campaigns-profitably-in-2026-a-complete-business-owner-s-guide — MEDIUM confidence
+- BlueprintDigital — "Performance Max vs Search Campaigns Compared": https://blueprintdigital.com/blog/performance-max-vs-search-campaign/ — MEDIUM confidence (aligns with multiple sources on PMax vs Search for small budgets)
+- Metalla Digital — "Meta Ads Strategy 2026: Why 2 Campaigns Scale Better Than 20": https://metalla.digital/meta-ads-strategy-2026-blueprint/ — MEDIUM confidence
+- Creative AdBundance — "Meta Ads 2026 Playbook: 5 Creative Strategies That Convert": https://www.creativeadbundance.com/blog/meta-ads-2026-playbook-5-creative-strategies-to-maximize-roi — MEDIUM confidence
+- Orr Consulting — "Landing Pages vs Homepages vs Product Pages: What Converts Best in 2026?": https://www.orr-consulting.com/post/landing-pages-vs-homepages-vs-product-pages-what-converts-best-in-2026 — MEDIUM confidence
+- ConversionLab — "Dedicated landing pages vs. homepage: a 116% uplift case study": https://blog.conversionlab.no/boosting-conversions-rates-with-dedicated-landing-pages-a-case-study-from-betterworlds-recent-a-b-test/ — MEDIUM confidence
+- Klientboost — "Message Match: Critical Component For Ad Success": https://www.klientboost.com/cro/message-match/ — MEDIUM confidence
+- Klaviyo — "Engagement-Based Email Segmentation": https://www.klaviyo.com/blog/engagement-based-email-segmentation — MEDIUM confidence (principle applies to Kit)
+- EngageBay — "Email Sunsetting Policy 101": https://www.engagebay.com/blog/sunsetting-policy-email-deliverability/ — MEDIUM confidence
 
 ---
 
-*Feature research for: ContentKit AI — digital product landing page + email capture funnel*
-*Researched: 2026-02-24*
+*Feature research for: ContentKit AI v1.1 — Growth & Revenue (post-purchase lifecycle, email segmentation, paid acquisition)*
+*Researched: 2026-02-28*

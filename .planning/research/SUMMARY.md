@@ -1,17 +1,17 @@
 # Project Research Summary
 
-**Project:** ContentKit AI — faceless digital product business
-**Domain:** Static landing page + email capture funnel + Stripe Payment Links + digital delivery (AI prompt packs + Notion templates)
-**Researched:** 2026-02-24
-**Confidence:** HIGH (stack and architecture verified via official docs; features and pitfalls corroborated across multiple practitioner sources)
+**Project:** ContentKit AI v1.1 — Growth & Revenue
+**Domain:** Digital product growth infrastructure — post-purchase lifecycle email, advanced segmentation, paid acquisition (Google Ads + Meta Ads), dedicated ad landing pages
+**Researched:** 2026-02-28
+**Confidence:** MEDIUM-HIGH
 
 ## Executive Summary
 
-ContentKit AI is a zero-backend digital product funnel selling two-tier AI prompt packs and Notion templates ($27/$47) to solopreneurs, freelancers, and agency owners. The established expert approach for this product type is a composition of external services — static HTML hosted on a CDN, Stripe Payment Links for checkout, Kit (ConvertKit) for email capture and delivery, and no custom backend code of any kind. This is not a simplification; it is the correct architecture for the problem. Any engineering complexity beyond this scope (authentication, custom checkout, user accounts, server-side APIs) is scope creep that adds cost and risk without improving conversion outcomes.
+ContentKit AI v1.1 adds growth and revenue infrastructure to an already-shipped v1.0 product. The core architecture (static HTML + GitHub Pages + Kit + Stripe Payment Links + Netlify webhook) is locked and working. Every v1.1 feature is an addition or modification — not a rebuild. The recommended approach treats the existing Netlify webhook and Kit tag system as the integration backbone: the webhook is extended to set custom fields and call Meta CAPI, while Kit tag additions trigger all new email automations. No new frameworks, services, or hosting changes are required. All new code lands in three places: the existing `ls-webhook.js`, new static HTML landing pages in the root directory, and Kit's visual automation builder.
 
-The recommended approach is to build everything in the correct dependency order: define the product positioning and collect beta testimonials before writing landing page copy, configure Stripe and Kit automations before driving any traffic, and test the full purchase-to-delivery flow end-to-end with a real charge before public launch. The single most dangerous technical assumption to avoid is treating the Stripe Payment Link success redirect as the fulfillment mechanism — it is not. Product delivery must be driven by a Stripe webhook or a third-party automation (Zapier/Make) that fires independently of whether the buyer's browser completes the redirect.
+The critical build order is: (1) external ad account setup with real tracking IDs, (2) inject those IDs into HTML, (3) build dedicated ad landing pages, (4) extend the Netlify webhook, (5) configure Kit automations, (6) launch campaigns. Steps 1-4 must complete before any ad spend because running campaigns with placeholder tracking IDs (`AW-XXXXXXXXXX`, `PIXEL_ID_HERE`) means zero optimization signal. The email automation work can run in parallel once the webhook custom field additions are deployed.
 
-The primary business risk is commoditization: the AI prompt market is flooded with free alternatives, and a generic "100 marketing prompts" pack will not convert at premium prices. The positioning must be locked around a specific buyer, specific outcome, and documented results before any landing page copy is written. Everything else in this project — the stack, the features, the architecture — is well-documented, low-risk, and executes quickly once the product is correctly positioned.
+The primary risks are operational, not technical. The cross-domain tracking gap at Stripe checkout can corrupt ROAS data if deduplication is not implemented. Meta Ads accounts are aggressively restricted for new advertisers — business verification and policy-compliant ad copy must be confirmed before any campaign launches. Google Ads Smart Bidding requires 30+ conversions/month to function; new accounts should start on Manual CPC to avoid a perpetual learning-phase stall. Email automation has one hard prerequisite: buyer suppression from the nurture sequence must be configured before the post-purchase onboarding sequence is activated, or buyers will receive both flows simultaneously.
 
 ---
 
@@ -19,186 +19,126 @@ The primary business risk is commoditization: the AI prompt market is flooded wi
 
 ### Recommended Stack
 
-The stack is deliberately minimal. Vanilla HTML5, Tailwind CSS v4 (CLI standalone, no Node project required), and Alpine.js v3 for micro-interactions constitute the front end. Cloudflare Pages (free tier, unlimited bandwidth, commercial use permitted) replaces Netlify as the clear hosting choice after Netlify's September 2025 pricing shift to credit-based billing. Kit free plan handles email capture and automation up to 10,000 subscribers. Stripe Payment Links require zero backend and handle PCI compliance, Apple Pay/Google Pay, and post-purchase redirects natively.
-
-The project should have no npm dependencies in production. The Tailwind CLI binary compiles CSS; Alpine.js loads via CDN script tag. The entire product delivery chain — from opt-in to email to download — runs through third-party services that own their own infrastructure.
+The v1.1 stack adds zero new dependencies. All additions are configuration changes to existing services plus new HTML files using the existing build toolchain. See `.planning/research/STACK.md` for full detail.
 
 **Core technologies:**
-- HTML5 + Tailwind CSS v4: page structure and styling — zero framework overhead for a 2-page static site
-- Alpine.js v3: micro-interactions (modals, FAQ accordions, mobile menu) — 15 kB, no build step
-- Cloudflare Pages (free): static hosting + global CDN — unlimited bandwidth, commercial use, 500 builds/month
-- Kit (ConvertKit) free: email list, lead magnet delivery, nurture sequences — 10K subscriber free tier
-- Stripe Payment Links: hosted checkout for $27/$47 tiers — no backend, no SDK, PCI compliant out of the box
+- **Kit (free plan → Creator $39/month):** Email automation backbone. Post-purchase onboarding sequence runs on the free plan's single automation slot. Win-back sequence requires upgrading to Creator plan — do not upgrade preemptively; validate onboarding first, then upgrade when win-back sequence is ready to build.
+- **Kit API v3 (existing webhook):** Remains current — not deprecated, no shutdown date. Extend the existing webhook to set `product_tier` and `purchase_value` custom fields via `PATCH /v3/subscribers/:id`. Do not migrate to v4 for v1.1.
+- **Meta Conversions API (CAPI):** Server-side Purchase event fired from the existing `ls-webhook.js` to `graph.facebook.com/v21.0/{PIXEL_ID}/events`. Requires `META_CAPI_ACCESS_TOKEN` in Netlify env vars. Provides approximately +20% lift in attributed conversions by bypassing iOS ad blockers.
+- **Google Ads gtag (existing):** Already implemented in all 8 HTML files. Only task is replacing the `AW-XXXXXXXXXX` placeholder with a real Conversion ID and Conversion Label from the Google Ads dashboard.
+- **Meta Pixel (existing):** Already implemented in all 8 HTML files. Only task is replacing `PIXEL_ID_HERE` with a real Pixel ID from Meta Events Manager.
+- **Static HTML landing pages (`lp-google.html`, `lp-meta.html`):** New files in the root directory using the existing Tailwind CSS v4 + Alpine.js v3 stack. Same `output.css`. No nav, no footer links, single CTA, message-matched headline.
 
-**Avoid:** Vercel (prohibits commercial use on free tier), Netlify (30 GB effective free bandwidth after 2025 pricing change), Next.js/React (40-130 kB JS overhead for a static page), MailerLite free (capped at 500 subscribers as of September 2025), Google Drive for PDF delivery (rate limits and broken public share links).
+**What not to add:** Google Tag Manager (over-engineered for 2 tracking tags), Segment.com (overkill for 2 ad platforms), Zapier/Make.com (Kit native automations handle this for free), Unbounce/Instapage (static HTML handles dedicated pages at zero cost), Kit Creator Pro at $79/month (subscriber scoring is premature), full ESP migration (Kit handles all v1.1 requirements).
 
 ### Expected Features
 
-The full feature set is documented in `.planning/research/FEATURES.md`. The prioritization is clear: every P1 feature has HIGH user value and LOW-MEDIUM implementation cost. The differentiators are not technical — they are copywriting and positioning decisions.
+See `.planning/research/FEATURES.md` for full detail, dependency graph, sequence structure, and competitor analysis.
 
-**Must have for launch (P1):**
-- Benefit-led hero headline + subheadline + CTA — first 3 seconds determine bounce
-- Product mockup visual — makes the intangible feel real; directly impacts perceived value
-- "What's Inside" deliverable breakdown — buyers must know what they're purchasing before pricing
-- "Who this is for / who this is not for" section — specificity converts the right buyer and disqualifies the wrong one
-- 3–5 specific, outcome-based testimonials — minimum social proof for cold traffic; faceless brand has no personal credibility as substitute
-- Two-tier pricing section with Stripe Payment Links — the conversion event; must work on mobile
-- Money-back guarantee badge + linked refund policy page — removes final objection at checkout
-- FAQ section (5–7 questions) — objection removal at the decision point
-- Lead magnet opt-in form (name + email only) — primary funnel entry; additional fields reduce opt-in rate
-- Automated lead magnet delivery email — instant delivery on opt-in; any delay breaks trust
-- Privacy Policy, Terms of Service, Refund Policy pages — legal prerequisite before collecting emails or displaying guarantee
-- Mobile-responsive, fast-loading layout — majority of cold traffic is mobile
+**Must have (P1 — table stakes, required before any ad spend):**
+- Buyer removal from nurture sequence — prevents simultaneous nurture + onboarding email delivery; prerequisite to all other email work
+- Post-purchase onboarding sequence (Starter tier, $147) — Day 0/3/7/14; confirms purchase, quick win, upsell to Full Kit on Day 7, testimonial ask on Day 14
+- Post-purchase onboarding sequence (Full Kit tier, $499) — Day 0/3/7/14; confirms premium purchase, advanced tips, testimonial ask
+- Real Google Ads Conversion ID injected — replaces `AW-XXXXXXXXXX` in 8 HTML files; required before any Google Ads budget
+- Real Meta Pixel ID injected — replaces `PIXEL_ID_HERE` in 8 HTML files; required before any Meta Ads budget
+- Dedicated ad landing pages (`lp-google.html`, `lp-meta.html`) — no nav, single CTA, message-matched to ad copy; must exist before campaigns launch
 
-**Should have after validation (P2):**
-- 5-email welcome sequence — converts leads who didn't buy immediately; 2-3x lift over single follow-up
-- Authentic urgency framing — date-anchored launch pricing, not a resetting countdown timer
-- Social proof counter — only when buyer/subscriber count is real (50+)
-- One free sample prompt visible on page — removes the "is this AI slop?" objection
+**Should have (P2 — competitive, ship within 30 days of first ad revenue):**
+- Engagement-based segmentation — tag subscribers `engaged` on open/click; creates win-back trigger foundation
+- Win-back sequence (3 emails, Day 21/25/30 from opt-in) — value-first approach, not discount-first; requires Kit Creator plan upgrade to $39/month
+- UTM-tagged landing page variants — separate URL per traffic source for clean Plausible attribution
+- Google Ads Search campaign (brand campaign + non-brand intent campaign, separate) — high-intent keyword capture
+- Meta Ads cold traffic campaign (Sales objective, CBO, broad targeting + interest-based ad sets) — awareness and demand generation
 
-**Defer to v2+:**
-- Affiliate/referral program — requires tracking infrastructure; premature before product-market fit
-- Blog/SEO content — high time investment; bandwidth better spent on funnel until initial validation
-- User accounts/login portal — entire product delivery is via email; accounts add backend complexity with no benefit
-- Video testimonials/VSL — high production effort for a faceless brand
+**Defer to v1.2+ (P3):**
+- Sunset automation — list deliverability hygiene; not urgent until list exceeds 2,000 subscribers
+- Retargeting campaigns — defer until 1,000+ unique ad visitors are pixeled; pixel builds audience passively
+- Engagement scoring (3-point custom field: active/warm/cold) — worth building when list exceeds 1,000 active subscribers
+- Meta CAPI — adds attribution lift but requires event_id threading; pixel alone is sufficient to launch
+- Affiliate/referral program — defer until LTV and conversion rate are validated
 
 ### Architecture Approach
 
-The architecture is a composition of four independently operated external services stitched together with URLs and JavaScript embeds. There is no shared backend, no server, and no database. The landing page (`index.html`) drives email opt-ins through a Kit embed. The sales page (`sales.html`) links directly to two Stripe Payment Link URLs. Stripe redirects buyers to `thank-you.html?session_id={CHECKOUT_SESSION_ID}` after checkout. Product delivery should go through Kit email (not the thank-you page HTML) to ensure delivery is independent of whether the buyer's browser completes the redirect.
+The architecture is an additive extension of the existing system. The Netlify webhook (`ls-webhook.js`) is the central integration point: it already tags Kit subscribers on purchase and is extended to also set custom fields (`product_tier`, `purchase_value`) and call Meta CAPI. Kit tag additions drive all email automation triggers — the `buyer` tag triggers the post-purchase onboarding visual automation; the `cold-subscriber` tag (applied via bulk action on the Kit Subscribers page) triggers the win-back automation. Segments in Kit are filter-only constructs for broadcasts and exclusions — they cannot trigger automations. Tags are the correct trigger mechanism. See `.planning/research/ARCHITECTURE.md` for full data flow diagrams and the 10-step build order.
 
 **Major components:**
-1. `index.html` — lead magnet landing page; Kit form embed; primary funnel entry point
-2. `sales.html` — product sales page; two Stripe Payment Link buttons; both pricing tiers with visual comparison
-3. `thank-you.html` — post-purchase confirmation; download access OR directs buyer to check email; Kit upsell opt-in
-4. Kit automations — lead magnet delivery sequence (5 emails) + separate buyer post-purchase sequence; must be two distinct segments
-5. Stripe Payment Links — two separate links ($27, $47); both redirect to `thank-you.html` with `{CHECKOUT_SESSION_ID}`
-6. Stripe webhook + Zapier/Make — fires `checkout.session.completed` to trigger email delivery independent of redirect; critical gap to fill
+1. **`ls-webhook.js` (modified)** — Stripe to Kit tagging (existing) + Kit custom field updates (new) + Meta CAPI Purchase event (new); all additions are soft-fail so Stripe always receives a 200 response
+2. **Kit Visual Automations (new)** — Post-purchase onboarding automation (trigger: `buyer` tag added, conditional branch for `purchased-starter` vs `purchased-full-kit`); Win-back automation (trigger: `cold-subscriber` tag added, 2-email re-engagement)
+3. **Kit Segmentation (new)** — 5 segments: Buyers-All, Buyers-Starter, Buyers-Full-Kit, Leads-Only, Cold-Subscribers; used for broadcasts and exclusion filters only
+4. **Ad landing pages (`lp-google.html`, `lp-meta.html`)** — Static HTML, no nav, single CTA, message-matched; same Tailwind/Alpine stack; real tracking IDs injected
+5. **`thank-you.html` (modified)** — Real Conversion ID + real Pixel ID; dynamic `value` based on `?tier=` param (already implemented, IDs only); `event_id` added to `fbq()` Purchase call for CAPI deduplication; `sessionStorage` guard prevents duplicate conversion events on refresh
+6. **Google Ads account (external setup)** — Brand campaign (exact match) + Non-brand intent campaign (phrase/broad match, 3 ad groups); Manual CPC bidding until 30+ conversions recorded
+7. **Meta Ads account (external setup)** — Sales objective, CBO, broad targeting ad set + interest-based ad set; business verification required before campaign creation
 
-**Build order mandated by architecture dependencies:**
-Tailwind setup → index.html + Kit embed → Kit automations (test delivery) → sales.html → Stripe products + payment links → thank-you.html → Cloudflare Pages deploy + custom domain → end-to-end test with real charge.
+**Build order dependency chain (10 steps):**
+External ad account setup → inject real IDs into HTML → build ad landing pages → add Netlify env vars → extend webhook → build Kit segments + custom fields → build Kit automations → end-to-end test each feature → launch campaigns.
 
 ### Critical Pitfalls
 
-1. **Generic product positioning** — a "100 marketing prompts" pack is indistinguishable from free alternatives. Every prompt pack must name a specific buyer, specific outcome, and documented time/money result. Fix in the product definition phase, before any copy is written.
+See `.planning/research/PITFALLS.md` for full detail, recovery strategies, and the "Looks Done But Isn't" checklist.
 
-2. **Fulfillment via Stripe redirect only** — Stripe explicitly warns against using the success redirect as the fulfillment mechanism. Buyers who close the tab, experience network errors, or use delayed payment methods (EU bank debits) receive nothing. Always configure a server-side webhook or Zapier automation as the authoritative delivery trigger.
+1. **Buyers receive nurture and onboarding emails simultaneously** — Configure Kit automation rule before post-purchase sequence is activated: `purchased-starter` or `purchased-full-kit` tag applied triggers unsubscribe from lead-magnet-nurture sequence. Test end-to-end with a test subscriber before activating. This is a non-optional prerequisite.
 
-3. **No social proof at launch** — a faceless brand has no personal credibility as a trust substitute. Testimonials must be collected from 10–20 beta users before public traffic is sent to the page. A launch with empty or vague testimonials ("great product!") will convert at sub-1% on cold traffic.
+2. **Duplicate conversion events on thank-you page refresh** — Implement `sessionStorage` deduplication guard before firing `gtag()` and `fbq()` events; pass Stripe `session_id` as `transaction_id` to Google Ads; set Google Ads conversion count to "One" not "Every." Verify by completing a test purchase and refreshing 3 times.
 
-4. **Lead magnet that doesn't pre-sell the paid product** — a free PDF that fully resolves the reader's curiosity removes purchase urgency. The lead magnet must demonstrate the methodology, stop short of full implementation, and make the gap to the paid product obvious and painful.
+3. **Cross-domain tracking gap at Stripe checkout** — `gclid` and `fbclid` cookies are not shared across the `buy.stripe.com` domain boundary. Pass click IDs dynamically via URL parameters appended to the Stripe Payment Link URL. Server-side CAPI via Netlify webhook provides attribution fallback for blocked cookies.
 
-5. **Weak pricing architecture** — two tiers presented without anchoring or urgency default to "I'll think about it." Add a visible anchor (crossed-out price, or $97 agency tier as a decoy) and a real date-anchored urgency mechanism (launch pricing window).
+4. **Google Ads Smart Bidding data starvation on new account** — Smart Bidding requires 30+ conversions/month. At $147–$499 per conversion, this is a high threshold. Start with Manual CPC or Maximize Clicks (no CPA target) for the first 4–6 weeks; switch to Smart Bidding only after 30+ conversions are recorded.
+
+5. **Meta Ads account restricted at launch** — Complete Meta Business Verification before creating any campaign. Audit all ad copy: replace earnings or income claims with outcome descriptions ("Save 8 hours a week" not "Replace a $5K copywriter"). Start at $5–10/day for 3–5 days to establish account trust before scaling budget.
+
+6. **Win-back fires on warm prospects immediately after nurture sequence ends** — The 5-email nurture ends on Day 9. A 14-day inactive trigger fires on almost everyone who did not buy. Set win-back trigger to 60+ days inactive AND subscriber age > 30 days AND no buyer tags.
 
 ---
 
 ## Implications for Roadmap
 
-Based on the combined research, five phases are suggested in the following order:
+Based on combined research, four phases are suggested in the following order:
 
-### Phase 1: Product Definition and Beta Validation
+### Phase 1: Tracking Infrastructure and Ad Landing Pages
 
-**Rationale:** The biggest risk in this project is not technical — it is positioning. Generic prompt packs fail to convert regardless of how good the landing page is. This phase locks the product before any copy, code, or automations are built. It also collects the social proof that is a hard dependency for launch (PITFALLS.md: Pitfalls 1, 2, 4).
+**Rationale:** Nothing in v1.1 can be validated without real conversion tracking. Placeholder IDs in 8 HTML files mean zero optimization signal from any ad spend. This phase is the prerequisite gate for all paid acquisition work. It also requires the Netlify webhook extension (Meta CAPI) and the deduplication logic on the thank-you page before any campaigns launch.
+**Delivers:** Real Google Ads Conversion ID and Meta Pixel ID injected into all HTML files; `sessionStorage` deduplication on thank-you page; Meta CAPI call added to `ls-webhook.js`; `lp-google.html` and `lp-meta.html` built and deployed; Netlify env vars (`META_CAPI_ACCESS_TOKEN`, `META_PIXEL_ID`) set
+**Addresses:** Tracking ID wiring (P1), dedicated landing pages (P1)
+**Avoids:** Duplicate conversion pitfall (Pitfall 2), cross-domain tracking gap (Pitfall 5), Plausible-only Smart Bidding blindness (Pitfall 3), hard-coded conversion value (ARCHITECTURE.md anti-pattern 4)
 
-**Delivers:**
-- Specific product positioning: one buyer persona, one specific outcome, one price point anchor
-- Lead magnet designed to pre-sell the paid product (not just attract subscribers)
-- 5–10 specific, outcome-based beta testimonials
-- Finalized product assets: prompt pack (with sample outputs) + Notion template ready to deliver
+### Phase 2: Email Automation — Post-Purchase Onboarding
 
-**Addresses:** Table stakes features that require finished assets (product mockup, "What's Inside", testimonials, product preview prompt on page)
+**Rationale:** Buyer lifecycle management must be in place before campaigns drive purchase volume. Buyers entering the system without onboarding emails and without nurture sequence suppression will receive mixed messaging. This phase protects list health and LTV before ad spend begins. It can run in parallel with Phase 1's external ad account setup but the webhook custom field additions (from Phase 1) should be deployed before testing the onboarding sequence end-to-end.
+**Delivers:** Buyer suppression automation rule (purchased-starter/full-kit tag → unsubscribe from nurture); Kit custom fields `product_tier` and `purchase_value` set by webhook; Kit Starter onboarding sequence (4 emails, Day 0/3/7/14); Kit Full Kit onboarding sequence (4 emails, Day 0/3/7/14); 5 Kit segments built; end-to-end verified via test purchase
+**Addresses:** Post-purchase onboarding — both tiers (P1), buyer removal from nurture (P1 prerequisite)
+**Avoids:** Buyers-in-nurture pitfall (Pitfall 1), post-purchase sequence referencing lead magnet that cold ad traffic buyers never received (PITFALLS.md UX pitfall), segments-as-automation-triggers anti-pattern (ARCHITECTURE.md anti-pattern 3)
 
-**Avoids:** Pitfall 1 (generic positioning), Pitfall 2 (lead magnet mismatch), Pitfall 4 (zero social proof at launch)
+### Phase 3: Ad Campaign Launch — Google Ads and Meta Ads
 
----
+**Rationale:** Phases 1 and 2 must be complete before any ad spend. Phase 1 ensures conversion tracking fires correctly and dedicated landing pages exist. Phase 2 ensures buyers have a working post-purchase experience. This phase is the revenue generation phase. The bidding strategy decision (Manual CPC, not Smart Bidding) must be locked before campaign creation.
+**Delivers:** Google Ads account + Search campaign (brand campaign + non-brand intent campaign, separate); Meta Business Manager + Pixel verified + initial Sales campaign (broad ad set + interest ad set, CBO); verified conversion tracking end-to-end (click → purchase → conversion credited); bidding strategy set to Manual CPC; campaigns sending to `lp-google.html` and `lp-meta.html` respectively
+**Addresses:** Google Ads Search campaign (P2), Meta Ads cold traffic campaign (P2)
+**Avoids:** Meta account restriction at launch (Pitfall 6), Smart Bidding data starvation (Pitfall 4), ad traffic sent to homepage rather than dedicated landing pages (PITFALLS.md technical debt table), broad match keywords on new account (PITFALLS.md performance traps)
 
-### Phase 2: Technical Infrastructure
+### Phase 4: Segmentation and Win-Back
 
-**Rationale:** Stripe and Kit must be configured and end-to-end tested before the sales page is finalized. Stripe Payment Link URLs must be real to embed in HTML. Kit automations must be verified before driving traffic. The webhook/Zapier delivery layer must be built and tested with a real charge before public launch (PITFALLS.md: Pitfall 3; ARCHITECTURE.md: Build Order).
-
-**Delivers:**
-- Cloudflare Pages deployment pipeline (Git push-to-deploy)
-- Two Stripe Payment Links ($27, $47) with post-purchase redirect configured
-- Stripe webhook or Zapier automation: `checkout.session.completed` → Kit email delivery
-- Kit account: lead magnet form, lead magnet delivery automation, two separate sequences (Leads vs. Buyers)
-- Email domain authenticated (SPF, DKIM, DMARC) and deliverability verified
-- End-to-end test: opt-in → lead magnet delivery + full purchase → delivery email (both tiers)
-
-**Uses:** Cloudflare Pages (STACK.md), Stripe Payment Links (STACK.md), Kit free plan (STACK.md)
-
-**Avoids:** Pitfall 3 (fulfillment via redirect only), PITFALLS.md email deliverability trap
-
-**Research flag:** Stripe webhook configuration in a static site context — particularly the Zapier/Make automation pattern for `checkout.session.completed` → Kit email delivery. Standard pattern but verify current Zapier template availability for this specific trigger/action pair.
-
----
-
-### Phase 3: Landing Page and Sales Page Build
-
-**Rationale:** The front-end build happens after product assets and infrastructure are ready. Stripe links are already real (embedded directly), testimonials are already collected (required for the social proof section), and the product preview prompt is already chosen. This phase has no creative unknowns — it is execution (ARCHITECTURE.md: Build Order steps 1-6; FEATURES.md: P1 feature list).
-
-**Delivers:**
-- `index.html`: lead magnet landing page with Kit form embed, benefit-led hero, social proof, FAQ
-- `sales.html`: sales page with both pricing tiers, Stripe Payment Link buttons, "What's Inside" breakdown, pricing anchoring, urgency framing, guarantee badge
-- `thank-you.html`: post-purchase confirmation page; instructs buyer to check email for delivery
-- Legal pages: Privacy Policy, Terms of Service, Refund Policy
-- Compiled Tailwind CSS (CLI standalone), Alpine.js for modals/FAQ, mobile-first responsive layout
-- Page load time validated under 3 seconds on mobile
-
-**Implements:** URL-stitched third-party composition pattern (ARCHITECTURE.md), Kit form embed pattern, two separate Stripe Payment Links per tier
-
-**Avoids:** Navigation menu on landing page (removes purchase momentum), multiple competing CTAs, price reveal before problem agitation (PAS/AIDA structure), long-form copy for sub-$50 product (under 1,200 words)
-
-**Research flag:** Standard patterns throughout — no deeper research needed. Tailwind v4 CLI and Alpine.js v3 are well-documented. Stripe Payment Link embed is a hyperlink.
-
----
-
-### Phase 4: Copy, Positioning, and Conversion Optimization
-
-**Rationale:** Conversion copywriting requires separate attention from the structural build. After the page structure exists, copy can be evaluated, stress-tested, and iterated independently. This phase applies the "Before/After" framing, pricing anchoring, and objection removal systematically across the full page (FEATURES.md: differentiators; PITFALLS.md: Pitfall 5, UX pitfalls).
-
-**Delivers:**
-- Headline A/B variants ready for testing (minimum 2 hero headline treatments)
-- Pricing section reviewed against anchoring checklist: anchor price or $97 decoy tier added
-- Authentic urgency framing: launch pricing window with real end date
-- "Before/After" outcome framing applied throughout (not just hero)
-- Commoditization objection addressed: sample output and documented time/result saving on page
-- Each testimonial passes the "so what?" specificity test
-
-**Avoids:** Pitfall 5 (weak pricing architecture), Pitfall 1 (generic copy / commodity positioning), "Looks Done But Isn't" checklist items
-
----
-
-### Phase 5: Launch Readiness and Post-Launch Iteration
-
-**Rationale:** A final verification phase before driving paid or organic traffic prevents recoverable mistakes from becoming expensive ones. Post-launch, the 5-email welcome sequence and social proof counter are added as conversion rates confirm product-market fit (PITFALLS.md: "Looks Done But Isn't" checklist; FEATURES.md: v1.x features).
-
-**Delivers:**
-- Full "Looks Done But Isn't" checklist verified: real charge end-to-end test, mobile purchase flow on physical device, deliverability to Gmail Primary and Outlook, Notion template duplication tested, analytics events confirmed, all links validated after deployment
-- GA4 (or equivalent) configured with `purchase` and `lead_magnet_download` events
-- 5-email welcome sequence built in Kit (lead segment): Day 0 PDF delivery → Day 2 engagement → Day 4 social proof → Day 6 soft pitch → Day 9 hard pitch with urgency
-- Social proof counter added when subscriber/buyer count reaches 50+ (real number only)
-- Paid traffic budget allocated: minimum 200 visits to validate headline conversion before broader spend
-
-**Avoids:** Stripe test mode in production, broken delivery on launch day, GDPR compliance gaps for EU traffic
-
----
+**Rationale:** Win-back requires engagement segmentation infrastructure to exist first. The win-back sequence trigger depends on a segment definition in Kit ("non-buyer + 60+ days inactive + subscriber age > 30 days"). This phase also unlocks clean broadcast targeting. Requires Kit Creator plan upgrade ($39/month) to support a second visual automation alongside the onboarding automation. Best timed after first paid acquisition conversions are confirmed — the Creator plan upgrade is more defensible once revenue is validated.
+**Delivers:** Engagement-based tagging (open/click events trigger `engaged` tag via Kit automation rule); win-back sequence (3 emails, Day 21/25/30, value-first not discount-first); Kit Creator plan upgrade; UTM-tagged landing page variants for clean Plausible attribution
+**Addresses:** Engagement-based segmentation (P2), win-back sequence (P2), UTM-tagged landing page variants (P2)
+**Avoids:** Win-back fires on warm prospects (Pitfall 7 — 60-day trigger + age > 30 days condition), broadcasts sent to buyers (PITFALLS.md integration gotchas), discount-led win-back (FEATURES.md anti-features)
 
 ### Phase Ordering Rationale
 
-- **Product definition before code:** Pitfalls 1, 2, and 4 are all pre-code failures. Starting with the landing page before the product is positioned and testimonials are collected is the most common failure mode for this product type.
-- **Infrastructure before HTML:** Stripe Payment Link URLs must be real to embed in `sales.html`. Kit automations must be tested before traffic arrives. Building HTML with placeholder payment links creates a false sense of completion.
-- **Structure before copy:** The page's wireframe and component structure can be built with placeholder copy, but the conversion-critical copy (headline, pricing, objection handling) requires deliberate iteration on top of a working structure.
-- **Verification before traffic:** Every unverified assumption costs money when paid traffic runs. The "Looks Done But Isn't" checklist items are specifically the ones that feel complete but aren't — they must be verified with real conditions (real charge, physical mobile device, fresh Notion account).
+- Phase 1 before Phase 3 is non-negotiable: launching campaigns with placeholder tracking IDs wastes every dollar spent and leaves algorithms with zero optimization signal.
+- Phase 2 before Phase 3 is strongly recommended: cold ad traffic buyers who land in a broken email experience (simultaneous nurture + onboarding) will unsubscribe at elevated rates, destroying the list quality that paid acquisition is meant to build.
+- Phase 4 after Phase 3 because: win-back requires actual list members who have been non-converting for 60+ days; the Kit Creator plan upgrade ($39/month) is more defensible once first paid acquisition conversions are confirmed; and engagement segmentation is more meaningful when there is a sufficient list to segment.
+- The feature dependency chain from FEATURES.md is fully respected: buyer removal from nurture (Phase 2) must precede onboarding (Phase 2); segmentation (Phase 4) must precede win-back (Phase 4); pixel tracking (Phase 1) must precede retargeting (deferred); all campaigns (Phase 3) require landing pages (Phase 1).
 
 ### Research Flags
 
 Phases likely needing deeper research during planning:
-- **Phase 2 (Technical Infrastructure):** The Zapier/Make automation pattern for Stripe `checkout.session.completed` → Kit email delivery — verify current template availability and exact field mapping. Low complexity but should be confirmed before committing to this approach over a Cloudflare Worker-based solution.
-- **Phase 2 (Technical Infrastructure):** EU VAT compliance — if EU customer volume is material, Stripe Payment Links do not handle EU VAT/GST automatically. Lemon Squeezy as merchant of record is the alternative. This decision should be made before the first sale.
+- **Phase 3 (Ad Campaign Launch):** Campaign structure is documented (keyword ad groups, bidding strategy, budget ranges), but keyword lists, ad copy variants, and creative briefs for Meta require production work not covered in this research. Google Ads Quality Score behavior for a new account in the AI tools category needs verification via Google Ads Keyword Planner during Phase 3 planning.
+- **Phase 4 (Win-Back):** Kit's built-in "cold subscriber" filter is reportedly fixed at 90 days (not configurable via the UI). If confirmed, the desired 60-day win-back window requires a manual workaround (bulk-tag subscribers filtered by 60 days no open on the Kit Subscribers page). Verify in the live Kit dashboard before designing the Phase 4 automation.
 
-Phases with standard patterns (skip deeper research):
-- **Phase 3 (Front-End Build):** Tailwind CSS v4 CLI, Alpine.js v3, and Cloudflare Pages are all well-documented with official docs verified HIGH confidence. No research needed during planning.
-- **Phase 1 (Product Definition):** No technical research needed. This is a copywriting and product strategy exercise.
-- **Phase 4 (Copy):** Standard conversion copywriting patterns (PAS, AIDA, anchoring) are well-documented. No research needed.
+Phases with standard patterns (skip research-phase):
+- **Phase 1 (Tracking Infrastructure):** Google Ads gtag and Meta Pixel implementations are fully documented in official sources and the code patterns are already in the codebase — only real IDs are missing. CAPI webhook extension pattern is well-established. `sessionStorage` deduplication is a standard pattern.
+- **Phase 2 (Email Automation):** Kit visual automations and automation rules are verified against official Kit help center (HIGH confidence). The tag-trigger pattern is confirmed. Sequence content (emails) is a writing task, not a research task.
 
 ---
 
@@ -206,48 +146,51 @@ Phases with standard patterns (skip deeper research):
 
 | Area | Confidence | Notes |
 |------|------------|-------|
-| Stack | HIGH | Core technologies verified against official docs (Tailwind v4, Stripe Payment Links, Cloudflare Pages, Kit pricing). Version compatibility confirmed. The one caveat: Kit's 10K free subscriber limit was sourced from a third-party review site, not Kit's own pricing page — verify at kit.com/pricing before committing. |
-| Features | MEDIUM-HIGH | P1 feature list is well-corroborated across multiple conversion optimization sources. Specific conversion lift numbers (34% from testimonials, 12% from guarantee) are directional, not precise — do not treat them as benchmarks. |
-| Architecture | HIGH | Architecture patterns verified against official Stripe and Kit documentation. The critical gap (Stripe → Kit buyer tagging requires Zapier/Make) is confirmed by the absence of native integration. Build order is verified as the correct dependency sequence. |
-| Pitfalls | MEDIUM | Critical pitfalls 1–3 are HIGH confidence (commoditization risk is market-observable; Stripe fulfillment warning is from official Stripe docs; social proof requirement is universal for faceless brands). Pitfalls 4–5 are MEDIUM confidence (practitioner sources, conversion statistics are directional). |
+| Stack | HIGH | Verified against official Kit API docs, Google Ads docs, Meta Ads docs, and live codebase inspection. Zero new dependencies — minimal unknown surface area. The one caveat: Kit free plan automation limit (1 visual automation, 1 sequence) sourced from third-party review sites, not Kit's own pricing page — verify at kit.com/pricing before building Phase 2 on this assumption. |
+| Features | MEDIUM-HIGH | Table stakes features (P1) are multi-source confirmed. Win-back timing benchmarks (60-day trigger) are industry consensus from practitioner sources (MEDIUM). The value-first vs. discount-first win-back recommendation is well-reasoned but lacks a controlled study for this specific product type. Tier-specific onboarding sequences are industry best practice, not a novel claim. |
+| Architecture | HIGH | Kit automation trigger patterns verified against official Kit help center. Stripe redirect behavior verified against official Stripe docs. Meta CAPI deduplication via event_id is confirmed in Meta official documentation (via web search, pattern well-established). Cross-domain tracking gap is documented by Stripe itself. |
+| Pitfalls | MEDIUM-HIGH | Critical pitfalls (duplicate conversions, Smart Bidding data starvation, Meta account restrictions, buyers-in-nurture) are HIGH confidence verified against official sources. Win-back timing pitfall is MEDIUM confidence from industry practitioners but directionally consistent across multiple sources. |
 
-**Overall confidence:** HIGH — sufficient to begin roadmap planning without additional research. The two flags in Phase 2 (Zapier pattern verification, EU VAT decision) should be resolved during Phase 2 planning, not before roadmap creation.
+**Overall confidence:** MEDIUM-HIGH — sufficient to proceed to roadmap creation without additional research. The gaps below should be resolved during phase planning, not before roadmap creation.
 
 ### Gaps to Address
 
-- **Kit subscriber limit:** Verify current free plan limit at kit.com/pricing before first email. The researched figure (10,000) is from a third-party review; Kit may have adjusted terms.
-- **EU VAT decision:** Make an explicit decision before the first sale — Stripe Payment Links (manual VAT handling) or Lemon Squeezy (merchant of record). This cannot be deferred after revenue begins flowing.
-- **Zapier vs. Cloudflare Worker for webhook delivery:** Both are viable. Zapier is simpler but adds a third-party dependency; a Cloudflare Worker is in the existing infrastructure. Decide during Phase 2 planning based on current Zapier template availability.
-- **Notion template hosting:** Test "Duplicate to Notion" link from a fresh account before finalizing delivery mechanism. Some Notion share configurations require the recipient to have a Notion account — verify this does not create a barrier for buyers.
+- **Kit free plan automation limit:** Reported as 1 visual automation + 1 email sequence by third-party sources. Must be verified at `kit.com/pricing` before committing Phase 2 to the free plan assumption. If the limit has changed or is stricter, Phase 2 may require the Creator plan upgrade earlier than planned.
+- **Kit "cold subscriber" 90-day threshold:** Research indicates Kit's built-in cold subscriber filter is fixed at 90 days and non-configurable. If the desired win-back window is 60 days, a manual tag-based workaround is needed. Verify in the live Kit dashboard before designing Phase 4 automation — this could affect trigger logic significantly.
+- **Meta CAPI event_id deduplication with mismatched IDs:** The ARCHITECTURE.md documents that the browser Pixel call will use a timestamp-based event_id while the CAPI server-side call uses the Stripe session ID — these will not match exactly. Meta uses fuzzy deduplication (user data hash + timing) when event_ids differ. Acceptable for v1.1 but should be monitored in Meta Events Manager after Phase 3 launch for unexpected duplicate counts.
+- **Google Ads Conversion Label format:** The codebase placeholder is `AW-XXXXXXXXXX`; the actual Google Ads conversion call requires both a Conversion ID (`AW-XXXXXXXXXX`) and a Conversion Label (a separate alphanumeric string). Both values must be sourced from the Google Ads dashboard and the `send_to` field in `thank-you.html` updated with the format `AW-REAL_ID/REAL_LABEL`. Verify this is correctly structured during Phase 1 implementation.
 
 ---
 
 ## Sources
 
 ### Primary (HIGH confidence)
-- Tailwind CSS v4 official release blog: https://tailwindcss.com/blog/tailwindcss-v4
-- Stripe Payment Links post-payment docs: https://docs.stripe.com/payment-links/post-payment
-- Stripe webhook fulfillment warning: https://docs.stripe.com/webhooks/handling-payment-events
+- Kit Visual Automations — triggers and actions: https://help.kit.com/en/articles/2502537-visual-automations-actions
+- Kit Automations — how to use visual automations: https://help.kit.com/en/articles/2502666-how-to-use-kit-visual-automations
+- Kit Automation Rules (tag-based triggers): https://help.kit.com/en/articles/6611507-how-to-create-and-manage-automation-rules-in-kit
+- Kit tags vs. segments (segments cannot trigger automations): https://help.kit.com/en/articles/4257108-tags-and-segments-in-kit-and-when-to-use-which
+- Kit list cleaning / cold subscriber template: https://help.kit.com/en/articles/5268661-cleaning-and-managing-your-list
+- Kit API v3 deprecation status: https://developers.kit.com/v3
+- Kit API v4 URL and endpoints: https://developers.kit.com/v4
+- Stripe Payment Links post-payment redirect: https://docs.stripe.com/payment-links/post-payment
 - Stripe Payment Links URL parameters: https://docs.stripe.com/payment-links/url-parameters
-- Cloudflare Pages limits and pricing: https://developers.cloudflare.com/pages/platform/limits/
-- Kit form embedding docs: https://help.kit.com/en/articles/4009572-form-embedding-basics
-- MailerLite free plan update (500 subscriber cap): https://www.mailerlite.com/help/free-plan-update-faq
-- Netlify credit-based pricing (September 2025): https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/
-- Alpine.js official site: https://alpinejs.dev/
+- Google Ads conversion deduplication via transaction ID: https://support.google.com/google-ads/answer/6386790
+- Google Ads Smart Bidding learning phase minimum conversions: https://support.google.com/google-ads/answer/13020501
+- Google Ads landing page best practices (message match, single CTA): https://support.google.com/google-ads/answer/6238826
+- Plausible Analytics — confirmed cannot import into Google Ads: https://plausible.io/blog/google-ads-tracking
+- Existing codebase (`ls-webhook.js`, `index.html`, `thank-you.html`) — verified directly
 
 ### Secondary (MEDIUM confidence)
-- Kit pricing (via emailtooltester.com, 2026): https://www.emailtooltester.com/en/reviews/convertkit/pricing/ — 10K free subscriber limit (verify directly)
-- Branded Agency — anatomy of high-converting landing page (2026): https://www.brandedagency.com/blog/the-anatomy-of-a-high-converting-landing-page-14-powerful-elements-you-must-use-in-2026
-- WiserNotify — social proof tactics: https://wisernotify.com/blog/social-proof-marketing/
-- GlockApps — lead magnet email sequence: https://glockapps.com/blog/how-to-build-a-lead-magnet-email-sequence-that-converts-strategies-and-examples/
-- Shopify — psychological pricing and anchoring: https://www.shopify.com/blog/psychological-pricing
-- Azura Magazine — faceless marketing trust signals: https://azuramagazine.com/articles/faceless-marketing-how-to-build-trust-with-branding
-- PathPages — Notion template delivery patterns: https://pathpages.com/blog/sell-notion-templates
-- Reply.io — email deliverability (SPF/DKIM/DMARC): https://reply.io/email-deliverability-best-practices-and-mistakes/
-
-### Tertiary (LOW confidence)
-- Medium / The Wounded Tiger — selling AI prompt packs in 2025 (access blocked): https://medium.com/@takudzwarukanda/i-tried-selling-ai-prompt-packs-in-2025 — finding: specificity beats generic packs; needs independent validation
+- Kit free plan limits (1 automation, 1 sequence): emailtooltester.com + sender.net — verify at kit.com/pricing
+- Kit Creator plan pricing ($39/month for up to 1,000 subscribers): same sources — verify at kit.com/pricing
+- Meta broad targeting outperforms interest stacking in 2026: metalla.digital + anchour.com (industry consensus)
+- Meta CAPI event_id deduplication behavior with mismatched IDs: multiple practitioner sources, pattern consistent
+- Google Ads Smart Bidding data starvation behavior: HawkSEM + Adventure PPC
+- Win-back timing benchmarks (60-day trigger, 3-email maximum, value-first): Flowium + ActiveCampaign blog
+- Meta Ads account suspension rates and UBP policy triggers for digital products: StubGroup + Blackscale Media
+- Stripe cross-domain tracking gap and gclid/fbclid passthrough workaround: ConversionTracking.io + Tracklution
+- Meta Pixel + CAPI combined approach for 2026: blog.funnelfox.com + adsuploader.com
 
 ---
-*Research completed: 2026-02-24*
+*Research completed: 2026-02-28*
 *Ready for roadmap: yes*
