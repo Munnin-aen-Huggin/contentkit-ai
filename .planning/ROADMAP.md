@@ -53,12 +53,12 @@ Plans:
   3. Kit custom fields product_tier, purchase_value, and purchase_date are populated on a test subscriber's record after a webhook-triggered purchase event
   4. Kit shows 5 segments (Buyers-All, Buyers-Starter, Buyers-Full-Kit, Leads-Only, Cold-Subscribers) each filtering the correct subscriber population
   5. A test subscriber inactive for 60+ days with no buyer tag enters the win-back sequence and receives the 3-email flow
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 07-01: Configure buyer suppression rule + extend Netlify webhook with custom fields
-- [ ] 07-02: Build Starter and Full Kit post-purchase onboarding automations in Kit
-- [ ] 07-03: Build Kit segments + win-back automation (requires Kit Creator plan upgrade)
+- [ ] 07-01-PLAN.md — Buyer suppression rules + webhook custom fields extension + KIT_API_KEY setup
+- [ ] 07-02-PLAN.md — Starter and Full Kit post-purchase onboarding sequences and automations
+- [ ] 07-03-PLAN.md — 5 subscriber segments + win-back automation for cold non-buyers
 
 #### Phase 8: Paid Ad Campaigns
 
